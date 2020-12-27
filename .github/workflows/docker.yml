@@ -32,7 +32,7 @@ jobs:
         run: |
           env
           ls -la
-          ./build.sh --images=all --lint=true
+          ./build.sh --lint=true
 
       - name: Login to DockerHub
         if: github.ref == 'refs/heads/main'
