@@ -29,7 +29,10 @@ jobs:
         with:
           path: main
       - name: Build Docker Images
-        run: ./build.sh --images=all --lint=true
+        run: |
+          env
+          ls -la
+          ./build.sh --images=all --lint=true
 
       - name: Login to DockerHub
         if: github.ref == 'refs/heads/main'
