@@ -1,0 +1,44 @@
+name: Build Docker Images
+
+on:
+  pull_request:
+    paths-ignore:
+      - "*.md"
+      - "binder/**"
+      - "docs/**"
+      - "examples/**"
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "*.md"
+      - "binder/**"
+      - "docs/**"
+      - "examples/**"
+
+jobs:
+  build:
+    name: Build Docker Images
+    runs-on: ubuntu-latest
+    if: >
+      !contains(github.event.head_commit.message, 'ci skip') &&
+      !contains(github.event.pull_request.title, 'ci skip')
+    steps:
+      - name: Clone Main Repo
+        uses: actions/checkout@v2
+        with:
+          path: main
+      - name: Build Docker Images
+        run: ./build.sh --images=all --lint=true
+
+      - name: Login to DockerHub
+        if: github.ref == 'refs/heads/main'
+        uses: docker/login-action@v1
+        with:
+          registry: https://eu.gcr.io
+          username: _json_key
+          password: ${{ secrets.AKT_ENG_REGISTRY_PUBLIC_JSON }}
+
+      - name: Push images on GoogleContainerRegistry
+        if: github.ref == 'refs/heads/main'
+        run: docker images --format "{{.Repository}}:{{.Tag}}" | grep akt-eng-registry-public | xargs -n 1 docker push
