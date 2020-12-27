@@ -26,8 +26,8 @@ jobs:
     steps:
       - name: Clone Main Repo
         uses: actions/checkout@v2
-        with:
-          path: main
+        # with:
+        #   path: main
       - name: Build Docker Images
         run: |
           env
