@@ -1,0 +1,100 @@
+FROM php:7.3-apache
+
+LABEL vendor="Artifakt.io" \
+      author="djalal@artifakt.io"
+
+HEALTHCHECK CMD curl --fail http://localhost || exit 1
+
+ARG PHP_EXTENSION_LIST="apcu bcmath bz2 calendar exif gd gettext iconv intl memcache mysqli opcache pcntl pdo_mysql shmop soap sockets sodium sysvmsg sysvsem sysvshm wddx xmlrpc xsl zip"
+
+ARG APACHE_MODULE_LIST="access_compat actions alias allowmethods auth_basic auth_digest authn_anon authn_core authn_dbd authn_dbm authn_file authn_socache authz_core authz_dbd authz_dbm authz_groupfile authz_host authz_owner authz_user autoindex cache cache_disk cache_socache cgi data dav dav_fs dav_lock dbd deflate dir dump_io echo env expires ext_filter filter headers http2 include info lbmethod_bybusyness lbmethod_byrequests lbmethod_bytraffic lbmethod_heartbeat lua macro mime mime_magic negotiation php7 proxy proxy_ajp proxy_balancer proxy_connect proxy_express proxy_fcgi proxy_fdpass proxy_ftp proxy_hcheck proxy_http proxy_scgi proxy_uwsgi proxy_wstunnel remoteip reqtimeout request rewrite setenvif slotmem_plain slotmem_shm socache_dbm socache_memcache socache_shmcb ssl status substitute suexec userdir vhost_alias"
+
+ARG LIB_SODIUM_VERSION=1.0.18
+
+ARG MEMCACHE_VERSION=4.0.5.2
+
+ARG APCU_VERSION=5.1.19
+
+# Install dependencies
+RUN apt-get update \
+  && apt-get upgrade -y \
+  && apt-get install -y --no-install-recommends \
+  apt-utils \
+  libbz2-dev \
+  libc-client-dev \
+  libfreetype6-dev \
+  libgmp-dev \
+  libicu-dev \
+  libjpeg62-turbo-dev \
+  libkrb5-dev \
+  libldap2-dev \
+  libpng-dev \
+  libpspell-dev \
+  libtidy-dev \
+  libwebp-dev \
+  libxpm-dev \
+  libxslt1-dev \
+  libzip-dev \
+  wget \
+  zip \
+  zlib1g-dev \
+  && rm -rf /var/lib/apt/lists/*
+
+# Configure the gd library
+RUN docker-php-ext-configure \
+  gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ --with-xpm-dir --with-webp-dir
+
+# Configure the opcache library
+RUN docker-php-ext-configure \
+  opcache --enable-opcache
+
+# Configure the zip library
+RUN docker-php-ext-configure \
+  zip --with-libzip
+
+# Install required PHP extensions
+RUN docker-php-ext-install -j$(nproc) \
+  bcmath \
+  bz2 \
+  calendar \
+  exif \
+  gd \
+  gettext \
+  iconv \
+  intl \
+  mysqli \
+  opcache \
+  pcntl \
+  pdo_mysql \
+  shmop \
+  soap \
+  sockets \
+  sysvmsg \
+  sysvsem \
+  sysvshm \
+  wddx \
+  xmlrpc \
+  xsl \
+  zip
+
+# a couple of extensions are only available through PECL
+RUN pecl install apcu-$ACPU_VERSION memcache-$MEMCACHE_VERSION
+
+# install SODIUM php extension
+# see DOCS: https://doc.libsodium.org/
+RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
+  && rm -f /usr/local/lib/php/extensions/*/*sodium.so \
+  && apt-get remove libsodium* -y  \
+  && mkdir -p /tmp/libsodium  \
+  && curl -sL https://github.com/jedisct1/libsodium/archive/$LIB_SODIUM_VERSION-RELEASE.tar.gz | tar xzf - -C  /tmp/libsodium \
+  && cd /tmp/libsodium/libsodium-${LIB_SODIUM_VERSION}-RELEASE/ \
+  && ./configure \
+  && make && make check \
+  && make install  \
+  && cd / \
+  && rm -rf /tmp/libsodium  \
+  && pecl install -o -f libsodium
+
+# finally, make sure all mods and extensions are enabled
+RUN docker-php-ext-enable $PHP_EXTENSION_LIST
+RUN a2enmod $APACHE_MODULE_LIST
