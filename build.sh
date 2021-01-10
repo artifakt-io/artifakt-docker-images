@@ -10,10 +10,6 @@ CONFIG="$1"
 
 REGISTRY_TARGET=${REGISTRY_TARGET:-"registry.artifakt.io"}
 
-echo $REGISTRY_TARGET
-
-exit 0
-
 IMAGE_TARGET="ALL"
 
 TAG_TARGET="ALL"
