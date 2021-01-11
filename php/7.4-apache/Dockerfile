@@ -16,8 +16,8 @@ ARG MEMCACHE_VERSION=4.0.5.2
 ARG APCU_VERSION=5.1.19
 
 # Install dependencies
+# hadolint ignore=DL3008
 RUN apt-get update \
-  && apt-get upgrade -y \
   && apt-get install -y --no-install-recommends \
   apt-utils \
   libbz2-dev \
@@ -40,8 +40,6 @@ RUN apt-get update \
   zlib1g-dev \
   && rm -rf /var/lib/apt/lists/*
 
-
-
 #RUN curl -sSLO https://github.com/php/pecl-text-wddx/archive/354bfc1d1a7390c14ccc0d0c5eaf83748e40bcf8.zip && \
 #	tar xzf 354bfc1d1a7390c14ccc0d0c5eaf83748e40bcf8.zip && \
 #	cd 354bfc1d1a7390c14ccc0d0c5eaf83748e40bcf8 && \
@@ -62,7 +60,7 @@ RUN docker-php-ext-configure \
 RUN docker-php-ext-configure zip
 
 # Install required PHP extensions
-RUN docker-php-ext-install -j$(nproc) \
+RUN "docker-php-ext-install -j$(nproc) \
   bcmath \
   bz2 \
   calendar \
@@ -84,13 +82,16 @@ RUN docker-php-ext-install -j$(nproc) \
 #  wddx \
   xmlrpc \
   xsl \
-  zip
+  zip"
 
 # a couple of extensions are only available through PECL
 RUN pecl install apcu-$APCU_VERSION memcache-$MEMCACHE_VERSION
 
+SHELL /bin/bash set -eo pipefail
+
 # install SODIUM php extension
 # see DOCS: https://doc.libsodium.org/
+# hadolint ignore=DL3003
 RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && rm -f /usr/local/lib/php/extensions/*/*sodium.so \
   && apt-get remove libsodium* -y  \
@@ -100,9 +101,8 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && ./configure \
   && make && make check \
   && make install  \
-  && cd / \
-  && rm -rf /tmp/libsodium  \
-  && pecl install -o -f libsodium
+  && pecl install -o -f libsodium \
+  && rm -rf /tmp/libsodium
 
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
