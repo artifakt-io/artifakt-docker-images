@@ -60,7 +60,7 @@ RUN docker-php-ext-configure \
 RUN docker-php-ext-configure zip
 
 # Install required PHP extensions
-RUN "docker-php-ext-install -j$(nproc) \
+RUN docker-php-ext-install -j$(nproc) \
   bcmath \
   bz2 \
   calendar \
@@ -82,16 +82,14 @@ RUN "docker-php-ext-install -j$(nproc) \
 #  wddx \
   xmlrpc \
   xsl \
-  zip"
+  zip
 
 # a couple of extensions are only available through PECL
 RUN pecl install apcu-$APCU_VERSION memcache-$MEMCACHE_VERSION
 
-SHELL /bin/bash set -eo pipefail
-
 # install SODIUM php extension
 # see DOCS: https://doc.libsodium.org/
-# hadolint ignore=DL3003
+# hadolint ignore=DL3003,DL4006,SC2039
 RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && rm -f /usr/local/lib/php/extensions/*/*sodium.so \
   && apt-get remove libsodium* -y  \

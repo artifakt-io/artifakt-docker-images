@@ -1,4 +1,3 @@
-# hadolint ignore=DL3003,DL3008
 FROM php:7.3-apache
 
 LABEL vendor="Artifakt.io" \
@@ -17,7 +16,7 @@ ARG MEMCACHE_VERSION=4.0.5.2
 ARG APCU_VERSION=5.1.19
 
 # Install dependencies
-# hadolint ignore=DL3003
+# hadolint ignore=DL3008
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   apt-utils \
@@ -54,7 +53,8 @@ RUN docker-php-ext-configure \
   zip --with-libzip
 
 # Install required PHP extensions
-RUN "docker-php-ext-install -j$(nproc) \
+# hadolint ignore=SC2046
+RUN docker-php-ext-install -j$(nproc) \
   bcmath \
   bz2 \
   calendar \
@@ -76,16 +76,14 @@ RUN "docker-php-ext-install -j$(nproc) \
   wddx \
   xmlrpc \
   xsl \
-  zip"
+  zip
 
 # a couple of extensions are only available through PECL
 RUN pecl install apcu-$APCU_VERSION memcache-$MEMCACHE_VERSION
 
-SHELL /bin/bash set -eo pipefail
-
 # install SODIUM php extension
 # see DOCS: https://doc.libsodium.org/
-# hadolint ignore=DL3008
+# hadolint ignore=DL3003,DL4006,SC2039
 RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && rm -f /usr/local/lib/php/extensions/*/*sodium.so \
   && apt-get remove libsodium* -y  \
