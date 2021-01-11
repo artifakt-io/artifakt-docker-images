@@ -60,6 +60,7 @@ RUN docker-php-ext-configure \
 RUN docker-php-ext-configure zip
 
 # Install required PHP extensions
+# hadolint ignore=SC2046
 RUN docker-php-ext-install -j$(nproc) \
   bcmath \
   bz2 \
