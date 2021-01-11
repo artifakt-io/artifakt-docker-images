@@ -32,7 +32,7 @@ jobs:
         run: |
           env
           ls -la
-          ./build.sh --lint=true
+          export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true
 
       - name: Login to target registry
         if: github.ref == 'refs/heads/main'
