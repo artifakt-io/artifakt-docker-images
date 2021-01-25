@@ -1,0 +1,57 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:alpine
+    environment:
+      - DOMAIN_NAME=redis.${BASEHOST:-magento.docker}
+    network_mode: bridge
+
+  mysql:
+    image: mysql:${MYSQLVERSION:-8}
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-toor}
+      - DOMAIN_NAME=mysql.${BASEHOST:-magento.docker}
+    command: --innodb-doublewrite=0
+    network_mode: bridge
+
+  application:
+    image: dockerwest/php-magento${MAGENTOVERSION}:${PHPVERSION:-7.3}
+    environment:
+      - C_UID=${C_UID:-1000}
+      - C_GID=${C_GID:-1000}
+      - DEVELOPMENT=${DEVELOPMENT:-1}
+    volumes:
+      - ${APPLICATION:-../magento}:/phpapp
+    links:
+      - mysql
+      - redis
+      - mailcatcher
+      - elastic
+    network_mode: bridge
+
+  nginx:
+    image: dockerwest/nginx-magento${MAGENTOVERSION}:${NGINXVERSION:-stable}
+    environment:
+      - VIRTUAL_HOST=${BASEHOST:-magento.docker},${EXTRAHOSTS}
+      - VIRTUAL_PORT=80
+    volumes:
+      - ${APPLICATION:-../magento}:/phpapp
+    links:
+      - application
+    network_mode: bridge
+
+  elastic:
+    image: blacktop/elasticsearch:${ELASTICSEARCHVERSION:-7}
+    environment:
+      - DOMAIN_NAME=elastic.${BASEHOST:-magento.docker}
+    network_mode: bridge
+
+  elastic-hq:
+    image: elastichq/elasticsearch-hq
+    environment:
+      - VIRTUAL_HOST=hq.${BASEHOST:-magento.docker}
+      - VIRTUAL_PORT=5001
+    links:
+      - elastic
+    network_mode: bridge
