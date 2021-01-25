@@ -1,4 +1,4 @@
-FROM php:7.3-fpm-stretch
+FROM php:7.4-fpm
 
 ENV PHP_MEMORY_LIMIT 2G
 ENV MAGENTO_ROOT /app
@@ -40,15 +40,14 @@ RUN apt-get update \
 
 # Configure the gd library
 RUN docker-php-ext-configure \
-  gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
+  gd --with-freetype --with-jpeg
 RUN docker-php-ext-configure \
   imap --with-kerberos --with-imap-ssl
 RUN docker-php-ext-configure \
   ldap --with-libdir=lib/x86_64-linux-gnu
 RUN docker-php-ext-configure \
   opcache --enable-opcache
-RUN docker-php-ext-configure \
-  zip --with-libzip
+RUN docker-php-ext-configure zip
 
 # Install required PHP extensions
 RUN docker-php-ext-install -j$(nproc) \
@@ -66,7 +65,7 @@ RUN docker-php-ext-install -j$(nproc) \
   opcache \
   pdo_mysql \
   pspell \
-  recode \
+#  recode \
   shmop \
   soap \
   sockets \
@@ -89,7 +88,7 @@ RUN pecl install -o -f \
   propro \
   raphf \
   redis \
-  xdebug-2.7.1 \
+  xdebug-3.0.2 \
   yaml
 
 RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
@@ -128,7 +127,7 @@ RUN docker-php-ext-enable \
   propro \
   pspell \
   raphf \
-  recode \
+#  recode \
   redis \
   shmop \
   soap \
@@ -138,7 +137,7 @@ RUN docker-php-ext-enable \
   sysvsem \
   sysvshm \
   tidy \
-  xdebug \
+#  xdebug \
   xmlrpc \
   xsl \
   yaml \
