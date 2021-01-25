@@ -1,0 +1,59 @@
+name: Build Docker Images
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+
+  provide_images_json:
+    # see json juggling: https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#example-6
+    # see https://stackoverflow.com/a/62953566/1348344
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: get docker json list
+        id: output_data
+        run: |
+          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(find . -name Dockerfile))"
+    # this step is needed, so the output gets to the next defined job
+    outputs:
+        matrix: ${{ steps.output_data.outputs.matrix }}
+
+
+  build_and_push:
+    needs: provide_images_json
+    
+    runs-on: ubuntu-latest
+    strategy:
+        fail-fast: true
+        matrix:
+            dockerfile: ${{fromJson(needs.provide_images_json.outputs.matrix)}}
+    steps:
+      - name: Clone Main Repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Build Docker Images
+        run: |
+          fullDockerfilePath=${{ matrix.dockerfile }}
+          folder=${fullDockerfilePath%"/Dockerfile"}
+          TMP_IMAGE_ARRAY=($(echo $folder | tr "/" "\n"))
+          IMAGE_NAME=${TMP_IMAGE_ARRAY[1]}
+          TAG=${TMP_IMAGE_ARRAY[2]}
+          export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true --image=$IMAGE_NAME --tag=$TAG
+
+      - name: Login to target registry
+        if: github.ref == 'refs/heads/main'
+        uses: docker/login-action@v1
+        with:
+          registry: https://eu.gcr.io
+          username: _json_key
+          password: ${{ secrets.AKT_ENG_REGISTRY_PUBLIC_JSON }}
+
+      - name: Push images to GoogleContainerRegistry
+        if: github.ref == 'refs/heads/main'
+        run: docker images --format "{{.Repository}}:{{.Tag}}" | grep ${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} | xargs -n 1 docker push
