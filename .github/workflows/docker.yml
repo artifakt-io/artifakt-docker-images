@@ -6,22 +6,12 @@ on:
   pull_request:
     paths:
       - '**/Dockerfile'    
-    paths-ignore:
-      - "*.md"
-      - "binder/**"
-      - "docs/**"
-      - "examples/**"
   push:
     branches:
       - main
     paths:
       - '**/Dockerfile'
-    paths-ignore:
-      - "*.md"
-      - "binder/**"
-      - "docs/**"
-      - "examples/**"
-
+  
 jobs:
 
   provide_images_json:
