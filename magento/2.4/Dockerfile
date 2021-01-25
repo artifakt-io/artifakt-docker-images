@@ -8,8 +8,8 @@ ENV UPLOAD_MAX_FILESIZE 64M
 ENV PHP_EXTENSIONS bcmath bz2 calendar exif gd gettext intl mysqli opcache pdo_mysql redis soap sockets sysvmsg sysvsem sysvshm xsl zip pcntl
 
 # Install dependencies
+# hadolint ignore=DL3008
 RUN apt-get update \
-  && apt-get upgrade -y \
   && apt-get install -y --no-install-recommends \
   apt-utils \
   sendmail-bin \
@@ -50,6 +50,7 @@ RUN docker-php-ext-configure \
 RUN docker-php-ext-configure zip
 
 # Install required PHP extensions
+# hadolint ignore=SC2046
 RUN docker-php-ext-install -j$(nproc) \
   bcmath \
   bz2 \
@@ -91,6 +92,7 @@ RUN pecl install -o -f \
   xdebug-3.0.2 \
   yaml
 
+# hadolint ignore=DL3003,DL4006,SC2039
 RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && rm -f /usr/local/lib/php/extensions/*/*sodium.so \
   && apt-get remove libsodium* -y  \
@@ -143,6 +145,9 @@ RUN docker-php-ext-enable \
   yaml \
   zip \
   pcntl
+
+# hadolint ignore=DL3022
+COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
 
 COPY etc/php-fpm.ini /usr/local/etc/php/conf.d/zz-magento.ini
 #COPY etc/php-xdebug.ini /usr/local/etc/php/conf.d/zz-xdebug-settings.ini
