@@ -12,15 +12,11 @@ ENV PHP_EXTENSIONS bcmath bz2 calendar exif gd gettext intl mysqli opcache pdo_m
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   apt-utils \
-  sendmail-bin \
-  sendmail \
-  sudo \
   libbz2-dev \
   libjpeg62-turbo-dev \
   libpng-dev \
   libfreetype6-dev \
   libgeoip-dev \
-  wget \
   libgmp-dev \
   libmagickwand-dev \
   libmagickcore-dev \
@@ -35,6 +31,11 @@ RUN apt-get update \
   libxslt1-dev \
   libyaml-dev \
   libzip-dev \
+  lsof \
+  sendmail \
+  sendmail-bin \
+  sudo \
+  wget \
   zip \
   && rm -rf /var/lib/apt/lists/*
 
@@ -139,7 +140,7 @@ RUN docker-php-ext-enable \
   sysvsem \
   sysvshm \
   tidy \
-#  xdebug \
+  xdebug \
   xmlrpc \
   xsl \
   yaml \
@@ -148,6 +149,9 @@ RUN docker-php-ext-enable \
 
 # hadolint ignore=DL3022
 COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
+
+# hadolint ignore=DL3022
+COPY --from=mysql:8 /usr/bin/my* /usr/bin/
 
 COPY etc/php-fpm.ini /usr/local/etc/php/conf.d/zz-magento.ini
 #COPY etc/php-xdebug.ini /usr/local/etc/php/conf.d/zz-xdebug-settings.ini
