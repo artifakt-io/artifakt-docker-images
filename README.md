@@ -93,7 +93,14 @@ docker run -d -p 8000:80 --name php_sample -v $PWD:/var/www/html artifakt-io/php
 
 After the application starts, navigate to `http://localhost:8000` in your web browser.
 
+# Adding an image
 
+* Fork this repository
+* Create a folder at the root with the convention <image_name>/<tag>
+* Write a Dockerfile inside this new folder
+* Lint it with `hadolint`
+* Submit a new pull request
+* Upon successful review, we'll publish it on our official registry
 
 # Image update policy
 
