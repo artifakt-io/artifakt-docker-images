@@ -1,1 +1,0 @@
-FROM drupal:8.9-fpm-alpine
