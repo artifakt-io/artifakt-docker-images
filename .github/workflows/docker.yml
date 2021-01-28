@@ -21,12 +21,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+
       - name: get docker json list
         id: output_data
         run: |
           pwd
           ls -la
-          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(git diff-tree --no-commit-id --name-only -r HEAD HEAD^ | grep Dockerfile))"
+          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r HEAD HEAD^ | grep Dockerfile))"
     # this step is needed, so the output gets to the next defined job
     outputs:
         matrix: ${{ steps.output_data.outputs.matrix }}
