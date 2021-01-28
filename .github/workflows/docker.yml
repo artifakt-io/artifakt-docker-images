@@ -3,13 +3,13 @@ name: Build Docker Images
 on:
   pull_request:
     paths:
-      - '**/Dockerfile'    
+      - '**/Dockerfile'
   push:
     branches:
       - main
     paths:
       - '**/Dockerfile'
-  
+
 jobs:
 
   provide_images_json:
@@ -31,7 +31,7 @@ jobs:
         run: |
           pwd
           ls -la
-          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r HEAD HEAD^ | grep Dockerfile))"
+          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r ${{ github.event.after }} ${{ github.base.sha }}  | grep Dockerfile))"
     # this step is needed, so the output gets to the next defined job
     outputs:
         matrix: ${{ steps.output_data.outputs.matrix }}
@@ -39,13 +39,13 @@ jobs:
 
   build_and_push:
     needs: provide_images_json
-    
+
     runs-on: ubuntu-latest
     strategy:
         fail-fast: true
         matrix:
             dockerfile: ${{fromJson(needs.provide_images_json.outputs.matrix)}}
-        
+
     if: >
       !contains(github.event.head_commit.message, 'ci skip') &&
       !contains(github.event.pull_request.title, 'ci skip')
