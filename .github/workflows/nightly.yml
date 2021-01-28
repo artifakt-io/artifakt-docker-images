@@ -1,15 +1,9 @@
 name: Build Docker Images
 
 on:
-  pull_request:
-    paths:
-      - '**/Dockerfile'    
-  push:
-    branches:
-      - main
-    paths:
-      - '**/Dockerfile'
-  
+  schedule:
+    - cron: "0 0 * * *"
+
 jobs:
 
   provide_images_json:
@@ -24,9 +18,7 @@ jobs:
       - name: get docker json list
         id: output_data
         run: |
-          pwd
-          ls -la
-          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(git diff-tree --no-commit-id --name-only -r HEAD HEAD^ | grep Dockerfile))"
+          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(find . -name Dockerfile))"
     # this step is needed, so the output gets to the next defined job
     outputs:
         matrix: ${{ steps.output_data.outputs.matrix }}
@@ -40,10 +32,6 @@ jobs:
         fail-fast: true
         matrix:
             dockerfile: ${{fromJson(needs.provide_images_json.outputs.matrix)}}
-        
-    if: >
-      !contains(github.event.head_commit.message, 'ci skip') &&
-      !contains(github.event.pull_request.title, 'ci skip')
     steps:
       - name: Clone Main Repo
         uses: actions/checkout@v2
@@ -54,8 +42,8 @@ jobs:
           fullDockerfilePath=${{ matrix.dockerfile }}
           folder=${fullDockerfilePath%"/Dockerfile"}
           TMP_IMAGE_ARRAY=($(echo $folder | tr "/" "\n"))
-          IMAGE_NAME=${TMP_IMAGE_ARRAY[0]}
-          TAG=${TMP_IMAGE_ARRAY[1]}
+          IMAGE_NAME=${TMP_IMAGE_ARRAY[1]}
+          TAG=${TMP_IMAGE_ARRAY[2]}
           export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true --image=$IMAGE_NAME --tag=$TAG
 
       - name: Login to target registry
