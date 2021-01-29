@@ -21,18 +21,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-
+      # comparing HEAD^ to HEAD works because previous action merges master into the PR branch
       - name: get docker json list
         id: output_data
         run: |
-          pwd
-          ls -la
-          git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r ${{ github.head_ref }} ${{ github.base_ref }}
-          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r ${{ github.event.after }} ${{ github.base.sha }}  | grep Dockerfile))"
+          echo FOUND UPDATED DOCKERFILES TO BUILD
+          git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r HEAD^ HEAD | grep Dockerfile
+          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r HEAD^ HEAD | grep Dockerfile))"
     # this step is needed, so the output gets to the next defined job
     outputs:
         matrix: ${{ steps.output_data.outputs.matrix }}
