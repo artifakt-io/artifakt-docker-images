@@ -48,13 +48,13 @@ Watch [the official blog](https://www.artifakt.io/blog) for Docker-related annou
 ## Pull from public registry
 
 ```
-docker search artifaktio
 docker pull artifaktio/magento:2.4
 ```
 
 ## Build from Source
 
-All images are publicly available on [Docker Hub](https://hub.docker.com/u/artifakt-io/). In case you want to build them locally, see sample commands below:
+All images are publicly available, just use the `docker pull` command or `FROM` syntax in your Dockerfile. 
+In case you want to build them locally, see sample commands below:
 
 ```
 git clone https://github.com/artifakt-io/artifakt-docker-images/
@@ -90,15 +90,14 @@ To force validation on Dockerfile before building, add the following option:
 
 Remark: by design, if a Dockerfile fails linting, it will not be built
 
-
 At anytime, just call the help with `./build.sh --help` for all the available options.
 
 ## Execution sample: run a web application
 
-It's easy to launch code inside a container from pre-built Artifakt PHP image. Just paste the following command in a terminal pointing to the code source:
+It's easy to launch code inside a container from a pre-built Artifakt PHP image. Just paste the following command in a terminal pointing to the code source:
 
 ```console
-docker run -d -p 8000:80 --name php_sample -v $PWD:/var/www/html artifakt-io/php:7.3-apache
+docker run -d -p 8000:80 --name php_sample -v $PWD:/var/www/html registry.artifakt.io/php:7.4-apache
 ```
 
 After the application starts, navigate to `http://localhost:8000` in your web browser.
