@@ -2,24 +2,34 @@
 
 # Artifakt Docker Images
 
-Contains all officially supported runtimes supported by the Artifakt.io platform. All are freely available on [Artifakt - https://hub.docker.com/u/artifaktio](https://hub.docker.com/u/artifaktio).
+Contains all maintained runtimes supported by the Artifakt.io platform. All are freely available our official registry at `registry.artifakt.io`
 
-## Currently maintained runtimes
+## Full list of available runtimes
 
 ### Languages
- - [artifaktio/php](https://hub.docker.com/r/artifaktio/php)
+ - PHP
+   - 7.4 FPM `docker pull registry.artifakt.io/php:7.4-fpm`
+   - 7.4 Apache `docker pull registry.artifakt.io/php:7.4-apache`
+   - 7.3 FPM `docker pull registry.artifakt.io/php:7.3-fpm`
+   - 7.3 Apache `docker pull registry.artifakt.io/php:7.3-apache`
 
 ### Frameworks
- - [artifaktio/symfony](https://hub.docker.com/r/artifaktio/symfony)
+ - Symfony
+   - 5.2 Apache `docker pull registry.artifakt.io/symfony:5.2-apache`
+   - 5.2 FPM `docker pull registry.artifakt.io/symfony:5.2-fpm`
 
 ### CMS
- - [artifaktio/wordpress](https://hub.docker.com/r/artifaktio/wordpress) 
- - [artifaktio/drupal](https://hub.docker.com/r/artifaktio/drupal) 
+ - Wordpress
+   - 5 Apache `docker pull registry.artifakt.io/wordpress:5-apache`
+ - Drupal
+   - 8.9 Apache `docker pull registry.artifakt.io/drupal:8.9-apache`
+   - 9.1 Apache `docker pull registry.artifakt.io/drupal:9.1-apache`
 
 ### Ecommerce
- - [artifaktio/magento](https://hub.docker.com/r/artifaktio/magento) 
- - [artifaktio/akeneo](https://hub.docker.com/r/artifaktio/akeneo) 
-
+ - Magento
+   - 2.4 `docker pull registry.artifakt.io/magento:2.4`
+ - Akeneo
+   - 3.2 Apache `docker pull registry.artifakt.io/akeneo:3.2-apache`
 
 # About Artifakt.io
 
