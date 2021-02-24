@@ -12,6 +12,9 @@ Contains all maintained runtimes supported by the Artifakt.io platform. All are 
    - 7.4 Apache `docker pull registry.artifakt.io/php:7.4-apache`
    - 7.3 FPM `docker pull registry.artifakt.io/php:7.3-fpm`
    - 7.3 Apache `docker pull registry.artifakt.io/php:7.3-apache`
+ - Node.js
+   - 12.x `docker pull registry.artifakt.io/node:12`
+   - 14.x `docker pull registry.artifakt.io/node:14`
 
 ### Frameworks
  - Symfony
