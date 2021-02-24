@@ -7,16 +7,18 @@ Contains all maintained runtimes supported by the Artifakt.io platform. All are 
 ## Full list of available runtimes
 
 ### Languages
- - Python
-   - 3.9 `docker pull registry.artifakt.io/python:3`
+ - Java
+   - 8 `docker pull registry.artifakt.io/java:8`  
+ - Node.js
+   - 12.x `docker pull registry.artifakt.io/node:12`
+   - 14.x `docker pull registry.artifakt.io/node:14`
  - PHP
    - 7.4 FPM `docker pull registry.artifakt.io/php:7.4-fpm`
    - 7.4 Apache `docker pull registry.artifakt.io/php:7.4-apache`
    - 7.3 FPM `docker pull registry.artifakt.io/php:7.3-fpm`
    - 7.3 Apache `docker pull registry.artifakt.io/php:7.3-apache`
- - Node.js
-   - 12.x `docker pull registry.artifakt.io/node:12`
-   - 14.x `docker pull registry.artifakt.io/node:14`
+ - Python
+   - 3.9 `docker pull registry.artifakt.io/python:3`
 
 ### Frameworks
  - Symfony
@@ -44,7 +46,7 @@ Artifakt makes cloud operations easier, by abstracting away differences between 
 
 Developers and agencies from all over the world can rely on Artifakt to manage all the boilerplate of deployments: SSL, CDN, OS security, stack monitoring.
 
-Of course we welcome [contributions](https://github.com/artifakt-io/artifakt-docker-images/blob/main/CONTRIBUTING.md), fixes, or updates, feel free to open pull requests, and we will be thrilled to answer as soon as possible.
+Of course we welcome contributions, fixes, or updates, feel free to open pull requests, and we will be thrilled to answer as soon as possible.
 
 Watch [the official blog](https://www.artifakt.io/blog) for Docker-related announcements.
 
