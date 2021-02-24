@@ -7,6 +7,8 @@ Contains all maintained runtimes supported by the Artifakt.io platform. All are 
 ## Full list of available runtimes
 
 ### Languages
+ - Python
+   - 3.9 `docker pull registry.artifakt.io/python:3`
  - PHP
    - 7.4 FPM `docker pull registry.artifakt.io/php:7.4-fpm`
    - 7.4 Apache `docker pull registry.artifakt.io/php:7.4-apache`
