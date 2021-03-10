@@ -11,6 +11,7 @@ ONBUILD COPY --chown=www-data:www-data . /var/www/html/
 # hadolint ignore=DL3022
 ONBUILD ENV APP_DEBUG=0
 ONBUILD ENV APP_ENV=prod
+
 ONBUILD COPY Dockerfile composer.json* ./
 ONBUILD RUN  if [ -f composer.json ]; then composer install --no-cache --optimize-autoloader --no-interaction --no-ansi --no-dev; fi
 ONBUILD COPY . .
