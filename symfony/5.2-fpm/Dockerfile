@@ -12,9 +12,9 @@ ONBUILD COPY --chown=www-data:www-data . /var/www/html/
 ONBUILD ENV APP_DEBUG=0
 ONBUILD ENV APP_ENV=prod
 
-ONBUILD COPY Dockerfile composer.json* ./
+ONBUILD COPY Dockerfile composer.json* /var/www/html/
 ONBUILD RUN  if [ -f composer.json ]; then composer install --no-cache --optimize-autoloader --no-interaction --no-ansi --no-dev; fi
-ONBUILD COPY . .
+ONBUILD COPY . /var/www/html
 ONBUILD RUN php bin/console cache:clear --no-warmup
 ONBUILD RUN php bin/console cache:warmup
 ONBUILD RUN rm -rf .git assets /root/.composer /tmp/* && chown -R www-data:www-data /var/www/html/vendor
