@@ -29,13 +29,12 @@ ONBUILD ENV APP_DEBUG=0
 ONBUILD ENV APP_ENV=prod
 ONBUILD RUN env && composer install --no-cache --optimize-autoloader --no-interaction --no-ansi --no-dev
 
-# add your custom build in build.sh or install.sh
-ONBUILD RUN  if [ -f artifakt/build.sh ]; then artifakt/build.sh; fi
-ONBUILD RUN  if [ -f artifakt/install.sh ]; then artifakt/install.sh; fi
-
 # copy the artifakt folder on root
-ONBUILD RUN  if [ -d artifakt ]; then cp -rp artifakt /.artifakt; fi
-ONBUILD RUN  if [ -d .artifakt ]; then cp -rp .artifakt /.artifakt; fi
+ONBUILD RUN  if [ -d .artifakt ]; then cp -rp /var/www/html/.artifakt /.artifakt/; elif [ -d artifakt ]; then cp -rp /var/www/html/artifakt /.artifakt; fi
+
+# run custom scripts build.sh or install.sh
+ONBUILD RUN  if [ -f /.artifakt/build.sh ]; then /.artifakt/build.sh; fi
+ONBUILD RUN  if [ -f /.artifakt/install.sh ]; then /.artifakt/install.sh; fi
 
 ONBUILD RUN php bin/console cache:clear --no-warmup
 ONBUILD RUN php bin/console cache:warmup
