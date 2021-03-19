@@ -35,6 +35,8 @@ ONBUILD RUN  if [ -f artifakt/install.sh ]; then artifakt/install.sh; fi
 
 # copy the artifakt folder on root
 ONBUILD RUN  if [ -d artifakt ]; then cp -rp artifakt /.artifakt; fi
+ONBUILD RUN  if [ -d .artifakt ]; then cp -rp .artifakt /.artifakt; fi
+
 ONBUILD RUN php bin/console cache:clear --no-warmup
 ONBUILD RUN php bin/console cache:warmup
 ONBUILD RUN rm -rf .git assets /root/.composer /tmp/* && chown -R www-data:www-data /var/www/html/vendor
