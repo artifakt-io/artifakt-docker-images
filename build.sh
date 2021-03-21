@@ -190,7 +190,7 @@ DOCKER_BIN=`command -v docker`
 if [[ $LINT_MODE = true ]]; then
 	echo -n "  - ";
 	wrap_good "hadolint docker image" 'available'
-	HADOLINT_BIN="docker run --rm -i hadolint/hadolint"
+	HADOLINT_BIN="docker run --rm -i hadolint/hadolint:v1.23.0-3-g6eaea2a"
 fi
 
 wrap_color "info: reading dockerfile list from current repo ..." white
