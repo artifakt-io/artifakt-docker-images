@@ -23,6 +23,8 @@ VOLUME var/uploads
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
 
+### FOLLOWING INSTRUCTIONS ARE FOR CHILD IMAGES ONLY
+
 ONBUILD COPY --chown=www-data:www-data . /var/www/html/
 # hadolint ignore=DL3022
 ONBUILD ENV APP_DEBUG=0
