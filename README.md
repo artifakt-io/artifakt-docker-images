@@ -17,6 +17,8 @@ Contains all maintained runtimes supported by the Artifakt.io platform. All are 
    - 7.4 Apache `docker pull registry.artifakt.io/php:7.4-apache`
    - 7.3 FPM `docker pull registry.artifakt.io/php:7.3-fpm`
    - 7.3 Apache `docker pull registry.artifakt.io/php:7.3-apache`
+   - 8.x FPM `docker pull registry.artifakt.io/php:8-fpm`
+   - 8.x Apache `docker pull registry.artifakt.io/php:8-apache`
  - Python
    - 3.9 `docker pull registry.artifakt.io/python:3`
 
