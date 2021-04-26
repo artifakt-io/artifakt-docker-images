@@ -2,13 +2,13 @@
 
 # Artifakt Docker Images
 
-Contains all maintained runtimes supported by the Artifakt.io platform. All are freely available our official registry at `registry.artifakt.io`
+Contains all maintained runtimes supported by the Artifakt platform. All are freely available our official registry at `registry.artifakt.io`
 
 ## Full list of available runtimes
 
 ### Languages
  - Java
-   - 8 `docker pull registry.artifakt.io/java:8`  
+   - 8 `docker pull registry.artifakt.io/java:8`
  - Node.js
    - 12.x `docker pull registry.artifakt.io/node:12`
    - 14.x `docker pull registry.artifakt.io/node:14`
@@ -38,17 +38,17 @@ Contains all maintained runtimes supported by the Artifakt.io platform. All are 
  - Akeneo
    - 3.2 Apache `docker pull registry.artifakt.io/akeneo:3.2-apache`
 
-# About Artifakt.io
+# About Artifakt
 
-[Artifakt](https://artifakt.io/?utm_source=github) is a developer-focused platform to run applications in the cloud. It can deploy, monitor and alert any web-based application and can scale to any scenario.
+[Artifakt](https://artifakt.com/?utm_source=github) is a developer-focused platform to run applications in the cloud. It can deploy, monitor and alert any web-based application and can scale to any scenario.
 
-Artifakt makes cloud operations easier, by abstracting away differences between cloud providers and exposing only the essentials. It keeps only the features that counts like region selection, database settings, storage needs, and scalability options. 
+Artifakt makes cloud operations easier, by abstracting away differences between cloud providers and exposing only the essentials. It keeps only the features that counts like region selection, database settings, storage needs, and scalability options.
 
 Developers and agencies from all over the world can rely on Artifakt to manage all the boilerplate of deployments: SSL, CDN, OS security, stack monitoring.
 
 Of course we welcome contributions, fixes, or updates, feel free to open pull requests, and we will be thrilled to answer as soon as possible.
 
-Watch [the official blog](https://www.artifakt.io/blog) for Docker-related announcements.
+Watch [the official blog](https://www.artifakt.com/blog) for Docker-related announcements.
 
 # How to use our images
 
@@ -60,7 +60,7 @@ docker pull artifaktio/magento:2.4
 
 ## Build from Source
 
-All images are publicly available, just use the `docker pull` command or `FROM` syntax in your Dockerfile. 
+All images are publicly available, just use the `docker pull` command or `FROM` syntax in your Dockerfile.
 In case you want to build them locally, see sample commands below:
 
 ```
@@ -128,5 +128,5 @@ After the application starts, navigate to `http://localhost:8000` in your web br
 * [Contact Artifakt Support](https://support.artifakt.io/)
 
 # License
- 
- TBD
+
+TBD

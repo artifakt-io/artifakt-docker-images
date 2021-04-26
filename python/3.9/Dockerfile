@@ -1,6 +1,6 @@
 FROM python:3.9
 
-LABEL vendor="Artifakt.io" \
+LABEL vendor="Artifakt" \
       author="djalal@artifakt.io"
 
 # https://github.com/moby/moby/issues/15025#issuecomment-371799311
