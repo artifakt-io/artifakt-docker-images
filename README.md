@@ -42,22 +42,22 @@ Contains all maintained runtimes supported by the Artifakt.io platform. All are 
 
 # About Artifakt.io
 
-[Artifakt](https://artifakt.io/?utm_source=github) is a developer-focused platform to run applications in the cloud. It can deploy, monitor and alert any web-based application and can scale to any scenario.
+[Artifakt](https://artifakt.io/?utm_source=github) is a developer-focused platform to run applications on the cloud—it deploys, monitors, and alerts any web-based application and auto-scales.
 
-Artifakt makes cloud operations easier, by abstracting away differences between cloud providers and exposing only the essentials. It keeps only the features that counts like region selection, database settings, storage needs, and scalability options. 
+Artifakt makes cloud operations easier by filtering out potential differences between cloud providers and presents you all the essential features—for example, region selection, database settings, storage needs, and scalability options. 
 
-Developers and agencies from all over the world can rely on Artifakt to manage all the boilerplate of deployments: SSL, CDN, OS security, stack monitoring.
+Developers and agencies from all over the world can rely on Artifakt to manage the boilerplates of deployment: SSL, CDN, OS security, stack monitoring, etc.
 
-Of course we welcome contributions, fixes, or updates, feel free to open pull requests, and we will be thrilled to answer as soon as possible.
+And of course, we are thrilled to welcome contributions, fixes, or updates, so feel free to open pull requests! We aim to respond as soon as possible.
 
-Watch [the official blog](https://www.artifakt.io/blog) for Docker-related announcements.
+Check out the [Artifakt Blog] (https://www.artifakt.io/blog) for all upcoming Docker-related (and not only!) announcements. 
 
 # How to use our images
 
 ## Pull from public registry
 
 ```
-docker pull artifaktio/magento:2.4
+docker pull registry.artifakt.io/magento:2.4
 ```
 
 ## Build from Source
