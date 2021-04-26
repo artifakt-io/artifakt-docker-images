@@ -1,6 +1,6 @@
 FROM php:7.3-fpm
 
-LABEL vendor="Artifakt.io" \
+LABEL vendor="Artifakt" \
       author="djalal@artifakt.io"
 
 HEALTHCHECK CMD curl --fail http://localhost || exit 1
