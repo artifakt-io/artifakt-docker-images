@@ -1,0 +1,13 @@
+parameters:
+    database_driver: pdo_mysql
+    database_host: '%env(ARTIFAKT_MYSQL_HOST)%'
+    database_port: '%env(ARTIFAKT_MYSQL_PORT)%'
+    database_name: '%env(ARTIFAKT_MYSQL_DATABASE_NAME)%'
+    database_user: '%env(ARTIFAKT_MYSQL_USER)%'
+    database_password: '%env(ARTIFAKT_MYSQL_PASSWORD)%'
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
+    product_index_name: akeneo_pim_product
+    product_model_index_name: akeneo_pim_product_model
+    product_and_product_model_index_name: akeneo_pim_product_and_product_model
+    index_hosts: 'elastic:changeme@elasticsearch:9200'

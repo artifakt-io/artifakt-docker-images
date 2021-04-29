@@ -1,0 +1,45 @@
+version: '2'
+
+services:
+  app:
+    build: .
+    image: registry.artifakt.io/akeneo:5-apache
+    ports:
+      - "80:80"
+    env_file:
+      - .env.local
+    environment:
+      PHP_CONF_MEMORY_LIMIT: "-1"
+      PHP_CONF_DATE_TIMEZONE: "Europe/Paris"
+      PHP_CONF_MAX_EXECUTION_TIME: 180
+      PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP: 1
+
+  mysql:
+    image: mysql:8.0.22
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: ${ARTIFAKT_MYSQL_DATABASE_NAME:-changeme}
+      MYSQL_USER: ${ARTIFAKT_MYSQL_USER:-changeme}
+      MYSQL_PASSWORD: ${ARTIFAKT_MYSQL_PASSWORD:-s3cr3t!}
+      MYSQL_RANDOM_ROOT_PASSWORD: "true"
+
+  elasticsearch:
+    image: 'docker.elastic.co/elasticsearch/elasticsearch-oss:7.10.0'
+    environment:
+      ES_JAVA_OPTS: '-Xms512M -Xmx512M'
+      discovery.type: 'single-node'
+    ulimits:
+        nofile:
+           soft: 65536
+           hard: 65536
+
+  object-storage:
+    image: 'minio/minio'
+    entrypoint: '/bin/sh -c "mkdir -p /data/asset /data/archive /data/catalog/ /data/jobs && minio server /data"'
+    environment:
+      MINIO_ACCESS_KEY: 'AKENEO_OBJECT_STORAGE_ACCESS_KEY'
+      MINIO_SECRET_KEY: 'AKENEO_OBJECT_STORAGE_SECRET_KEY'
+
+  pubsub-emulator:
+    image: 'google/cloud-sdk:312.0.0'
+    command: 'gcloud --user-output-enabled --log-http beta emulators pubsub start --host-port=0.0.0.0:8085'
