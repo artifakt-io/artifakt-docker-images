@@ -1,6 +1,27 @@
-FROM php:7.4-apache
+ARG PHP_VERSION=7.4-apache
 
-ENV PHP_MEMORY_LIMIT 2G
+FROM php:${PHP_VERSION}
+
+ARG MYSQL_HOST
+ARG MYSQL_ROOT_PASSWORD
+ARG MYSQL_USER
+ARG MYSQL_PASSWORD
+ARG MYSQL_DATABASE
+ARG MAGENTO_LANGUAGE
+ARG MAGENTO_TIMEZONE
+ARG MAGENTO_DEFAULT_CURRENCY
+ARG MAGENTO_URL
+ARG MAGENTO_BACKEND_FRONTNAME
+ARG MAGENTO_USE_SECURE
+ARG MAGENTO_BASE_URL_SECURE
+ARG MAGENTO_USE_SECURE_ADMIN
+ARG MAGENTO_ADMIN_FIRSTNAME
+ARG MAGENTO_ADMIN_LASTNAME
+ARG MAGENTO_ADMIN_EMAIL
+ARG MAGENTO_ADMIN_USERNAME
+ARG MAGENTO_ADMIN_PASSWORD
+
+ENV PHP_MEMORY_LIMIT 4G
 ENV MAGENTO_ROOT /app
 ENV DEBUG false
 ENV MAGENTO_RUN_MODE production
@@ -147,11 +168,30 @@ COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
 # hadolint ignore=DL3022
 COPY --from=mysql:8 /usr/bin/my* /usr/bin/
 
-COPY etc/php-fpm.ini /usr/local/etc/php/conf.d/zz-magento.ini
+COPY etc/magento.ini /usr/local/etc/php/conf.d/magento.ini
 COPY etc/mail.ini /usr/local/etc/php/conf.d/zz-mail.ini
-COPY etc/php-fpm.conf /usr/local/etc/
+COPY etc/crontab /etc/cron.d/magento2-cron
+COPY etc/000-default.conf /usr/apache2/sites-available/000-default.conf
+RUN a2enmod rewrite && a2ensite 000-default
 
-COPY docker-entrypoint.sh /docker-entrypoint.sh
+HEALTHCHECK CMD curl --fail http://localhost/index.php || exit 1
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+# hadolint ignore=DL3045
+COPY docker-entrypoint.sh /usr/local/bin/
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
+
+### FOLLOWING INSTRUCTIONS ARE FOR CHILD IMAGES ONLY
+# hadolint ignore=DL3022
+ONBUILD COPY --chown=www-data:www-data . /var/www/html/
+
+ONBUILD COPY .artifakt /var/www/html/.artifakt
+ONBUILD RUN ls -la /var/www/html/.artifakt
+
+# copy the artifakt folder on root
+ONBUILD RUN  if [ -d .artifakt ]; then cp -rp /var/www/html/.artifakt /.artifakt/; elif [ -d artifakt ]; then cp -rp /var/www/html/artifakt /.artifakt; fi
+
+# run custom scripts build.sh or install.sh
+ONBUILD RUN  if [ -f /.artifakt/build.sh ]; then /.artifakt/build.sh; fi
+ONBUILD RUN  if [ -f /.artifakt/install.sh ]; then /.artifakt/install.sh; fi
