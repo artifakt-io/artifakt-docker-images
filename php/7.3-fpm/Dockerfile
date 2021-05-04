@@ -94,5 +94,8 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && pecl install -o -f libsodium \
   && rm -rf /tmp/libsodium
 
+RUN curl -sS https://getcomposer.org/installer | \
+  php -- --version=2 --install-dir=/usr/local/bin --filename=composer
+
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
