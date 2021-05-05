@@ -19,8 +19,6 @@ COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
 RUN chown -R www-data:www-data /var/www/html
 
-# hadolint ignore=DL3002
-USER root
 HEALTHCHECK CMD curl --fail http://localhost/index.php || exit 1
 
 # hadolint ignore=DL3045
