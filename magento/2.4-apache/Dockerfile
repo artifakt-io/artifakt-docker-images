@@ -2,6 +2,9 @@ ARG PHP_VERSION=7.4-apache
 
 FROM php:${PHP_VERSION}
 
+LABEL vendor="Artifakt" \
+      author="djalal@artifakt.io"
+
 ARG MYSQL_HOST
 ARG MYSQL_ROOT_PASSWORD
 ARG MYSQL_USER

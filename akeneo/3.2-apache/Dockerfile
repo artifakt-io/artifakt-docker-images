@@ -1,5 +1,8 @@
 FROM php:7.2-apache
 
+LABEL vendor="Artifakt" \
+      author="djalal@artifakt.io"
+
 # see release archives https://github.com/akeneo/pim-community-dev/releases
 ARG AKENEO_VERSION=3.2.80
 
