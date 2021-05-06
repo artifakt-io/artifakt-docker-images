@@ -236,7 +236,7 @@ do
 		OLDPWD=$PWD
 		echo -n "  - building $_image:$_tag... "
 		cd $_build_dir
-		$DOCKER_BIN image build -t $REGISTRY_TARGET/$_image:$_tag .
+		DOCKER_BUILDKIT=0 $DOCKER_BIN image build --progress=plain -t $REGISTRY_TARGET/$_image:$_tag .
 		wrap_good "" 'done!'
 
 	)

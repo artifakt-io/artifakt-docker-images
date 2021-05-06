@@ -6,10 +6,17 @@ LABEL vendor="Artifakt" \
 # hadolint ignore=DL3022
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-RUN composer create-project symfony/website-skeleton:"^5.2" .
+# reset html folder content
+#WORKDIR /var/www/
+#RUN rm -rf /var/www/html && mkdir -p /var/www/html
+#WORKDIR /var/www/html
 
+USER www-data
+RUN ls -laR /var/www/html
+RUN composer create-project symfony/website-skeleton:"^5.2" .
 RUN composer require symfony/apache-pack
 
-COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
+# hadolint ignore=DL3002
+USER root
 
-RUN chown -R www-data:www-data .
+COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf

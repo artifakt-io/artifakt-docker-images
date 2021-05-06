@@ -1,5 +1,8 @@
 FROM php:7.2-apache
 
+LABEL vendor="Artifakt" \
+      author="djalal@artifakt.io"
+
 # see release archives https://github.com/akeneo/pim-community-dev/releases
 ARG AKENEO_VERSION=3.2.80
 
@@ -119,7 +122,8 @@ RUN composer update --no-cache --no-dev --optimize-autoloader --prefer-dist --no
     yarn install --cache-folder=/tmp && \
     php bin/console pim:installer:assets --symlink --clean --env=prod && \
     php bin/console cache:clear --no-warmup --env=prod && \
-    yarn run webpack
+    yarn run webpack && \
+    yarn cache clean
 
 COPY parameters.yml ./app/config/parameters.yml
 
