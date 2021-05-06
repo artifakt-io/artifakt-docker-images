@@ -1,4 +1,9 @@
-FROM php:7.4-fpm
+ARG PHP_VERSION=7.4-fpm
+
+FROM php:${PHP_VERSION}
+
+LABEL vendor="Artifakt" \
+      author="djalal@artifakt.io"
 
 ENV PHP_MEMORY_LIMIT 2G
 ENV MAGENTO_ROOT /app
