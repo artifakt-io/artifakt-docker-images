@@ -1,16 +1,16 @@
-version: '2'
+version: '3'
 
 services:
   app:
     build: .
     image: registry.artifakt.io/akeneo:5-apache
     ports:
-      - "80:80"
+      - "8000:80"
     env_file:
       - .env.local
     environment:
       PHP_CONF_MEMORY_LIMIT: "-1"
-      PHP_CONF_DATE_TIMEZONE: "Europe/Paris"
+      PHP_CONF_DATE_TIMEZONE: "Europe/Berlin"
       PHP_CONF_MAX_EXECUTION_TIME: 180
       PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP: 1
 

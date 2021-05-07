@@ -1,10 +1,10 @@
 parameters:
     database_driver: pdo_mysql
-    database_host: '%env(ARTIFAKT_MYSQL_HOST)%'
-    database_port: '%env(ARTIFAKT_MYSQL_PORT)%'
-    database_name: '%env(ARTIFAKT_MYSQL_DATABASE_NAME)%'
-    database_user: '%env(ARTIFAKT_MYSQL_USER)%'
-    database_password: '%env(ARTIFAKT_MYSQL_PASSWORD)%'
+    database_host: 'mysql'
+    database_port: 3306
+    database_name: 'akeneo5_pim'
+    database_user: 'akeneo5_pim'
+    database_password: 'akeneo5_pim'
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
     product_index_name: akeneo_pim_product

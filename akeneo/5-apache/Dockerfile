@@ -1,7 +1,10 @@
 FROM registry.artifakt.io/php:7.4-apache
 
+LABEL vendor="Artifakt" \
+      author="djalal@artifakt.io"
+
 # see release archives https://github.com/akeneo/pim-community-dev/releases
-ARG AKENEO_VERSION=5.0.21
+ARG AKENEO_VERSION=5.0.24
 
 # see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html
 ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
@@ -86,6 +89,9 @@ RUN docker-php-ext-install -j$(nproc) \
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
 
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
+    sed -ri -e 's!memory_limit = 128M!memory_limit = 512M!g' /usr/local/etc/php/php.ini
+
 # hadolint ignore=DL3022
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
@@ -97,43 +103,37 @@ RUN curl -sSLO https://github.com/akeneo/pim-community-dev/archive/v$AKENEO_VERS
     mv pim-community-dev-$AKENEO_VERSION pim-community-standard && \
     chown -R www-data:www-data .
 
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
-    sed -ri -e 's!memory_limit = 128M!memory_limit = 512M!g' /usr/local/etc/php/php.ini
-
-RUN a2enmod rewrite
 
 WORKDIR /var/www/html/pim-community-standard
 
 USER www-data
 
 # dependencies
-RUN composer validate --no-check-all && composer install
-RUN yarn install --frozen-lockfile
+RUN composer validate --no-check-all && \
+  composer install && \
+  yarn install --frozen-lockfile && \
+  yarn cache clean
+
 # cache
 RUN rm -rf var/cache && php bin/console cache:warmup
+
 # assets
 RUN rm -rf public/bundles public/js && php bin/console --env=prod pim:installer:assets --symlink --clean
+
 # css
 RUN rm -rf public/css && yarn run less
+
 # dsm
-RUN yarn --cwd=akeneo-design-system install --frozen-lockfile
-RUN yarn --cwd=akeneo-design-system run lib:build
+RUN yarn --cwd=akeneo-design-system install --frozen-lockfile && \
+    yarn cache clean && \
+    yarn --cwd=akeneo-design-system run lib:build
+
 # javascript-prod
-RUN yarn run update-extensions
-RUN rm -rf public/dist && yarn run webpack
+RUN yarn run update-extensions && \
+    rm -rf public/dist && \
+    yarn run webpack
 
-#  APP_ENV=prod $(MAKE) database
-
-#RUN composer validate --no-check-all && composer install
-#RUN yarn install --cache-folder=/tmp --frozen-lockfile
-#RUN rm -rf var/cache && APP_ENV=prod php bin/console cache:warmup
-#RUN rm -rf public/bundles public/js && php bin/console --env=prod pim:installer:assets --symlink --clean
-#RUN rm -rf public/css && yarn run less
-#RUN yarn --cwd=akeneo-design-system install --frozen-lockfile
-#RUN yarn --cwd=akeneo-design-system run lib:build
-#RUN rm -rf public/dist && yarn run webpack
-
-COPY .env.local ./env.local
+COPY .env.local ./.env.local
 COPY parameters.yml ./config/services/parameters.yml
 
 # hadolint ignore=DL3002
