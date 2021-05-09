@@ -2,7 +2,7 @@
 
 # Artifakt Docker Images
 
-Contains all maintained runtimes supported by the Artifakt platform. All are freely available our official registry at `registry.artifakt.io`
+Contains all maintained runtimes supported by the Artifakt platform. All are freely available through our official registry at `registry.artifakt.io`
 
 ## Full list of available runtimes
 
@@ -24,6 +24,7 @@ Contains all maintained runtimes supported by the Artifakt platform. All are fre
 
 ### Frameworks
  - Symfony
+   - 4.4 Apache `docker pull registry.artifakt.io/symfony:4.4-apache`
    - 5.2 Apache `docker pull registry.artifakt.io/symfony:5.2-apache`
    - 5.2 FPM `docker pull registry.artifakt.io/symfony:5.2-fpm`
 
@@ -38,7 +39,8 @@ Contains all maintained runtimes supported by the Artifakt platform. All are fre
  - Magento
    - 2.4 `docker pull registry.artifakt.io/magento:2.4`
  - Akeneo
-   - 3.2 Apache `docker pull registry.artifakt.io/akeneo:3.2-apache`
+   - 4.0 Apache `docker pull registry.artifakt.io/akeneo:4-apache`
+   - 5.0 Apache `docker pull registry.artifakt.io/akeneo:5-apache`
 
 # About Artifakt
 
@@ -57,7 +59,7 @@ Check out the [Artifakt Blog] (https://www.artifakt.com/blog) for all upcoming D
 ## Pull from public registry
 
 ```
-docker pull registry.artifakt.io/magento:2.4
+docker pull registry.artifakt.io/magento:2.4-apache
 ```
 
 ## Build from Source
@@ -80,13 +82,13 @@ To build all Docker images, just run the ```build.sh``` command at the top level
 To build a specific Docker image, use its name following the same folder name:
 
 ```
-./build.sh --image=magento2
+./build.sh --image=magento
 ```
 
 To build a specific version, just add the tag name to the previous build command
 
 ```
-./build.sh --image=php --tag=7.4
+./build.sh --image=php --tag=7.4-apache
 ```
 
 In case a Dockerfile has been updated, this repo uses [Hadolint](https://github.com/hadolint/hadolint) as a linter.
@@ -94,7 +96,7 @@ In case a Dockerfile has been updated, this repo uses [Hadolint](https://github.
 To force validation on Dockerfile before building, add the following option:
 
 ```
-./build.sh --image=php --tag=7.4 --lint=true
+./build.sh --image=php --tag=7.4-apache --lint=true
 ```
 
 Remark: by design, if a Dockerfile fails linting, it will not be built
@@ -129,6 +131,9 @@ After the application starts, navigate to `http://localhost:8000` in your web br
 * [File an issue](https://github.com/artifakt-io/artifakt-docker-images/issues/new/choose)
 * [Contact Artifakt Support](https://support.artifakt.io/)
 
-# License
+License
+=========
 
-TBD
+artifakt-docker-images is licensed under the Apache License, Version 2.0. See
+[LICENSE](https://github.com/artifakt-io/artifakt-docker-images/blob/main/LICENSE) for the full
+license text.
