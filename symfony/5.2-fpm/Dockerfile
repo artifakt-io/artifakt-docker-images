@@ -1,11 +1,16 @@
 FROM registry.artifakt.io/php:7.4-fpm
 
+LABEL vendor="Artifakt" \
+      author="djalal@artifakt.io"
+
 # hadolint ignore=DL3022
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
+USER www-data
 RUN composer create-project symfony/website-skeleton:"^5.2" .
 
-RUN chown -R www-data:www-data .
+# hadolint ignore=DL3002
+USER root
 
 ONBUILD COPY --chown=www-data:www-data . /var/www/html/
 # hadolint ignore=DL3022

@@ -96,6 +96,22 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && pecl install -o -f libsodium \
   && rm -rf /tmp/libsodium
 
+ARG COMPOSER_VERSION=1.10.22
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN curl -sS https://getcomposer.org/installer | \
+  php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
+
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
 RUN a2enmod $APACHE_MODULE_LIST
+
+ARG ARCHIVE_FILE=php-simple-page-master
+RUN curl -sSLO https://gitlab.com/djalal/php-simple-page/-/archive/master/${ARCHIVE_FILE}.tar.gz && \
+  tar -xzf ${ARCHIVE_FILE}.tar.gz -C /tmp && \
+  mv /tmp/${ARCHIVE_FILE}/* /var/www/html && \
+  chown -R www-data:www-data /var/www/html && \
+  rm ${ARCHIVE_FILE}.tar.gz
+
+ONBUILD COPY --chown=www-data:www-data . /var/www/html/
+ONBUILD WORKDIR /var/www/html
+ONBUILD RUN [ -f composer.lock ] && composer install --no-cache --optimize-autoloader --no-interaction --no-ansi --no-dev || true

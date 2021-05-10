@@ -94,5 +94,10 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && pecl install -o -f libsodium \
   && rm -rf /tmp/libsodium
 
+ARG COMPOSER_VERSION=1.10.22
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN curl -sS https://getcomposer.org/installer | \
+  php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
+
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
