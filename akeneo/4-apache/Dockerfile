@@ -4,7 +4,7 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io"
 
 # see release archives https://github.com/akeneo/pim-community-dev/releases
-ARG AKENEO_VERSION=4.0.107
+ARG AKENEO_VERSION=4.0.108
 
 # see https://docs.akeneo.com/4.0/install_pim/manual/system_requirements/system_requirements.html
 ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
@@ -122,19 +122,25 @@ RUN rm -rf public/dist && yarn run webpack
 
 COPY parameters.yml ./config/services/parameters.yml
 
+VOLUME /var/www/html/pim-community-standard/var/cache
+VOLUME /var/www/html/pim-community-standard/var/logs
+VOLUME /var/www/html/pim-community-standard/var/uploads
+
+RUN ln -s /dev/stderr /var/www/html/pim-community-standard/var/logs/error.log && \
+    ln -s /dev/stdout /var/www/html/pim-community-standard/var/logs/access.log && \
+    ln -s /dev/stdout /var/www/html/pim-community-standard/var/logs/dev.log
+
 # hadolint ignore=DL3002
 USER root
 
 COPY wait-for-it.sh docker-entrypoint.sh /usr/local/bin/
 COPY akeneo.conf /etc/apache2/sites-available/000-default.conf
 COPY akeneo.ini /usr/local/etc/php/conf.d/
-RUN ln -s /dev/stderr /var/www/html/pim-community-standard/var/logs/error.log && \
-    ln -s /dev/stdout /var/www/html/pim-community-standard/var/logs/access.log && \
-    ln -s /dev/stdout /var/www/html/pim-community-standard/var/logs/dev.log
 
-VOLUME /var/www/html/pim-community-standard/var/cache
-VOLUME /var/www/html/pim-community-standard/var/log
-VOLUME /var/www/html/pim-community-standard/var/uploads
+ENV APP_DATABASE_HOST=${ARTIFAKT_MYSQL_HOST:-mysql}
+ENV APP_DATABASE_NAME=${ARTIFAKT_MYSQL_DATABASE_NAME:-dbname}
+ENV APP_DATABASE_USER=${ARTIFAKT_MYSQL_USER:-dbuser}
+ENV APP_DATABASE_PASSWORD=${ARTIFAKT_MYSQL_PASSWORD:-dbpass}
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["apache2-foreground"]

@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   app:
@@ -6,9 +6,13 @@ services:
     image: registry.artifakt.io/akeneo:4-apache
     ports:
       - "8000:80"
-    env_file:
-      - .env
     environment:
+      APP_ENV: "prod"
+      APP_DEBUG: 0
+      APP_DATABASE_HOST: ${ARTIFAKT_MYSQL_HOST}
+      APP_DATABASE_NAME: ${ARTIFAKT_MYSQL_DATABASE_NAME}
+      APP_DATABASE_USER: ${ARTIFAKT_MYSQL_USER}
+      APP_DATABASE_PASSWORD: ${ARTIFAKT_MYSQL_PASSWORD}
       PHP_CONF_MEMORY_LIMIT: "-1"
       PHP_CONF_DATE_TIMEZONE: "Europe/Paris"
       PHP_CONF_MAX_EXECUTION_TIME: 180
@@ -18,10 +22,10 @@ services:
     image: mysql:8.0.18
     command: --default-authentication-plugin=mysql_native_password
     environment:
-      MYSQL_ROOT_PASSWORD: 'root'
-      MYSQL_DATABASE: akeneo4_pim
-      MYSQL_USER: akeneo4_pim
-      MYSQL_PASSWORD: akeneo4_pim
+      MYSQL_RANDOM_ROOT_PASSWORD: "true"
+      MYSQL_DATABASE: ${ARTIFAKT_MYSQL_DATABASE_NAME}
+      MYSQL_USER: ${ARTIFAKT_MYSQL_USER}
+      MYSQL_PASSWORD: ${ARTIFAKT_MYSQL_PASSWORD}
 
   elasticsearch:
     image: 'docker.elastic.co/elasticsearch/elasticsearch-oss:7.5.2'
