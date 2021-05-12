@@ -12,8 +12,8 @@ RUN mkdir -p /var/log/artifakt && chown www-data:www-data /var/log/artifakt
 
 USER www-data
 RUN composer install --no-cache --optimize-autoloader --no-interaction --no-ansi --no-dev
-RUN php bin/console cache:clear --no-warmup
-RUN php bin/console cache:warmup
+RUN php bin/console cache:clear --no-warmup && \
+    php bin/console cache:warmup
 
 USER root
 # run custom scripts build.sh
