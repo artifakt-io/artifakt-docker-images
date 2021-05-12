@@ -1,6 +1,14 @@
 name: Build Docker Images
 
 on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'reason'     
+        required: true
+        default: ''
+      tags:
+        description: 'forced manual rebuild' 
   pull_request:
     paths:
       - '**/Dockerfile'
