@@ -123,7 +123,8 @@ RUN curl -sSLO https://gitlab.com/djalal/php-simple-page/-/archive/master/${ARCH
   chown -R www-data:www-data /var/www/html && \
   rm ${ARCHIVE_FILE}.tar.gz
 
-ONBUILD COPY --chown=www-data:www-data . /var/www/html/
-ONBUILD WORKDIR /var/www/html
-ONBUILD RUN [ -f composer.lock ] && composer install --no-cache --optimize-autoloader --no-interaction --no-ansi --no-dev || true
+# hadolint ignore=DL3045
+COPY docker-entrypoint.sh /usr/local/bin/
 
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["apache2-foreground"]
