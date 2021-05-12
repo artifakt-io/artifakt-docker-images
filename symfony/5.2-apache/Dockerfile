@@ -3,6 +3,8 @@ FROM registry.artifakt.io/php:7.4-apache
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io"
 
+HEALTHCHECK CMD curl --fail http://localhost/index.php || exit 1
+
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # hadolint ignore=DL3022
@@ -19,3 +21,7 @@ RUN composer require symfony/apache-pack
 USER root
 
 COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
+# hadolint ignore=DL3045
+COPY docker-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["apache2-foreground"]
