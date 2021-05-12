@@ -35,7 +35,7 @@ jobs:
         run: |
           echo FOUND UPDATED DOCKERFILES TO BUILD
           git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r HEAD^ HEAD | grep Dockerfile$
-          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r HEAD^ HEAD | grep Dockerfile))"
+          echo "::set-output name=matrix::$(python -c 'import json, sys; print(json.dumps([v for v in sys.argv[1:]]))' $(git diff-tree --no-commit-id --name-only --diff-filter=ACMRT -r HEAD^ HEAD | grep Dockerfile$))"
     # this step is needed, so the output gets to the next defined job
     outputs:
         matrix: ${{ steps.output_data.outputs.matrix }}
