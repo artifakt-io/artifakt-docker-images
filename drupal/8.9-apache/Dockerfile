@@ -3,6 +3,8 @@ FROM drupal:8.9-apache
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io"
 
+COPY --chown=www-data:www-data default.settings.php /opt/settings.php
+
 # hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
 
