@@ -1,6 +1,17 @@
 
+<div align="center">
 
-# Artifakt Docker Images
+
+<h1>Artifakt Docker Images</h1>
+<img src="./.github/logo.svg" alt="artifakt-logo" width="100"/>
+
+**Base Docker images supported by Artifakt PaaS**
+
+
+[![Build Docker Images](https://github.com/artifakt-io/artifakt-docker-images/actions/workflows/nightly.yml/badge.svg)][Build status]
+[![Twitter handle][]][Twitter badge]
+
+</div>
 
 Contains all maintained runtimes supported by the Artifakt platform. All are freely available through our official registry at `registry.artifakt.io`
 
@@ -137,3 +148,8 @@ License
 artifakt-docker-images is licensed under the Apache License, Version 2.0. See
 [LICENSE](https://github.com/artifakt-io/artifakt-docker-images/blob/main/LICENSE) for the full
 license text.
+
+[Build Status - Main]: https://github.com/artifakt-io/artifakt-docker-images/actions/workflows/nightly.yml/badge.svg?branch=main&event=push
+[Build status]: https://github.com/artifakt-io/artifakt-docker-images/actions
+[Twitter badge]: https://twitter.com/intent/follow?screen_name=artifakt_com
+[Twitter handle]: https://img.shields.io/twitter/follow/artifakt_com.svg?style=social&label=Follow
