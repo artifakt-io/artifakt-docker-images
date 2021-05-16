@@ -1,0 +1,23 @@
+FROM registry.artifakt.io/symfony:4.4-apache
+
+COPY --chown=www-data:www-data . /var/www/html/
+ENV APP_DEBUG=0
+ENV APP_ENV=prod
+
+# copy the artifakt folder on root
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN  if [ -d .artifakt ]; then cp -rp /var/www/html/.artifakt /.artifakt/; fi
+
+RUN mkdir -p /var/log/artifakt && chown www-data:www-data /var/log/artifakt
+
+USER www-data
+RUN composer install --no-cache --optimize-autoloader --no-interaction --no-ansi --no-dev
+RUN php bin/console cache:clear --no-warmup && \
+    php bin/console cache:warmup
+
+USER root
+# run custom scripts build.sh
+# hadolint ignore=SC1091
+RUN --mount=source=artifakt-custom-build-args,target=/tmp/build-args \
+    if [ -f /tmp/build-args ]; then source /tmp/build-args; fi && \
+    if [ -f /.artifakt/build.sh ]; then /.artifakt/build.sh; fi
