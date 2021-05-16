@@ -3,7 +3,7 @@
 
 
 <h1>Artifakt Docker Images</h1>
-<img src="./.github/logo.svg" alt="artifakt-logo" width="100"/>
+<img src="./.github/logo.png" alt="artifakt-logo" width="100"/>
 
 **Base Docker images supported by Artifakt PaaS**
 
