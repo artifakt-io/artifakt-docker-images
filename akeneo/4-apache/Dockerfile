@@ -4,7 +4,7 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io"
 
 # see release archives https://github.com/akeneo/pim-community-dev/releases
-ARG AKENEO_VERSION=4.0.108
+ARG AKENEO_VERSION=4.0.110
 
 # see https://docs.akeneo.com/4.0/install_pim/manual/system_requirements/system_requirements.html
 ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
