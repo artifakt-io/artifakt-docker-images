@@ -1,7 +1,8 @@
 FROM drupal:9.1-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io"
+      author="djalal@artifakt.io" \
+      stage="alpha"
 
 COPY --chown=www-data:www-data default.settings.php /opt/settings.php
 
