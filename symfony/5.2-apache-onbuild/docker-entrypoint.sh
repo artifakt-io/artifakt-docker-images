@@ -1,9 +1,8 @@
-#!/bin/sh
+#!/bin/bash
+set -e
 
-[ "$DEBUG" = "true" ] && set -x
-
-if [ -f /.artifakt/entrypoint.sh ]; then
-	/.artifakt/entrypoint.sh;
+if [[ -x "/.artifakt/entrypoint.sh" ]]; then
+    source /.artifakt/entrypoint.sh
 fi
 
 # first arg is `-f` or `--some-option`
