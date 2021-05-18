@@ -6,8 +6,6 @@ LABEL vendor="Artifakt" \
 
 RUN echo 'SetEnv ${HTTPS}' > /etc/apache2/conf-enabled/force-ssl.conf 
 
-SetEnv HTTPS ${HTTPS}
-
 # hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
 
