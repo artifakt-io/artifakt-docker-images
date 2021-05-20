@@ -8,7 +8,7 @@ HEALTHCHECK CMD curl --fail http://localhost/index.php || exit 1
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 USER www-data
-RUN composer create-project symfony/website-skeleton:"^5.2" /tmp/website-skeleton && \
+RUN composer create-project symfony/website-skeleton:"^4.4" /tmp/website-skeleton && \
     rm -rf /var/www/html/{.[!.],}* && \
     mv /tmp/website-skeleton/{.[!.],}* /var/www/html
 WORKDIR /var/www/html
