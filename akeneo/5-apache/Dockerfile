@@ -1,10 +1,11 @@
 FROM registry.artifakt.io/php:7.4-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io"
+      author="djalal@artifakt.io" \
+      stage="alpha"
 
 # see release archives https://github.com/akeneo/pim-community-dev/releases
-ARG AKENEO_VERSION=5.0.24
+ARG AKENEO_VERSION=5.0.26
 
 # see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html
 ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
@@ -92,8 +93,10 @@ RUN docker-php-ext-enable $PHP_EXTENSION_LIST
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
     sed -ri -e 's!memory_limit = 128M!memory_limit = 512M!g' /usr/local/etc/php/php.ini
 
-# hadolint ignore=DL3022
-COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+ARG COMPOSER_VERSION=1.10.22
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN curl -sS https://getcomposer.org/installer | \
+  php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 WORKDIR /var/www/html
 
@@ -102,7 +105,6 @@ RUN curl -sSLO https://github.com/akeneo/pim-community-dev/archive/v$AKENEO_VERS
     rm v$AKENEO_VERSION.tar.gz && \
     mv pim-community-dev-$AKENEO_VERSION pim-community-standard && \
     chown -R www-data:www-data .
-
 
 WORKDIR /var/www/html/pim-community-standard
 
@@ -143,9 +145,9 @@ COPY wait-for-it.sh docker-entrypoint.sh /usr/local/bin/
 COPY akeneo.conf /etc/apache2/sites-available/000-default.conf
 COPY akeneo.ini /usr/local/etc/php/conf.d/
 
-VOLUME /var/www/html/var/cache
-VOLUME /var/www/html/var/logs
-VOLUME /var/www/html/var/uploads
+VOLUME /var/www/html/pim-community-standard/var/cache
+VOLUME /var/www/html/pim-community-standard/var/logs
+VOLUME /var/www/html/pim-community-standard/var/uploads
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
