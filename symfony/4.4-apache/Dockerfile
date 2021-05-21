@@ -7,6 +7,11 @@ HEALTHCHECK CMD curl --fail http://localhost/index.php || exit 1
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
+#downgrade composer to v1.x
+ARG COMPOSER_VERSION=1.10.22
+RUN curl -sS https://getcomposer.org/installer | \
+  php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
+
 USER www-data
 RUN composer create-project symfony/website-skeleton:"^4.4" /tmp/website-skeleton && \
     rm -rf /var/www/html/{.[!.],}* && \
