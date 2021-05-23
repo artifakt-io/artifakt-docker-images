@@ -145,9 +145,5 @@ COPY wait-for-it.sh docker-entrypoint.sh /usr/local/bin/
 COPY akeneo.conf /etc/apache2/sites-available/000-default.conf
 COPY akeneo.ini /usr/local/etc/php/conf.d/
 
-VOLUME /var/www/html/pim-community-standard/var/cache
-VOLUME /var/www/html/pim-community-standard/var/logs
-VOLUME /var/www/html/pim-community-standard/var/uploads
-
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
