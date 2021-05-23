@@ -140,8 +140,6 @@ RUN yarn run update-extensions && \
 COPY .env.local ./.env.local
 COPY parameters.yml ./config/services/parameters.yml
 
-VOLUME /var/www/html/pim-community-standard/var
-
 # hadolint ignore=DL3002
 USER root
 
