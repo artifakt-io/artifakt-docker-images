@@ -6,7 +6,7 @@ parameters:
     database_user: 'akeneo5_pim'
     database_password: 'akeneo5_pim'
     locale: en
-    secret: ThisTokenIsNotSoSecretChangeIt
+    secret: ArtifaktRecommendsThisTokenChanged
     product_index_name: akeneo_pim_product
     product_model_index_name: akeneo_pim_product_model
     product_and_product_model_index_name: akeneo_pim_product_and_product_model
