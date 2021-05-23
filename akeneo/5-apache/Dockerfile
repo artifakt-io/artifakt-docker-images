@@ -90,8 +90,10 @@ RUN docker-php-ext-install -j$(nproc) \
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
 
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
-    sed -ri -e 's!memory_limit = 128M!memory_limit = 512M!g' /usr/local/etc/php/php.ini
+ENV PHP_CONF_MEMORY_LIMIT="-1"
+ENV PHP_CONF_DATE_TIMEZONE="Europe/Paris"
+ENV PHP_CONF_MAX_EXECUTION_TIME=600
+ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
 
 ARG COMPOSER_VERSION=2.0.14
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -113,7 +115,7 @@ USER www-data
 # dependencies
 RUN composer validate --no-check-all && \
   composer install && \
-  yarn install --frozen-lockfile && \
+  yarn install --cache-folder=/tmp --frozen-lockfile && \
   yarn cache clean
 
 # cache
@@ -138,6 +140,8 @@ RUN yarn run update-extensions && \
 COPY .env.local ./.env.local
 COPY parameters.yml ./config/services/parameters.yml
 
+VOLUME /var/www/html/pim-community-standard/var
+
 # hadolint ignore=DL3002
 USER root
 
@@ -145,9 +149,10 @@ COPY wait-for-it.sh docker-entrypoint.sh /usr/local/bin/
 COPY akeneo.conf /etc/apache2/sites-available/000-default.conf
 COPY akeneo.ini /usr/local/etc/php/conf.d/
 
-VOLUME /var/www/html/pim-community-standard/var/cache
-VOLUME /var/www/html/pim-community-standard/var/logs
-VOLUME /var/www/html/pim-community-standard/var/uploads
+ENV APP_DATABASE_HOST=${ARTIFAKT_MYSQL_HOST:-mysql}
+ENV APP_DATABASE_NAME=${ARTIFAKT_MYSQL_DATABASE_NAME:-dbname}
+ENV APP_DATABASE_USER=${ARTIFAKT_MYSQL_USER:-dbuser}
+ENV APP_DATABASE_PASSWORD=${ARTIFAKT_MYSQL_PASSWORD:-dbpass}
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
