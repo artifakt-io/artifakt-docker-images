@@ -1,7 +1,8 @@
 FROM registry.artifakt.io/php:7.3-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io"
+      author="djalal@artifakt.io" \
+      stage="alpha"
 
 # see release archives https://github.com/akeneo/pim-community-dev/releases
 ARG AKENEO_VERSION=4.0.110
@@ -59,8 +60,7 @@ RUN docker-php-ext-configure \
   opcache --enable-opcache
 
 # Configure the zip library
-RUN docker-php-ext-configure \
-  zip --with-libzip
+RUN docker-php-ext-configure zip --with-libzip
 
 # Install required PHP extensions
 # hadolint ignore=SC2046
@@ -91,6 +91,11 @@ RUN docker-php-ext-install -j$(nproc) \
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
 
+ENV PHP_CONF_MEMORY_LIMIT="-1"
+ENV PHP_CONF_DATE_TIMEZONE="Europe/Paris"
+ENV PHP_CONF_MAX_EXECUTION_TIME=600
+ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
+
 ARG COMPOSER_VERSION=1.10.22
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
@@ -104,27 +109,32 @@ RUN curl -sSLO https://github.com/akeneo/pim-community-dev/archive/v$AKENEO_VERS
     mv pim-community-dev-$AKENEO_VERSION pim-community-standard && \
     chown -R www-data:www-data .
 
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
-    sed -ri -e 's!memory_limit = 128M!memory_limit = 512M!g' /usr/local/etc/php/php.ini
-
-RUN a2enmod rewrite
-
 WORKDIR /var/www/html/pim-community-standard
 
 USER www-data
 
-RUN composer validate --no-check-all && composer install
-RUN yarn install --cache-folder=/tmp --frozen-lockfile && yarn cache clean
-RUN APP_ENV=prod php bin/console cache:warmup
+# dependencies
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
+RUN composer validate --no-check-all && \
+  composer install --no-cache --prefer-dist --optimize-autoloader --no-interaction && \
+  yarn install --cache-folder=/tmp --frozen-lockfile && \
+  yarn cache clean
+
+# cache
+# RUN composer require --update-no-dev --no-cache --prefer-dist --optimize-autoloader --no-interaction league/flysystem-aws-s3-v3 && \ php bin/console cache:warmup
+RUN rm -rf var/cache && php bin/console cache:warmup
+
+# assets
 RUN rm -rf public/bundles public/js && php bin/console --env=prod pim:installer:assets --symlink --clean
+
+# css
 RUN rm -rf public/css && yarn run less
+
+# javascript-prod
 RUN rm -rf public/dist && yarn run webpack
 
+COPY .env.local ./.env.local
 COPY parameters.yml ./config/services/parameters.yml
-
-VOLUME /var/www/html/pim-community-standard/var/cache
-VOLUME /var/www/html/pim-community-standard/var/logs
-VOLUME /var/www/html/pim-community-standard/var/uploads
 
 RUN ln -s /dev/stderr /var/www/html/pim-community-standard/var/logs/error.log && \
     ln -s /dev/stdout /var/www/html/pim-community-standard/var/logs/access.log && \
@@ -142,5 +152,5 @@ ENV APP_DATABASE_NAME=${ARTIFAKT_MYSQL_DATABASE_NAME:-dbname}
 ENV APP_DATABASE_USER=${ARTIFAKT_MYSQL_USER:-dbuser}
 ENV APP_DATABASE_PASSWORD=${ARTIFAKT_MYSQL_PASSWORD:-dbpass}
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
