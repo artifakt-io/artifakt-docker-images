@@ -110,32 +110,24 @@ RUN curl -sSLO https://github.com/akeneo/pim-community-standard/archive/v$AKENEO
 
 WORKDIR /var/www/html/pim-community-standard
 
+RUN mkdir -p /var/www/.cache/yarn && \
+    touch /var/www/.yarnrc && \
+    chown -R www-data:www-data /var/www/.cache /var/www/.yarnrc
+
 USER www-data
 
-# dependencies
+# dependencies / vendor
 RUN composer validate --no-check-all && \
-  COMPOSER_MEMORY_LIMIT=-1 composer install --no-cache && \
-  yarn install --cache-folder=/tmp --frozen-lockfile && \
-  yarn cache clean
+  COMPOSER_MEMORY_LIMIT=-1 composer install --no-cache
 
-# cache
-RUN rm -rf var/cache && php bin/console cache:warmup
-
-# assets
-RUN rm -rf public/bundles public/js && php bin/console --env=prod pim:installer:assets --symlink --clean
-
-# css
-RUN rm -rf public/css && yarn run less
-
-# dsm
-RUN yarn --cwd=akeneo-design-system install --frozen-lockfile && \
-    yarn cache clean && \
-    yarn --cwd=akeneo-design-system run lib:build
-
-# javascript-prod
-RUN yarn run update-extensions && \
-    rm -rf public/dist && \
-    yarn run webpack
+ENV NO_DOCKER=true
+RUN make node_modules && \
+  make cache && \
+  make assets && \
+  make dsm && \
+  make javascript-prod && \
+  make css && \
+  make javascript-extensions
 
 COPY .env.local ./.env.local
 COPY parameters.yml ./config/services/parameters.yml
