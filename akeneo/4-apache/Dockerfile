@@ -103,28 +103,19 @@ RUN curl -sS https://getcomposer.org/installer | \
 
 WORKDIR /var/www/html
 
-RUN curl -sSLO https://github.com/akeneo/pim-community-dev/archive/v$AKENEO_VERSION.tar.gz && \
+RUN curl -sSLO https://github.com/akeneo/pim-community-standard/archive/v$AKENEO_VERSION.tar.gz && \
     tar -xzf v$AKENEO_VERSION.tar.gz -C . && \
     rm v$AKENEO_VERSION.tar.gz && \
-    mv pim-community-dev-$AKENEO_VERSION pim-community-standard && \
+    mv pim-community-standard-$AKENEO_VERSION pim-community-standard && \
     chown -R www-data:www-data .
 
 WORKDIR /var/www/html/pim-community-standard
 
 USER www-data
 
-# dependencies
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
-RUN composer validate --no-check-all && \
-  composer install --no-cache --prefer-dist --optimize-autoloader --no-interaction && \
-  yarn install --cache-folder=/tmp --frozen-lockfile && \
-  yarn cache clean
-
-# cache
-# RUN composer require --update-no-dev --no-cache --prefer-dist --optimize-autoloader --no-interaction league/flysystem-aws-s3-v3 && \ php bin/console cache:warmup
-RUN rm -rf var/cache && php bin/console cache:warmup
-
-# assets
+RUN composer validate --no-cache --no-check-all && COMPOSER_MEMORY_LIMIT=-1 composer install
+RUN yarn install --cache-folder=/tmp --frozen-lockfile && yarn cache clean
+RUN APP_ENV=prod php bin/console cache:warmup
 RUN rm -rf public/bundles public/js && php bin/console --env=prod pim:installer:assets --symlink --clean
 
 # css
