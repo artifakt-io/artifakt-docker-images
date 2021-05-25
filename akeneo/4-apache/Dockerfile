@@ -1,7 +1,8 @@
 FROM registry.artifakt.io/php:7.3-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io"
+      author="djalal@artifakt.io" \
+      stage="alpha"
 
 # see release archives https://github.com/akeneo/pim-community-dev/releases
 ARG AKENEO_VERSION=4.0.110
@@ -59,8 +60,7 @@ RUN docker-php-ext-configure \
   opcache --enable-opcache
 
 # Configure the zip library
-RUN docker-php-ext-configure \
-  zip --with-libzip
+RUN docker-php-ext-configure zip --with-libzip
 
 # Install required PHP extensions
 # hadolint ignore=SC2046
@@ -117,9 +117,14 @@ RUN composer validate --no-cache --no-check-all && COMPOSER_MEMORY_LIMIT=-1 comp
 RUN yarn install --cache-folder=/tmp --frozen-lockfile && yarn cache clean
 RUN APP_ENV=prod php bin/console cache:warmup
 RUN rm -rf public/bundles public/js && php bin/console --env=prod pim:installer:assets --symlink --clean
+
+# css
 RUN rm -rf public/css && yarn run less
+
+# javascript-prod
 RUN rm -rf public/dist && yarn run webpack
 
+COPY .env.local ./.env.local
 COPY parameters.yml ./config/services/parameters.yml
 
 RUN ln -s /dev/stderr /var/www/html/pim-community-standard/var/logs/error.log && \
@@ -138,5 +143,5 @@ ENV APP_DATABASE_NAME=${ARTIFAKT_MYSQL_DATABASE_NAME:-dbname}
 ENV APP_DATABASE_USER=${ARTIFAKT_MYSQL_USER:-dbuser}
 ENV APP_DATABASE_PASSWORD=${ARTIFAKT_MYSQL_PASSWORD:-dbpass}
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
