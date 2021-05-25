@@ -91,6 +91,11 @@ RUN docker-php-ext-install -j$(nproc) \
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
 
+ENV PHP_CONF_MEMORY_LIMIT="-1"
+ENV PHP_CONF_DATE_TIMEZONE="Europe/Paris"
+ENV PHP_CONF_MAX_EXECUTION_TIME=600
+ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
+
 ARG COMPOSER_VERSION=1.10.22
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
@@ -98,22 +103,17 @@ RUN curl -sS https://getcomposer.org/installer | \
 
 WORKDIR /var/www/html
 
-RUN curl -sSLO https://github.com/akeneo/pim-community-dev/archive/v$AKENEO_VERSION.tar.gz && \
+RUN curl -sSLO https://github.com/akeneo/pim-community-standard/archive/v$AKENEO_VERSION.tar.gz && \
     tar -xzf v$AKENEO_VERSION.tar.gz -C . && \
     rm v$AKENEO_VERSION.tar.gz && \
-    mv pim-community-dev-$AKENEO_VERSION pim-community-standard && \
+    mv pim-community-standard-$AKENEO_VERSION pim-community-standard && \
     chown -R www-data:www-data .
-
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
-    sed -ri -e 's!memory_limit = 128M!memory_limit = 512M!g' /usr/local/etc/php/php.ini
-
-RUN a2enmod rewrite
 
 WORKDIR /var/www/html/pim-community-standard
 
 USER www-data
 
-RUN composer validate --no-check-all && composer install
+RUN composer validate --no-cache --no-check-all && COMPOSER_MEMORY_LIMIT=-1 composer install
 RUN yarn install --cache-folder=/tmp --frozen-lockfile && yarn cache clean
 RUN APP_ENV=prod php bin/console cache:warmup
 RUN rm -rf public/bundles public/js && php bin/console --env=prod pim:installer:assets --symlink --clean
@@ -121,10 +121,6 @@ RUN rm -rf public/css && yarn run less
 RUN rm -rf public/dist && yarn run webpack
 
 COPY parameters.yml ./config/services/parameters.yml
-
-VOLUME /var/www/html/pim-community-standard/var/cache
-VOLUME /var/www/html/pim-community-standard/var/logs
-VOLUME /var/www/html/pim-community-standard/var/uploads
 
 RUN ln -s /dev/stderr /var/www/html/pim-community-standard/var/logs/error.log && \
     ln -s /dev/stdout /var/www/html/pim-community-standard/var/logs/access.log && \
