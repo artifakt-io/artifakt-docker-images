@@ -4,7 +4,7 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-# see release archives https://github.com/akeneo/pim-community-dev/releases
+# see release archives https://github.com/akeneo/pim-community-standard/releases
 ARG AKENEO_VERSION=5.0.26
 
 # see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html
@@ -102,10 +102,10 @@ RUN curl -sS https://getcomposer.org/installer | \
 
 WORKDIR /var/www/html
 
-RUN curl -sSLO https://github.com/akeneo/pim-community-dev/archive/v$AKENEO_VERSION.tar.gz && \
+RUN curl -sSLO https://github.com/akeneo/pim-community-standard/archive/v$AKENEO_VERSION.tar.gz && \
     tar -xzf v$AKENEO_VERSION.tar.gz -C . && \
     rm v$AKENEO_VERSION.tar.gz && \
-    mv pim-community-dev-$AKENEO_VERSION pim-community-standard && \
+    mv pim-community-standard-$AKENEO_VERSION pim-community-standard && \
     chown -R www-data:www-data .
 
 WORKDIR /var/www/html/pim-community-standard
@@ -114,7 +114,7 @@ USER www-data
 
 # dependencies
 RUN composer validate --no-check-all && \
-  composer install && \
+  COMPOSER_MEMORY_LIMIT=-1 composer install --no-cache && \
   yarn install --cache-folder=/tmp --frozen-lockfile && \
   yarn cache clean
 
