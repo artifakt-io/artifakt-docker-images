@@ -63,7 +63,7 @@ Developers and agencies from all over the world can rely on Artifakt to manage t
 
 And of course, we are thrilled to welcome contributions, fixes, or updates, so feel free to open pull requests! We aim to respond as soon as possible.
 
-Check out the [Artifakt Blog] (https://www.artifakt.com/blog) for all upcoming Docker-related (and not only!) announcements. 
+Check out the [Artifakt Blog](https://www.artifakt.com/blog) for all upcoming Docker-related (and not only!) announcements. 
 
 # How to use our images
 
@@ -90,7 +90,7 @@ To build all Docker images, just run the ```build.sh``` command at the top level
 ./build.sh
 ```
 
-To build a specific Docker image, use its name following the same folder name:
+To build all tags for a specific Docker image, use its name following the same folder name:
 
 ```
 ./build.sh --image=magento
@@ -110,7 +110,14 @@ To force validation on Dockerfile before building, add the following option:
 ./build.sh --image=php --tag=7.4-apache --lint=true
 ```
 
-Remark: by design, if a Dockerfile fails linting, it will not be built
+Upon successful build, the resulting image can be further assessed using using [Google's container-structure-test](https://github.com/GoogleContainerTools/container-structure-test) tool, with the following command:
+
+```
+./build.sh --image=php --tag=7.4-apache --lint=true --test=true
+```
+
+Remark #1: by design, if a Dockerfile fails linting, it will not be built
+Remark #2: structure tests will look for a `test.yaml` next to the tested Dockerfile
 
 At anytime, just call the help with `./build.sh --help` for all the available options.
 
@@ -127,7 +134,7 @@ After the application starts, navigate to `http://localhost:8000` in your web br
 # Adding an image
 
 * Fork this repository
-* Create a folder at the root with the convention <image_name>/<tag>
+* Create a folder at the root with the convention `<image_name>/<tag>`
 * Write a Dockerfile inside this new folder
 * Lint it with `hadolint`
 * Submit a new pull request
