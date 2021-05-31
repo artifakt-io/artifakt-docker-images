@@ -109,3 +109,9 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
 
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
+
+# hadolint ignore=DL3045
+COPY docker-entrypoint.sh /usr/local/bin/
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["apache2-foreground"]
