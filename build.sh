@@ -18,6 +18,12 @@ VERBOSE_MODE=true
 
 LINT_MODE=false
 
+TEST_MODE=false
+
+SKIP_BUILD=false
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 _usage() {
 
 cat <<EOF
@@ -32,6 +38,7 @@ OPTIONS:
     -i|--image        target name for a specific service (type:string, default:"all")
     -t|--tag          target name for a specific tag (type:string, default:"all")
     -l|--lint         run syntaxic checks on Dockerfiles (type:string, default:"false")
+    -s|--skip-build   do not build anything (type:string, default:"false")
 
 EOF
 exit
@@ -44,18 +51,22 @@ while getopts ':h-itvlp' OPTION ; do
     t  ) TAG_TARGET="$OPTARG"                           ;;
     v  ) VERBOSE_MODE=true                         	    ;;
     l  ) LINT_MODE=false                         	    ;;
+    t  ) TEST_MODE=false                         	    ;;
+    s  ) SKIP_BUILD=false                         	    ;;
     h  ) _usage                         				;;
     -  ) [ $OPTIND -ge 1 ] && optind=$(expr $OPTIND - 1 ) || optind=$OPTIND
          eval OPTION="\$$optind"
          OPTARG=$(echo $OPTION | cut -d'=' -f2)
          OPTION=$(echo $OPTION | cut -d'=' -f1)
          case $OPTION in
-		     --image     ) IMAGE_TARGET="$OPTARG"                  ;;
-             --tag       ) TAG_TARGET="$OPTARG"                    ;;
-             --lint      ) LINT_MODE="$OPTARG"                     ;;
-             --verbose   ) VERBOSE_MODE=true                       ;;
-             --help      ) _usage                         		   ;;
-             * )  _usage " Long: >>>>>>>> invalid options (long) " ;;
+		     --image      ) IMAGE_TARGET="$OPTARG"                  ;;
+             --tag        ) TAG_TARGET="$OPTARG"                    ;;
+             --lint       ) LINT_MODE="$OPTARG"                     ;;
+             --test       ) TEST_MODE="$OPTARG"                     ;;
+             --skip-build ) SKIP_BUILD=true                         ;;
+             --verbose    ) VERBOSE_MODE=true                       ;;
+             --help       ) _usage                         		    ;;
+             * )  _usage " Long: >>>>>>>> invalid options (long) "  ;;
          esac
        OPTIND=1
        shift
@@ -179,24 +190,23 @@ check_files() {
 	done
 }
 
-
 ########################################################## MAIN ###
 
 echo ' - "'$(wrap_color 'binary requirements' yellow)'":'
 echo -n "  - "; check_command docker
 
 DOCKER_BIN=`command -v docker`
+CONTAINER_TEST_BIN=`command -v container-structure-test`
 
 if [[ $LINT_MODE = true ]]; then
 	echo -n "  - ";
 	wrap_good "hadolint docker image" 'available'
-	HADOLINT_BIN="docker run --rm -i hadolint/hadolint:v2.3.0 hadolint --require-label author:text --ignore DL3059 --ignore SC2015 -"
+	HADOLINT_BIN="docker run --rm -i hadolint/hadolint:v2.4.1 hadolint --require-label author:text --failure-threshold=warning -"
 fi
 
 wrap_color "info: reading dockerfile list from current repo ..." white
 echo ' - "'$(wrap_color 'dockerfiles' yellow)'":'
 check_files "${dockerfiles[@]}"
-
 
 wrap_color "info: building images..." white
 for dockerfile in "${dockerfiles[@]}"
@@ -224,7 +234,7 @@ do
 		set -Ee
 		function _catch {
 			wrap_bad "" 'failed!'
-			exit 0  # optional; use if you don't want to propagate (rethrow) error to outer shell
+			exit 1  # optional; use if you don't want to propagate (rethrow) error to outer shell
 		}
 		function _finally {
 			cd $OLDPWD
@@ -233,10 +243,22 @@ do
 		trap _finally EXIT
 
 		#try
-		OLDPWD=$PWD
-		echo -n "  - building $_image:$_tag... "
-		cd $_build_dir
-		DOCKER_BUILDKIT=0 $DOCKER_BIN image build --progress=plain -t $REGISTRY_TARGET/$_image:$_tag .
+		if [[ $SKIP_BUILD = false  ]]; then
+			OLDPWD=$PWD
+			echo -n "  - building $_image:$_tag... "
+			cd $_build_dir
+			DOCKER_BUILDKIT=0 $DOCKER_BIN image build --progress=plain -t $REGISTRY_TARGET/$_image:$_tag .
+		fi
+		if [[ $TEST_MODE = true ]]; then
+			LOCAL_TEST_FILE=""
+			if [ -f "$_build_dir/test.yaml" ]; then
+				LOCAL_TEST_FILE="--config $_build_dir/test.yaml"
+			else
+				echo -n "  - no test.yaml in $SCRIPT_DIR/$_build_dir, skipping... "
+			fi
+			echo -n "  - testing image $_image:$_tag... "
+			$CONTAINER_TEST_BIN test --image $REGISTRY_TARGET/$_image:$_tag $LOCAL_TEST_FILE --config $SCRIPT_DIR/global.yaml
+		fi
 		wrap_good "" 'done!'
 
 	)

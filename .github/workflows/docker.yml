@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       logLevel:
-        description: 'reason'     
+        description: 'reason'
         required: true
         default: ''
       tags:
-        description: 'forced manual rebuild' 
+        description: 'forced manual rebuild'
   pull_request:
     paths:
       - '**/Dockerfile'
@@ -60,12 +60,13 @@ jobs:
           fetch-depth: 0
       - name: Build Docker Images
         run: |
+          curl -LO https://storage.googleapis.com/container-structure-test/latest/container-structure-test-linux-amd64 && chmod +x container-structure-test-linux-amd64 && sudo mv container-structure-test-linux-amd64 /usr/local/bin/container-structure-test
           fullDockerfilePath=${{ matrix.dockerfile }}
           folder=${fullDockerfilePath%"/Dockerfile"}
           TMP_IMAGE_ARRAY=($(echo $folder | tr "/" "\n"))
           IMAGE_NAME=${TMP_IMAGE_ARRAY[0]}
           TAG=${TMP_IMAGE_ARRAY[1]}
-          export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true --image=$IMAGE_NAME --tag=$TAG
+          export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true --test=true --image=$IMAGE_NAME --tag=$TAG
 
       - name: Login to target registry
         if: github.ref == 'refs/heads/main'
