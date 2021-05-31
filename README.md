@@ -17,41 +17,30 @@ Contains all maintained runtimes supported by the Artifakt platform. All are fre
 
 ## Full list of available runtimes
 
-### Languages
- - Java
-   - 8 `docker pull registry.artifakt.io/java:8`
- - Node.js
-   - 12.x `docker pull registry.artifakt.io/node:12`
-   - 14.x `docker pull registry.artifakt.io/node:14`
- - PHP
-   - 7.4 FPM `docker pull registry.artifakt.io/php:7.4-fpm`
-   - 7.4 Apache `docker pull registry.artifakt.io/php:7.4-apache`
-   - 7.3 FPM `docker pull registry.artifakt.io/php:7.3-fpm`
-   - 7.3 Apache `docker pull registry.artifakt.io/php:7.3-apache`
-   - 8.x FPM `docker pull registry.artifakt.io/php:8-fpm`
-   - 8.x Apache `docker pull registry.artifakt.io/php:8-apache`
- - Python
-   - 3.9 `docker pull registry.artifakt.io/python:3`
 
-### Frameworks
- - Symfony
-   - 4.4 Apache `docker pull registry.artifakt.io/symfony:4.4-apache`
-   - 5.2 Apache `docker pull registry.artifakt.io/symfony:5.2-apache`
-   - 5.2 FPM `docker pull registry.artifakt.io/symfony:5.2-fpm`
 
-### CMS
- - Wordpress
-   - 5 Apache `docker pull registry.artifakt.io/wordpress:5-apache`
- - Drupal
-   - 8.9 Apache `docker pull registry.artifakt.io/drupal:8.9-apache`
-   - 9.1 Apache `docker pull registry.artifakt.io/drupal:9.1-apache`
+| Runtime    | Version    | Base Image           | Demo App                                                                   | Build status                                                                         | Image Size
+|------------|------------|----------------------|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Akeneo     | 4.0 Apache | `akeneo:4.0-apache`  |[artifakt-io/base-akeneo](https://github.com/artifakt-io/base-akeneo)       | ![akeneo:4.0-apache](https://img.shields.io/badge/akaneo_4.0-passing-green)          | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Akeneo     | 5.0 Apache | `akeneo:5.0-apache`  |[artifakt-io/base-akeneo](https://github.com/artifakt-io/base-akeneo)       | ![akeneo:5.0-apache](https://img.shields.io/badge/akaneo_5.0-passing-green)          | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Drupal     | 8.9 Apache | `drupal:8.9-apache`  |[artifakt-io/base-drupal](https://github.com/artifakt-io/base-drupal)       | ![drupal:8.9-apache](https://img.shields.io/badge/drupal_8.9-passing-green)          | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Drupal     | 9.1 Apache | `drupal:9.1-apache`  |[artifakt-io/base-drupal](https://github.com/artifakt-io/base-drupal)       | ![drupal:9.1-apache](https://img.shields.io/badge/drupal_9.1-passing-green)          | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Java       | 8          | `java:8`             |[artifakt-io/base-java:8](https://github.com/artifakt-io/base-java)         | ![Java 8](https://img.shields.io/badge/java_8-passing-green)                         | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Magento    | 2.4        | `magento:2.4-apache` |[artifakt-io/base-magento](https://github.com/artifakt-io/base-magento)     | ![magento:2.4](https://img.shields.io/badge/magento_2.4-passing-green)               | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Node.js    | 12         | `node:12`            |[artifakt-io/base-nodejs](https://github.com/artifakt-io/base-nodejs)       | ![Node.js 12](https://img.shields.io/badge/nodejs_12-passing-green)                  | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Node.js    | 14         | `node:14`            |[artifakt-io/base-nodejs](https://github.com/artifakt-io/base-nodejs)       | ![Node.js 14](https://img.shields.io/badge/nodejs_14-passing-green)                  | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| PHP Apache | 7.3        | `php:7.3-apache`     |[artifakt-io/base-php](https://github.com/artifakt-io/base-php)             | ![PHP 7.3](https://img.shields.io/badge/php_7.3_apache-passing-green)                | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| PHP FPM    | 7.3        | `php:7.3-fpm`        |[artifakt-io/base-php](https://github.com/artifakt-io/base-php)             | ![PHP 7.3](https://img.shields.io/badge/php_7.3_fpm-passing-green)                   | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| PHP Apache | 7.4        | `php:7.4-apache`     |[artifakt-io/base-php](https://github.com/artifakt-io/base-php)             | ![PHP 7.4](https://img.shields.io/badge/php_7.4_apache-passing-green)                | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| PHP FPM    | 7.4        | `php:7.4-fpm`        |[artifakt-io/base-php](https://github.com/artifakt-io/base-php)             | ![PHP 7.4](https://img.shields.io/badge/php_7.4_fpm-passing-green)                   | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| PHP Apache | 8.0        | `php:7.4-apache`     |[artifakt-io/base-php](https://github.com/artifakt-io/base-php)             | ![PHP 8.0](https://img.shields.io/badge/php_8.0_apache-passing-green)                | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| PHP FPM    | 8.0        | `php:7.4-fpm`        |[artifakt-io/base-php](https://github.com/artifakt-io/base-php)             | ![PHP 8.0](https://img.shields.io/badge/php_8.0_fpm-passing-green)                   | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Python     | 3.9        | `python:3.9`         |[artifakt-io/base-python](https://github.com/artifakt-io/base-python)       | ![python:3.9](https://img.shields.io/badge/python_3.9-passing-green)                 | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Symfony    | 4.4 Apache | `symfony:4.4-apache` |[artifakt-io/base-symfony](https://github.com/artifakt-io/base-symfony)     | ![symfony:5.2-apache](https://img.shields.io/badge/symfony_5.2_apache-passing-green) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Symfony    | 5.2 FPM    | `symfony:7.4-fpm`    |[artifakt-io/base-symfony](https://github.com/artifakt-io/base-symfony)     | ![symfony:5.2-fpm](https://img.shields.io/badge/symfony_5.2_fpm-passing-green)       | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Symfony    | 5.2 Apache | `symfony:7.4-apache` |[artifakt-io/base-symfony](https://github.com/artifakt-io/base-symfony)     | ![symfony:5.2-apache](https://img.shields.io/badge/symfony_5.2_apache-passing-green) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
+| Wordpress  | 5 Apache   | `wordpress:5-apache` |[artifakt-io/base-wordpress](https://github.com/artifakt-io/base-wordpress) | ![wordpress:5-apache](https://img.shields.io/badge/wordpress_5_apache-passing-green) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/library/php/8.0) |
 
-### Ecommerce
- - Magento
-   - 2.4 `docker pull registry.artifakt.io/magento:2.4`
- - Akeneo
-   - 4.0 Apache `docker pull registry.artifakt.io/akeneo:4-apache`
-   - 5.0 Apache `docker pull registry.artifakt.io/akeneo:5-apache`
 
 # About Artifakt
 
