@@ -1,0 +1,28 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  labels:
+    - key: 'vendor'
+      value: 'Artifakt'
+    - key: 'stage'
+      value: '(alpha|beta|ga|maintenance|retired)'
+      isRegex: true
+    - key: 'author'
+      value: "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$"
+      isRegex: true
+  volumes: []
+  entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
+
+fileExistenceTests:
+- name: 'bash'
+  path: '/bin/bash'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+
+commandTests:
+  - name: "debian based server"
+    command: "which"
+    args: [ "apt-get"]
+    expectedOutput: ['/usr/bin/apt-get']
