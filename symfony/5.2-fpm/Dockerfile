@@ -1,7 +1,8 @@
 FROM registry.artifakt.io/php:7.4-fpm
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io"
+      author="djalal@artifakt.io" \
+      stage="alpha"
 
 # hadolint ignore=DL3022
 COPY --from=composer /usr/bin/composer /usr/bin/composer
@@ -11,6 +12,10 @@ RUN composer create-project symfony/website-skeleton:"^5.2" .
 
 # hadolint ignore=DL3002
 USER root
+
+# hadolint ignore=DL3045
+COPY docker-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
 ONBUILD COPY --chown=www-data:www-data . /var/www/html/
 # hadolint ignore=DL3022

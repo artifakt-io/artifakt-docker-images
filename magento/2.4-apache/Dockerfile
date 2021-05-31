@@ -166,7 +166,7 @@ RUN docker-php-ext-enable \
   zip \
   pcntl
 
-ARG COMPOSER_VERSION=2.0.13
+ARG COMPOSER_VERSION=2.0.14
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
