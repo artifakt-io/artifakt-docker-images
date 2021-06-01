@@ -6,6 +6,8 @@ LABEL vendor="Artifakt" \
 
 COPY --chown=www-data:www-data default.settings.php /opt/settings.php
 
+WORKDIR /var/www/html
+
 # hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
 

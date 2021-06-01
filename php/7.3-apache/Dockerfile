@@ -1,7 +1,8 @@
 FROM php:7.3-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io"
+      author="djalal@artifakt.io" \
+      stage="alpha"
 
 HEALTHCHECK CMD curl --fail http://localhost || exit 1
 

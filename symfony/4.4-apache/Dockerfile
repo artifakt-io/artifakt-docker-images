@@ -1,7 +1,8 @@
 FROM registry.artifakt.io/php:7.4-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io"
+      author="djalal@artifakt.io" \
+      stage="alpha"
 
 HEALTHCHECK CMD curl --fail http://localhost/index.php || exit 1
 

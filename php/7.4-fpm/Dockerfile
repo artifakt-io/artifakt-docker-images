@@ -1,7 +1,8 @@
 FROM php:7.4-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io"
+      author="djalal@artifakt.io" \
+      stage="alpha"
 
 HEALTHCHECK CMD curl --fail http://localhost || exit 1
 
@@ -108,3 +109,9 @@ RUN curl -sS https://getcomposer.org/installer | \
 
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
+
+# hadolint ignore=DL3045
+COPY docker-entrypoint.sh /usr/local/bin/
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["apache2-foreground"]
