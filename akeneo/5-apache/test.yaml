@@ -1,0 +1,133 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  cmd: ["apache2-foreground"]
+  workdir: "/var/www/html/pim-community-standard"
+
+#cf https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html
+fileExistenceTests:
+- name: 'gzip'
+  path: '/bin/gzip'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+# - name: 'mysql'
+#   path: '/usr/bin/mysql'
+#   shouldExist: true
+#   permissions: '-rwxr-xr-x'
+#   uid: 0
+#   gid: 0
+#   isExecutableBy: 'any'
+- name: 'php'
+  path: '/usr/local/bin/php'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'tar'
+  path: '/bin/tar'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+
+commandTests:
+  - name: "nodejs version"
+    command: "node"
+    args: [ "-v"]
+    expectedOutput: ['v12\..+']
+  - name: "yarn version"
+    command: "yarn"
+    args: [ "-v"]
+    expectedOutput: ['1\..+']
+  - name: "apache version"
+    command: "apache2ctl"
+    args: [ "-v"]
+    expectedOutput: ['Apache\/2\.4\.*']
+  - name: "apache version"
+    command: "apache2ctl"
+    args: [ "-t", "-D", "DUMP_MODULES"]
+    expectedOutput: ['.*rewrite_module.*']
+#  - name: "mysql client version"
+#    command: "mysql"
+#    args: [ "-V"]
+#    expectedOutput: ['.*mysql  Ver 8\.0\.*']
+  - name: "php version"
+    command: "php"
+    args: [ "-r", "echo phpversion();"]
+    expectedOutput: ['.*7\.4\.*']
+  - name: "php timezone = UTC"
+    command: "php"
+    args: [ "-r", "echo ini_get('date.timezone');"]
+    expectedOutput: ["UTC"]
+  - name: "php memory_limit >= 1GB"
+    command: "php"
+    args: [ "-r", "if (intval(ini_get('memory_limit')) == -1 || (intval(ini_get('memory_limit')) * 1024 ** ['k' => 1, 'm' => 2, 'g' => 3][strtolower(ini_get('memory_limit'))[-1]] >= 1073741824)) { exit(0); } else { echo 'memory_limit='.ini_get('memory_limit'); exit(1);};"]
+    exitCode: 0
+  - name: "composer version"
+    command: "composer"
+    args: [ "--version"]
+    expectedOutput: ['.*2\.0\.*']
+  - name: "php apcu"
+    command: "php"
+    args: [ "-r", "!extension_loaded('apcu') && exit(1);"]
+    exitCode: 0
+  - name: "php bcmath"
+    command: "php"
+    args: [ "-r", "!extension_loaded('bcmath') && exit(1);"]
+    exitCode: 0
+  - name: "php curl"
+    command: "php"
+    args: [ "-r", "!extension_loaded('curl') && exit(1);"]
+    exitCode: 0
+  - name: "php exif"
+    command: "php"
+    args: [ "-r", "!extension_loaded('exif') && exit(1);"]
+    exitCode: 0
+  - name: "php imagick"
+    command: "php"
+    args: [ "-r", "!extension_loaded('imagick') && exit(1);"]
+    exitCode: 0
+  - name: "php intl"
+    command: "php"
+    args: [ "-r", "!extension_loaded('intl') && exit(1);"]
+    exitCode: 0
+  - name: "php memcached"
+    command: "php"
+    args: [ "-r", "!extension_loaded('memcached') && exit(1);"]
+    exitCode: 0
+  - name: "php mbstring"
+    command: "php"
+    args: [ "-r", "!extension_loaded('mbstring') && exit(1);"]
+    exitCode: 0
+  - name: "php mysqli"
+    command: "php"
+    args: [ "-r", "!extension_loaded('mysqli') && exit(1);"]
+    exitCode: 0
+  - name: "php pdo_mysql"
+    command: "php"
+    args: [ "-r", "!extension_loaded('pdo_mysql') && exit(1);"]
+    exitCode: 0
+  - name: "php opcache"
+    command: "php"
+    args: [ "-r", "!extension_loaded('opcache') && exit(1);"]
+    exitCode: 0
+  - name: "php xml"
+    command: "php"
+    args: [ "-r", "!extension_loaded('xml') && exit(1);"]
+    exitCode: 0
+  - name: "php zip"
+    command: "php"
+    args: [ "-r", "!extension_loaded('zip') && exit(1);"]
+    exitCode: 0
+  - name: "php function exec()"
+    command: "php"
+    args: [ "-r", "!function_exists('exec') && exit(1);"]
+    exitCode: 0
+  - name: "php imagick >=6.8"
+    command: "php"
+    args: [ "-r", "preg_match('/ImageMagick ([0-9]+\\.[0-9]+\\.[0-9]+)/', Imagick::getVersion()['versionString'], Imagick::getVersion()); if(version_compare($v[1],'6.8.0')<=0){ print_r(Imagick::getVersion()); exit(1); };"]
+    exitCode: 0
