@@ -7,8 +7,8 @@ LABEL vendor="Artifakt" \
 # see release archives https://github.com/akeneo/pim-community-standard/releases
 ARG AKENEO_VERSION=5.0.26
 
-# see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html, already enabled: curl 
-ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mbstring mysqli opcache pdo_mysql xml zip"
+# see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html, already enabled: curl, mbstring, xml
+ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mbstring mysqli opcache pdo_mysql zip"
 
 ARG IMAGICK_VERSION=3.4.4
 ARG MEMCACHED_VERSION=3.1.5
