@@ -36,6 +36,7 @@ RUN apt-get update \
   libjpeg62-turbo-dev \
   libkrb5-dev \
   libldap2-dev \
+  libmemcached-dev \
   libpng-dev \
   libpspell-dev \
   libtidy-dev \
