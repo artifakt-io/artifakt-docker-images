@@ -7,10 +7,11 @@ LABEL vendor="Artifakt" \
 # see release archives https://github.com/akeneo/pim-community-standard/releases
 ARG AKENEO_VERSION=5.0.26
 
-# see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html
-ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
+# see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html, already enabled: curl, mbstring, xml
+ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mysqli opcache pdo_mysql zip"
 
 ARG IMAGICK_VERSION=3.4.4
+ARG MEMCACHED_VERSION=3.1.5
 
 # hadolint ignore=DL3008,DL4006
 RUN export CFLAGS="$PHP_CFLAGS" CPPFLAGS="$PHP_CPPFLAGS" LDFLAGS="$PHP_LDFLAGS" \
@@ -35,6 +36,7 @@ RUN apt-get update \
   libjpeg62-turbo-dev \
   libkrb5-dev \
   libldap2-dev \
+  libmemcached-dev \
   libpng-dev \
   libpspell-dev \
   libtidy-dev \
@@ -47,9 +49,11 @@ RUN apt-get update \
   zlib1g-dev \
   && rm -rf /var/lib/apt/lists/*
 
-# Install image magick
-RUN pecl install imagick-$IMAGICK_VERSION \
-    && docker-php-ext-enable imagick
+# a couple of extensions are only available through PECL
+RUN pecl install \
+      imagick-$IMAGICK_VERSION \
+      memcached-$MEMCACHED_VERSION \
+    && docker-php-ext-enable imagick memcached
 
 # Configure the gd library
 RUN docker-php-ext-configure \
@@ -91,7 +95,7 @@ RUN docker-php-ext-install -j$(nproc) \
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
 
 ENV PHP_CONF_MEMORY_LIMIT="-1"
-ENV PHP_CONF_DATE_TIMEZONE="Europe/Paris"
+ENV PHP_CONF_DATE_TIMEZONE="UTC"
 ENV PHP_CONF_MAX_EXECUTION_TIME=600
 ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
 
