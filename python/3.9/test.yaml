@@ -4,4 +4,4 @@ metadataTest:
   volumes: []
   entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
   cmd: ["python"]
-  workdir: "/app"
+  workdir: "/var/www/html"

@@ -229,14 +229,6 @@ do
 		_build_dir=$_image/$_tag
 	fi
 
-echo BUILD_DIR = $_build_dir
-echo SCRIPT_DIR= $SCRIPT_DIR
-echo current directory=`pwd`
-echo list files in $SCRIPT_DIR/$_build_dir
-ls -la $SCRIPT_DIR/$_build_dir
-echo list files in current folder
-ls -last
-
 	# run the actual build
 	(
 		set -Ee
