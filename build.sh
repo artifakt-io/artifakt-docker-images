@@ -229,6 +229,9 @@ do
 		_build_dir=$_image/$_tag
 	fi
 
+echo BUILD_DIR = $_build_dir
+echo SCRIPT_DIR= $SCRIPT_DIR
+
 	# run the actual build
 	(
 		set -Ee
