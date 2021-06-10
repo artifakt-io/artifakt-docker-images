@@ -259,8 +259,8 @@ ls -last
 		fi
 		if [[ $TEST_MODE = true ]]; then
 			LOCAL_TEST_FILE=""
-			if [ -f "$_build_dir/test.yaml" ]; then
-				LOCAL_TEST_FILE="--config $_build_dir/test.yaml"
+			if [ -f "$SCRIPT_DIR/$_build_dir/test.yaml" ]; then
+				LOCAL_TEST_FILE="--config $SCRIPT_DIR/$_build_dir/test.yaml"
 			else
 				echo -n "  - no test.yaml in $SCRIPT_DIR/$_build_dir, skipping... "
 			fi
