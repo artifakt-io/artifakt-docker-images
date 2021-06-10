@@ -10,11 +10,12 @@ ARG PHP_EXTENSION_LIST="apcu bcmath bz2 calendar exif gd gettext iconv intl memc
 
 ARG APACHE_MODULE_LIST="access_compat actions alias allowmethods auth_basic auth_digest authn_anon authn_core authn_dbd authn_dbm authn_file authn_socache authz_core authz_dbd authz_dbm authz_groupfile authz_host authz_owner authz_user autoindex cache cache_disk cache_socache cgi data dav dav_fs dav_lock dbd deflate dir dump_io echo env expires ext_filter filter headers http2 include info lbmethod_bybusyness lbmethod_byrequests lbmethod_bytraffic lbmethod_heartbeat lua macro mime mime_magic negotiation php7 proxy proxy_ajp proxy_balancer proxy_connect proxy_express proxy_fcgi proxy_fdpass proxy_ftp proxy_hcheck proxy_http proxy_scgi proxy_uwsgi proxy_wstunnel remoteip reqtimeout request rewrite setenvif slotmem_plain slotmem_shm socache_dbm socache_memcache socache_shmcb ssl status substitute suexec userdir vhost_alias"
 
-ARG LIB_SODIUM_VERSION=1.0.18
+ARG LIBSODIUM__REPO_TAG=1.0.18
 
 ARG MEMCACHE_VERSION=4.0.5.2
 
 ARG APCU_VERSION=5.1.19
+ARG LIBSODIUM_VERSION=2.0.23
 
 # Install dependencies
 # hadolint ignore=DL3008
@@ -89,13 +90,14 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && rm -f /usr/local/lib/php/extensions/*/*sodium.so \
   && apt-get remove libsodium* -y  \
   && mkdir -p /tmp/libsodium  \
-  && curl -sL https://github.com/jedisct1/libsodium/archive/$LIB_SODIUM_VERSION-RELEASE.tar.gz | tar xzf - -C  /tmp/libsodium \
-  && cd /tmp/libsodium/libsodium-${LIB_SODIUM_VERSION}-RELEASE/ \
+  && curl -sL https://github.com/jedisct1/libsodium/archive/$LIBSODIUM__REPO_TAG-RELEASE.tar.gz | tar xzf - -C  /tmp/libsodium \
+  && cd /tmp/libsodium/libsodium-${LIBSODIUM__REPO_TAG}-RELEASE/ \
   && ./configure \
   && make && make check \
   && make install  \
-  && pecl install -o -f libsodium \
+  && pecl install -o -f libsodium-$LIBSODIUM_VERSION \
   && rm -rf /tmp/libsodium
+
 
 ARG COMPOSER_VERSION=1.10.22
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -105,13 +107,6 @@ RUN curl -sS https://getcomposer.org/installer | \
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
 RUN a2enmod $APACHE_MODULE_LIST
-
-ARG ARCHIVE_FILE=php-simple-page-master
-RUN curl -sSLO https://gitlab.com/djalal/php-simple-page/-/archive/master/${ARCHIVE_FILE}.tar.gz && \
-  tar -xzf ${ARCHIVE_FILE}.tar.gz -C /tmp && \
-  mv /tmp/${ARCHIVE_FILE}/* /var/www/html && \
-  chown -R www-data:www-data /var/www/html && \
-  rm ${ARCHIVE_FILE}.tar.gz
 
 # hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
