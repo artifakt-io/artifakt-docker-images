@@ -113,6 +113,10 @@ RUN curl -sSLO https://gitlab.com/djalal/php-simple-page/-/archive/master/${ARCH
   chown -R www-data:www-data /var/www/html && \
   rm ${ARCHIVE_FILE}.tar.gz
 
+# Use the default production configuration
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+COPY zzz-artifakt.ini $PHP_INI_DIR/conf.d/zzz-artifakt.ini
+
 # hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
 
