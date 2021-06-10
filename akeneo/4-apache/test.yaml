@@ -3,7 +3,7 @@ metadataTest:
   cmd: ["apache2-foreground"]
   workdir: "/var/www/html/pim-community-standard"
 
-#cf https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html
+#cf https://docs.akeneo.com/4.0/install_pim/manual/system_requirements/system_requirements.html
 fileExistenceTests:
 - name: 'gzip'
   path: '/bin/gzip'
@@ -12,20 +12,13 @@ fileExistenceTests:
   uid: 0
   gid: 0
   isExecutableBy: 'any'
-# - name: 'mysql'
-#   path: '/usr/bin/mysql'
+# - name: 'php'
+#   path: '/usr/local/bin/php'
 #   shouldExist: true
 #   permissions: '-rwxr-xr-x'
 #   uid: 0
 #   gid: 0
 #   isExecutableBy: 'any'
-- name: 'php'
-  path: '/usr/local/bin/php'
-  shouldExist: true
-  permissions: '-rwxr-xr-x'
-  uid: 0
-  gid: 0
-  isExecutableBy: 'any'
 - name: 'tar'
   path: '/bin/tar'
   shouldExist: true
@@ -38,7 +31,7 @@ commandTests:
   - name: "nodejs version"
     command: "node"
     args: [ "-v"]
-    expectedOutput: ['v12\..+']
+    expectedOutput: ['v10\..+']
   - name: "yarn version"
     command: "yarn"
     args: [ "-v"]
@@ -51,14 +44,14 @@ commandTests:
     command: "apache2ctl"
     args: [ "-t", "-D", "DUMP_MODULES"]
     expectedOutput: ['.*rewrite_module.*']
-#  - name: "mysql client version"
-#    command: "mysql"
-#    args: [ "-V"]
-#    expectedOutput: ['.*mysql  Ver 8\.0\.*']
+  # - name: "mysql client version"
+  #   command: "mysql"
+  #   args: [ "-V"]
+  #   expectedOutput: ['.*mysql  Ver 8\.0\.*']
   - name: "php version"
     command: "php"
     args: [ "-r", "echo phpversion();"]
-    expectedOutput: ['.*7\.4\.*']
+    expectedOutput: ['.*7\.3\.*']
   - name: "php timezone = UTC"
     command: "php"
     args: [ "-r", "echo ini_get('date.timezone');"]
@@ -70,7 +63,7 @@ commandTests:
   - name: "composer version"
     command: "composer"
     args: [ "--version"]
-    expectedOutput: ['.*2\.0\.*']
+    expectedOutput: ['.*1\.10\.*']
   - name: "php apcu"
     command: "php"
     args: [ "-r", "!extension_loaded('apcu') && exit(1);"]
@@ -95,6 +88,10 @@ commandTests:
     command: "php"
     args: [ "-r", "!extension_loaded('intl') && exit(1);"]
     exitCode: 0
+  - name: "php gd"
+    command: "php"
+    args: [ "-r", "!extension_loaded('gd') && exit(1);"]
+    exitCode: 0
   - name: "php memcached"
     command: "php"
     args: [ "-r", "!extension_loaded('memcached') && exit(1);"]
@@ -103,10 +100,10 @@ commandTests:
     command: "php"
     args: [ "-r", "!extension_loaded('mbstring') && exit(1);"]
     exitCode: 0
-  - name: "php mysqli"
-    command: "php"
-    args: [ "-r", "!extension_loaded('mysqli') && exit(1);"]
-    exitCode: 0
+  # - name: "php mysql"
+  #   command: "php"
+  #   args: [ "-r", "!extension_loaded('mysql') && exit(1);"]
+  #   exitCode: 0
   - name: "php pdo_mysql"
     command: "php"
     args: [ "-r", "!extension_loaded('pdo_mysql') && exit(1);"]
@@ -123,11 +120,8 @@ commandTests:
     command: "php"
     args: [ "-r", "!extension_loaded('zip') && exit(1);"]
     exitCode: 0
-  - name: "php function exec()"
-    command: "php"
-    args: [ "-r", "!function_exists('exec') && exit(1);"]
-    exitCode: 0
   - name: "php imagick >=6.8"
     command: "php"
     args: [ "--ri", "imagick"]
     expectedOutput: ['.+ImageMagick 6\.[8|9]\..+']
+

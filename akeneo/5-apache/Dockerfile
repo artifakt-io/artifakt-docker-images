@@ -5,7 +5,7 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 # see release archives https://github.com/akeneo/pim-community-standard/releases
-ARG AKENEO_VERSION=5.0.26
+ARG AKENEO_VERSION=5.0.30
 
 # see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html, already enabled: curl, mbstring, xml
 ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mysqli opcache pdo_mysql zip"
@@ -140,6 +140,10 @@ RUN make node_modules && \
 
 COPY .env.local ./.env.local
 COPY parameters.yml ./config/services/parameters.yml
+
+RUN ln -s /dev/stderr /var/www/html/pim-community-standard/var/logs/error.log && \
+    ln -s /dev/stdout /var/www/html/pim-community-standard/var/logs/access.log && \
+    ln -s /dev/stdout /var/www/html/pim-community-standard/var/logs/dev.log
 
 # hadolint ignore=DL3002
 USER root
