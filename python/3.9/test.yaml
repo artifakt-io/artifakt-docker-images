@@ -1,0 +1,7 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  exposedPorts: []
+  volumes: []
+  entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
+  cmd: ["python"]
+  workdir: "/var/www/html"
