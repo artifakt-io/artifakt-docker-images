@@ -1,14 +1,5 @@
 schemaVersion: '2.0.0'
 metadataTest:
-  labels:
-    - key: 'vendor'
-      value: 'Artifakt'
-    - key: 'release'
-      value: '(alpha|beta|ga|maintenance|retired)'
-      isRegex: true
-    - key: 'author'
-      value: "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$"
-      isRegex: true
   exposedPorts: []
   volumes: []
   entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
