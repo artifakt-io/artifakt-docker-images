@@ -7,5 +7,7 @@ LABEL vendor="Artifakt" \
 # hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
 
+WORKDIR /var/www/html
+
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD [ "python" ]
