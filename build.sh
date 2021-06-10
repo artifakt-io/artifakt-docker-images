@@ -231,6 +231,8 @@ do
 
 echo BUILD_DIR = $_build_dir
 echo SCRIPT_DIR= $SCRIPT_DIR
+echo current directory=`pwd`
+echo ls -la
 
 	# run the actual build
 	(
