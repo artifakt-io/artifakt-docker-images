@@ -53,7 +53,7 @@ jobs:
           TMP_IMAGE_ARRAY=($(echo $folder | tr "/" "\n"))
           IMAGE_NAME=${TMP_IMAGE_ARRAY[1]}
           TAG=${TMP_IMAGE_ARRAY[2]}
-          export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true --image=$IMAGE_NAME --tag=$TAG
+          export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true --test=true --image=$IMAGE_NAME --tag=$TAG
 
       - name: Login to target registry
         if: github.ref == 'refs/heads/main'
