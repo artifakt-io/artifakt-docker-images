@@ -232,7 +232,10 @@ do
 echo BUILD_DIR = $_build_dir
 echo SCRIPT_DIR= $SCRIPT_DIR
 echo current directory=`pwd`
-echo ls -la
+echo list files in $SCRIPT_DIR/$_build_dir
+ls -la $SCRIPT_DIR/$_build_dir
+echo list files in current folder
+ls -last
 
 	# run the actual build
 	(
