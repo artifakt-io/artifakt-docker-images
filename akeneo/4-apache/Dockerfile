@@ -140,7 +140,7 @@ USER root
 
 COPY wait-for-it.sh docker-entrypoint.sh /usr/local/bin/
 COPY akeneo.conf /etc/apache2/sites-available/000-default.conf
-COPY akeneo.ini /usr/local/etc/php/conf.d/
+COPY akeneo.ini /usr/local/etc/php/conf.d/zzzz-akeneo.ini
 
 ENV APP_DATABASE_HOST=${ARTIFAKT_MYSQL_HOST:-mysql}
 ENV APP_DATABASE_NAME=${ARTIFAKT_MYSQL_DATABASE_NAME:-dbname}
