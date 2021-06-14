@@ -1,8 +1,0 @@
-
-
-  mailcatcher:
-    image: mailhog/mailhog:latest
-    environment:
-      - VIRTUAL_HOST=mailcatcher.${BASEHOST:-magento.docker}
-      - VIRTUAL_PORT=8025
-    network_mode: bridge
