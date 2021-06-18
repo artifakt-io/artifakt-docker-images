@@ -3,8 +3,10 @@ FROM wordpress:5-apache
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
+      
+HEALTHCHECK CMD curl --fail http://localhost || exit 1
 
-ENV HTTPS=ON
+ENV HTTPS=on
 
 # hadolint ignore=SC2016
 RUN echo 'SetEnv HTTPS on' > /etc/apache2/conf-enabled/force-ssl.conf
