@@ -13,8 +13,8 @@ ARG COMPOSER_VERSION=1.10.22
 RUN curl -sS https://getcomposer.org/installer | \
     php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
-RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
-    chmod +x wp-cli.phar \
+RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
+    chmod +x wp-cli.phar && \
     mv wp-cli.phar /usr/local/bin/wp
 
 # hadolint ignore=DL3045
