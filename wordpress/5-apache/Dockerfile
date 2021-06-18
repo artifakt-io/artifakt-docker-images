@@ -20,6 +20,7 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
     mv wp-cli.phar /usr/local/bin/wp
 
 # hadolint ignore=DL3045
+COPY etc/wp-config.php /.artifakt/
 COPY etc/app-entrypoint.sh /.artifakt/entrypoint.sh
 COPY docker-entrypoint.sh /usr/local/bin/
 
