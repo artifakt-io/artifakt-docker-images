@@ -70,7 +70,7 @@ commandTests:
   - name: "composer version"
     command: "composer"
     args: [ "--version"]
-    expectedOutput: ['.*2\.0\.*']
+    expectedOutput: ['.*2\.1\.*']
   - name: "php apcu"
     command: "php"
     args: [ "-r", "!extension_loaded('apcu') && exit(1);"]

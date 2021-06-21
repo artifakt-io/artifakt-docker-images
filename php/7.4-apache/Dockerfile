@@ -97,7 +97,7 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && pecl install -o -f libsodium-$LIBSODIUM_VERSION \
   && rm -rf /tmp/libsodium
 
-ARG COMPOSER_VERSION=2.0.14
+ARG COMPOSER_VERSION=2.1.3
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
