@@ -5,12 +5,12 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 # see release archives https://github.com/akeneo/pim-community-standard/releases
-ARG AKENEO_VERSION=5.0.31
+ARG AKENEO_VERSION=5.0.33
 
 # see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html, already enabled: curl, mbstring, xml
 ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mysqli opcache pdo_mysql zip"
 
-ARG IMAGICK_VERSION=3.4.4
+ARG IMAGICK_VERSION=3.5.0
 ARG MEMCACHED_VERSION=3.1.5
 
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
@@ -104,7 +104,7 @@ ENV PHP_CONF_DATE_TIMEZONE="UTC"
 ENV PHP_CONF_MAX_EXECUTION_TIME=600
 ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
 
-ARG COMPOSER_VERSION=2.0.14
+ARG COMPOSER_VERSION=2.1.3
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
@@ -151,11 +151,6 @@ USER root
 COPY wait-for-it.sh docker-entrypoint.sh /usr/local/bin/
 COPY akeneo.conf /etc/apache2/sites-available/000-default.conf
 COPY akeneo.ini /usr/local/etc/php/conf.d/zzzz-akeneo.ini
-
-ENV APP_DATABASE_HOST=${ARTIFAKT_MYSQL_HOST:-mysql}
-ENV APP_DATABASE_NAME=${ARTIFAKT_MYSQL_DATABASE_NAME:-dbname}
-ENV APP_DATABASE_USER=${ARTIFAKT_MYSQL_USER:-dbuser}
-ENV APP_DATABASE_PASSWORD=${ARTIFAKT_MYSQL_PASSWORD:-dbpass}
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]

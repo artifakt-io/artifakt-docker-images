@@ -5,12 +5,12 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 # see release archives https://github.com/akeneo/pim-community-dev/releases
-ARG AKENEO_VERSION=4.0.113
+ARG AKENEO_VERSION=4.0.114
 
 # see https://docs.akeneo.com/4.0/install_pim/manual/system_requirements/system_requirements.html
 ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
 
-ARG IMAGICK_VERSION=3.4.4
+ARG IMAGICK_VERSION=3.5.0
 ARG MEMCACHED_VERSION=3.1.5
 
 # hadolint ignore=DL3008,DL4006
@@ -141,11 +141,6 @@ USER root
 COPY wait-for-it.sh docker-entrypoint.sh /usr/local/bin/
 COPY akeneo.conf /etc/apache2/sites-available/000-default.conf
 COPY akeneo.ini /usr/local/etc/php/conf.d/zzzz-akeneo.ini
-
-ENV APP_DATABASE_HOST=${ARTIFAKT_MYSQL_HOST:-mysql}
-ENV APP_DATABASE_NAME=${ARTIFAKT_MYSQL_DATABASE_NAME:-dbname}
-ENV APP_DATABASE_USER=${ARTIFAKT_MYSQL_USER:-dbuser}
-ENV APP_DATABASE_PASSWORD=${ARTIFAKT_MYSQL_PASSWORD:-dbpass}
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]

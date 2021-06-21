@@ -8,7 +8,7 @@ COPY --chown=www-data:www-data default.settings.php /opt/settings.php
 
 WORKDIR /var/www/html
 
-ARG COMPOSER_VERSION=2.0.13
+ARG COMPOSER_VERSION=2.1.3
 RUN curl -sS https://getcomposer.org/installer | \
 php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
