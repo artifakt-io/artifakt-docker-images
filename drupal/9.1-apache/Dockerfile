@@ -1,18 +1,11 @@
-FROM drupal:9.1-apache
+FROM debian:buster-slim
 
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
-      stage="alpha"
+      stage="retired"
 
-COPY --chown=www-data:www-data default.settings.php /opt/settings.php
+RUN echo This runtime is now retired, see https://docs.artifakt.com/
 
-WORKDIR /var/www/html
-
-ARG COMPOSER_VERSION=2.1.3
-RUN curl -sS https://getcomposer.org/installer | \
-php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
-
-# hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
