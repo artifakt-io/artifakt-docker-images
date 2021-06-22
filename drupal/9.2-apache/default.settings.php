@@ -11,7 +11,7 @@
 $settings['config_sync_directory'] = '../config/sync';
 
 // Hash salt.
-$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
+$settings['hash_salt'] = file_get_contents('/data/salt.txt'); ;
 
 // Disallow access to update.php by anonymous users.
 $settings['update_free_access'] = FALSE;
@@ -26,12 +26,12 @@ $settings['file_scan_ignore_directories'] = [
 
 // Database connection.
 $databases['default']['default'] = [
-  'database' => getenv('DRUPAL_DATABASE_NAME'),
-  'username' => getenv('DRUPAL_DATABASE_USERNAME'),
-  'password' => getenv('DRUPAL_DATABASE_PASSWORD'),
+  'database' => $_ENV['ARTIFAKT_MYSQL_DATABASE_NAME'],
+  'username' => $_ENV['ARTIFAKT_MYSQL_USER'],
+  'password' => $_ENV['ARTIFAKT_MYSQL_PASSWORD'],
   'prefix' => '',
-  'host' => getenv('DRUPAL_DATABASE_HOST'),
-  'port' => getenv('DRUPAL_DATABASE_PORT'),
+  'host' => $_ENV['ARTIFAKT_MYSQL_HOST'],
+  'port' => $_ENV['ARTIFAKT_MYSQL_PORT'],
   'namespace' => 'Drupal\Core\Database\Driver\mysql',
   'driver' => 'mysql',
 ];
