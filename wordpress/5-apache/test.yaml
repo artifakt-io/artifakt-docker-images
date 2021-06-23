@@ -29,11 +29,11 @@ fileExistenceTests:
   path: '/.artifakt/entrypoint.sh'
   shouldExist: true
   permissions: '-rwxr-xr-x'
-  uid: 33
-  gid: 33
+  uid: 0
+  gid: 0
   isExecutableBy: 'any'
 - name: 'default wp-config'
-  path: '/.artifakt/wp-config.php'
+  path: '/var/www/html/wp-config.php'
   shouldExist: true
   permissions: '-rw-r--r--'
   uid: 33

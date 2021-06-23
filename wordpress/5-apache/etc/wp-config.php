@@ -46,7 +46,6 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-
 include "/data/secret-key.php";
 
 /**#@-*/
