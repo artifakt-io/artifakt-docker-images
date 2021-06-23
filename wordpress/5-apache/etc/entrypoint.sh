@@ -8,21 +8,25 @@ set -e
   chown www-data:www-data /data/secret-key.php
 
 # Mount upload directory
-mkdir -p /data/wp-content/uploads && \
-  chown www-data:www-data /data/wp-content/uploads && \
-  ln -sfn /data/wp-content/uploads /var/www/html/wp-content/uploads
+rm -rf /var/www/html/wp-content/uploads && \
+  mkdir -p /data/wp-content/uploads && \
+  ln -sfn /data/wp-content/uploads /var/www/html/wp-content/uploads && \
+  chown -h www-data:www-data /var/www/html/wp-content/uploads /data/wp-content/uploads
 
 # Mount cache directory
-mkdir -p /data/wp-content/cache && \
-  chown www-data:www-data /data/wp-content/cache && \
-  ln -sfn /data/wp-content/cache /var/www/html/wp-content/cache
-
+rm -rf /var/www/html/wp-content/cache && \
+  mkdir -p /data/wp-content/cache && \
+  ln -sfn /data/wp-content/cache /var/www/html/wp-content/cache && \
+  chown -h www-data:www-data /var/www/html/wp-content/cache /data/wp-content/cache
+  
 # Uncomment to mount plugins directory if you don't version them
-#mkdir -p /data/wp-content/plugins && \
-#  chown www-data:www-data /data/wp-content/plugins && \
-#  ln -sfn /data/wp-content/plugins /var/www/html/wp-content/plugins
+#rm -rf /var/www/html/wp-content/plugins && \
+#  mkdir -p /data/wp-content/plugins && \
+#  ln -sfn /data/wp-content/plugins /var/www/html/wp-content/plugins && \
+#  chown -h www-data:www-data /var/www/html/wp-content/plugins /data/wp-content/plugins
 
 # Uncomment to mount themes directory if you don't version them
-#mkdir -p /data/wp-content/themes && \
-#  chown www-data:www-data /data/wp-content/themes && \
-#  ln -sfn /data/wp-content/themes /var/www/html/wp-content/themes
+#rm -rf /var/www/html/wp-content/themes && \
+#  mkdir -p /data/wp-content/themes && \
+#  ln -sfn /data/wp-content/themes /var/www/html/wp-content/themes && \
+#  chown www-data:www-data /var/www/html/wp-content/themes /data/wp-content/themes
