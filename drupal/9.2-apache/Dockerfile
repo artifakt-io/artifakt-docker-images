@@ -17,7 +17,7 @@ RUN { \
 
 ARG COMPOSER_VERSION=2.1.3
 RUN curl -sS https://getcomposer.org/installer | \
-php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
+    php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 # https://www.drupal.org/node/3060/release
 ENV DRUPAL_VERSION 9.2.0
@@ -27,6 +27,7 @@ WORKDIR /opt/drupal
 RUN set -eux; \
 	export COMPOSER_HOME="$(mktemp -d)"; \
 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; \
+	composer require --no-cache --update-no-dev --prefer-dist --no-ansi --no-interaction drush/drush; \
 	chown -R www-data:www-data web/sites web/modules web/themes; \
 	rmdir /var/www/html; \
 	ln -sf /opt/drupal/web /var/www/html; \
