@@ -23,6 +23,7 @@ RUN composer create-project symfony/website-skeleton:"^4.4" /tmp/website-skeleto
     mv /tmp/website-skeleton/{.[!.],}* /var/www/html
 WORKDIR /var/www/html
 RUN composer require symfony/apache-pack
+RUN composer clear-cache
 
 # hadolint ignore=DL3002
 USER root
