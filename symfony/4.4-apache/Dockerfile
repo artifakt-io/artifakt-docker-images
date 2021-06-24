@@ -12,6 +12,18 @@ ARG COMPOSER_VERSION=1.0.22
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
+RUN mkdir -p /var/log/artifakt && chown -R www-data:www-data /var/log/artifakt
+RUN mkdir /var/www/.composer && chown -R www-data:www-data /var/www/.composer
+
+USER www-data
+RUN composer --no-cache create-project symfony/website-skeleton:"^4.4" /tmp/website-skeleton && \
+    rm -rf /var/www/html/{.[!.],}* && \
+    mv /tmp/website-skeleton/{.[!.],}* /var/www/html
+WORKDIR /var/www/html
+RUN composer require symfony/apache-pack
+# hadolint ignore=DL3002
+USER root
+
 COPY 000-default.conf /etc/apache2/sites-available/
 RUN a2enmod rewrite && a2ensite 000-default
 
