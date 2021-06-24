@@ -8,4 +8,4 @@ parameters:
     mailer_host: 'localhost'
     mailer_user: 'null'
     mailer_password: 'null'
-    secret: 'zQCvhDu2V9eTDD3z4PcA2ex72yTVLZnG'
+    secret: '%env(WORDPRESS_SECRET)%'
