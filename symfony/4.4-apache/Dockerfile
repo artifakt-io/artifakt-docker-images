@@ -12,8 +12,6 @@ ARG COMPOSER_VERSION=1.0.22
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
-RUN mkdir /var/www/.composer && chown -R www-data:www-data /var/www/.composer
-
 COPY 000-default.conf /etc/apache2/sites-available/
 RUN a2enmod rewrite && a2ensite 000-default
 
