@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # 2021-06-24: Aymeric Mathéossian / Upgrade to version 2.0.14 because of last 4.4 version and error message:
 ## "Warning from https://repo.packagist.org: Support for Composer 1 is deprecated and some packages will not be available. You should upgrade to Composer 2. See https://blog.packagist.com/deprecating-composer-1-support/"
-ARG COMPOSER_VERSION=1.0.22
+ARG COMPOSER_VERSION=1.10.22
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
