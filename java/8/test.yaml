@@ -5,6 +5,6 @@ metadataTest:
 
 commandTests:
   - name: "java version"
-    command: "java"
-    args: [ "-version"]
-    expectedOutput: ['.*1\.8\.*']
+    command: "bash"
+    args: [ "-c", "java -version 2>&1"]
+    expectedOutput: ['openjdk version \"1\.8\..*']
