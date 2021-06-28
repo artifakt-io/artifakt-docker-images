@@ -1,4 +1,4 @@
-FROM node:erbium
+FROM node:erbium-stretch
 
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \

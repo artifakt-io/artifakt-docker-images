@@ -5,9 +5,8 @@ if [[ -x "/.artifakt/entrypoint.sh" ]]; then
     source /.artifakt/entrypoint.sh
 fi
 
-# first arg is `-f` or `--some-option`
-if [ "${1#-}" != "$1" ]; then
-	set -- node "$@"
+if [ "${1#-}" != "${1}" ] || [ -z "$(command -v "${1}")" ]; then
+  set -- node "$@"
 fi
 
 exec "$@"

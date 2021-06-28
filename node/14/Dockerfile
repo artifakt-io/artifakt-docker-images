@@ -1,4 +1,4 @@
-FROM node:fermium
+FROM node:fermium-stretch
 
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \

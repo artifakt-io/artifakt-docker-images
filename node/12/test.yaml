@@ -1,0 +1,63 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  cmd: ["npm", "start"]
+
+fileExistenceTests:
+- name: 'yarn'
+  path: '/usr/local/bin/yarn'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'node'
+  path: '/usr/local/bin/node'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 50
+  isExecutableBy: 'any'
+- name: 'npm'
+  path: '/usr/local/bin/npm'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 50
+  isExecutableBy: 'any'
+- name: 'gzip'
+  path: '/bin/gzip'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'tar'
+  path: '/bin/tar'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'default entrypoint'
+  path: '/usr/local/bin/docker-entrypoint.sh'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+
+commandTests:
+  - name: "node version"
+    command: "node"
+    args: [ "--version"]
+    expectedOutput: ['v12\.*']
+
+  - name: "npm version"
+    command: "npm"
+    args: [ "--version"]
+    expectedOutput: ['6\.14\.*']
+
+  - name: "yarn version"
+    command: "yarn"
+    args: [ "--version"]
+    expectedOutput: ['1\.22\.*']
