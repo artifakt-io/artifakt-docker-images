@@ -6,7 +6,7 @@ fileExistenceTests:
 - name: 'yarn'
   path: '/usr/local/bin/yarn'
   shouldExist: true
-  permissions: '-rwxr-xr-x'
+  permissions: 'Lrwxrwxrwx'
   uid: 0
   gid: 0
   isExecutableBy: 'any'
@@ -20,7 +20,7 @@ fileExistenceTests:
 - name: 'npm'
   path: '/usr/local/bin/npm'
   shouldExist: true
-  permissions: '-rwxr-xr-x'
+  permissions: 'Lrwxrwxrwx'
   uid: 0
   gid: 50
   isExecutableBy: 'any'
@@ -48,7 +48,7 @@ fileExistenceTests:
 
 commandTests:
   - name: "node version"
-    command: "npm"
+    command: "node"
     args: [ "--version"]
     expectedOutput: ['v14\.*']
 
