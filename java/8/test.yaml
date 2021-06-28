@@ -1,0 +1,10 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  exposedPorts: []
+  volumes: []
+
+commandTests:
+  - name: "java version"
+    command: "java"
+    args: [ "-version"]
+    expectedOutput: ['.*1\.8\.*']

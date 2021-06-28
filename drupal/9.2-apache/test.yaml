@@ -1,0 +1,105 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  cmd: ["apache2-foreground"]
+
+fileExistenceTests:
+- name: 'gzip'
+  path: '/bin/gzip'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'php'
+  path: '/usr/local/bin/php'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'tar'
+  path: '/bin/tar'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'default entrypoint'
+  path: '/.artifakt/entrypoint.sh'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'default wp-config'
+  path: '/var/www/html/wp-config.php'
+  shouldExist: true
+  permissions: '-rw-r--r--'
+  uid: 33
+  gid: 33
+
+commandTests:
+  - name: "apache version"
+    command: "apache2ctl"
+    args: [ "-v"]
+    expectedOutput: ['Apache\/2\.4\.*']
+  - name: "apache version"
+    command: "apache2ctl"
+    args: [ "-t", "-D", "DUMP_MODULES"]
+    expectedOutput: ['.*rewrite_module.*']
+  - name: "php version"
+    command: "php"
+    args: [ "-r", "echo phpversion();"]
+    expectedOutput: ['.*8\.0\.*']
+  - name: "php memory_limit >= 1GB"
+    command: "php"
+    args: [ "-r", "if (intval(ini_get('memory_limit')) == -1 || (intval(ini_get('memory_limit')) * 1024 ** ['k' => 1, 'm' => 2, 'g' => 3][strtolower(ini_get('memory_limit'))[-1]] >= 134217728 )) { exit(0); } else { echo 'memory_limit='.ini_get('memory_limit'); exit(1);};"]
+    exitCode: 0
+  - name: "composer version"
+    command: "composer"
+    args: [ "--version"]
+    expectedOutput: ['.*2\.1\.*']
+  - name: "php bcmath"
+    command: "php"
+    args: [ "-r", "!extension_loaded('bcmath') && exit(1);"]
+    exitCode: 0
+  - name: "php curl"
+    command: "php"
+    args: [ "-r", "!extension_loaded('curl') && exit(1);"]
+    exitCode: 0
+  - name: "php exif"
+    command: "php"
+    args: [ "-r", "!extension_loaded('exif') && exit(1);"]
+    exitCode: 0
+  - name: "php imagick"
+    command: "php"
+    args: [ "-r", "!extension_loaded('imagick') && exit(1);"]
+    exitCode: 0
+  - name: "php mbstring"
+    command: "php"
+    args: [ "-r", "!extension_loaded('mbstring') && exit(1);"]
+    exitCode: 0
+  - name: "php mysqli"
+    command: "php"
+    args: [ "-r", "!extension_loaded('mysqli') && exit(1);"]
+    exitCode: 0
+  - name: "php opcache enabled"
+    command: "php"
+    args: [ "-r", "echo ini_get('opcache.enable');"]
+    expectedOutput: ["1"]
+  - name: "php xml"
+    command: "php"
+    args: [ "-r", "!extension_loaded('xml') && exit(1);"]
+    exitCode: 0
+  - name: "php zip"
+    command: "php"
+    args: [ "-r", "!extension_loaded('zip') && exit(1);"]
+    exitCode: 0
+  - name: "php function exec()"
+    command: "php"
+    args: [ "-r", "!function_exists('exec') && exit(1);"]
+    exitCode: 0
+  - name: "php imagick >=6.8"
+    command: "php"
+    args: [ "--ri", "imagick"]
+    expectedOutput: ['.+ImageMagick 6\.[8|9]\..+']
