@@ -10,8 +10,6 @@ ARG COMPOSER_VERSION=1.10.22
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
-RUN mkdir -p /var/log/artifakt && chown -R www-data:www-data /var/log/artifakt
-
 USER www-data
 RUN composer --no-cache create-project symfony/website-skeleton:"^4.4" /tmp/website-skeleton && \
     rm -rf /var/www/html/{.[!.],}* && \
