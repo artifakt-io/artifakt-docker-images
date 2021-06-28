@@ -11,7 +11,6 @@ RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 RUN mkdir -p /var/log/artifakt && chown -R www-data:www-data /var/log/artifakt
-RUN mkdir /var/www/.composer && chown -R www-data:www-data /var/www/.composer
 
 USER www-data
 RUN composer --no-cache create-project symfony/website-skeleton:"^4.4" /tmp/website-skeleton && \
