@@ -24,19 +24,6 @@ fileExistenceTests:
   uid: 0
   gid: 0
   isExecutableBy: 'any'
-- name: 'default entrypoint'
-  path: '/.artifakt/entrypoint.sh'
-  shouldExist: true
-  permissions: '-rwxr-xr-x'
-  uid: 0
-  gid: 0
-  isExecutableBy: 'any'
-- name: 'default wp-config'
-  path: '/var/www/html/wp-config.php'
-  shouldExist: true
-  permissions: '-rw-r--r--'
-  uid: 33
-  gid: 33
 
 commandTests:
   - name: "apache version"
@@ -71,10 +58,6 @@ commandTests:
     command: "php"
     args: [ "-r", "!extension_loaded('exif') && exit(1);"]
     exitCode: 0
-  - name: "php imagick"
-    command: "php"
-    args: [ "-r", "!extension_loaded('imagick') && exit(1);"]
-    exitCode: 0
   - name: "php mbstring"
     command: "php"
     args: [ "-r", "!extension_loaded('mbstring') && exit(1);"]
@@ -99,7 +82,3 @@ commandTests:
     command: "php"
     args: [ "-r", "!function_exists('exec') && exit(1);"]
     exitCode: 0
-  - name: "php imagick >=6.8"
-    command: "php"
-    args: [ "--ri", "imagick"]
-    expectedOutput: ['.+ImageMagick 6\.[8|9]\..+']
