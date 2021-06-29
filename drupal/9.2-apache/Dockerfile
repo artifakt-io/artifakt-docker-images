@@ -29,7 +29,6 @@ RUN set -eux; \
 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; \
 	composer require --no-cache --update-no-dev --prefer-dist --no-ansi --no-interaction drush/drush; \
 	chown -R www-data:www-data /opt/drupal web/sites web/modules web/themes; \
-	ls -la /opt/drupal; \
 	rmdir /var/www/html; \
 	ln -sf /opt/drupal/web /var/www/html; \
 	# delete composer cache
