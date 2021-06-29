@@ -5,3 +5,13 @@ metadataTest:
   entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
   cmd: ["python"]
   workdir: "/var/www/html"
+
+commandTests:
+  - name: "python version"
+    command: "python3"
+    args: [ "--version"]
+    expectedOutput: ['.*3\.9\.*']
+  - name: "pip version"
+    command: "pip"
+    args: [ "-V"]
+    expectedOutput: ['.*21\.1\.*']

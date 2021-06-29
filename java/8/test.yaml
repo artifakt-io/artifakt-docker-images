@@ -1,0 +1,10 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  exposedPorts: []
+  volumes: []
+
+commandTests:
+  - name: "java version"
+    command: "bash"
+    args: [ "-c", "java -version 2>&1"]
+    expectedOutput: ['openjdk version \"1\.8\..*']

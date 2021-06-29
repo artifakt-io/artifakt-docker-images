@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.9-buster
 
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
