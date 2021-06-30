@@ -1,6 +1,16 @@
 #!/bin/bash
 set -e
 
+PERSISTENT_FOLDER_LIST=("app/uploads" "web/uploads" "var/logs")
+
+for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
+  echo Mount $persistent_folder directory
+  rm -rf /var/www/html/$persistent_folder && \
+    mkdir -p /data/$persistent_folder && \
+    ln -sfn /data/$persistent_folder /var/www/html/$persistent_folder && \
+    chown -h www-data:www-data /var/www/html/$persistent_folder /data/$persistent_folder
+done
+
 # Generate file holding custom keys 
 if [[ ! -f /data/secret-key ]]; then
   key=$(openssl rand -base64 24)

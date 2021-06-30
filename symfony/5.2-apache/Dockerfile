@@ -1,14 +1,16 @@
 FROM registry.artifakt.io/php:7.4-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io"
+      author="djalal@artifakt.io" \
+      stage="alpha"
 
 HEALTHCHECK CMD curl --fail http://localhost/index.php || exit 1
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-# hadolint ignore=DL3022
-COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+ARG COMPOSER_VERSION=2.1.3
+RUN curl -sS https://getcomposer.org/installer | \
+  php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 USER www-data
 RUN composer create-project symfony/website-skeleton:"^5.2" /tmp/website-skeleton && \
