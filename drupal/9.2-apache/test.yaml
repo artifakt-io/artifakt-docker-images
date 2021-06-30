@@ -26,6 +26,21 @@ fileExistenceTests:
   isExecutableBy: 'any'
 
 commandTests:
+  - name: "check default salt file"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/data/salt.txt"]
+    expectedOutput: [ '-rw-r--r-- 1 www-data www-data 74 [A-Za-z]{3} [0-9]{2} [0-9]{2}:[0-9]{2} /data/salt.txt' ]
+  - name: "check mounted folder private"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/opt/drupal/web/sites/default/private"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data 31 [A-Za-z]{3} [0-9]{2} [0-9]{2}:[0-9]{2} /opt/drupal/web/sites/default/private -> /data/web/sites/default/private' ]
+  - name: "check mounted folder sites"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/opt/drupal/web/sites/default/files"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data 29 [A-Za-z]{3} [0-9]{2} [0-9]{2}:[0-9]{2} /opt/drupal/web/sites/default/files -> /data/web/sites/default/files' ]
   - name: "apache version"
     command: "apache2ctl"
     args: [ "-v"]
