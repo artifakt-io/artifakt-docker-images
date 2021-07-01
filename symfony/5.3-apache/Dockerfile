@@ -13,7 +13,7 @@ RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 USER www-data
-RUN composer create-project symfony/website-skeleton:"^5.2" /tmp/website-skeleton && \
+RUN composer create-project symfony/website-skeleton:"^5.3" /tmp/website-skeleton && \
     rm -rf /var/www/html/{.[!.],}* && \
     mv /tmp/website-skeleton/{.[!.],}* /var/www/html
 WORKDIR /var/www/html
