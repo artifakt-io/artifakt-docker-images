@@ -45,32 +45,32 @@ commandTests:
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
     args: [ "-la", "/data/secret-key.php"]
-    expectedOutput: [ '-rw-r--r-- 1 www-data www-data [0-9]{2} [A-Za-z]{3} [0-9]{2} [0-9]{2}:[0-9]{2} /data/secret-key.php' ]
+    expectedOutput: [ '-rw-r--r-- 1 www-data www-data .+ /data/secret-key.php' ]
   - name: "check mounted folder content cache"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
     args: [ "-la", "/var/www/html/wp-content/cache"]
-    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data [0-9]{2} [A-Za-z]{3} [0-9]{2} [0-9]{2}:[0-9]{2} /var/www/html/wp-content/cache -> /data/wp-content/cache' ]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/wp-content/cache -> /data/wp-content/cache' ]
   - name: "check mounted folder content uploads"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
     args: [ "-la", "/var/www/html/wp-content/uploads"]
-    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data [0-9]{2} [A-Za-z]{3} [0-9]{2} [0-9]{2}:[0-9]{2} /var/www/html/wp-content/uploads -> /data/wp-content/uploads' ]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/wp-content/uploads -> /data/wp-content/uploads' ]
   - name: "check mounted folder content backups"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
     args: [ "-la", "/var/www/html/wp-content/backups"]
-    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data [0-9]{2} [A-Za-z]{3} [0-9]{2} [0-9]{2}:[0-9]{2} /var/www/html/wp-content/backups -> /data/wp-content/backups' ]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/wp-content/backups -> /data/wp-content/backups' ]
   - name: "check mounted folder content backup-db"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
     args: [ "-la", "/var/www/html/wp-content/backup-db"]
-    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data [0-9]{2} [A-Za-z]{3} [0-9]{2} [0-9]{2}:[0-9]{2} /var/www/html/wp-content/backup-db -> /data/wp-content/backup-db' ]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/wp-content/backup-db -> /data/wp-content/backup-db' ]
   - name: "check mounted folder content upgrade"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
     args: [ "-la", "/var/www/html/wp-content/upgrade"]
-    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data [0-9]{2} [A-Za-z]{3} [0-9]{2} [0-9]{2}:[0-9]{2} /var/www/html/wp-content/upgrade -> /data/wp-content/upgrade' ]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/wp-content/upgrade -> /data/wp-content/upgrade' ]
   - name: "apache version"
     command: "apache2ctl"
     args: [ "-v"]
