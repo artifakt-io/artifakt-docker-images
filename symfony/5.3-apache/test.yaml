@@ -26,6 +26,11 @@ fileExistenceTests:
   isExecutableBy: 'any'
 
 commandTests:
+  - name: "check secret key"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/data/secret-key"]
+    expectedOutput: [ '-rw-r--r-- 1 root root .+ /data/secret-key' ]
   - name: "check mounted folder uploads"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
