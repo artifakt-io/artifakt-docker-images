@@ -35,6 +35,16 @@ fileExistenceTests:
   isExecutableBy: 'any'
 
 commandTests:
+  - name: "check mounted folder public uploads"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/public/uploads"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/public/uploads -> /data/public/uploads' ]
+  - name: "check mounted folder var log"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/var/log"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/var/log -> /data/wp-content/var/log' ]
   - name: "nodejs version"
     command: "node"
     args: [ "-v"]
