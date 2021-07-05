@@ -8,4 +8,4 @@ parameters:
     mailer_host: 'localhost'
     mailer_user: 'null'
     mailer_password: 'null'
-    secret: '%env(WORDPRESS_SECRET)%'
+    secret: '%env(SYMFONY_SECRET)%'

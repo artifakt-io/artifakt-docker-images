@@ -14,7 +14,7 @@ done
 # Generate file holding custom keys 
 if [[ ! -f /data/secret-key ]]; then
   key=$(openssl rand -base64 24)
-  echo export WORDPRESS_SECRET=$key >> /data/secret-key
+  echo export SYMFONY_SECRET=$key >> /data/secret-key
 fi
 
 source /data/secret-key
