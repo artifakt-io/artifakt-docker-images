@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-PERSISTENT_FOLDER_LIST=("app/uploads" "web/uploads" "var/logs")
+PERSISTENT_FOLDER_LIST=("public/uploads" "var/log")
 
 for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
   echo Mount $persistent_folder directory
@@ -14,7 +14,7 @@ done
 # Generate file holding custom keys 
 if [[ ! -f /data/secret-key ]]; then
   key=$(openssl rand -base64 24)
-  echo export WORDPRESS_SECRET=$key >> /data/secret-key
+  echo export SYMFONY_SECRET=$key >> /data/secret-key
 fi
 
 source /data/secret-key
