@@ -31,13 +31,13 @@ commandTests:
   - name: "check mounted folder public uploads"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
-    args: [ "-la", "/var/www/html/public/uploads"]
-    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/public/uploads -> /data/public/uploads' ]
+    args: [ "-la", "/var/www/html/pim-community-standard/public/uploads"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/pim-community-standard/public/uploads -> /data/public/uploads' ]
   - name: "check mounted folder var log"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
-    args: [ "-la", "/var/www/html/var/log"]
-    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/var/log -> /data/wp-content/var/log' ]
+    args: [ "-la", "/var/www/html/pim-community-standard/var/logs"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/pim-community-standard/var/logs -> /data/var/logs' ]
   - name: "nodejs version"
     command: "node"
     args: [ "-v"]
@@ -73,7 +73,7 @@ commandTests:
   - name: "composer version"
     command: "composer"
     args: [ "--version"]
-    expectedOutput: ['.*1\.10\.*']
+    expectedOutput: ['.*2\.1\.*']
   - name: "php apcu"
     command: "php"
     args: [ "-r", "!extension_loaded('apcu') && exit(1);"]
