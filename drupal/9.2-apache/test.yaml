@@ -34,7 +34,7 @@ commandTests:
   - name: "check salt file content"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "wc"
-    args: [ "-c", "<" , "/data/salt.txt"]
+    args: [ "-c", "/data/salt.txt"]
     excludedOutput: [ '0' ]
   - name: "check mounted folder private"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
