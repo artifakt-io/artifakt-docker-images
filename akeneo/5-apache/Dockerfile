@@ -148,7 +148,7 @@ RUN ln -s /dev/stderr /var/www/html/pim-community-standard/var/logs/error.log &&
 # hadolint ignore=DL3002
 USER root
 
-COPY wait-for-it.sh docker-entrypoint.sh /usr/local/bin/
+COPY wait-for docker-entrypoint.sh /usr/local/bin/
 COPY akeneo.conf /etc/apache2/sites-available/000-default.conf
 COPY akeneo.ini /usr/local/etc/php/conf.d/zzzz-akeneo.ini
 
