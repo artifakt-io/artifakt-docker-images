@@ -48,6 +48,7 @@ USER root
 
 COPY wait-for docker-entrypoint.sh /usr/local/bin/
 
+COPY php.ini /usr/local/etc/php/conf.d/zzzz-sylius.ini
 COPY 000-default.conf /etc/apache2/sites-available/
 RUN a2enmod rewrite && a2ensite 000-default
 

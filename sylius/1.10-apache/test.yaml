@@ -60,10 +60,10 @@ commandTests:
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
     args: [ "-la", "/var/www/html/var/log"]
-    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/var/log -> /data/var/log' ]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/var/log -> /var/log/artifakt' ]
   - name: "symfony version"
-    command: "./bin/console"
-    args: [ "about"]
+    command: "php"
+    args: [ "/var/www/html/bin/console", "--env=prod", "about"]
     expectedOutput: ['.*Version\s+5\.3\..+']
   - name: "apache version"
     command: "apache2ctl"
@@ -77,10 +77,10 @@ commandTests:
     command: "php"
     args: [ "-r", "echo phpversion();"]
     expectedOutput: ['.*7\.4\.*']
-  - name: "php timezone = Europe/Paris"
+  - name: "php timezone = UTC"
     command: "php"
     args: [ "-r", "echo ini_get('date.timezone');"]
-    expectedOutput: ["Europe/Paris"]
+    expectedOutput: ["UTC"]
   - name: "php memory_limit >= 1024MB"
     command: "php"
     args: [ "-r", "if (intval(ini_get('memory_limit')) == -1 || (intval(ini_get('memory_limit')) * 1024 ** ['k' => 1, 'm' => 2, 'g' => 3][strtolower(ini_get('memory_limit'))[-1]] >= 1073741824)) { exit(0); } else { echo 'memory_limit='.ini_get('memory_limit'); exit(1);};"]
