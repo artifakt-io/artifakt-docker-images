@@ -7,7 +7,7 @@ PERSISTENT_FOLDER_LIST=('pub/media' 'pub/static/_cache', 'var')
 for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
     echo Mount $persistent_folder directory
     mkdir -p /data/$persistent_folder
-    # Preserve and copy all original directory content (.htaccess files for example)
+    # Preserve and copy original directory content to the persistent directory (keep .htaccess files for example)
     if [ -d "/var/www/html/$persistent_folder/" ]; then
       cp -rf /var/www/html/$persistent_folder/. /data/$persistent_folder && \
       rm -rf /var/www/html/$persistent_folder
