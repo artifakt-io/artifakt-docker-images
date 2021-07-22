@@ -20,7 +20,7 @@ RUN curl -sS https://getcomposer.org/installer | \
     php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 # https://www.drupal.org/node/3060/release
-ENV DRUPAL_VERSION 9.2.0
+ENV DRUPAL_VERSION 9.2.2
 
 WORKDIR /opt/drupal
 
