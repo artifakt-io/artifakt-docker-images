@@ -4,11 +4,18 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-# hadolint ignore=DL3022
-COPY --from=composer /usr/bin/composer /usr/bin/composer
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+ARG COMPOSER_VERSION=2.1.3
+RUN curl -sS https://getcomposer.org/installer | \
+  php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 USER www-data
-RUN composer create-project symfony/website-skeleton:"^5.2" .
+RUN composer create-project symfony/website-skeleton:"^5.2" /tmp/website-skeleton && \
+    rm -rf /var/www/html/{.[!.],}* && \
+    mv /tmp/website-skeleton/{.[!.],}* /var/www/html
+
+WORKDIR /var/www/html
 
 # hadolint ignore=DL3002
 USER root
@@ -16,15 +23,4 @@ USER root
 # hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-
-ONBUILD COPY --chown=www-data:www-data . /var/www/html/
-# hadolint ignore=DL3022
-ONBUILD ENV APP_DEBUG=0
-ONBUILD ENV APP_ENV=prod
-
-ONBUILD COPY Dockerfile composer.json* /var/www/html/
-ONBUILD RUN  if [ -f composer.json ]; then composer install --no-cache --optimize-autoloader --no-interaction --no-ansi --no-dev; fi
-ONBUILD COPY . /var/www/html
-ONBUILD RUN php bin/console cache:clear --no-warmup
-ONBUILD RUN php bin/console cache:warmup
-ONBUILD RUN rm -rf .git assets /root/.composer /tmp/* && chown -R www-data:www-data /var/www/html/vendor
+CMD [ "php-fpm" ]
