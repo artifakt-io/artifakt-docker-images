@@ -193,15 +193,19 @@ check_files() {
 ########################################################## MAIN ###
 
 echo ' - "'$(wrap_color 'binary requirements' yellow)'":'
-echo -n "  - "; check_command docker
 
+echo -n "  - "; check_command docker
 DOCKER_BIN=`command -v docker`
-CONTAINER_TEST_BIN=`command -v container-structure-test`
+
+if [[ $TEST_MODE = true ]]; then
+	echo -n "  - "; check_command container-structure-test
+	CONTAINER_TEST_BIN=`command -v container-structure-test`
+fi
 
 if [[ $LINT_MODE = true ]]; then
 	echo -n "  - ";
 	wrap_good "hadolint docker image" 'available'
-	HADOLINT_BIN="docker run --rm -i hadolint/hadolint:v2.4.1 hadolint --require-label author:text --failure-threshold=warning -"
+	HADOLINT_BIN="docker run --rm -i ghcr.io/hadolint/hadolint:v2.6.0 hadolint --require-label author:text --failure-threshold=warning -"
 fi
 
 wrap_color "info: reading dockerfile list from current repo ..." white
