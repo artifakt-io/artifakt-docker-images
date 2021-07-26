@@ -5,7 +5,7 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 # see release archives https://github.com/akeneo/pim-community-dev/releases
-ARG AKENEO_VERSION=4.0.118
+ARG AKENEO_VERSION=4.0.120
 
 # see https://docs.akeneo.com/4.0/install_pim/manual/system_requirements/system_requirements.html
 ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
@@ -44,6 +44,7 @@ RUN apt-get update \
   libxpm-dev \
   libxslt1-dev \
   libzip-dev \
+  netcat \
   wget \
   zip \
   zlib1g-dev \
@@ -138,7 +139,7 @@ RUN ln -s /dev/stderr /var/www/html/pim-community-standard/var/logs/error.log &&
 # hadolint ignore=DL3002
 USER root
 
-COPY wait-for-it.sh docker-entrypoint.sh /usr/local/bin/
+COPY wait-for docker-entrypoint.sh /usr/local/bin/
 COPY akeneo.conf /etc/apache2/sites-available/000-default.conf
 COPY akeneo.ini /usr/local/etc/php/conf.d/zzzz-akeneo.ini
 
