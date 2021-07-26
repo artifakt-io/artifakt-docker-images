@@ -40,14 +40,6 @@ RUN apt-get update \
   zlib1g-dev \
   && rm -rf /var/lib/apt/lists/*
 
-#RUN curl -sSLO https://github.com/php/pecl-text-wddx/archive/354bfc1d1a7390c14ccc0d0c5eaf83748e40bcf8.zip && \
-# tar xzf 354bfc1d1a7390c14ccc0d0c5eaf83748e40bcf8.zip && \
-# cd 354bfc1d1a7390c14ccc0d0c5eaf83748e40bcf8 && \
-# usr/local/bin/phpize && \
-# ./configure && \
-# make && \
-# make install
-
 # Configure the gd library
 RUN docker-php-ext-configure \
   gd --with-freetype --with-jpeg --with-xpm --with-webp
@@ -114,4 +106,4 @@ RUN docker-php-ext-enable $PHP_EXTENSION_LIST
 COPY docker-entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-CMD ["apache2-foreground"]
+CMD ["php-fpm"]

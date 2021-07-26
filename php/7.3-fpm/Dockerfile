@@ -111,4 +111,4 @@ COPY zzz-artifakt.ini $PHP_INI_DIR/conf.d/zzz-artifakt.ini
 COPY docker-entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-CMD ["apache2-foreground"]
+CMD ["php-fpm"]
