@@ -205,7 +205,7 @@ fi
 if [[ $LINT_MODE = true ]]; then
 	echo -n "  - ";
 	wrap_good "hadolint docker image" 'available'
-	HADOLINT_BIN="docker run --rm -i ghcr.io/hadolint/hadolint:v2.6.0 hadolint --require-label author:text --failure-threshold=warning -"
+	HADOLINT_BIN="docker run --rm -i ghcr.io/hadolint/hadolint:v2.6.0 hadolint --require-label author:text --failure-threshold=error -"
 fi
 
 wrap_color "info: reading dockerfile list from current repo ..." white
