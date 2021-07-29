@@ -14,4 +14,4 @@ commandTests:
   - name: "pip version"
     command: "pip"
     args: [ "-V"]
-    expectedOutput: ['.*21\.1\.*']
+    expectedOutput: ['.*21\.2\.*']
