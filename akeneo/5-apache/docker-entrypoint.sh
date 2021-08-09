@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-PERSISTENT_FOLDER_LIST=("public/uploads")
+PERSISTENT_FOLDER_LIST=("public/uploads" "var")
 
 for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
   echo Mount $persistent_folder directory
