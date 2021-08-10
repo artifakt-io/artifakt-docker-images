@@ -28,11 +28,21 @@ fileExistenceTests:
   isExecutableBy: 'any'
 
 commandTests:
+  - name: "check mounted folder public media"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/pim-community-standard/public/media"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/pim-community-standard/public/media -> /data/public/media' ]
   - name: "check mounted folder public uploads"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
     args: [ "-la", "/var/www/html/pim-community-standard/public/uploads"]
     expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/pim-community-standard/public/uploads -> /data/public/uploads' ]
+  - name: "check mounted folder var"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/pim-community-standard/var"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/pim-community-standard/var -> /data/var' ]
   - name: "check mounted folder var log"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
