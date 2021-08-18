@@ -1,4 +1,4 @@
-FROM changeme
+FROM ruby:2.7-buster
 
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
@@ -10,3 +10,4 @@ COPY docker-entrypoint.sh /usr/local/bin/
 WORKDIR /var/www/html
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD [ "ruby" ]
