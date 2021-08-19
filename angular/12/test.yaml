@@ -6,7 +6,7 @@ metadataTest:
   workdir: "/var/www/html"
 
 commandTests:
-  - name: "php -v"
-    command: "php"
-    args: [ "-v"]
-    expectedOutput: ['.*8\.0\.*']
+  - name: "ng --version"
+    command: "ng"
+    args: [ "--version"]
+    expectedOutput: ['.*Angular CLI: 12\.*']
