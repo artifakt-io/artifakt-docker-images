@@ -1,0 +1,12 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  exposedPorts: []
+  volumes: []
+  entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
+  workdir: "/var/www/html"
+
+commandTests:
+  - name: "ruby -v"
+    command: "ruby"
+    args: [ "--version"]
+    expectedOutput: ['.*2\.7\.*']
