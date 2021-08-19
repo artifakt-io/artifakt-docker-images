@@ -6,7 +6,11 @@ metadataTest:
   workdir: "/var/www/html"
 
 commandTests:
-  - name: "php -v"
-    command: "php"
-    args: [ "-v"]
-    expectedOutput: ['.*8\.0\.*']
+  - name: "vue --version"
+    command: "vue"
+    args: [ "--version"]
+    expectedOutput: ['.*4\.5\.*']
+  - name: "vue framework 3.2"
+    command: "npm"
+    args: [ "list", "-g", "--depth=0"]
+    expectedOutput: ['.*vue@3\.2\.*']
