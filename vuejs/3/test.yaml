@@ -1,0 +1,16 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  exposedPorts: []
+  volumes: []
+  entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
+  workdir: "/var/www/html"
+
+commandTests:
+  - name: "vue --version"
+    command: "vue"
+    args: [ "--version"]
+    expectedOutput: ['.*4\.5\.*']
+  - name: "vue framework 3.2"
+    command: "npm"
+    args: [ "list", "-g", "--depth=0"]
+    expectedOutput: ['.*vue@3\.2\.*']
