@@ -1,0 +1,17 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  exposedPorts: []
+  volumes: []
+  entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
+  workdir: "/go/src/app"
+
+commandTests:
+  - name: "go version"
+    command: "go"
+    args: [ "version"]
+    expectedOutput: ['.*1\.16\.*']
+  - name: "check code folder should link to go source app"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/go/src/"]
+    expectedOutput: [ 'drwxr-xr-x 2 www-data www-data .+ app' ]
