@@ -1,0 +1,210 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  cmd: ["apache2-foreground"]
+
+fileExistenceTests:
+- name: 'gzip'
+  path: '/bin/gzip'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'php'
+  path: '/usr/local/bin/php'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'tar'
+  path: '/bin/tar'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+
+commandTests:
+  - name: "check mounted folder custom plugins"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/custom/plugins"]
+    expectedOutput: ['lrwxrwxrwx 1 www-data www-data .+ plugins -> /data/custom/plugins' ]
+
+  - name: "check mounted files folder"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/files"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ files -> /data/files' ]
+
+  - name: "check mounted config/jwt folder"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/config/jwt"]
+    expectedOutput: ['lrwxrwxrwx 1 www-data www-data .+ jwt -> /data/config/jwt' ]
+
+  - name: "check mounted public/theme folder"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/public/theme"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ theme -> /data/public/theme' ]
+
+  - name: "check mounted public/media folder"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/public/media"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ media -> /data/public/media' ]
+
+  - name: "check mounted public/thumbnail folder"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/public/thumbnail"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ thumbnail -> /data/public/thumbnail' ]
+
+  - name: "check mounted public/bundles folder"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/public/bundles"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ bundles -> /data/public/bundles' ]
+
+  - name: "check mounted public/sitemap folder"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/public/sitemap"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ sitemap -> /data/public/sitemap' ]
+
+  - name: "check mounted folder log"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/var/"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ logs -> /var/log/artifakt' ]
+
+
+  - name: "apache version"
+    command: "apache2ctl"
+    args: [ "-v"]
+    expectedOutput: ['Apache\/2\.4\.*']
+  - name: "apache version"
+    command: "apache2ctl"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    args: [ "-D", "DUMP_MODULES"]
+    expectedOutput: ['.*rewrite_module.*']
+  - name: "php version"
+    command: "php"
+    args: [ "-r", "echo phpversion();"]
+    expectedOutput: ['.*7\.4\.*']
+  - name: "composer version"
+    command: "composer"
+    args: [ "--version"]
+    expectedOutput: ['.*2\.1\.*']
+  - name: "symfony version"
+    command: "composer"
+    args: [ "show", "symfony/console"]
+    expectedOutput: ['.*versions : \*\s+v5\.3\..+']
+  - name: "php timezone = Europe/Paris"
+    command: "php"
+    args: [ "-r", "echo ini_get('date.timezone');"]
+    expectedOutput: ["Europe/Paris"]
+  - name: "php memory_limit >= 768MB"
+    command: "php"
+    args: [ "-r", "if (intval(ini_get('memory_limit')) == -1 || (intval(ini_get('memory_limit')) * 1024 ** ['k' => 1, 'm' => 2, 'g' => 3][strtolower(ini_get('memory_limit'))[-1]] >= 805306368)) { exit(0); } else { echo 'memory_limit='.ini_get('memory_limit'); exit(1);};"]
+    exitCode: 0
+  - name: "php curl"
+    command: "php"
+    args: [ "-r", "!extension_loaded('curl') && exit(1);"]
+    exitCode: 0
+  - name: "php intl"
+    command: "php"
+    args: [ "-r", "!extension_loaded('intl') && exit(1);"]
+    exitCode: 0
+  - name: "php gd"
+    command: "php"
+    args: [ "-r", "!extension_loaded('gd') && exit(1);"]
+    exitCode: 0
+
+  - name: "php mbstring"
+    command: "php"
+    args: [ "-r", "!extension_loaded('mbstring') && exit(1);"]
+    exitCode: 0
+
+  - name: "php opcache enabled"
+    command: "php"
+    args: [ "-r", "echo ini_get('opcache.enable');"]
+    expectedOutput: ["1"]
+
+  - name: "php xml"
+    command: "php"
+    args: [ "-r", "!extension_loaded('xml') && exit(1);"]
+    exitCode: 0
+
+  - name: "php zip"
+    command: "php"
+    args: [ "-r", "!extension_loaded('zip') && exit(1);"]
+    exitCode: 0
+
+  - name: "php dom"
+    command: "php"
+    args: [ "-r", "!extension_loaded('dom') && exit(1);"]
+    exitCode: 0
+
+  - name: "php fileinfo"
+    command: "php"
+    args: [ "-r", "!extension_loaded('fileinfo') && exit(1);"]
+    exitCode: 0
+
+  - name: "php iconv"
+    command: "php"
+    args: [ "-r", "!extension_loaded('iconv') && exit(1);"]
+    exitCode: 0
+
+  - name: "php json"
+    command: "php"
+    args: [ "-r", "!extension_loaded('json') && exit(1);"]
+    exitCode: 0
+
+  - name: "php libxml"
+    command: "php"
+    args: [ "-r", "!extension_loaded('libxml') && exit(1);"]
+    exitCode: 0
+
+  - name: "php openssl"
+    command: "php"
+    args: [ "-r", "!extension_loaded('openssl') && exit(1);"]
+    exitCode: 0
+
+  - name: "php pcre"
+    command: "php"
+    args: [ "-r", "!extension_loaded('pcre') && exit(1);"]
+    exitCode: 0
+
+  - name: "php pdo"
+    command: "php"
+    args: [ "-r", "!extension_loaded('pdo') && exit(1);"]
+    exitCode: 0
+
+  - name: "php pdo_mysql"
+    command: "php"
+    args: [ "-r", "!extension_loaded('pdo_mysql') && exit(1);"]
+    exitCode: 0
+
+  - name: "php phar"
+    command: "php"
+    args: [ "-r", "!extension_loaded('phar') && exit(1);"]
+    exitCode: 0
+
+  - name: "php simplexml"
+    command: "php"
+    args: [ "-r", "!extension_loaded('simplexml') && exit(1);"]
+    exitCode: 0
+
+  - name: "php sodium"
+    command: "php"
+    args: [ "-r", "!extension_loaded('sodium') && exit(1);"]
+    exitCode: 0
+
+  - name: "php zlib"
+    command: "php"
+    args: [ "-r", "!extension_loaded('zlib') && exit(1);"]
+    exitCode: 0
+
