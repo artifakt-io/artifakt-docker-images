@@ -32,10 +32,31 @@ ENV TZ=Europe/Paris \
     FPM_PM_MAX_SPARE_SERVERS=3 \
     PHP_MAX_UPLOAD_SIZE=128m \
     PHP_MAX_EXECUTION_TIME=300 \
-    PHP_MEMORY_LIMIT=512m 
+    PHP_MEMORY_LIMIT=512m
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt -y install nodejs default-mysql-client cron netcat
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends nodejs default-mysql-client cron netcat && \
+    rm -rf /var/lib/apt/lists/*
+
+ENV PHP_CONF_MEMORY_LIMIT="-1"
+ENV PHP_CONF_DATE_TIMEZONE="UTC"
+ENV PHP_CONF_MAX_EXECUTION_TIME=600
+ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
+
+ARG COMPOSER_VERSION=2.1.3
+RUN curl -sS https://getcomposer.org/installer | \
+  php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
+
+WORKDIR /var/www/html
+
+COPY --chown=www-data composer.* /var/www/html/
+
+USER www-data
+RUN ls -la /var/www/html
+RUN [ -f composer.lock ] && composer install --no-scripts --no-cache --optimize-autoloader --no-interaction --no-ansi --no-dev || true
+USER root
 
 COPY 000-default.conf /etc/apache2/sites-available/
 RUN a2enmod rewrite && a2ensite 000-default
