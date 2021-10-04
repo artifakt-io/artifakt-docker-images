@@ -51,7 +51,7 @@ commandTests:
   - name: "nodejs version"
     command: "node"
     args: [ "-v"]
-    expectedOutput: ['v10\..+']
+    expectedOutput: ['v12\..+']
   - name: "yarn version"
     command: "yarn"
     args: [ "-v"]

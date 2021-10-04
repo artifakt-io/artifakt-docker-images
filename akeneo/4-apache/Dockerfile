@@ -13,6 +13,11 @@ ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
 ARG IMAGICK_VERSION=3.5.0
 ARG MEMCACHED_VERSION=3.1.5
 
+RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends nodejs && \
+    rm -rf /var/lib/apt/lists/*
+
 # hadolint ignore=DL3008,DL4006
 RUN export CFLAGS="$PHP_CFLAGS" CPPFLAGS="$PHP_CPPFLAGS" LDFLAGS="$PHP_LDFLAGS" \
     && apt-get update && apt-get install -y --no-install-recommends \
@@ -20,7 +25,7 @@ RUN export CFLAGS="$PHP_CFLAGS" CPPFLAGS="$PHP_CPPFLAGS" LDFLAGS="$PHP_LDFLAGS" 
         gnupg \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
-    && apt-get update && apt-get install --no-install-recommends -y nodejs yarn ghostscript aspell \
+    && apt-get update && apt-get install --no-install-recommends -y yarn ghostscript aspell \
     && rm -rf /var/lib/apt/lists/*
 
 # Install dependencies
