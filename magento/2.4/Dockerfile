@@ -96,7 +96,6 @@ RUN pecl install -o -f \
   propro \
   raphf \
   redis \
-  xdebug-3.0.2 \
   yaml
 
 # hadolint ignore=DL3003,DL4006,SC2039
@@ -146,7 +145,6 @@ RUN docker-php-ext-enable \
   sysvsem \
   sysvshm \
   tidy \
-  xdebug \
   xmlrpc \
   xsl \
   yaml \
@@ -160,7 +158,6 @@ COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
 COPY --from=mysql:8 /usr/bin/my* /usr/bin/
 
 COPY etc/php-fpm.ini /usr/local/etc/php/conf.d/zz-magento.ini
-#COPY etc/php-xdebug.ini /usr/local/etc/php/conf.d/zz-xdebug-settings.ini
 COPY etc/mail.ini /usr/local/etc/php/conf.d/zz-mail.ini
 COPY etc/php-fpm.conf /usr/local/etc/
 
