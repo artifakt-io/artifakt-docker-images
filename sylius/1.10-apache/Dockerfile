@@ -6,18 +6,18 @@ LABEL vendor="Artifakt" \
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
-RUN apt-get update && \
+RUN apt-get --allow-releaseinfo-change update && \
     apt-get install -y --no-install-recommends nodejs && \
     rm -rf /var/lib/apt/lists/*
 
 # hadolint ignore=DL3008,DL4006
 RUN export CFLAGS="$PHP_CFLAGS" CPPFLAGS="$PHP_CPPFLAGS" LDFLAGS="$PHP_LDFLAGS" \
-    && apt-get update && apt-get install -y --no-install-recommends \
+    && apt-get --allow-releaseinfo-change update && apt-get install -y --no-install-recommends \
         gnupg \
         netcat \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
-    && apt-get update && apt-get install --no-install-recommends -y yarn \
+    && apt-get --allow-releaseinfo-change update && apt-get install --no-install-recommends -y yarn \
     && rm -rf /var/lib/apt/lists/*
 
 ENV PHP_CONF_MEMORY_LIMIT="-1"

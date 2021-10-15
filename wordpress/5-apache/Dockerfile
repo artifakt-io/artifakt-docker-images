@@ -13,7 +13,7 @@ HEALTHCHECK CMD curl --fail http://localhost || exit 1
 
 # persistent dependencies
 RUN set -eux; \
-	apt-get update; \
+	apt-get --allow-releaseinfo-change update; \
 	apt-get install -y --no-install-recommends \
 # Ghostscript is required for rendering PDF previews
 		ghostscript \
@@ -25,7 +25,7 @@ RUN set -ex; \
 	\
 	savedAptMark="$(apt-mark showmanual)"; \
 	\
-	apt-get update; \
+	apt-get --allow-releaseinfo-change update; \
 	apt-get install -y --no-install-recommends \
 		libfreetype6-dev \
 		libjpeg-dev \

@@ -15,7 +15,7 @@ ENV PHP_EXTENSIONS bcmath bz2 calendar exif gd gettext intl mysqli opcache pdo_m
 
 # Install dependencies
 # hadolint ignore=DL3008
-RUN apt-get update \
+RUN apt-get --allow-releaseinfo-change update \
   && apt-get install -y --no-install-recommends \
   apt-utils \
   libbz2-dev \

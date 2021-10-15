@@ -36,7 +36,7 @@ ENV TZ=Europe/Paris \
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get update && \
+RUN apt-get --allow-releaseinfo-change update && \
     apt-get install -y --no-install-recommends nodejs default-mysql-client cron netcat && \
     rm -rf /var/lib/apt/lists/*
 

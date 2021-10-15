@@ -17,7 +17,7 @@ ARG XMLRPC_VERSION=1.0.0RC2
 
 # Install dependencies
 # hadolint ignore=DL3008
-RUN apt-get update \
+RUN apt-get --allow-releaseinfo-change update \
   && apt-get install -y --no-install-recommends \
   apt-utils \
   libbz2-dev \

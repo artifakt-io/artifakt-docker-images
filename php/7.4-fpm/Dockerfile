@@ -16,7 +16,7 @@ ARG APCU_VERSION=5.1.19
 
 # Install dependencies
 # hadolint ignore=DL3008
-RUN apt-get update \
+RUN apt-get --allow-releaseinfo-change update \
   && apt-get install -y --no-install-recommends \
   apt-utils \
   libbz2-dev \
