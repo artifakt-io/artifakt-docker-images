@@ -4,7 +4,7 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-# see release archives https://github.com/akeneo/pim-community-dev/releases
+# see release archives https://github.com/akeneo/pim-community-standard/releases
 ARG AKENEO_VERSION=4.0.120
 
 # see https://docs.akeneo.com/4.0/install_pim/manual/system_requirements/system_requirements.html
