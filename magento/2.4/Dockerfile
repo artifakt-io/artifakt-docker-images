@@ -157,8 +157,8 @@ COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
 # hadolint ignore=DL3022
 COPY --from=mysql:8 /usr/bin/my* /usr/bin/
 
-COPY etc/php-fpm.ini /usr/local/etc/php/conf.d/zz-magento.ini
-COPY etc/mail.ini /usr/local/etc/php/conf.d/zz-mail.ini
+COPY etc/php-fpm.ini /usr/local/etc/php/conf.d/zzzz-magento.ini
+COPY etc/mail.ini /usr/local/etc/php/conf.d/zzzz-mail.ini
 COPY etc/php-fpm.conf /usr/local/etc/
 
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
