@@ -19,90 +19,90 @@
 
   <link crossorigin="anonymous" media="all" integrity="sha512-xlDV9el7Cjd+KTSbwspx+c8its28uxn++hLZ9pqYYo1zOVcpLPlElTo42iA/8gV3xYfLvgqRZ3dQPxHCu4UaOQ==" rel="stylesheet" href="https://github.githubassets.com/assets/dark_dimmed-c650d5f5e97b0a377e29349bc2ca71f9.css" /><link data-color-theme="light" crossorigin="anonymous" media="all" integrity="sha512-L06pZD/4Yecj8D8pY5aYfA7oKG6CI8/hlx2K9ZlXOS/j5TnYEjrusaVa9ZIb9O3/tBHmnRFLzaC1ixcafWtaAg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light-2f4ea9643ff861e723f03f296396987c.css" /><link data-color-theme="dark" crossorigin="anonymous" media="all" integrity="sha512-xcx3R1NmKjgOAE2DsCHYbus068pwqr4i3Xaa1osduISrxqYFi3zIaBLqjzt5FM9VSHqFN7mneFXK73Z9a2QRJg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark-c5cc774753662a380e004d83b021d86e.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-jkzjbgytRSAyC4EMcrdpez+aJ2CROSpfemvgO2TImxO6XgWWHNG2qSr2htlD1SL78zfuPXb+iXaVTS5jocG0DA==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-8e4ce36e0cad4520320b810c72b7697b.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" integrity="sha512-FzS8HhJ7XSHmx/dBll4FYlvu+8eivvb7jnttZy9KM5plsMkgbEghYKJszrFFauqQvv7ezYdbk7v/d8UtdjG9rw==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-1734bc1e127b5d21e6c7f741965e0562.css" /><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" integrity="sha512-IpkvxndMpMcO4paMJl83lYTcy18jv2jqG7mHZnTfr9HRV09iMhuQ/HrE+4mQO2nshL7ZLejO1OiVNDQkyVFOCA==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-22992fc6774ca4c70ee2968c265f3795.css" />
   <link crossorigin="anonymous" media="all" integrity="sha512-4hzfg/znP4UxIOUt/r3SNYEZ6jBPJIS6PH4VC26tE0Nd4xAymMC3KXDaC9YITfG4fhyfxuB1YnDHo1H2iUwsfg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-e21cdf83fce73f853120e52dfebdd235.css" />
-    <link crossorigin="anonymous" media="all" integrity="sha512-sT0AyFLl78shyaRWRXOw8uwRSnR+7tURIXoJwVYadATkrqeWfze5y/tOu8MS1mbzUKl6pgLjfEdT+U8bwBJHfQ==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-b13d00c852e5efcb21c9a4564573b0f2.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-hY9cPg0yhzOEz+VzCWyvaD7AlZV7TmgCQdFioKUwVl3Uc7jY5jasMMQ3Nv2bzj/JG01ReXUHxmcGnk/EYdwmKQ==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-858f5c3e0d32873384cfe573096caf68.css" />
     
     
     
     
-    <link crossorigin="anonymous" media="all" integrity="sha512-jdtbQr5ZSKZqID/c80i87Ml+YyEhYVd5sF9szeR+Xuvbfhi4yLJbEsSllzk0XRzcbWqD4tDtshhRo5IuJx4Mzw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-8ddb5b42be5948a66a203fdcf348bcec.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-5F1+i9sM/Bb3LnUtTfFBD/BO+o9/A/e8flUJj8Tb2C4nJseqm2dXuwrFTr3B7mHCsIPaCNzp/tZUMWeqfeEQvg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-e45d7e8bdb0cfc16f72e752d4df1410f.css" />
 
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-/0zs/So9AxtDONKx324yW8s62PoPMx4Epxmk1aJmMgIYIKUkQg4YqlZQ06B4j0tSXQcUB8/zWiIkhLtVEozU/w==" type="application/javascript" src="https://github.githubassets.com/assets/environment-ff4cecfd.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-8p4kkx6e3xBq1g3NP0O3/AW/aiTQ+VRxYencIeMD8crx7AEwrOTV+XOL/UE8cw4vEvkoU/zzLEZ9cud0jFfI4w==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-f29e2493.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-slE3Aa2Duzwgju0UbTfes+w5slmaEOhXwom+Ev+pPsxxOpeh2CGZqfriJGr6pkhTZX+ffOTTYl3GnSLtp7AkJw==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-b2513701.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-GCKGhAXfGKreHAinXWGlCzuvkEAQPL+EDKtDj8g6Bk19Hh0KBTFiHdA3xeDVe8zVqXPm78DprJbRV57gzZBwRQ==" type="application/javascript" src="https://github.githubassets.com/assets/environment-18228684.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-yxcBm6Vjgm/5GJEqyFmAQurm/vmzlef3m9q9hlcWD+zbmpGbYYWvtMvW/pxo6/QxynB5dv7gJenRoTVgf4etdg==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-cb17019b.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-AceI9xuL/Yg1MV0DwAWjJCsMG7uA2pYXeSab+AieNW912jG7dzJ71B1tjWPdaMpBbmpZB9UV6QQNwihMGu7+qQ==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-01c788f7.js"></script>
   
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-ZDU7IsI6lFo4eeBuqkrh/Htsa12ZYOi44uBhKqG0LyV6XHM502iJjjsIVnmtmNXrrC9oGMf2O5i57Bx4lwGsXw==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-64353b22.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-6kOZ4CYxy0/b/spXvoM6IDqwzRB4QTwpXZN7ZcpPthTktZJa9H7BFmnNV+OFcx8MyCpyhKhHaG9pGUGUndOsHg==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-ea4399e0.js"></script>
   
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-ODZJzCJpaOfusrIka5QVZQcPiO9LBGyrrMYjhhJWSLuCN5WbZ5xiEiiOPOKVu71dqygyRdB2TY7AKPA1J5hqdg==" type="application/javascript" data-module-id="./chunk-unveil.js" data-src="https://github.githubassets.com/assets/chunk-unveil-383649cc.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-emPgUbSwW9ezLCgRnTE7n4fbbfc/MqEEDHmnkmG61dTyjWKHTYKN4wN3OPS7SY0fwmSJ8mB5+gng2nZw4/HsUg==" type="application/javascript" data-module-id="./chunk-animate-on-scroll.js" data-src="https://github.githubassets.com/assets/chunk-animate-on-scroll-7a63e051.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-pWX6rMbTl/ERAhhtbAyXiJzoXFr91jp/mRy2Xk4OpAId3aVFI2X+yI8X3mhbf985F5BRHamuRx20kG62nRtSLQ==" type="application/javascript" data-module-id="./chunk-ref-selector.js" data-src="https://github.githubassets.com/assets/chunk-ref-selector-a565faac.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-GKiNgfnSOtC7SUFIvLZMYoteE7iKDONxzaeovKiziJczuW1P4KMU1KhXeoTv4WEN0ufeXC9ejA8HvgYa+xPAAQ==" type="application/javascript" data-module-id="./chunk-filter-input.js" data-src="https://github.githubassets.com/assets/chunk-filter-input-18a88d81.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-HRWFwpj3BLrXflQCvPbnuXPFjpnti5TtcqJqUx/b6klMyuskNlUBIo+1UT0KVHFdEW/Y9QKjmXlZxhP6z1j5pg==" type="application/javascript" data-module-id="./chunk-edit.js" data-src="https://github.githubassets.com/assets/chunk-edit-1d1585c2.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-GhqHDMwaAgqUsjVyltYVhaaLYy2G887rPRXXNbsdaI+Xm3dh0fbaHLhZns70EjFAEpXBgCAYFYdnlG1IQFmz1A==" type="application/javascript" data-module-id="./chunk-responsive-underlinenav.js" data-src="https://github.githubassets.com/assets/chunk-responsive-underlinenav-1a1a870c.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-gmw7obKL/JEHWPp6zWFh+ynbXUFOidj1DN2aPiTDwP8Gair0moVuDmA340LD84A29I3ZPak19CEiumG+oIiseg==" type="application/javascript" data-module-id="./chunk-tag-input.js" data-src="https://github.githubassets.com/assets/chunk-tag-input-826c3ba1.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-Ao9llFIlj54ApuKf2QLboXukbu2h7MHfMmtYHrrsVe1lprKNLiA0usVcRpvruKhfT5STDuWm/GGmyx8ox27hWQ==" type="application/javascript" data-module-id="./chunk-notification-list-focus.js" data-src="https://github.githubassets.com/assets/chunk-notification-list-focus-028f6594.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-SPWd3rzrxmU6xW6vy1JPWCd+3uWFWmnd0MVGpmw/TpHWUAdLWDqL8kWyC/sBIZJmda4mTtUO1DHJQzAXRSrC+g==" type="application/javascript" data-module-id="./chunk-cookies.js" data-src="https://github.githubassets.com/assets/chunk-cookies-48f59dde.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-MK53GXbb2BPV+ADlEbJbkrvg34WPcAd5RC2nBJhUH1tR/Mjr9xrsf56ptBajfWcIWKRKbqqRtLktgr0wAbB3zw==" type="application/javascript" data-module-id="./chunk-async-export.js" data-src="https://github.githubassets.com/assets/chunk-async-export-30ae7719.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-tw9SApiMkftVBYeb6/VGhEwGNw8tlyBhXc9RVXH4UbCD6u+48uuCMvXf3bxvBdOld0OoYg83SnD2mgJWhdaTiQ==" type="application/javascript" data-module-id="./chunk-premium-runners.js" data-src="https://github.githubassets.com/assets/chunk-premium-runners-b70f5202.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-D576CjzS9sbDqFBJdq0Y6+KVMHXkO6mLFO/GRL1NtoE8jgXjAvmdjoZ4nNMWyDwqbtBHspvupORzE9L+YoBLYQ==" type="application/javascript" data-module-id="./chunk-get-repo-element.js" data-src="https://github.githubassets.com/assets/chunk-get-repo-element-0f9efa0a.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-xhSAO0KtnFAlRqAK+mg8BPj/J334ccvnCmmjmBQBCgZcsoO9teHJSS6oAn3XOWYFsWPU2JehwG7S3OVEbLwdUg==" type="application/javascript" data-module-id="./chunk-color-modes.js" data-src="https://github.githubassets.com/assets/chunk-color-modes-c614803b.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-jitxouuFY6SUcDZV5W3jhadVEIfFBfCQZxfPV3kxNnsWEBzbxMJFp0ccLb7+OlBjSs1zU/MNtuOV6T9Ay7lx4w==" type="application/javascript" data-module-id="./chunk-copy.js" data-src="https://github.githubassets.com/assets/chunk-copy-8e2b71a2.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-Auj2atZZccqguPinFmOL2k1TCzZs/yfMMFF5aMYMB/5miqEN7v4oAFG0o3Np24NOTkJ9o/txZCeuT6NGHgGoUA==" type="application/javascript" data-module-id="./chunk-voting.js" data-src="https://github.githubassets.com/assets/chunk-voting-02e8f66a.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-HDsLJf6gAN+WDFaJneJwmIY82XkZKWqeX7tStBLRh1XM53K8vMV6JZvjq/UQXszaNVWxWcuYtgYTG6ZWo8+QSw==" type="application/javascript" data-module-id="./chunk-confetti.js" data-src="https://github.githubassets.com/assets/chunk-confetti-1c3b0b25.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-zEirtMGIgj3NVAnB8kWhDykK5NLa7q4ugkIxB7EftbovRjhU3X5I/20Rploa4KGPwAR27e36rAljHIsDKbTm/Q==" type="application/javascript" data-module-id="./chunk-codemirror.js" data-src="https://github.githubassets.com/assets/chunk-codemirror-cc48abb4.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-Gr3ZcJt5t73JeBM3NwOEziKyDZ3HpHwzqZL/c1pgTUfo+6QC5f88XXRw/RT6X2diwqvaa3OVFh0oWsZ9ZxhtdQ==" type="application/javascript" data-module-id="./chunk-tip.js" data-src="https://github.githubassets.com/assets/chunk-tip-1abdd970.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-EdQvlnI4Pu5Q6K0HCvp+mi0Vw9ZuwaEuhbnCbmFKX+c0xwiUWY0L3n9P0F6doLhaHhfpvW3718+miL11WG4BeA==" type="application/javascript" data-module-id="./chunk-line.js" data-src="https://github.githubassets.com/assets/chunk-line-11d42f96.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-4zSHP2sQXPKoN9jFy8q2ThHsQNej8s4qhubSR4g0/2dTexAEnoTG+RbaffdIhmjfghGjpS/DlE0cdSTFEOcipQ==" type="application/javascript" data-module-id="./chunk-array.js" data-src="https://github.githubassets.com/assets/chunk-array-e334873f.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-g8fb6U7h9SkWgiK69nfNMn4aN5D2YBYPZUbCIuLpemWoOw8NOaZY8Z0hPq4RUVs4+bYdCFR6K719k8lwFeUijg==" type="application/javascript" data-module-id="./chunk-band.js" data-src="https://github.githubassets.com/assets/chunk-band-83c7dbe9.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-6oWCu7ltWLHlroIRg8mR6RloC1wqKS9aK9e5THWgzaE2GNPAdoC+MLZEYD/TdIiZxsQRev0RInyonsXGBK0aMw==" type="application/javascript" data-module-id="./chunk-toast.js" data-src="https://github.githubassets.com/assets/chunk-toast-ea8582bb.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-miaiZ1xkDsWBUsURHOmeYtbgVKQGnm1octCo/lDXUmPzDyjtubnHULRVw1AK+sttwdwyB0+LOyhIVAWCNSGx+A==" type="application/javascript" data-module-id="./chunk-delayed-loading-element.js" data-src="https://github.githubassets.com/assets/chunk-delayed-loading-element-9a26a267.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-GD25CNhMGDMzEmeFhUT0FILBupAkx5/CHohnYXOP1togy40O0iu/lASaSp3gV8ue0nwscalJVQqR5gKDRHHDVg==" type="application/javascript" data-module-id="./chunk-three.module.js" data-src="https://github.githubassets.com/assets/chunk-three.module-183db908.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-4vVRplWFI7P4m3RHQ0QAhkq6eZUdtIE8PBhsKYJRwDkhQw9iK/U1st1/fM1tQZFuBFwGMyqaZblbWtQ+2ejcqQ==" type="application/javascript" data-module-id="./chunk-slug.js" data-src="https://github.githubassets.com/assets/chunk-slug-e2f551a6.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-Ofk7ddnMsJ6F9d2vCuPQav+FG9Rg8i6WRG2KmbzwT01S9H4y58Fl42zYxDh/lJjOWeSyOB9KJyfIkdpCCTYG9A==" type="application/javascript" data-module-id="./chunk-invitations.js" data-src="https://github.githubassets.com/assets/chunk-invitations-39f93b75.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-vFR+IqThljOLrAWmjhOL/kiQrjgZZg95uPovX0J7kRH5p7Y049LDRZaXLMDijfeqqk71d3MMn9XP5bUcH+lB9w==" type="application/javascript" data-module-id="./chunk-profile.js" data-src="https://github.githubassets.com/assets/chunk-profile-bc547e22.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-FeRujRzXPfs03roBR3mnHvWukfFpu27XbyZPQri9jcCY0AdUWSM5R4drHTJUDQ62Pz/aX0rSS5xORvTu7NsjlQ==" type="application/javascript" data-module-id="./chunk-overview.js" data-src="https://github.githubassets.com/assets/chunk-overview-15e46e8d.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-xqw233932eUGcGURAPuwUWZpC5Km/9Btq7/2Jnkt1rSWnPSVfMl+JKpr9eLtCoQmrpgP8vaghEuX8bWAS8fzTg==" type="application/javascript" data-module-id="./chunk-advanced.js" data-src="https://github.githubassets.com/assets/chunk-advanced-c6ac36df.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-6Rmd0BBAsJ9ouvb/pgrkToMPs5ogcqi8rcQ7R3GDPPHIjlu0NZ0Bx6HUn/aOruMCECETHm4Exfs5gjYdHs66RQ==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-e9199dd0.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-xdGx4qSd2qa0c/AVc4wDqpBhFHasDjOZ5y+MbwuIRA+ar7YxAFhZ2pGFs/+W5hVjSv+BMfKrcWpgLwR3xPIWHA==" type="application/javascript" data-module-id="./chunk-profile-pins-element.js" data-src="https://github.githubassets.com/assets/chunk-profile-pins-element-c5d1b1e2.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-LrD2kFGlUY4JxKVeN3dgYfuhfq0akTPGHtqW0gxkM2sDqVY6pauK2k57tmMHw4TQdcUrs+RQnBc1HPD+ou+ZfQ==" type="application/javascript" data-module-id="./chunk-emoji-picker-element.js" data-src="https://github.githubassets.com/assets/chunk-emoji-picker-element-2eb0f690.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-EvJ2Fip59DXgARNuwTWgjdVqoCjhXQL73SP9yexijlWStKq92sfbKeGK5R4wIP0QOr39WsnW/Kaw3Wpl1QPfog==" type="application/javascript" data-module-id="./chunk-edit-hook-secret-element.js" data-src="https://github.githubassets.com/assets/chunk-edit-hook-secret-element-12f27616.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-W0EihGBOA1mE3orR7s2squ9xVaLXrwd2bOYY9SSslfZHrovrS6KenJU+XXn+CaykddON6/aFEd/FbuQ/FltI9Q==" type="application/javascript" data-module-id="./chunk-insights-query.js" data-src="https://github.githubassets.com/assets/chunk-insights-query-5b412284.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-D/5Ad6jlKQNRPSHbVN5ShlFXOTyRsKbT7O0cWbVHwtOZ/UrwOC5bHKaQFHTq46qeMBbFKyDG+oIdtm5G8NifDA==" type="application/javascript" data-module-id="./chunk-remote-clipboard-copy.js" data-src="https://github.githubassets.com/assets/chunk-remote-clipboard-copy-0ffe4077.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-SUjF5sI77QngAIQUwKJRgZuIM4qggFBMtOZJ3EFS7ecv4uq4BQQJivDVxNBG9api9/rWrpw0d6RzvTCz2GrbdA==" type="application/javascript" data-module-id="./chunk-series-table.js" data-src="https://github.githubassets.com/assets/chunk-series-table-4948c5e6.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-nrfktuuo7BZhPpJxM4fVi62vPbZu6VJZ7ykfarxBExTTDnchXEalCJOq2O3GrVdfWu9cdn9kR/J8+oeTAjdHlA==" type="application/javascript" data-module-id="./chunk-line-chart.js" data-src="https://github.githubassets.com/assets/chunk-line-chart-9eb7e4b6.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-IOMGagwchKC7UeWHK/bV/rO1F1/RZAH0fNNouWV2boLOtE1a9LUbesoRsYK7sz6aFXslPC8fLfow+yWpT1eZzQ==" type="application/javascript" data-module-id="./chunk-stacked-area-chart.js" data-src="https://github.githubassets.com/assets/chunk-stacked-area-chart-20e3066a.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-GohDpVrxfHqlavb8Zabvj+y/s6CHegYwyGpQxKtzR2MkQsynBC98LdLongRFMHI+TKAECLavp200Lsy9JbV5TQ==" type="application/javascript" data-module-id="./chunk-presence-avatars.js" data-src="https://github.githubassets.com/assets/chunk-presence-avatars-1a8843a5.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-TpHTIXhA/2bI21CVmFL1oS3dv+8zveJVZLOVVAZwXNAAI94Hy70L9vT3Q1Vvkyu4Z2gi2iFdy1a53pfYlEDgnQ==" type="application/javascript" data-module-id="./chunk-pulse-authors-graph-element.js" data-src="https://github.githubassets.com/assets/chunk-pulse-authors-graph-element-4e91d321.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-aNAcFMlIdG1ocY5LnZylnN/6KXiJxyPvKg7y1Jnai732wdnrjXazcvNiQkRnj5FY8WP6JRa3K4doCReA4nhj7w==" type="application/javascript" data-module-id="./chunk-stacks-input-config-view.js" data-src="https://github.githubassets.com/assets/chunk-stacks-input-config-view-68d01c14.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-MXXdKvrDUhz9jfXB1/McrPebK8VbV5haYcxcNt5WXgbUym55dZattmCIAK2pJFAD2h4aBUFHo7CzpjmDYf7EkQ==" type="application/javascript" data-module-id="./chunk-community-contributions.js" data-src="https://github.githubassets.com/assets/chunk-community-contributions-3175dd2a.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-eWDdPSTt/NMNFFSNdUSOf36O6AJJepQdiKFtVzHjM5WYpUTAg21zPoyeA4DqfPNL5RggK/+RjWQZzypmNBAH4w==" type="application/javascript" data-module-id="./chunk-discussion-page-views.js" data-src="https://github.githubassets.com/assets/chunk-discussion-page-views-7960dd3d.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-5+v3VN/rhJv/1iAOVphuCGs1FM9eUlSB43CJLw1txGMLvuPNNz/xHQbzTOIW+t2NKFpTnptRvKbuicQ3Jp28UQ==" type="application/javascript" data-module-id="./chunk-discussions-daily-contributors.js" data-src="https://github.githubassets.com/assets/chunk-discussions-daily-contributors-e7ebf754.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-/PSS3erY5t+SZL9B5T6Edgzy2pLD3jx7G/ZqQE+UCPhaaMEEc8Qrhv5XTREOOX0e3DquvxVDDM/KVa6SK/BPcA==" type="application/javascript" data-module-id="./chunk-discussions-new-contributors.js" data-src="https://github.githubassets.com/assets/chunk-discussions-new-contributors-fcf492dd.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-7vazCSTbHAmhDkKepqPuoJu5ZlBV51uKBKdUTiKd5UylsfULxuXr6XtFSZ16eU4TzdMAifa2hR4riO/QRi/9gw==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-eef6b309.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-AVKfqEKBF/JCvS2PoakItu304k6gGt9oSMBW2R/eEfGsGuTmC9QeiQw//IJJKFRQdrzpha/FoC/cws9v6dsujQ==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-01529fa8.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-mQXS2AvjT52IlcDNeeAaWUnOLa3aaGISiApB7zeboZBSILzsVM1ikEJdM7VIaH+xwYYT/D6lqtIwjO1/KVbK2Q==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-9905d2d8.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-4xtjUJAtGhsZOLk+SHoir8MWF0vKHoR4tGlR36xsg1kGrE9ftN4BHe21k2TT5jSkqz5x8z7BfZKj/eUuwcZMEQ==" type="application/javascript" data-module-id="./chunk-launch-code-element.js" data-src="https://github.githubassets.com/assets/chunk-launch-code-element-e31b6350.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-NilVxyBbQNJ61v85EVcC3VjOsz5tz+bOlaR1h1R+jIFXNT8VhoalRgPXREht+R3JIZF5fiqkkHZy3+01pX4ZDg==" type="application/javascript" data-module-id="./chunk-metric-selection-element.js" data-src="https://github.githubassets.com/assets/chunk-metric-selection-element-362955c7.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-VtwQp1HbSSWXOsB5a8wzpRH8Bl7/vD0jgBgXsp2K2CTYkhfq/LAWps52SnVQjcRPoB2svCVaJV20hyFuCbGL3w==" type="application/javascript" data-module-id="./chunk-severity-calculator-element.js" data-src="https://github.githubassets.com/assets/chunk-severity-calculator-element-56dc10a7.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-yXHkwiNZgB6O0iSDKE8jrZzTtTyF8YdFFXHcemhWEPuN3sWs1PQrSwEh0Gw4/B9TIzUfvogbqlJ71yLLuqyM+Q==" type="application/javascript" data-module-id="./chunk-readme-toc-element.js" data-src="https://github.githubassets.com/assets/chunk-readme-toc-element-c971e4c2.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-QMvMhJF7+RJNuy+lp8zP+XbKf08Cc36NVOw6CMk0WRGAO1kmoNhTC+FjHB5EBFx/sDurFeYqerS3NGhusJncMA==" type="application/javascript" data-module-id="./chunk-feature-callout-element.js" data-src="https://github.githubassets.com/assets/chunk-feature-callout-element-40cbcc84.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-SyYXfc8EbLO9BnTas69LeNMF6aXITT41QqsFoIuEHHt/0i9+WQAV7ZFBu944TFS7HHFu9eRgmdq1MU/W12Q8xw==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-4b26177d.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-6JUQHgkTqBaCCdDugMcO4fQ8YxUHk+m6rwVp2Wxa4FMVz6BbBMPOzGluT4wBq8NTUcFv6DnXSOnt5e85jNgpGg==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-e895101e.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-28pipPJZvizfcYYETJWBBeDHsrDEz7A06d7Y5swgY/OWmsX0ZJW6mkZVFRO7Z/xZh1D1qFbPHGNixfCd1YpBnA==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-dbca62a4.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-y0yuiXfWuIeCCcUBT1jacp25vWnFCJWgwLM5G1VM4tmCHdoQbiVjvW/vuSuEXUjtS8WwdioTD5hVv9UULiUlww==" type="application/javascript" data-module-id="./chunk-webgl-warp.js" data-src="https://github.githubassets.com/assets/chunk-webgl-warp-cb4cae89.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-fvcOOYapCxPkDRQWz2WQzrqL6rRhX88yHWF87fb9Xny2Fq4lri0ONaVFL7XDSTiTyu4OTp+8WoyfMVpgGUaaVg==" type="application/javascript" data-module-id="./chunk-unveil.js" data-src="https://github.githubassets.com/assets/chunk-unveil-7ef70e39.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-tQMUqRJH3y0kDtOFWGGedIzZR8qp9CKkc5CyylzweMJcvGHMYM+ug5uHq7aargcUmHVsAGJshqwqD4JQLbBKeA==" type="application/javascript" data-module-id="./chunk-animate-on-scroll.js" data-src="https://github.githubassets.com/assets/chunk-animate-on-scroll-b50314a9.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-9xhBxiFCx8a89IWT9qOAlpG7AYCcrqmOG811x87J8VmWIXEd/2/Nnbb1VIYg2aS5wnQ6kNpoexayKyM86ihlIg==" type="application/javascript" data-module-id="./chunk-ref-selector.js" data-src="https://github.githubassets.com/assets/chunk-ref-selector-f71841c6.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-gUbz7FhJzwbOWjvo5usnnGy9y+leOGtcPrN5jL23XcooSieBRizyQbRIWTQzAvbw2miGl+zaMUkyWJe5/onKFA==" type="application/javascript" data-module-id="./chunk-filter-input.js" data-src="https://github.githubassets.com/assets/chunk-filter-input-8146f3ec.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-mFcZal4N+qXEaGAF09y9izYmZB702iavRwtHdJ3NZl92+5p5yeNOd/l3DWKr5yFwAIEVYqMZBWqBjk83nkwjYw==" type="application/javascript" data-module-id="./chunk-edit.js" data-src="https://github.githubassets.com/assets/chunk-edit-9857196a.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-jUpJTNYr0DKdjNyhUzHM3FZvpnEXUpKwJeU1FpMLrnIFYBGty8yjMQWujYNQfBUxTvVPjq++gEJcg7dkx4sSag==" type="application/javascript" data-module-id="./chunk-responsive-underlinenav.js" data-src="https://github.githubassets.com/assets/chunk-responsive-underlinenav-8d4a494c.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-FnMAzMicEfnOat1Frlp+ve9uEF8tyUofT4T4DqedwoPqEIP5KGhFQrvi7VNlQoSDVgG46aNXhKx5rYVjdqJl7A==" type="application/javascript" data-module-id="./chunk-tag-input.js" data-src="https://github.githubassets.com/assets/chunk-tag-input-167300cc.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-5kC7r+ezqZbAxlxjz63Z60uKuTgNuMREX68MyfNS/SRM0bnmg31T+sfaKJ5Pizy1tRfJuv2V0WOgu1BHY+QlzA==" type="application/javascript" data-module-id="./chunk-notification-list-focus.js" data-src="https://github.githubassets.com/assets/chunk-notification-list-focus-e640bbaf.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-ZKcEoIMJ5sVFZ4a7nPo78n/liXgHYeCDknykhkmh0+D7Q8T0A3RT5pyQ6cbK6yEf56rIOzXJb4udofCUbjwzWQ==" type="application/javascript" data-module-id="./chunk-cookies.js" data-src="https://github.githubassets.com/assets/chunk-cookies-64a704a0.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-QFFTldE+TutfGrG+ynhJq3dZsoSzrxMvjounvvZpiWbBcNg6citMaOhHRhQA7IIX2QKGgQzGRYqdtFdWm8U08w==" type="application/javascript" data-module-id="./chunk-async-export.js" data-src="https://github.githubassets.com/assets/chunk-async-export-40515395.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-4WUsXxvlXMlL8r519ldcltSD93NUpn5GA/AnuI7TUu4YxDa6wuPkB1R4Djv7FAVDLnewuhW0h+fTE/mXKXVSuA==" type="application/javascript" data-module-id="./chunk-premium-runners.js" data-src="https://github.githubassets.com/assets/chunk-premium-runners-e1652c5f.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-FA9+6CCSGlvw7+wuwp7Yuv41laal2WbPoCqNIe+Jh8pluxW21v15AAg0nLRv8TrbYAcSLeDuAs/GDmvRHXPNCg==" type="application/javascript" data-module-id="./chunk-get-repo-element.js" data-src="https://github.githubassets.com/assets/chunk-get-repo-element-140f7ee8.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-ol5y71RI6PxIzSuxVDnwevlSWZzk4bNc3O/EjhN5zfx6VPqcyDOAiN9CoTydwOZwe2K3Jmu+85/EV19h4A13Uw==" type="application/javascript" data-module-id="./chunk-color-modes.js" data-src="https://github.githubassets.com/assets/chunk-color-modes-a25e72ef.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-vpt2Tdt20tOKRtrRWtOVaRi2wBoAaflNGUR6xuQgU/0Ywfxvbazq0C2hhKwuiC8b6A813gXGm+8fj0NCEosbYQ==" type="application/javascript" data-module-id="./chunk-copy.js" data-src="https://github.githubassets.com/assets/chunk-copy-be9b764d.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-BaJT1JQEuulq953/0IRsQ6BBqFSjE77PX/c9dv2nRA+jDB1xW0LaAaZrErAI3I9CHV25a2zljQWPB7dnfThWgw==" type="application/javascript" data-module-id="./chunk-voting.js" data-src="https://github.githubassets.com/assets/chunk-voting-05a253d4.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-JKFJ/vcn3uYKKZwBq9An1scgXJEhWBkVMFIGJUFUZCCWFfKs2EAZVJtxhjKxyyFOOii0SHhCt2eBIATDJfF+tQ==" type="application/javascript" data-module-id="./chunk-confetti.js" data-src="https://github.githubassets.com/assets/chunk-confetti-24a149fe.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-gJVB/GH52amHFpHlhs4k3CbvxrTGIfjDQMpjfDj6Y+4EyBRKbC9IJ3AHkJ8B2tvICPmtkpBNnYF+fmD2FKh16Q==" type="application/javascript" data-module-id="./chunk-codemirror.js" data-src="https://github.githubassets.com/assets/chunk-codemirror-809541fc.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-lOWku9YTzrujXXE9Gw2/fuY003SQ/guN37z49ZLegvgRwPzvvVpJjwkMTdmldgbiRuj9YWjF1ihlBZya3Rq5+g==" type="application/javascript" data-module-id="./chunk-tip.js" data-src="https://github.githubassets.com/assets/chunk-tip-94e5a4bb.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-vmtT5r0gvfYRqPPeAKDO2jCskwQgqay7JXgzcGQtAKb5FGptmF3QpO5MuKfazP4AbOqbgGL3VdhfSs64WE409A==" type="application/javascript" data-module-id="./chunk-line.js" data-src="https://github.githubassets.com/assets/chunk-line-be6b53e6.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-P7LTGHlGIwxFHh23D08Kq6RU5s2knxjFSjKfJ6+UcgL5RzOpcJ+mHAJkXkD67JTEYhaeTxtGdTHtD3Ls2q7SPw==" type="application/javascript" data-module-id="./chunk-array.js" data-src="https://github.githubassets.com/assets/chunk-array-3fb2d318.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-1XwXglKLXHju4JnPBvXcCx59aJd5W8bAMlBWJhh9nw1FbgWSDGdPsYOY6AunsaKV34sa5CWT2Y1s93yc8gdl0Q==" type="application/javascript" data-module-id="./chunk-band.js" data-src="https://github.githubassets.com/assets/chunk-band-d57c1782.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-WK8VXw3lfUQ/VRW0zlgKPhcMUqH0uTnB/KzePUPdZhCm/HpxfXXHKTGvj5C0Oex7+zbIM2ECzULbtTCT4ug3yg==" type="application/javascript" data-module-id="./chunk-toast.js" data-src="https://github.githubassets.com/assets/chunk-toast-58af155f.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-k3SlS412IUog0/DAh6sWIRtf881M1kAELDFk2GN+FWLUw5sUlsr8sf3JH9LSnaaIdlOiBnwmtb6l2lSagEiGnQ==" type="application/javascript" data-module-id="./chunk-delayed-loading-element.js" data-src="https://github.githubassets.com/assets/chunk-delayed-loading-element-9374a54b.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-sRRRBVD0LHT641C1Lwmxz+CFHggcU30SPHNS+Qt80W70WDXK28RFccGvy7m+pbmsoF5lUndE+64C1gqeO1H2fg==" type="application/javascript" data-module-id="./chunk-three.module.js" data-src="https://github.githubassets.com/assets/chunk-three.module-b1145105.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-Cv6nmSi76TZMSczzPiqFBOH+ejpEOsezmcqEy1aHs+ip/JMlNxQxBxgOajYbti2AXM0UgMG6lrJLBYzIuYkcqg==" type="application/javascript" data-module-id="./chunk-slug.js" data-src="https://github.githubassets.com/assets/chunk-slug-0afea799.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-4t+G5fe4QUNub+iRYMTfxr2kQ9KdH7aWatXOvxCsDl+Q9tEtSf+GRQt9+ZvrOw/ZgRTC74J7w6l6JDDE/k4hjQ==" type="application/javascript" data-module-id="./chunk-invitations.js" data-src="https://github.githubassets.com/assets/chunk-invitations-e2df86e5.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-hgoSKLTlL8I3IWr/TLONCU+N4kdCtdrHCrrud4NKhgRlLrTw0XUPhqBaDdZUiFSzDQRw/nFQ1kw2VeTm0g9+lA==" type="application/javascript" data-module-id="./chunk-profile.js" data-src="https://github.githubassets.com/assets/chunk-profile-860a1228.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-vhLi469EW4GW+qbs2uh0p0ZmpsNhv2KvwjOgF8lJJWWwwRrkDR1RaMa7EEnWrSMZ/AeKUYKKMq3KwiUKHF9oGA==" type="application/javascript" data-module-id="./chunk-overview.js" data-src="https://github.githubassets.com/assets/chunk-overview-be12e2e3.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-WY4pg33/i8nLwqJ+sCHX/9raMISin0Yi/Fh5J6K8qL2YVjqEZQ8WJ8AsJs/3/IoXiN1OaBgo7Cqqy2cKgqq2HA==" type="application/javascript" data-module-id="./chunk-advanced.js" data-src="https://github.githubassets.com/assets/chunk-advanced-598e2983.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-q9IKKBadRSw90Tn8lhS7OS03x1+prUIEwY8/WwYKx4KE++sg826QMTd0WHVOKiyWbVFbJLXxCjqQtJhIsqqvLw==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-abd20a28.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-SRLHss3KzSFb/E7cpPnqJHQ+16aPKljzv518gB9tRySRcNAV2LR8FntHDpr4p3YJSmNrbkk7QRWmdnfTkoBoLg==" type="application/javascript" data-module-id="./chunk-profile-pins-element.js" data-src="https://github.githubassets.com/assets/chunk-profile-pins-element-4912c7b2.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-SsCEZUoP4uiSY2jpnstC5oUV0+5lSZcgJ2roTJ0NgRIT5at3m/6l5Ygs7SsZ1AduNq8coZgb9iFNy3q25htJ7w==" type="application/javascript" data-module-id="./chunk-emoji-picker-element.js" data-src="https://github.githubassets.com/assets/chunk-emoji-picker-element-4ac08465.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-+iGGQK5S9OqlPwzPiCE9eJo1Yv/gvDDQaJ9NGKVTuNuRBwoJcj7pxsasdK7ZyZFHBLjTGG8220QkJ197i99OZw==" type="application/javascript" data-module-id="./chunk-edit-hook-secret-element.js" data-src="https://github.githubassets.com/assets/chunk-edit-hook-secret-element-fa218640.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-KeCtePoPHNIvSsI2ZAGWm/w4dxHmw4UpqmHY9VvPm4TNHI3QCUrGJErq7Q1PUImyDR7PXOK3VgItO5d5yfRIiA==" type="application/javascript" data-module-id="./chunk-insights-query.js" data-src="https://github.githubassets.com/assets/chunk-insights-query-29e0ad78.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-W1lGpa93VyXewdQaK4sxbLudAgCPTz/YOf0i2x4Mz9g/xUtrHmFaPWfboiVhQTM/qbYzvawhkwot56Ps2fMKZA==" type="application/javascript" data-module-id="./chunk-remote-clipboard-copy.js" data-src="https://github.githubassets.com/assets/chunk-remote-clipboard-copy-5b5946a5.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-81OTF+K8GwVPZZ7gJFo0VR+Vpa2Spg0eaxCbgAcy6+QJjM3hM1oQpRRf3fMufldsp5v2z6LRbrUvfc0CXtN1kw==" type="application/javascript" data-module-id="./chunk-series-table.js" data-src="https://github.githubassets.com/assets/chunk-series-table-f3539317.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-DM+iykxjf2HT7QQrMTM2EtpCyj60FVl/S3qzBjl5snpx4rdc6Cmc87pnXGiuvuZzI1x9j+HQ+/Rwamb85or+NQ==" type="application/javascript" data-module-id="./chunk-line-chart.js" data-src="https://github.githubassets.com/assets/chunk-line-chart-0ccfa2ca.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-0p8FP92jFw0Ijsu8wRVY6prAQ48QEsaDAhUYhUm5bMRq1q21W/KPC5tcBN7pcak+S3CGjELrUh6vrSJn1fRjZQ==" type="application/javascript" data-module-id="./chunk-stacked-area-chart.js" data-src="https://github.githubassets.com/assets/chunk-stacked-area-chart-d29f053f.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-FUzmws9Fy8WkPuBrXO3Gl0zdsc7rXITQq0RsKhUYYyB1gERACwd36i93sjGzyI/0AdobLcEtf6Nv4JCyCT28hg==" type="application/javascript" data-module-id="./chunk-presence-avatars.js" data-src="https://github.githubassets.com/assets/chunk-presence-avatars-154ce6c2.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-8uIQ5UjDEzJGvTTBAD1uwbSp+3EXA530Nz2cMXLRwcKwNCpherk27nV4Z/8jpQg2pBpz/nLjwiKhS6OozpAVTg==" type="application/javascript" data-module-id="./chunk-pulse-authors-graph-element.js" data-src="https://github.githubassets.com/assets/chunk-pulse-authors-graph-element-f2e210e5.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-coojJ/UNFlaRrR+2TSkiopwWNtzkl/wFumM3x3QpZ4V00b3rCau/Ttr8nZMNskWnhd99w5K7mbCqklgWKalDgw==" type="application/javascript" data-module-id="./chunk-stacks-input-config-view.js" data-src="https://github.githubassets.com/assets/chunk-stacks-input-config-view-728a2327.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-oPKE/9fWau7I5ukozek/dky6L1Htp0AiiYVvJNEcghSu6lld7jT25NB3EeIdkU1WlcpgnzQ+fI42ry1rolPqbg==" type="application/javascript" data-module-id="./chunk-community-contributions.js" data-src="https://github.githubassets.com/assets/chunk-community-contributions-a0f284ff.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-SENXTxOX1mCsezrybSOmDYn7XMF/21STpaPr4G2RRPsyGp94i/wltoJlk47C3IA/8MoIxk7wIZqEgSn0vj0KSA==" type="application/javascript" data-module-id="./chunk-discussion-page-views.js" data-src="https://github.githubassets.com/assets/chunk-discussion-page-views-4843574f.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-wGXIyqDuvhZzpOk836DLhw4YHt/mNh/bn7FcMYRVPU3Z1b8sB1JxnNUnYc6Rm8YtUkBnBlkVODj46SjZYOSQew==" type="application/javascript" data-module-id="./chunk-discussions-daily-contributors.js" data-src="https://github.githubassets.com/assets/chunk-discussions-daily-contributors-c065c8ca.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-6q+hClGdfvJ4mBrxAlQKqSZgo4xh3DbyqX/GBKyrQnb0UR4rNcWGQiaRaCnGm0ALLjPk1XNNCz8s7pDXEdMYrQ==" type="application/javascript" data-module-id="./chunk-discussions-new-contributors.js" data-src="https://github.githubassets.com/assets/chunk-discussions-new-contributors-eaafa10a.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-VeQi38hQFT2oKliPhoJ0mudIx23Osdjw8Y468QxhBqX0b6hOC6BBZZQr+bBPig5u/Vvl3ly+u3ACWBmXfP7Tdg==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-55e422df.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-7nlm84GbeRAMsFkGMg1Khrk69rwOKLNf1wf5VrUX24l+IESCdizDiwjHc0sRaQYe9TNcO3ZBJc0lAOclluVv6g==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-ee7966f3.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-Zst8WujZ/2lSDuTjy8+4ItFCMEftmKB2w682B6zPlyOn7hwZ9LS8BUXtWxqM2djZA4I0ITiB+KUz6bSXb/rW4w==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-66cb7c5a.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-CDXxcrRb9uLr5a9J2/C1VwF8T4F/XNPtL7FF+jTWkBy+rcZ+6rqW3VN/koe77IbMHXtVWLgtWrXbR8DtWLFF6Q==" type="application/javascript" data-module-id="./chunk-launch-code-element.js" data-src="https://github.githubassets.com/assets/chunk-launch-code-element-0835f172.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-hZbjLGWLlrKvKeOObGY7B7MMEfbD8N6WorJoTGXaQqCEdTywJl+D4HcFpnOZ08xsuVXGdgpP7yQg3c8FWB4o3Q==" type="application/javascript" data-module-id="./chunk-metric-selection-element.js" data-src="https://github.githubassets.com/assets/chunk-metric-selection-element-8596e32c.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-2ccUx37FZwL3WMN2wTUu4pGwRAdYWbzGoFHixdEBuaH4KygVJcNull4RBSVJ0D9hVaG9gr4YMC8dqQOWkqsLYg==" type="application/javascript" data-module-id="./chunk-severity-calculator-element.js" data-src="https://github.githubassets.com/assets/chunk-severity-calculator-element-d9c714c7.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-hfNSQUbKM5t21wnG7FoiRqd5UgaQ+MwSjkvn/LcgHzE/bWY16XEabKFvhU8MazS6lu3fjJhNxfglOEKiYY41Hw==" type="application/javascript" data-module-id="./chunk-readme-toc-element.js" data-src="https://github.githubassets.com/assets/chunk-readme-toc-element-85f35241.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-OuWKAOx3SUYuHFQj+smmMJXW6IdF/cq5Ol1at45eNB2OGhgZWtviEo4odoriGTO454ZwlNSpIb+KgR6GgzQMhQ==" type="application/javascript" data-module-id="./chunk-feature-callout-element.js" data-src="https://github.githubassets.com/assets/chunk-feature-callout-element-3ae58a00.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-makoNQ8jFYUx50kS4T4eC18puAmSVW+7F9jsM2pdUTXB9OaU7wqc+wBe30jrGEKsz2bCjknrJBLzQpAvkOv1Cw==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-99a92835.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-prjl40a6JHS9TcfGtqMnHZX4tlIS6HNofJ727h8ZPrf+xhnbGTGEWTTc9U1yqfW3S+PgYhzkfZ7BXzISt9f9mg==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-a6b8e5e3.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-Kpiss3fNUXokEKH9mkHm0O8MZakZr8q64uvjtkjdgSWyC12HuM/+X6v5irKJV9hzOClYT3+k9kKXSd1g9e3FrQ==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-2a98acb3.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-8NWmKXh96TMxAyNDrhoc2YIl4tXPe6v+DUuO6nPOP2C0WiUObu6+6q5PJPqzqi/BJqMHMHPiIMCFUEu/v6LikQ==" type="application/javascript" data-module-id="./chunk-webgl-warp.js" data-src="https://github.githubassets.com/assets/chunk-webgl-warp-f0d5a629.js"></script>
   
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-tfzZxJCbul4TLTQmD9EJzuvXoLZGUCnWTiuJCGnXlaABfL2eD0I/J/IL9blT+JbF1dQvKi1g/E7396zAKdrZTA==" type="application/javascript" src="https://github.githubassets.com/assets/repositories-b5fcd9c4.js"></script>
-<script crossorigin="anonymous" defer="defer" integrity="sha512-Bs1K/vyZ2bHvgl7D760X4B4rTd1A8ZhqnIzBYtMmXdF7vZ8VmWUo5Xo1jbbTRTTigQeLFs7E9Fa6naPM7tGsyQ==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-06cd4afe.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-GBlegh9b9Zm8s+yRFiRNhJg09OxAqlOU4XA1zHGZbYTD+DaLps6fNHcqhjRRuKcEK/Xo9BlcSkYVr4HCW9B2jA==" type="application/javascript" src="https://github.githubassets.com/assets/repositories-18195e82.js"></script>
+<script crossorigin="anonymous" defer="defer" integrity="sha512-2cGbZ+odRG2o6raoQtBlhLBXQUN4OES5zgr5Lfimc4pWszDNFL2h8oWYYhpS+Oh9jTzk2bR3vWXV2k+HnxHo9Q==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-d9c19b67.js"></script>
 
   <meta name="viewport" content="width=device-width">
   
-  <title>artifakt-docker-images/README.md at d1b356d8f656dd5af90d2e24931c4324b1103199 · artifakt-io/artifakt-docker-images</title>
+  <title>artifakt-docker-images/README.md at feat/ch6276-generate-perjob-labels · artifakt-io/artifakt-docker-images</title>
     <meta name="description" content="Base Docker images supported by Artifakt PaaS. Contribute to artifakt-io/artifakt-docker-images development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
   <meta name="apple-itunes-app" content="app-id=1477376905" />
-    <meta name="twitter:image:src" content="https://avatars.githubusercontent.com/u/24843899?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="artifakt-docker-images/README.md at d1b356d8f656dd5af90d2e24931c4324b1103199 · artifakt-io/artifakt-docker-images" /><meta name="twitter:description" content="Base Docker images supported by Artifakt PaaS. Contribute to artifakt-io/artifakt-docker-images development by creating an account on GitHub." />
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/24843899?s=400&amp;v=4" /><meta property="og:image:alt" content="Base Docker images supported by Artifakt PaaS. Contribute to artifakt-io/artifakt-docker-images development by creating an account on GitHub." /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="artifakt-docker-images/README.md at d1b356d8f656dd5af90d2e24931c4324b1103199 · artifakt-io/artifakt-docker-images" /><meta property="og:url" content="https://github.com/artifakt-io/artifakt-docker-images" /><meta property="og:description" content="Base Docker images supported by Artifakt PaaS. Contribute to artifakt-io/artifakt-docker-images development by creating an account on GitHub." />
+    <meta name="twitter:image:src" content="https://avatars.githubusercontent.com/u/24843899?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="artifakt-docker-images/README.md at feat/ch6276-generate-perjob-labels · artifakt-io/artifakt-docker-images" /><meta name="twitter:description" content="Base Docker images supported by Artifakt PaaS. Contribute to artifakt-io/artifakt-docker-images development by creating an account on GitHub." />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/24843899?s=400&amp;v=4" /><meta property="og:image:alt" content="Base Docker images supported by Artifakt PaaS. Contribute to artifakt-io/artifakt-docker-images development by creating an account on GitHub." /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="artifakt-docker-images/README.md at feat/ch6276-generate-perjob-labels · artifakt-io/artifakt-docker-images" /><meta property="og:url" content="https://github.com/artifakt-io/artifakt-docker-images" /><meta property="og:description" content="Base Docker images supported by Artifakt PaaS. Contribute to artifakt-io/artifakt-docker-images development by creating an account on GitHub." />
     
 
 
@@ -110,11 +110,11 @@
     
 
   <link rel="assets" href="https://github.githubassets.com/">
-    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/4036528/ws?session=eyJ2IjoiVjMiLCJ1Ijo0MDM2NTI4LCJzIjo3NzQ0OTUzMTUsImMiOjE1OTI5MDg2MSwidCI6MTYzNTk2ODMwMn0=--2f1596ede347857a15a3bf79d6104c9300e1a264f1de345dff582c1f805b6650" data-refresh-url="/_alive" data-session-id="3dbd7a1eed2a4a1f0c88050a8b4f378876223740fb015919b28488b276e607c8">
-    <link rel="shared-web-socket-src" href="/assets-cdn/worker/socket-worker-5ba606f2.js">
+    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/4036528/ws?session=eyJ2IjoiVjMiLCJ1Ijo0MDM2NTI4LCJzIjo3NzQ0OTUzMTUsImMiOjIxMzgxNjQ5NTAsInQiOjE2MzYyMjM3MTZ9--edf302242af8f90096494778f32118560a7eeebfc0f5528eae8a21d13dcf511d" data-refresh-url="/_alive" data-session-id="3dbd7a1eed2a4a1f0c88050a8b4f378876223740fb015919b28488b276e607c8">
+    <link rel="shared-web-socket-src" href="/assets-cdn/worker/socket-worker-2e2ab3fc.js">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
-  <meta name="request-id" content="B9D8:7D18:14ED711:1601B6B:6182E4AA" data-pjax-transient="true" /><meta name="html-safe-nonce" content="7083ade0035ab1daa94d45c1d3706038d65b3b0635de4cc9f965d12d31a306b4" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6IkI5RDg6N0QxODoxNEVENzExOjE2MDFCNkI6NjE4MkU0QUEiLCJ2aXNpdG9yX2lkIjoiMjI1NzcxOTUwMDAyMjYxMDc5MiIsInJlZ2lvbl9lZGdlIjoiZnJhIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-pjax-transient="true" /><meta name="visitor-hmac" content="c9fa334f987a76086b25441596d89d464fd368916acd7e7d126555d5da0b1b3a" data-pjax-transient="true" />
+  <meta name="request-id" content="CDA5:E046:10B3B1:135F42:6186CAD5" data-pjax-transient="true" /><meta name="html-safe-nonce" content="7083ade0035ab1daa94d45c1d3706038d65b3b0635de4cc9f965d12d31a306b4" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6IkNEQTU6RTA0NjoxMEIzQjE6MTM1RjQyOjYxODZDQUQ1IiwidmlzaXRvcl9pZCI6IjIyNTc3MTk1MDAwMjI2MTA3OTIiLCJyZWdpb25fZWRnZSI6ImZyYSIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="fd848ddc56c5571ec0b01d2a3ca4b7374a63476ed1a4d55b00782e5888a4ac28" data-pjax-transient="true" />
 
     <meta name="hovercard-subject-tag" content="repository:323352019" data-pjax-transient>
 
@@ -141,7 +141,7 @@
   <meta name="optimizely-datafile" content="{&quot;version&quot;: &quot;4&quot;, &quot;rollouts&quot;: [], &quot;typedAudiences&quot;: [], &quot;anonymizeIP&quot;: true, &quot;projectId&quot;: &quot;16737760170&quot;, &quot;variables&quot;: [], &quot;featureFlags&quot;: [], &quot;experiments&quot;: [{&quot;status&quot;: &quot;Running&quot;, &quot;audienceIds&quot;: [], &quot;variations&quot;: [{&quot;variables&quot;: [], &quot;id&quot;: &quot;20438636352&quot;, &quot;key&quot;: &quot;control&quot;}, {&quot;variables&quot;: [], &quot;id&quot;: &quot;20484957397&quot;, &quot;key&quot;: &quot;treatment&quot;}], &quot;id&quot;: &quot;20479227424&quot;, &quot;key&quot;: &quot;growth_ghec_onboarding_experience&quot;, &quot;layerId&quot;: &quot;20467848595&quot;, &quot;trafficAllocation&quot;: [{&quot;entityId&quot;: &quot;20484957397&quot;, &quot;endOfRange&quot;: 1000}, {&quot;entityId&quot;: &quot;20484957397&quot;, &quot;endOfRange&quot;: 3000}, {&quot;entityId&quot;: &quot;20484957397&quot;, &quot;endOfRange&quot;: 5000}, {&quot;entityId&quot;: &quot;20484957397&quot;, &quot;endOfRange&quot;: 6000}, {&quot;entityId&quot;: &quot;20484957397&quot;, &quot;endOfRange&quot;: 8000}, {&quot;entityId&quot;: &quot;20484957397&quot;, &quot;endOfRange&quot;: 10000}], &quot;forcedVariations&quot;: {&quot;85e2238ce2b9074907d7a3d91d6feeae&quot;: &quot;control&quot;}}, {&quot;status&quot;: &quot;Running&quot;, &quot;audienceIds&quot;: [], &quot;variations&quot;: [{&quot;variables&quot;: [], &quot;id&quot;: &quot;20619540113&quot;, &quot;key&quot;: &quot;control&quot;}, {&quot;variables&quot;: [], &quot;id&quot;: &quot;20598530123&quot;, &quot;key&quot;: &quot;treatment&quot;}], &quot;id&quot;: &quot;20619150105&quot;, &quot;key&quot;: &quot;dynamic_seats&quot;, &quot;layerId&quot;: &quot;20615170077&quot;, &quot;trafficAllocation&quot;: [{&quot;entityId&quot;: &quot;20598530123&quot;, &quot;endOfRange&quot;: 5000}, {&quot;entityId&quot;: &quot;20619540113&quot;, &quot;endOfRange&quot;: 10000}], &quot;forcedVariations&quot;: {}}, {&quot;status&quot;: &quot;Running&quot;, &quot;audienceIds&quot;: [], &quot;variations&quot;: [{&quot;variables&quot;: [], &quot;id&quot;: &quot;20667381018&quot;, &quot;key&quot;: &quot;control&quot;}, {&quot;variables&quot;: [], &quot;id&quot;: &quot;20680930759&quot;, &quot;key&quot;: &quot;treatment&quot;}], &quot;id&quot;: &quot;20652570897&quot;, &quot;key&quot;: &quot;project_genesis&quot;, &quot;layerId&quot;: &quot;20672300363&quot;, &quot;trafficAllocation&quot;: [{&quot;entityId&quot;: &quot;20667381018&quot;, &quot;endOfRange&quot;: 5000}, {&quot;entityId&quot;: &quot;20667381018&quot;, &quot;endOfRange&quot;: 10000}], &quot;forcedVariations&quot;: {&quot;83356e17066d336d1803024138ecb683&quot;: &quot;treatment&quot;, &quot;18e31c8a9b2271332466133162a4aa0d&quot;: &quot;treatment&quot;, &quot;10f8ab3fbc5ebe989a36a05f79d48f32&quot;: &quot;treatment&quot;, &quot;1686089f6d540cd2deeaec60ee43ecf7&quot;: &quot;treatment&quot;}}], &quot;audiences&quot;: [{&quot;conditions&quot;: &quot;[\&quot;or\&quot;, {\&quot;match\&quot;: \&quot;exact\&quot;, \&quot;name\&quot;: \&quot;$opt_dummy_attribute\&quot;, \&quot;type\&quot;: \&quot;custom_attribute\&quot;, \&quot;value\&quot;: \&quot;$opt_dummy_value\&quot;}]&quot;, &quot;id&quot;: &quot;$opt_dummy_audience&quot;, &quot;name&quot;: &quot;Optimizely-Generated Audience for Backwards Compatibility&quot;}], &quot;groups&quot;: [], &quot;sdkKey&quot;: &quot;WTc6awnGuYDdG98CYRban&quot;, &quot;environmentKey&quot;: &quot;production&quot;, &quot;attributes&quot;: [{&quot;id&quot;: &quot;16822470375&quot;, &quot;key&quot;: &quot;user_id&quot;}, {&quot;id&quot;: &quot;17143601254&quot;, &quot;key&quot;: &quot;spammy&quot;}, {&quot;id&quot;: &quot;18175660309&quot;, &quot;key&quot;: &quot;organization_plan&quot;}, {&quot;id&quot;: &quot;18813001570&quot;, &quot;key&quot;: &quot;is_logged_in&quot;}, {&quot;id&quot;: &quot;19073851829&quot;, &quot;key&quot;: &quot;geo&quot;}, {&quot;id&quot;: &quot;20175462351&quot;, &quot;key&quot;: &quot;requestedCurrency&quot;}, {&quot;id&quot;: &quot;20785470195&quot;, &quot;key&quot;: &quot;country_code&quot;}], &quot;botFiltering&quot;: false, &quot;accountId&quot;: &quot;16737760170&quot;, &quot;events&quot;: [{&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;17911811441&quot;, &quot;key&quot;: &quot;hydro_click.dashboard.teacher_toolbox_cta&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18124116703&quot;, &quot;key&quot;: &quot;submit.organizations.complete_sign_up&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18145892387&quot;, &quot;key&quot;: &quot;no_metric.tracked_outside_of_optimizely&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18178755568&quot;, &quot;key&quot;: &quot;click.org_onboarding_checklist.add_repo&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18180553241&quot;, &quot;key&quot;: &quot;submit.repository_imports.create&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18186103728&quot;, &quot;key&quot;: &quot;click.help.learn_more_about_repository_creation&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18188530140&quot;, &quot;key&quot;: &quot;test_event.do_not_use_in_production&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18191963644&quot;, &quot;key&quot;: &quot;click.empty_org_repo_cta.transfer_repository&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18195612788&quot;, &quot;key&quot;: &quot;click.empty_org_repo_cta.import_repository&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18210945499&quot;, &quot;key&quot;: &quot;click.org_onboarding_checklist.invite_members&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18211063248&quot;, &quot;key&quot;: &quot;click.empty_org_repo_cta.create_repository&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18215721889&quot;, &quot;key&quot;: &quot;click.org_onboarding_checklist.update_profile&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18224360785&quot;, &quot;key&quot;: &quot;click.org_onboarding_checklist.dismiss&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18234832286&quot;, &quot;key&quot;: &quot;submit.organization_activation.complete&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18252392383&quot;, &quot;key&quot;: &quot;submit.org_repository.create&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18257551537&quot;, &quot;key&quot;: &quot;submit.org_member_invitation.create&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18259522260&quot;, &quot;key&quot;: &quot;submit.organization_profile.update&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18564603625&quot;, &quot;key&quot;: &quot;view.classroom_select_organization&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18568612016&quot;, &quot;key&quot;: &quot;click.classroom_sign_in_click&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18572592540&quot;, &quot;key&quot;: &quot;view.classroom_name&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18574203855&quot;, &quot;key&quot;: &quot;click.classroom_create_organization&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18582053415&quot;, &quot;key&quot;: &quot;click.classroom_select_organization&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18589463420&quot;, &quot;key&quot;: &quot;click.classroom_create_classroom&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18591323364&quot;, &quot;key&quot;: &quot;click.classroom_create_first_classroom&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18591652321&quot;, &quot;key&quot;: &quot;click.classroom_grant_access&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;18607131425&quot;, &quot;key&quot;: &quot;view.classroom_creation&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;, &quot;20619150105&quot;], &quot;id&quot;: &quot;18831680583&quot;, &quot;key&quot;: &quot;upgrade_account_plan&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19064064515&quot;, &quot;key&quot;: &quot;click.signup&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19075373687&quot;, &quot;key&quot;: &quot;click.view_account_billing_page&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19077355841&quot;, &quot;key&quot;: &quot;click.dismiss_signup_prompt&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19079713938&quot;, &quot;key&quot;: &quot;click.contact_sales&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19120963070&quot;, &quot;key&quot;: &quot;click.compare_account_plans&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19151690317&quot;, &quot;key&quot;: &quot;click.upgrade_account_cta&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19424193129&quot;, &quot;key&quot;: &quot;click.open_account_switcher&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19520330825&quot;, &quot;key&quot;: &quot;click.visit_account_profile&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19540970635&quot;, &quot;key&quot;: &quot;click.switch_account_context&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19730198868&quot;, &quot;key&quot;: &quot;submit.homepage_signup&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19820830627&quot;, &quot;key&quot;: &quot;click.homepage_signup&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;19988571001&quot;, &quot;key&quot;: &quot;click.create_enterprise_trial&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20036538294&quot;, &quot;key&quot;: &quot;click.create_organization_team&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20040653299&quot;, &quot;key&quot;: &quot;click.input_enterprise_trial_form&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20062030003&quot;, &quot;key&quot;: &quot;click.continue_with_team&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20068947153&quot;, &quot;key&quot;: &quot;click.create_organization_free&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20086636658&quot;, &quot;key&quot;: &quot;click.signup_continue.username&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20091648988&quot;, &quot;key&quot;: &quot;click.signup_continue.create_account&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20103637615&quot;, &quot;key&quot;: &quot;click.signup_continue.email&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20111574253&quot;, &quot;key&quot;: &quot;click.signup_continue.password&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20120044111&quot;, &quot;key&quot;: &quot;view.pricing_page&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20152062109&quot;, &quot;key&quot;: &quot;submit.create_account&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20165800992&quot;, &quot;key&quot;: &quot;submit.upgrade_payment_form&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20171520319&quot;, &quot;key&quot;: &quot;submit.create_organization&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20222645674&quot;, &quot;key&quot;: &quot;click.recommended_plan_in_signup.discuss_your_needs&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20227443657&quot;, &quot;key&quot;: &quot;submit.verify_primary_user_email&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20234607160&quot;, &quot;key&quot;: &quot;click.recommended_plan_in_signup.try_enterprise&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20238175784&quot;, &quot;key&quot;: &quot;click.recommended_plan_in_signup.team&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20239847212&quot;, &quot;key&quot;: &quot;click.recommended_plan_in_signup.continue_free&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20251097193&quot;, &quot;key&quot;: &quot;recommended_plan&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20438619534&quot;, &quot;key&quot;: &quot;click.pricing_calculator.1_member&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20456699683&quot;, &quot;key&quot;: &quot;click.pricing_calculator.15_members&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20467868331&quot;, &quot;key&quot;: &quot;click.pricing_calculator.10_members&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20476267432&quot;, &quot;key&quot;: &quot;click.trial_days_remaining&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;], &quot;id&quot;: &quot;20476357660&quot;, &quot;key&quot;: &quot;click.discover_feature&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20479287901&quot;, &quot;key&quot;: &quot;click.pricing_calculator.custom_members&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20481107083&quot;, &quot;key&quot;: &quot;click.recommended_plan_in_signup.apply_teacher_benefits&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20483089392&quot;, &quot;key&quot;: &quot;click.pricing_calculator.5_members&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;, &quot;20652570897&quot;], &quot;id&quot;: &quot;20484283944&quot;, &quot;key&quot;: &quot;click.onboarding_task&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20484996281&quot;, &quot;key&quot;: &quot;click.recommended_plan_in_signup.apply_student_benefits&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;], &quot;id&quot;: &quot;20486713726&quot;, &quot;key&quot;: &quot;click.onboarding_task_breadcrumb&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;], &quot;id&quot;: &quot;20490791319&quot;, &quot;key&quot;: &quot;click.upgrade_to_enterprise&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;], &quot;id&quot;: &quot;20491786766&quot;, &quot;key&quot;: &quot;click.talk_to_us&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;], &quot;id&quot;: &quot;20494144087&quot;, &quot;key&quot;: &quot;click.dismiss_enterprise_trial&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;, &quot;20652570897&quot;], &quot;id&quot;: &quot;20499722759&quot;, &quot;key&quot;: &quot;completed_all_tasks&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;, &quot;20652570897&quot;], &quot;id&quot;: &quot;20500710104&quot;, &quot;key&quot;: &quot;completed_onboarding_tasks&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;], &quot;id&quot;: &quot;20513160672&quot;, &quot;key&quot;: &quot;click.read_doc&quot;}, {&quot;experimentIds&quot;: [&quot;20652570897&quot;], &quot;id&quot;: &quot;20516196762&quot;, &quot;key&quot;: &quot;actions_enabled&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;], &quot;id&quot;: &quot;20518980986&quot;, &quot;key&quot;: &quot;click.dismiss_trial_banner&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20535446721&quot;, &quot;key&quot;: &quot;click.issue_actions_prompt.dismiss_prompt&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20557002247&quot;, &quot;key&quot;: &quot;click.issue_actions_prompt.setup_workflow&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20595070227&quot;, &quot;key&quot;: &quot;click.pull_request_setup_workflow&quot;}, {&quot;experimentIds&quot;: [&quot;20619150105&quot;], &quot;id&quot;: &quot;20626600314&quot;, &quot;key&quot;: &quot;click.seats_input&quot;}, {&quot;experimentIds&quot;: [&quot;20619150105&quot;], &quot;id&quot;: &quot;20642310305&quot;, &quot;key&quot;: &quot;click.decrease_seats_number&quot;}, {&quot;experimentIds&quot;: [&quot;20619150105&quot;], &quot;id&quot;: &quot;20662990045&quot;, &quot;key&quot;: &quot;click.increase_seats_number&quot;}, {&quot;experimentIds&quot;: [], &quot;id&quot;: &quot;20679620969&quot;, &quot;key&quot;: &quot;click.public_product_roadmap&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;], &quot;id&quot;: &quot;20761240940&quot;, &quot;key&quot;: &quot;click.dismiss_survey_banner&quot;}, {&quot;experimentIds&quot;: [&quot;20479227424&quot;], &quot;id&quot;: &quot;20767210721&quot;, &quot;key&quot;: &quot;click.take_survey&quot;}, {&quot;experimentIds&quot;: [&quot;20652570897&quot;], &quot;id&quot;: &quot;20795281201&quot;, &quot;key&quot;: &quot;click.archive_list&quot;}], &quot;revision&quot;: &quot;968&quot;}" />
   <!-- To prevent page flashing, the optimizely JS needs to be loaded in the
     <head> tag before the DOM renders -->
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-NZtGC6blJ7XNT65diVllJBaNYNfq1AF6KQL75eFqN/RlMMwleYJ/a6KTgp7dEeO3Iy3PGM2h52TpyYawjCYqkg==" type="application/javascript" src="https://github.githubassets.com/assets/optimizely-359b460b.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-8ODWXcoorICxNiqsCan+W5GIxa70VtWQnf1WSSaCu0qLtK782YVzROIh7YkG6uCC8FZiqZDAZ2jaKYDEuA0dzg==" type="application/javascript" src="https://github.githubassets.com/assets/optimizely-f0e0d65d.js"></script>
 
 
 
@@ -153,16 +153,16 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="MDIzZjUzZjViM2JhM2NjYzE0MTU2N2ZjYWVlYjM1MjJiMjBmY2E4YmY0M2Y3OWVmMGNlYWRmMDYzYWQwYmVkNXx7InJlbW90ZV9hZGRyZXNzIjoiMzcuMTY2LjEwNC4yMjkiLCJyZXF1ZXN0X2lkIjoiQjlEODo3RDE4OjE0RUQ3MTE6MTYwMUI2Qjo2MTgyRTRBQSIsInRpbWVzdGFtcCI6MTYzNTk2ODMwMiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+      <meta name="js-proxy-site-detection-payload" content="ZWFiOWI3Y2M3N2NiMzQ0NzAyYjFiNDYzY2ZlMDg2OGIwZjBmZWMzYWM2N2RlNTg1M2Q1NWU0NGMxMGUzNzViNnx7InJlbW90ZV9hZGRyZXNzIjoiMzcuMTcxLjE4My4xNjYiLCJyZXF1ZXN0X2lkIjoiQ0RBNTpFMDQ2OjEwQjNCMToxMzVGNDI6NjE4NkNBRDUiLCJ0aW1lc3RhbXAiOjE2MzYyMjM3MTYsImhvc3QiOiJnaXRodWIuY29tIn0=">
       <meta name="keyboard-shortcuts-preference" content="all">
       <script type="application/json" id="memex_keyboard_shortcuts_preference">"all"</script>
 
     <meta name="enabled-features" content="ACTIONS_CALLABLE_WORKFLOWS,ACTIONS_ID_TOKEN_PERMISSION,MARKETPLACE_PENDING_INSTALLATIONS,FILE_UPLOAD_CURSOR_POSITION">
 
-  <meta http-equiv="x-pjax-version" content="89408a5ac57f5b71ed7ebb466b241a52be13289bf52f5580353d1ab3681a2237">
+  <meta http-equiv="x-pjax-version" content="fe55eb1c97984569bb12131ac8632f7af3485b0309e38941cd8b83d1c9d0dd68">
   <meta http-equiv="x-pjax-csp-version" content="9ea82e8060ac9d44365bfa193918b70ed58abd9413362ba412abb161b3a8d1b6">
-  <meta http-equiv="x-pjax-css-version" content="8c75751aad52ee8322f8435d51506c1b59a636003602b767a0b479bddfe5cb22">
-  <meta http-equiv="x-pjax-js-version" content="3cad26b543586e12a4ad3073df6bdffcfe52ab9dafecfd0ffc60594d519fb9b5">
+  <meta http-equiv="x-pjax-css-version" content="2e39f8bc5d06f2f3e291bb5f216e5655ee9e78e533a1b88c9eca99c84426ab16">
+  <meta http-equiv="x-pjax-js-version" content="ffd7f50db7548cfecde71476e68eb2c952eefe8f794809e08062d1c7c61cedf1">
   
 
     
@@ -172,7 +172,7 @@
 
 
 
-    <link rel="canonical" href="https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -197,14 +197,14 @@
     
 
     <div class="position-relative js-header-wrapper ">
-      <a href="#start-of-content" class="p-3 color-bg-info-inverse color-text-white show-on-focus js-skip-to-content">Skip to content</a>
+      <a href="#start-of-content" class="p-3 color-bg-accent-emphasis color-text-white show-on-focus js-skip-to-content">Skip to content</a>
       <span data-view-component="true" class="progress-pjax-loader js-pjax-loader-bar Progress position-fixed width-full">
     <span style="width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar color-bg-info-inverse"></span>
 </span>      
       
 
 
-        <script crossorigin="anonymous" defer="defer" integrity="sha512-rOXjHA1MRZqbTE2Gm6bpfE1bENPufFQnz5pgAb9MFRTHb4XNxUQv1YPUUUCN8tfGjEoxMalEUfLssXGrxaZy7g==" type="application/javascript" src="https://github.githubassets.com/assets/command-palette-ace5e31c.js"></script>
+        <script crossorigin="anonymous" defer="defer" integrity="sha512-VZB1Apj9AZYKtMtlkfV+oNDc+Evi5/RpvZRkOSyHhNuINKpbP368nQhDRAH5r08k4srsIgFxCD8hpjJmDoCryQ==" type="application/javascript" src="https://github.githubassets.com/assets/command-palette-55907502.js"></script>
 
             <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap" role="banner" >
     <div class="Header-item mt-n1 mb-n1  d-none d-md-flex">
@@ -213,7 +213,7 @@
   href="https://github.com/"
   data-hotkey="g d"
   aria-label="Homepage "
-  data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="41f41eabfeceda240eb5ec6c88a16982c4d36dc9bd1bc40cb80cef60a972a7b4" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}"
+  data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="4df0cdf00055b6d54e740478d6f872c57816a21cfcba4720a1bc7d3804ae5ba6" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}"
 >
   <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
     <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
@@ -263,7 +263,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" value="GkAnS7BPpxkicFth48yr4hktMVouciCslXofdnavIxyBLU0i9nsbcMyBCIPayRjz57XP1iHxv9XrzVdCCkjo9g==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+        <input type="hidden" value="ZJosrxmc80QYXTWL0vKPOyJFyIZ8FYEHtFcbkS5S5in/90bGX6hPLfasZmnr9zwq3N02CnOWHn7K4FOlUrUtww==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -434,10 +434,13 @@
 
 
     <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
-      <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="m-3 anim-rotate">
-  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
-  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
-</svg>
+      <span role="status">
+  <span class="sr-only">Loading</span>
+  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="m-3 anim-rotate">
+    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+</svg></span>
+
     </li>
 </ul>
 
@@ -467,7 +470,7 @@
     <a class="js-selected-navigation-item Header-link d-block d-md-none py-2 py-md-3 border-top border-md-top-0 border-white-fade" data-ga-click="Header, click, Nav menu - item:workspaces context:user" data-selected-links="/codespaces /codespaces" href="/codespaces">
       Codespaces
 </a>
-      <a class="js-selected-navigation-item Header-link d-block d-md-none py-2 py-md-3 border-top border-md-top-0 border-white-fade" data-ga-click="Header, click, Nav menu - item:Sponsors" data-hydro-click="{&quot;event_type&quot;:&quot;sponsors.button_click&quot;,&quot;payload&quot;:{&quot;button&quot;:&quot;HEADER_SPONSORS_DASHBOARD&quot;,&quot;sponsorable_login&quot;:&quot;djalal&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="f95f07b4e34f759273d31fa85f579bc1f7a23dc2ee9f7de2b9fac1565355bf6a" data-selected-links=" /sponsors/accounts" href="/sponsors/accounts">Sponsors</a>
+      <a class="js-selected-navigation-item Header-link d-block d-md-none py-2 py-md-3 border-top border-md-top-0 border-white-fade" data-ga-click="Header, click, Nav menu - item:Sponsors" data-hydro-click="{&quot;event_type&quot;:&quot;sponsors.button_click&quot;,&quot;payload&quot;:{&quot;button&quot;:&quot;HEADER_SPONSORS_DASHBOARD&quot;,&quot;sponsorable_login&quot;:&quot;djalal&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5864c9320083cd1584af8729a3d5e347a960b05854342214206eec1e6be5caf8" data-selected-links=" /sponsors/accounts" href="/sponsors/accounts">Sponsors</a>
 
     <a class="Header-link d-block d-md-none mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade" href="/settings/profile">
       Settings
@@ -476,12 +479,12 @@
       <img class="avatar avatar-user" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/4036528?s=40&amp;v=4" width="20" height="20" alt="@djalal" />
       djalal
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="11WWKVosTt9YBrHH30rEcC0Nrm3nneHhxxwT84Mc25+wdUBTrHhSarNGdtJzUFZoiSv6qr0op/tnoTReP0gpTA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="HPPzw1xCdxdxb9g52SjKyXitaMSvNuEJyi3W8zmAzEl70yW5qhZropovHyx1MljR3Is8A/WDpxNqkPFehdQ+mg==" />
       <button
         type="submit"
         class="Header-link mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade d-md-none btn-link d-block width-full text-left"
         style="padding-left: 2px;"
-        data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;sign out&quot;,&quot;label&quot;:&quot;icon:logout&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="c565511acf023c5bdbc4cd6ea354437607f2440b240d88963639cf099ff0b3cf" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;sign out&quot;,&quot;label&quot;:&quot;icon:logout&quot;}"
+        data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;sign out&quot;,&quot;label&quot;:&quot;icon:logout&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="d41c5fab43880d370c781c78c8b45e912bc1a4cc70cde0797841c0f2a5cd07aa" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;sign out&quot;,&quot;label&quot;:&quot;icon:logout&quot;}"
       >
         <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sign-out v-align-middle">
     <path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm10.44 4.5H6.75a.75.75 0 000 1.5h5.69l-1.97 1.97a.75.75 0 101.06 1.06l3.25-3.25a.75.75 0 000-1.06l-3.25-3.25a.75.75 0 10-1.06 1.06l1.97 1.97z"></path>
@@ -498,7 +501,7 @@
   href="https://github.com/"
   data-hotkey="g d"
   aria-label="Homepage "
-  data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="41f41eabfeceda240eb5ec6c88a16982c4d36dc9bd1bc40cb80cef60a972a7b4" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}"
+  data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="4df0cdf00055b6d54e740478d6f872c57816a21cfcba4720a1bc7d3804ae5ba6" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}"
 >
   <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
     <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
@@ -514,7 +517,7 @@
       <notification-indicator
         class="js-socket-channel"
         data-test-selector="notifications-indicator"
-        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NDAzNjUyOCIsInQiOjE2MzU5NjgzMDJ9--894e2b8fca65b45025ef4789df009ec675405187a6d4626ae43fdcbe99a49526">
+        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NDAzNjUyOCIsInQiOjE2MzYyMjM3MTZ9--c21e7a480fc3e8ce484a1ebf6ccd86d8309cbb431c99d0e29aae696fad0c50f8">
         <a href="/notifications"
           class="Header-link notification-indicator position-relative tooltipped tooltipped-sw"
           
@@ -537,7 +540,7 @@
   <summary
     class="Header-link"
     aria-label="Create new…"
-    data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;create new&quot;,&quot;label&quot;:&quot;icon:add&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="c91e33687bb2b9cb999733b9f13dd54f52432ad8678e75f69221f63585834edc" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;create new&quot;,&quot;label&quot;:&quot;icon:add&quot;}"
+    data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;create new&quot;,&quot;label&quot;:&quot;icon:add&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="da3dbef279a409011f60ea8360b489675fb838fc05c2b2de097eba39f531ad0d" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;create new&quot;,&quot;label&quot;:&quot;icon:add&quot;}"
   >
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-plus">
     <path fill-rule="evenodd" d="M7.75 2a.75.75 0 01.75.75V7h4.25a.75.75 0 110 1.5H8.5v4.25a.75.75 0 11-1.5 0V8.5H2.75a.75.75 0 010-1.5H7V2.75A.75.75 0 017.75 2z"></path>
@@ -575,9 +578,9 @@
   <summary
     class="Header-link"
     aria-label="View profile and more"
-    data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;show menu&quot;,&quot;label&quot;:&quot;icon:avatar&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="e97ab09ef1d1c72017d8e0dc15a8d38a121a6a155f938316ee06d7db6c1c2bc2" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;show menu&quot;,&quot;label&quot;:&quot;icon:avatar&quot;}"
+    data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;show menu&quot;,&quot;label&quot;:&quot;icon:avatar&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="534e4aa741494541122c5b80a7304f8e541ea7b5f8987890ecf64ced310e84af" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;show menu&quot;,&quot;label&quot;:&quot;icon:avatar&quot;}"
   >
-    <img src="https://avatars.githubusercontent.com/u/4036528?s=40&amp;v=4" alt="@djalal" size="20" height="20" width="20" data-view-component="true" class="avatar-user avatar avatar-small"></img>
+    <img src="https://avatars.githubusercontent.com/u/4036528?s=40&amp;v=4" alt="@djalal" size="20" height="20" width="20" data-view-component="true" class="avatar avatar-small circle"></img>
       <span class="feature-preview-indicator js-feature-preview-indicator" style="top: 1px;" hidden></span>
     <span class="dropdown-caret"></span>
   </summary>
@@ -585,10 +588,13 @@
       src="/users/4036528/menu" preload>
       <include-fragment>
         <p class="text-center mt-3" data-hide-on-error>
-          <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="anim-rotate">
-  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
-  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
-</svg>
+          <span role="status">
+  <span class="sr-only">Loading</span>
+  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="anim-rotate">
+    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+</svg></span>
+
         </p>
         <p class="ml-1 mb-2 mt-2 color-fg-default" data-show-on-error>
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
@@ -646,14 +652,14 @@
   <details-dialog class="command-palette-details-dialog d-flex flex-column flex-justify-center height-fit">
     <command-palette
       class="command-palette color-bg-primary rounded-3"
-      data-return-to=/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md
+      data-return-to=/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md
       data-user-id="4036528"
       >
-      <input type="hidden" value="SbDj4oDdZnigTaQByyvDMtYYhwKNM3WEOJbk7XxBm+DFs74d218DpubtzqDal6lzBndIkZiP3+kYrwueVWKZUg==" data-csrf="true" class="js-graphql-csrf" />
-      <iframe class="d-none js-command-palette-commands" sandbox="allow-scripts allow-same-origin" srcdoc="<script crossorigin=&quot;anonymous&quot; defer=&quot;defer&quot; integrity=&quot;sha512-k8kteJ39jotHE3EREM/TrvO91gDeMgTcrnsP/i26aRFwOu3WdPVGrmYoibHjwMb1l0482p3yf2V/2vGdl4CpXA==&quot; type=&quot;application/javascript&quot; src=&quot;https://github.githubassets.com/assets/command-runner-93c92d78.js&quot;></script>
+      <input type="hidden" value="ZaKaOmmkgQfDbbRf5ojXpyUnkK/PFj0RZ2CWLBW4fb/pocfFMibk2YXN3v73NL3m9UhfPNqql3xHWXlfPJt/DQ==" data-csrf="true" class="js-graphql-csrf" />
+      <iframe class="d-none js-command-palette-commands" sandbox="allow-scripts allow-same-origin" srcdoc="<script crossorigin=&quot;anonymous&quot; defer=&quot;defer&quot; integrity=&quot;sha512-QlLlS61ztNDX0MakiMw8Co2H4lwwWxBjEux0TXwYeRxNqomMtm5SWMesEKum2gowVBnTnVaG9IqV5fCMSTa9Jg==&quot; type=&quot;application/javascript&quot; src=&quot;https://github.githubassets.com/assets/command-runner-4252e54b.js&quot;></script>
 " aria-hidden="true"></iframe>
       <input type="hidden" name="color-mode-path" id="color-mode-path" value="/settings/appearance/color_mode" class="js-color-mode-path" autocomplete="off" />
-      <input type="hidden" value="qEboiAa09+/nIH+JO7l5/aPCy9F/Lx5r+1dX1mi5pQFhP7SHw39L2Y+FAribhyHYD0ixcVxF4cGA8QLYTHjmXg==" data-csrf="true" class="js-color-mode-csrf" />
+      <input type="hidden" value="g2cwa4T00eQz/ZYg2IqhWhwynsTLG0YaMzfOTl2i4jhKHmxkQT9t0ltY6xF4tPl/sLjkZOhxubBIkZtAeWOhZw==" data-csrf="true" class="js-color-mode-csrf" />
 
         <command-palette-mode
           data-char="#"
@@ -1322,7 +1328,7 @@
         data-action="toggle:notifications-list-subscription-form#detailsToggled"
       >
 
-      <summary data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="93beb28842ed43ba28a7e3dd26a2e60b760f95a6e0dccd4127ad260114712b83" data-ga-click="Repository, click Watch settings, action:blob#show" aria-label="Notification settings" role="button" data-view-component="true" class="rounded-right-0 btn-sm btn">
+      <summary data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="010c3880d7ec64fdb88530f4f03d321fda5b1877b9778a58e49ce77af97e16db" data-ga-click="Repository, click Watch settings, action:blob#show" aria-label="Notification settings" role="button" data-view-component="true" class="rounded-right-0 btn-sm btn">
   
   
           <span data-menu-button>
@@ -1379,7 +1385,7 @@
             </header>
 
             <div class="SelectMenu-list">
-              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Xn45rb5MXnyzD5mPZ4FXlk9t0pQmBo6KRVcWfYwhgjqKS0q0Ck0qMf1IZHMpl82uv6Fi7TQe9TYYh47AlUfpwg==" autocomplete="off" />
+              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="/Z0Pmpuk3Z1znxMvvZ9iBm4O27U5QckVOSGVn74PpO4pqHyDL6Wp0D3Y7tPzifg+nsJrzCtZsqlk8Q0ip2nPFg==" autocomplete="off" />
 
                 <input type="hidden" name="repository_id" value="323352019">
 
@@ -1502,7 +1508,7 @@
 
         <details-dialog class="notifications-component-dialog " data-target="notifications-list-subscription-form.customDialog" hidden>
           <div class="SelectMenu-modal notifications-component-dialog-modal overflow-visible">
-            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Ib8DRqOujl28KuFagrhFlojKpN14eDMbGJ2ILavGiKf1inBfF6/6EPJtHKbMrt+ueAYUpGpgSKdFTRCQsqDjXw==" autocomplete="off" />
+            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="FYZMHa2m03R/JaWB7Bp7D8V0bpVAcr2C6oYuQulBgInBsz8EGaenOTFiWH2iDOE3Nbje7FJqxj63Vrb/8CfrcQ==" autocomplete="off" />
 
               <input type="hidden" name="repository_id" value="323352019">
 
@@ -1668,9 +1674,9 @@
 
     <li>
           <div class="js-toggler-container js-social-container starring-container d-block">
-    <form class="starred js-social-form" action="/artifakt-io/artifakt-docker-images/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="kHnQBdLbUll9WlqcQqY85bZmZfuhsxFLCQLm8TugD0FD/IvABNbgHbONO9vJZjLAb739oqlfbTuvdEoUPpXfow==" autocomplete="off" />
+    <form class="starred js-social-form" action="/artifakt-io/artifakt-docker-images/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="V8r6N7wJ8BbuLidjkMSQ0WFCUeY5XZ5885NvutSnRBaET6HyagRCUiD5RiQbBJ70uJnJvzGx4gxV5cNf0ZKU9A==" autocomplete="off" />
       <input type="hidden" name="context" value="repository">
-      <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5ecd471686ecd3057f97134acdce25f7e39e4a8852ddb7a900a7f7238a90e05e" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar" aria-label="Unstar this repository" type="submit" data-view-component="true" class="js-toggler-target btn-with-count btn-sm btn">
+      <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="fdc269f05953181728956b793240559e3134635053fcfd4a613062169328a363" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar" aria-label="Unstar this repository" type="submit" data-view-component="true" class="js-toggler-target btn-with-count btn-sm btn">
   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill mr-1">
     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path>
 </svg>
@@ -1680,14 +1686,19 @@
 </span>
   
 
-</button>        <a class="social-count js-social-count" href="/artifakt-io/artifakt-docker-images/stargazers"
-           aria-label="0 users starred this repository">
+</button>        <a
+          class="social-count js-social-count"
+          href="/artifakt-io/artifakt-docker-images/stargazers"
+          aria-label="0 users starred this repository"
+          data-singular-suffix="user starred this repository"
+          data-plural-suffix="users starred this repository"
+        >
            0
         </a>
 </form>
-    <form class="unstarred js-social-form" action="/artifakt-io/artifakt-docker-images/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="mKh4EzNpbM2hRt8pCT/Q4UZvUsqxZAc5jilur9ydtxKpq0ybK8A5nSjjjEjScxt881CukcILMK87DWyjFas5pQ==" autocomplete="off" />
+    <form class="unstarred js-social-form" action="/artifakt-io/artifakt-docker-images/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="93vkGPLEUEteFwDJhYV77+YQD3HMUaOrbbVDjHq74pDGeNCQ6m0FG9eyU6heybByUy/zKr8+lD3YkUGAs41sJw==" autocomplete="off" />
       <input type="hidden" name="context" value="repository">
-      <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="71bf307f0ee8aa448c273f8d60ba0bd09c50d17862999bf40400e3fde238e249" data-ga-click="Repository, click star button, action:blob#show; text:Star" aria-label="Star this repository" type="submit" data-view-component="true" class="js-toggler-target btn-with-count btn-sm btn">
+      <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="76b22a9c84d8f2a04a2ba57a799b5c2480f92e0b9f7948232d5bb9dee5ce7f3c" data-ga-click="Repository, click star button, action:blob#show; text:Star" aria-label="Star this repository" type="submit" data-view-component="true" class="js-toggler-target btn-with-count btn-sm btn">
   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-1">
     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
 </svg>
@@ -1697,8 +1708,13 @@
 </span>
   
 
-</button>        <a class="social-count js-social-count" href="/artifakt-io/artifakt-docker-images/stargazers"
-           aria-label="0 users starred this repository">
+</button>        <a
+          class="social-count js-social-count"
+          href="/artifakt-io/artifakt-docker-images/stargazers"
+          aria-label="0 users starred this repository"
+          data-singular-suffix="user starred this repository"
+          data-plural-suffix="users starred this repository"
+        >
           0
         </a>
 </form>
@@ -1745,7 +1761,7 @@
 
   <ul data-view-component="true" class="UnderlineNav-body list-style-none">
       <li data-view-component="true" class="d-inline-flex">
-  <a id="code-tab" href="/artifakt-io/artifakt-docker-images" data-tab-item="i0code-tab" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments /artifakt-io/artifakt-docker-images" data-hotkey="g c" data-ga-click="Repository, Navigation click, Code tab" data-pjax="#repo-content-pjax-container" aria-current="page" data-view-component="true" class="UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected">
+  <a id="code-tab" href="/artifakt-io/artifakt-docker-images/tree/feat/ch6276-generate-perjob-labels" data-tab-item="i0code-tab" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments /artifakt-io/artifakt-docker-images/tree/feat/ch6276-generate-perjob-labels" data-hotkey="g c" data-ga-click="Repository, Navigation click, Code tab" data-pjax="#repo-content-pjax-container" aria-current="page" data-view-component="true" class="UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected">
     
                   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline">
     <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path>
@@ -1816,7 +1832,7 @@
   
             <ul>
                 <li data-menu-item="i0code-tab" hidden>
-                  <a role="menuitem" class="js-selected-navigation-item selected dropdown-item" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments /artifakt-io/artifakt-docker-images" href="/artifakt-io/artifakt-docker-images">
+                  <a role="menuitem" class="js-selected-navigation-item selected dropdown-item" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments /artifakt-io/artifakt-docker-images/tree/feat/ch6276-generate-perjob-labels" href="/artifakt-io/artifakt-docker-images/tree/feat/ch6276-generate-perjob-labels">
                     Code
 </a>                </li>
                 <li data-menu-item="i1pull-requests-tab" hidden>
@@ -1859,7 +1875,7 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/artifakt-io/artifakt-docker-images/blob/28b4f576f95b2628605266b19cf1094fbaa297fe/README.md">Permalink</a>
 
     <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-wrap flex-md-nowrap flex-justify-between flex-md-justify-start">
       
@@ -1867,11 +1883,11 @@
   <details class="details-reset details-overlay mr-0 mb-0 " id="branch-select-menu">
     <summary class="btn css-truncate"
             data-hotkey="w"
-            title="Switch branches or tags">
+            title="feat/ch6276-generate-perjob-labels">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-branch">
     <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path>
 </svg>
-      <span class="css-truncate-target" data-menu-button>d1b356d8f6</span>
+      <span class="css-truncate-target" data-menu-button>feat/ch6276-ge…</span>
       <span class="dropdown-caret"></span>
     </summary>
 
@@ -1918,7 +1934,7 @@
             query-endpoint="/artifakt-io/artifakt-docker-images/refs"
             can-create
             cache-key="v0:1635871234.364104"
-            current-committish="ZDFiMzU2ZDhmNjU2ZGQ1YWY5MGQyZTI0OTMxYzQzMjRiMTEwMzE5OQ=="
+            current-committish="ZmVhdC9jaDYyNzYtZ2VuZXJhdGUtcGVyam9iLWxhYmVscw=="
             default-branch="bWFpbg=="
             name-with-owner="YXJ0aWZha3QtaW8vYXJ0aWZha3QtZG9ja2VyLWltYWdlcw=="
             prefetch-on-mouseover
@@ -1929,9 +1945,9 @@
             </template>
 
               <template data-target="ref-selector.noMatchTemplate">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/artifakt-io/artifakt-docker-images/branches" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="VF0e5Bdpewm9Vy9W+GjHtYyF+kP5rF9hGi/N2vVRRnhp3pZnPS2ZfcX4C948GIYuKzgKxT+GSb+0oqo4pX4ZgA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/artifakt-io/artifakt-docker-images/branches" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="aVr8O20yhIEeiwcCFrXKM4Unf8JtJ4KrR7EHLnOSEUBU2XS4R3Zm9WYkI4rSxYuoIpqPRKsNlHXpPGDMI71OuA==" />
       <input type="hidden" name="name" value="{{ refName }}">
-      <input type="hidden" name="branch"  value="d1b356d8f656dd5af90d2e24931c4324b1103199">
+      <input type="hidden" name="branch"  value="feat/ch6276-generate-perjob-labels">
       <input type="hidden" name="path_binary" value="UkVBRE1FLm1k">
 
       <button class="SelectMenu-item wb-break-word" type="submit" role="menuitem" data-index="{{ index }}">
@@ -1940,7 +1956,7 @@
 </svg>
         <div>
           <span class="text-bold">Create branch: {{ refName }}</span>
-          <span class="color-text-tertiary">from ‘d1b356d’</span>
+          <span class="color-fg-muted">from ‘feat/ch6276-generate-perjob-labels’</span>
         </div>
       </button>
 </form></template>
@@ -1949,10 +1965,13 @@
             <!-- TODO: this max-height is necessary or else the branch list won't scroll.  why? -->
             <div data-target="ref-selector.listContainer" role="menu" class="SelectMenu-list " style="max-height: 330px" data-pjax="#repo-content-pjax-container">
               <div class="SelectMenu-loading pt-3 pb-0" aria-label="Menu is loading">
-                <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="anim-rotate">
-  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
-  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
-</svg>
+                <span role="status">
+  <span class="sr-only">Loading</span>
+  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="anim-rotate">
+    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+</svg></span>
+
               </div>
             </div>
 
@@ -1983,7 +2002,7 @@
             data-targets="input-demux.sinks"
             query-endpoint="/artifakt-io/artifakt-docker-images/refs"
             cache-key="v0:1635871234.364104"
-            current-committish="ZDFiMzU2ZDhmNjU2ZGQ1YWY5MGQyZTI0OTMxYzQzMjRiMTEwMzE5OQ=="
+            current-committish="ZmVhdC9jaDYyNzYtZ2VuZXJhdGUtcGVyam9iLWxhYmVscw=="
             default-branch="bWFpbg=="
             name-with-owner="YXJ0aWZha3QtaW8vYXJ0aWZha3QtZG9ja2VyLWltYWdlcw=="
           >
@@ -2009,10 +2028,13 @@
 
             <div data-target="ref-selector.listContainer" role="menu" class="SelectMenu-list" style="max-height: 330px" data-pjax="#repo-content-pjax-container">
               <div class="SelectMenu-loading pt-3 pb-0" aria-label="Menu is loading">
-                <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="anim-rotate">
-  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
-  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
-</svg>
+                <span role="status">
+  <span class="sr-only">Loading</span>
+  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="anim-rotate">
+    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+</svg></span>
+
               </div>
             </div>
               <footer class="SelectMenu-footer"><a href="/artifakt-io/artifakt-docker-images/tags">View all tags</a></footer>
@@ -2028,9 +2050,9 @@
 </div>
 
       <h2 id="blob-path" class="breadcrumb flex-auto flex-self-center min-width-0 text-normal mx-2 width-full width-md-auto flex-order-1 flex-md-order-none mt-3 mt-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="#repo-content-pjax-container" rel="nofollow" href="/artifakt-io/artifakt-docker-images/tree/d1b356d8f656dd5af90d2e24931c4324b1103199"><span>artifakt-docker-images</span></a></span></span><span class="separator">/</span><strong class="final-path">README.md</strong>
+        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="#repo-content-pjax-container" href="/artifakt-io/artifakt-docker-images/tree/feat/ch6276-generate-perjob-labels"><span>artifakt-docker-images</span></a></span></span><span class="separator">/</span><strong class="final-path">README.md</strong>
       </h2>
-      <a href="/artifakt-io/artifakt-docker-images/find/d1b356d8f656dd5af90d2e24931c4324b1103199"
+      <a href="/artifakt-io/artifakt-docker-images/find/feat%2Fch6276-generate-perjob-labels"
             class="js-pjax-capture-input btn mr-2 d-none d-md-block"
             data-pjax
             data-hotkey="t">
@@ -2049,9 +2071,9 @@
 </summary>
   <div data-view-component="true">          <ul class="dropdown-menu dropdown-menu-sw">
             <li class="d-block d-md-none">
-              <a class="dropdown-item d-flex flex-items-baseline" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="621368be88b407c4f07809598999c455742b21616122cd59142928a692943ecc" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/artifakt-io/artifakt-docker-images/find/d1b356d8f656dd5af90d2e24931c4324b1103199">
+              <a class="dropdown-item d-flex flex-items-baseline" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="542c7a6977f7ed9f5b092bcbf9e281f6c25c1d71264c37a70c7dc477a495ddd0" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/artifakt-io/artifakt-docker-images/find/feat%2Fch6276-generate-perjob-labels">
                 <span class="flex-auto">Go to file</span>
-                <span class="text-small color-text-secondary" aria-hidden="true">T</span>
+                <span class="text-small color-fg-muted" aria-hidden="true">T</span>
 </a>            </li>
             <li data-toggle-for="blob-more-options-details">
               <button data-toggle-for="jumpto-line-details-dialog" type="button" data-view-component="true" class="dropdown-item btn-link">
@@ -2059,7 +2081,7 @@
   
                 <span class="d-flex flex-items-baseline">
                   <span class="flex-auto">Go to line</span>
-                  <span class="text-small color-text-secondary" aria-hidden="true">L</span>
+                  <span class="text-small color-fg-muted" aria-hidden="true">L</span>
                 </span>
 
   
@@ -2073,7 +2095,7 @@
 
 </clipboard-copy>            </li>
             <li>
-              <clipboard-copy data-toggle-for="blob-more-options-details" aria-label="Copy permalink" value="https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md" data-view-component="true" class="dropdown-item cursor-pointer">
+              <clipboard-copy data-toggle-for="blob-more-options-details" aria-label="Copy permalink" value="https://github.com/artifakt-io/artifakt-docker-images/blob/28b4f576f95b2628605266b19cf1094fbaa297fe/README.md" data-view-component="true" class="dropdown-item cursor-pointer">
     
                 <span class="d-flex flex-items-baseline">
                   <span class="flex-auto">Copy permalink</span>
@@ -2088,17 +2110,83 @@
 
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-      <include-fragment src="/artifakt-io/artifakt-docker-images/contributors/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md" class="commit-loader">
-        <div class="Box-header d-flex flex-items-center">
-          <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
-          <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
-        </div>
+      
+  <div class="Box-header Details js-details-container">
+      <div class="d-flex flex-items-center">
+        <span class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1">
+          <a rel="contributor" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/djalal/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/djalal"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/4036528?s=48&amp;v=4" width="24" height="24" alt="@djalal" /></a>
+        </span>
+        <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
+          <div class="css-truncate css-truncate-overflow">
+            <a class="text-bold Link--primary" rel="contributor" data-hovercard-type="user" data-hovercard-url="/users/djalal/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/djalal">djalal</a>
 
-        <div class="Box-body d-flex flex-items-center" >
-          <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
-          <span class="color-text-danger h6 loader-error">Cannot retrieve contributors at this time</span>
+              <span class="markdown-title">
+                <a data-pjax="true" title="add svg ext." class="Link--secondary" href="/artifakt-io/artifakt-docker-images/commit/28b4f576f95b2628605266b19cf1094fbaa297fe">add svg ext.</a>
+              </span>
+          </div>
+
+
+          <span class="ml-2">
+            <include-fragment accept="text/fragment+html" src="/artifakt-io/artifakt-docker-images/commit/28b4f576f95b2628605266b19cf1094fbaa297fe/rollup?direction=e" class="d-inline"></include-fragment>
+          </span>
         </div>
-</include-fragment>    </div>
+        <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-fg-muted no-wrap">
+          <span class="d-none d-md-inline">
+            <span>Latest commit</span>
+            <a class="text-small text-mono Link--secondary" href="/artifakt-io/artifakt-docker-images/commit/28b4f576f95b2628605266b19cf1094fbaa297fe" data-pjax>28b4f57</a>
+            <span itemprop="dateModified"><relative-time datetime="2021-11-05T22:21:37Z" class="no-wrap">Nov 5, 2021</relative-time></span>
+          </span>
+
+          <a data-pjax href="/artifakt-io/artifakt-docker-images/commits/feat/ch6276-generate-perjob-labels/README.md" class="ml-3 no-wrap Link--primary no-underline">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-history">
+    <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path>
+</svg>
+            <span class="d-none d-sm-inline">
+              <strong>History</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="Box-body d-flex flex-items-center flex-auto border-bottom-0 flex-wrap" >
+    <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default float-left mr-3" id="blob_contributors_box">
+      <summary class="Link--primary">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-people">
+    <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"></path>
+</svg>
+        <strong>1</strong>
+        
+        contributor
+      </summary>
+      <details-dialog
+        class="Box Box--overlay d-flex flex-column anim-fade-in fast"
+        aria-label="Users who have contributed to this file"
+        src="/artifakt-io/artifakt-docker-images/contributors-list/feat/ch6276-generate-perjob-labels/README.md" preload>
+        <div class="Box-header">
+          <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+          </button>
+          <h3 class="Box-title">
+            Users who have contributed to this file
+          </h3>
+        </div>
+        <include-fragment>
+          <span role="status">
+  <span class="sr-only">Loading</span>
+  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="my-3 mx-auto d-block anim-rotate">
+    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+</svg></span>
+
+        </include-fragment>
+      </details-dialog>
+    </details>
+  </div>
+    </div>
 
 
 
@@ -2122,8 +2210,8 @@
 
       <details
   data-target="readme-toc.trigger"
-  data-menu-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;trigger&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}"
-  data-menu-hydro-click-hmac="5eefe8987df803e33871c8227a2e9ed79a49eb0f592db32439d36868334ddc3f"
+  data-menu-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;trigger&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}"
+  data-menu-hydro-click-hmac="d732c2a13a8923016cf51fc4e47ce1e9018ef135368c1b9dbe958ee6e54101f2"
   class="dropdown details-reset details-overlay"
 >
   <summary
@@ -2152,17 +2240,17 @@
         </div>
 
       <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" data-filterable-for="toc-filter-field" data-filterable-type="substring">
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#artifakt-docker-images">Artifakt Docker Images</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 " style="padding-left: 24px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#full-list-of-available-runtimes">Full list of available runtimes</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#about-artifakt">About Artifakt</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#how-to-use-our-images">How to use our images</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 " style="padding-left: 24px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#pull-from-public-registry">Pull from public registry</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 " style="padding-left: 24px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#build-from-source">Build from Source</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 " style="padding-left: 24px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#execution-sample-run-a-web-application">Execution sample: run a web application</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#adding-an-image">Adding an image</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#image-update-policy">Image update policy</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#support-and-feedback">Support and feedback</a>
-          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="5872034c001748ec30e69e60bd26fa6190a4bcca1ceb2f594c5532d98cacd137" href="#license">License</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#artifakt-docker-images">Artifakt Docker Images</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 " style="padding-left: 24px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#full-list-of-available-runtimes">Full list of available runtimes</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#about-artifakt">About Artifakt</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#how-to-use-our-images">How to use our images</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 " style="padding-left: 24px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#pull-from-public-registry">Pull from public registry</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 " style="padding-left: 24px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#build-from-source">Build from Source</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 " style="padding-left: 24px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#execution-sample-run-a-web-application">Execution sample: run a web application</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#adding-an-image">Adding an image</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#image-update-policy">Image update policy</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#support-and-feedback">Support and feedback</a>
+          <a role="menuitem" class="filter-item SelectMenu-item py-1 text-emphasized" style="padding-left: 12px;" data-action="click:readme-toc#blur" data-targets="readme-toc.entries" data-hydro-click="{&quot;event_type&quot;:&quot;repository_toc_menu.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;entry&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2e0a0a5ee63a44812cc55f9dd064990d0882eaa2d96e10e12ab1480d58c4e55c" href="#license">License</a>
       </div>
     </div>
   </details-menu>
@@ -2173,19 +2261,19 @@
 
       147 lines (100 sloc)
       <span class="file-info-divider"></span>
-    10.9 KB
+    11.1 KB
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between hide-sm hide-md">
         <div class="BtnGroup">
-    <a href="/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md?plain=1" data-permalink-href="/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md?plain=1" aria-label="Display the source blob" role="button" data-view-component="true" class="source tooltipped tooltipped tooltipped-n  js-permalink-replaceable-link btn-sm btn BtnGroup-item">
+    <a href="/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md?plain=1" data-permalink-href="/artifakt-io/artifakt-docker-images/blob/28b4f576f95b2628605266b19cf1094fbaa297fe/README.md?plain=1" aria-label="Display the source blob" role="button" data-view-component="true" class="source tooltipped tooltipped tooltipped-n  js-permalink-replaceable-link btn-sm btn BtnGroup-item">
   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
     <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path>
 </svg>
   
   
 
-</a>    <a href="/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md" data-permalink-href="/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md" aria-label="Display the rendered blob" role="button" data-view-component="true" class="rendered tooltipped tooltipped tooltipped-n selected js-permalink-replaceable-link btn-sm btn BtnGroup-item">
+</a>    <a href="/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md" data-permalink-href="/artifakt-io/artifakt-docker-images/blob/28b4f576f95b2628605266b19cf1094fbaa297fe/README.md" aria-label="Display the rendered blob" role="button" data-view-component="true" class="rendered tooltipped tooltipped tooltipped-n selected js-permalink-replaceable-link btn-sm btn BtnGroup-item">
   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file">
     <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
 </svg>
@@ -2196,13 +2284,13 @@
 
 
     <div class="BtnGroup">
-      <a href="/artifakt-io/artifakt-docker-images/raw/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md" id="raw-url" role="button" data-view-component="true" class="btn-sm btn BtnGroup-item">
+      <a href="/artifakt-io/artifakt-docker-images/raw/feat/ch6276-generate-perjob-labels/README.md" id="raw-url" role="button" data-view-component="true" class="btn-sm btn BtnGroup-item">
   
   Raw
   
 
 </a>
-        <a href="/artifakt-io/artifakt-docker-images/blame/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md" data-hotkey="b" role="button" data-view-component="true" class="js-update-url-with-hash btn-sm btn BtnGroup-item">
+        <a href="/artifakt-io/artifakt-docker-images/blame/feat/ch6276-generate-perjob-labels/README.md" data-hotkey="b" role="button" data-view-component="true" class="js-update-url-with-hash btn-sm btn BtnGroup-item">
   
   Blame
   
@@ -2211,28 +2299,33 @@
     </div>
 
     <div>
-          <button class="btn-octicon disabled tooltipped tooltipped-nw js-remove-unless-platform"
-             data-platforms="windows,mac" type="button"  disabled
-             aria-label="You must be on a branch to open this file in GitHub Desktop">
+          <a class="btn-octicon tooltipped tooltipped-nw js-remove-unless-platform"
+             data-platforms="windows,mac"
+             href="x-github-client://openRepo/https://github.com/artifakt-io/artifakt-docker-images?branch=feat%2Fch6276-generate-perjob-labels&amp;filepath=README.md"
+             aria-label="Open this file in GitHub Desktop"
+             data-ga-click="Repository, open with desktop">
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-desktop">
     <path fill-rule="evenodd" d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z"></path>
 </svg>
-          </button>
+          </a>
 
         
-          <a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fartifakt-io%2Fartifakt-docker-images%2Fblob%2Fd1b356d8f656dd5af90d2e24931c4324b1103199%2FREADME.md" class="btn-octicon disabled tooltipped tooltipped-nw"
-            aria-label="You must be on a branch to make or propose changes to this file">
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil">
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/artifakt-io/artifakt-docker-images/edit/feat/ch6276-generate-perjob-labels/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="MD9PoPdb2fgnHanAEk3KjDg4PvoEhF0X+PLJRdthGS9KEeT0ybNBDGu7u9Bol8UxKsYUjeLYnmrvnYhM5j2gtw==" />
+            <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+              aria-label="Edit this file" data-hotkey="e" data-disable-with>
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil">
     <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
 </svg>
-          </a>
-          <a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fartifakt-io%2Fartifakt-docker-images%2Fblob%2Fd1b356d8f656dd5af90d2e24931c4324b1103199%2FREADME.md" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
-            aria-label="You must be on a branch to make or propose changes to this file">
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
+            </button>
+</form>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/artifakt-io/artifakt-docker-images/delete/feat/ch6276-generate-perjob-labels/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="BOcv7Y++gbel11s+UFed3nmrtpsnKq63IFen3XMeSDAdUdyawUeZJQDK1r6tgDtqoV5g3gkism7DNG1NXLDZzw==" />
+            <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+              aria-label="Delete this file" data-disable-with>
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
     <path fill-rule="evenodd" d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z"></path>
 </svg>
-          </a>
-    </div>
+            </button>
+</form>    </div>
   </div>
 
     <div class="d-flex hide-lg hide-xl flex-order-2 flex-grow-0">
@@ -2245,20 +2338,33 @@
 
         <ul class="dropdown-menu dropdown-menu-sw" style="width: 175px">
             <li>
+                <a class="dropdown-item tooltipped tooltipped-nw js-remove-unless-platform"
+                   data-platforms="windows,mac"
+                   href="x-github-client://openRepo/https://github.com/artifakt-io/artifakt-docker-images?branch=feat%2Fch6276-generate-perjob-labels&amp;filepath=README.md"
+                   data-ga-click="Repository, open with desktop">
+                  Open with Desktop
+                </a>
             </li>
           <li>
-            <a class="dropdown-item" href="/artifakt-io/artifakt-docker-images/raw/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md">
+            <a class="dropdown-item" href="/artifakt-io/artifakt-docker-images/raw/feat/ch6276-generate-perjob-labels/README.md">
               View raw
             </a>
           </li>
             <li>
                           </li>
             <li>
-              <a class="dropdown-item" href="/artifakt-io/artifakt-docker-images/blame/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md">
+              <a class="dropdown-item" href="/artifakt-io/artifakt-docker-images/blame/feat/ch6276-generate-perjob-labels/README.md">
                 View blame
               </a>
             </li>
 
+              <li class="dropdown-divider" role="none"></li>
+              <li>
+                <a class="dropdown-item" href="/artifakt-io/artifakt-docker-images/edit/feat/ch6276-generate-perjob-labels/README.md">Edit file</a>
+              </li>
+              <li>
+                <a class="dropdown-item menu-item-danger" href="/artifakt-io/artifakt-docker-images/delete/feat/ch6276-generate-perjob-labels/README.md">Delete file</a>
+              </li>
         </ul>
       </details>
     </div>
@@ -2268,7 +2374,7 @@
         <div id="readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6 gist-border-0">
     <article class="markdown-body entry-content container-lg" itemprop="text"><div align="center">
 <h1><a id="user-content-artifakt-docker-images" class="anchor" aria-hidden="true" href="#artifakt-docker-images"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Artifakt Docker Images</h1>
-<a target="_blank" rel="noopener noreferrer" href="/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/.github/logo.png"><img src="/artifakt-io/artifakt-docker-images/raw/d1b356d8f656dd5af90d2e24931c4324b1103199/.github/logo.png" alt="artifakt-logo" width="100" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/.github/logo.png"><img src="/artifakt-io/artifakt-docker-images/raw/feat/ch6276-generate-perjob-labels/.github/logo.png" alt="artifakt-logo" width="100" style="max-width: 100%;"></a>
 <p><strong>Base Docker images supported by Artifakt PaaS</strong></p>
 <p><a href="https://github.com/artifakt-io/artifakt-docker-images/actions"><img src="https://github.com/artifakt-io/artifakt-docker-images/actions/workflows/nightly.yml/badge.svg" alt="Build Docker Images" style="max-width: 100%;"></a>
 <a href="https://twitter.com/intent/follow?screen_name=artifakt_com" rel="nofollow"><img src="https://camo.githubusercontent.com/b230e746575b9073a361d7be4a1254de39079a4fbc927395f349137f00a15d0c/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6172746966616b745f636f6d2e7376673f7374796c653d736f6369616c266c6162656c3d466f6c6c6f77" alt="Twitter handle" data-canonical-src="https://img.shields.io/twitter/follow/artifakt_com.svg?style=social&amp;label=Follow" style="max-width: 100%;"></a></p>
@@ -2292,160 +2398,160 @@
 <td>4.0 Apache</td>
 <td><code>akeneo:4.0-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-akeneo/tree/4.0">artifakt-io/base-akeneo</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/124a0bd9b5c8349fc5da4709c1af21704e5f0851a502f96b12e546ae3d94c7e0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d737461747573"><img src="https://camo.githubusercontent.com/124a0bd9b5c8349fc5da4709c1af21704e5f0851a502f96b12e546ae3d94c7e0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d737461747573" alt="akeneo:4.0-apache" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_4.0-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c6326af1f8354cc9f5ab9fe27bcf1797d5661c435cb221383b6372f73e7953f5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d73697a65"><img src="https://camo.githubusercontent.com/c6326af1f8354cc9f5ab9fe27bcf1797d5661c435cb221383b6372f73e7953f5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_4.0-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/57cdf102da41196ed3b0f17f25bdf26b3a773fdd71562935dea6d2c766c5fc47/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d7374617475732e737667"><img src="https://camo.githubusercontent.com/57cdf102da41196ed3b0f17f25bdf26b3a773fdd71562935dea6d2c766c5fc47/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d7374617475732e737667" alt="akeneo:4.0-apache" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_4.0-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/54cac5710151c475631cdcdc847cd61a316aac43a33a0b5012fbf743df798af2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d73697a652e737667"><img src="https://camo.githubusercontent.com/54cac5710151c475631cdcdc847cd61a316aac43a33a0b5012fbf743df798af2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_4.0-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Akeneo</td>
 <td>5.0 Apache</td>
 <td><code>akeneo:5.0-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-akeneo/tree/5.0">artifakt-io/base-akeneo</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a0ae3004f590da018d04a63a96bd1bfc62e31e2387d2e2a2f33770123d71889d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d737461747573"><img src="https://camo.githubusercontent.com/a0ae3004f590da018d04a63a96bd1bfc62e31e2387d2e2a2f33770123d71889d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d737461747573" alt="akeneo:5.0-apache" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_5.0-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4cf1cbbdd07251a8eec59a1f7157bda0c869d2675548fc053a68d1e6d17807b3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d73697a65"><img src="https://camo.githubusercontent.com/4cf1cbbdd07251a8eec59a1f7157bda0c869d2675548fc053a68d1e6d17807b3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_5.0-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e65dc05c51ee8e91eede847f471ae04c52cf133c76310e6e5907bc1402d568b1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d7374617475732e737667"><img src="https://camo.githubusercontent.com/e65dc05c51ee8e91eede847f471ae04c52cf133c76310e6e5907bc1402d568b1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d7374617475732e737667" alt="akeneo:5.0-apache" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_5.0-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/2a973b3105695f18d9482283d8a7f19d8554464e578908ed95e4eb2d77957cc9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d73697a652e737667"><img src="https://camo.githubusercontent.com/2a973b3105695f18d9482283d8a7f19d8554464e578908ed95e4eb2d77957cc9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_5.0-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Angular</td>
 <td>12</td>
 <td><code>angular:12</code></td>
 <td><a href="https://github.com/artifakt-io/base-angular">artifakt-io/base-angular</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/29a46590a31a7a87001fa2c36e52d6f540865050dadb1403cebb4fe11cc58fd5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d737461747573"><img src="https://camo.githubusercontent.com/29a46590a31a7a87001fa2c36e52d6f540865050dadb1403cebb4fe11cc58fd5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d737461747573" alt="angular:12" data-canonical-src="https://res.cloudinary.com/artifakt/angular_12-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/388c167b5e7bbdba6d9e7f4559d3a96b7ef231f5edbb439c2ef71985da421bb3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d73697a65"><img src="https://camo.githubusercontent.com/388c167b5e7bbdba6d9e7f4559d3a96b7ef231f5edbb439c2ef71985da421bb3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/angular_12-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f7f4db692f7ff04e0eb6920159ce3c964da98bfe707b859ca8c0e9a431b2a867/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d7374617475732e737667"><img src="https://camo.githubusercontent.com/f7f4db692f7ff04e0eb6920159ce3c964da98bfe707b859ca8c0e9a431b2a867/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d7374617475732e737667" alt="angular:12" data-canonical-src="https://res.cloudinary.com/artifakt/angular_12-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/cdf9014836dc0b984b952e2f35773d25ccb5e55e27363ee6e426a7dc0b2357c3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d73697a652e737667"><img src="https://camo.githubusercontent.com/cdf9014836dc0b984b952e2f35773d25ccb5e55e27363ee6e426a7dc0b2357c3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/angular_12-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Drupal</td>
 <td>9.2 Apache</td>
 <td><code>drupal:9.2-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-drupal/tree/9.2">artifakt-io/base-drupal</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f341a62a639b51766c4ac0da2444884c42777256b2e434c1c34254796b34c0d3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d737461747573"><img src="https://camo.githubusercontent.com/f341a62a639b51766c4ac0da2444884c42777256b2e434c1c34254796b34c0d3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d737461747573" alt="drupal:9.2-apache" data-canonical-src="https://res.cloudinary.com/artifakt/drupal_9.2-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e62b2c49aecc933191d269a78fb70ce1058198c2d4c29412ccb16de4cd0f380a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d73697a65"><img src="https://camo.githubusercontent.com/e62b2c49aecc933191d269a78fb70ce1058198c2d4c29412ccb16de4cd0f380a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/drupal_9.2-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9f16b84c89b35d9111511a613f4c08088b16e47b8c6fda46d897919d059c19b4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d7374617475732e737667"><img src="https://camo.githubusercontent.com/9f16b84c89b35d9111511a613f4c08088b16e47b8c6fda46d897919d059c19b4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d7374617475732e737667" alt="drupal:9.2-apache" data-canonical-src="https://res.cloudinary.com/artifakt/drupal_9.2-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/79a479e3681133105ab0265033ce5abca903429eadf5031bdaab6942c56b34ca/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d73697a652e737667"><img src="https://camo.githubusercontent.com/79a479e3681133105ab0265033ce5abca903429eadf5031bdaab6942c56b34ca/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/drupal_9.2-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Golang</td>
 <td>1.16</td>
 <td><code>golang:1.16</code></td>
 <td><a href="https://github.com/artifakt-io/base-golang">artifakt-io/base-golang</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4ffed10658ab947d9125cdf0ece7b1d543f64f8924afd8cdef4dd3ecc14d359d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d737461747573"><img src="https://camo.githubusercontent.com/4ffed10658ab947d9125cdf0ece7b1d543f64f8924afd8cdef4dd3ecc14d359d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d737461747573" alt="golang:1.16" data-canonical-src="https://res.cloudinary.com/artifakt/golang_1.16-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c2996a55d7efe644c7e77a2b69fe04b8d8ba504ac31918336bb0cdfc82d22b36/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d73697a65"><img src="https://camo.githubusercontent.com/c2996a55d7efe644c7e77a2b69fe04b8d8ba504ac31918336bb0cdfc82d22b36/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/golang_1.16-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/1e9dcc927198c201fcd06dbdfde5283fc43d9f76e095a337447e9d0d6163efc0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d7374617475732e737667"><img src="https://camo.githubusercontent.com/1e9dcc927198c201fcd06dbdfde5283fc43d9f76e095a337447e9d0d6163efc0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d7374617475732e737667" alt="golang:1.16" data-canonical-src="https://res.cloudinary.com/artifakt/golang_1.16-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/2bc5a654bcb4405c91928f3daa3e08ea90f13f0f375cef51e0a634571ea3025b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d73697a652e737667"><img src="https://camo.githubusercontent.com/2bc5a654bcb4405c91928f3daa3e08ea90f13f0f375cef51e0a634571ea3025b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/golang_1.16-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Java</td>
 <td>8</td>
 <td><code>java:8</code></td>
 <td><a href="https://github.com/artifakt-io/base-java">artifakt-io/base-java</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/91eff28bc9b7083ca23942d98a44c50e639ca2f4d19509b83d936d4ff74b8ef3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d737461747573"><img src="https://camo.githubusercontent.com/91eff28bc9b7083ca23942d98a44c50e639ca2f4d19509b83d936d4ff74b8ef3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d737461747573" alt="Java 8" data-canonical-src="https://res.cloudinary.com/artifakt/java_8-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b9bf603a21f763def00e29937642c4cd9bef57a1b657b9bc2a80c4f2b3a19217/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d73697a65"><img src="https://camo.githubusercontent.com/b9bf603a21f763def00e29937642c4cd9bef57a1b657b9bc2a80c4f2b3a19217/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/java_8-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c4bf89b59b42206c2c93cd992ba8119c1dd67cd8d1339d95dab66774e6834a55/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d7374617475732e737667"><img src="https://camo.githubusercontent.com/c4bf89b59b42206c2c93cd992ba8119c1dd67cd8d1339d95dab66774e6834a55/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d7374617475732e737667" alt="Java 8" data-canonical-src="https://res.cloudinary.com/artifakt/java_8-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/359d6f6bec34ec29501dc2de17b697d89b12915092ef1ae3ea6e3679a27dd2ce/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d73697a652e737667"><img src="https://camo.githubusercontent.com/359d6f6bec34ec29501dc2de17b697d89b12915092ef1ae3ea6e3679a27dd2ce/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/java_8-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Magento</td>
 <td>2.4</td>
 <td><code>magento:2.4-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-magento/tree/2.4">artifakt-io/base-magento</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/beeba5732958d096bd43b3797c8264506e6da58bae58691731299bc523a06f4d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d737461747573"><img src="https://camo.githubusercontent.com/beeba5732958d096bd43b3797c8264506e6da58bae58691731299bc523a06f4d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d737461747573" alt="magento:2.4" data-canonical-src="https://res.cloudinary.com/artifakt/magento_2.4-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/7bf4b51ca0bd306d4a0147c535939034703d808175cc8d7d8767f64d8bf96f4b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d73697a65"><img src="https://camo.githubusercontent.com/7bf4b51ca0bd306d4a0147c535939034703d808175cc8d7d8767f64d8bf96f4b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/magento_2.4-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c52132907bbc193a484074a01ab11aad9c7a14d8199c092ec9311c2cf1543a54/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d7374617475732e737667"><img src="https://camo.githubusercontent.com/c52132907bbc193a484074a01ab11aad9c7a14d8199c092ec9311c2cf1543a54/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d7374617475732e737667" alt="magento:2.4" data-canonical-src="https://res.cloudinary.com/artifakt/magento_2.4-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/bc21ec0ffb0c513530592099d371151c6d479346fbdc5d4f6d916362650db9f1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d73697a652e737667"><img src="https://camo.githubusercontent.com/bc21ec0ffb0c513530592099d371151c6d479346fbdc5d4f6d916362650db9f1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/magento_2.4-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Node.js</td>
 <td>12</td>
 <td><code>node:12</code></td>
 <td><a href="https://github.com/artifakt-io/base-nodejs">artifakt-io/base-nodejs</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/d3485ff0d7257efed6bd6db223bf0d156ac35c9237f44930171aea35b63572eb/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d737461747573"><img src="https://camo.githubusercontent.com/d3485ff0d7257efed6bd6db223bf0d156ac35c9237f44930171aea35b63572eb/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d737461747573" alt="Node.js 12" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_12-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b8b99886711f4d7afdb785cb805302494b4c93de9a7ffe438f711491f109f869/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d73697a65"><img src="https://camo.githubusercontent.com/b8b99886711f4d7afdb785cb805302494b4c93de9a7ffe438f711491f109f869/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_12-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f87c9e4e0728e478c859a4731f07cca8884f50b3bdcb19f15d273c2f3353e74a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d7374617475732e737667"><img src="https://camo.githubusercontent.com/f87c9e4e0728e478c859a4731f07cca8884f50b3bdcb19f15d273c2f3353e74a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d7374617475732e737667" alt="Node.js 12" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_12-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/644de74a4555c233468707f94a1653ca8f01365aec31bae7622d56b96fa4abb3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d73697a652e737667"><img src="https://camo.githubusercontent.com/644de74a4555c233468707f94a1653ca8f01365aec31bae7622d56b96fa4abb3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_12-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Node.js</td>
 <td>14</td>
 <td><code>node:14</code></td>
 <td><a href="https://github.com/artifakt-io/base-nodejs">artifakt-io/base-nodejs</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/801919f6710ad9d9506bb9e6b1ca1a3879336a5d0cce65c916309c57990d42ef/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d737461747573"><img src="https://camo.githubusercontent.com/801919f6710ad9d9506bb9e6b1ca1a3879336a5d0cce65c916309c57990d42ef/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d737461747573" alt="Node.js 14" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_14-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/8c375c818d99ec81e423f00f02d50d84ff3ff8b46e023f0e48697c7f8f0017d9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d73697a65"><img src="https://camo.githubusercontent.com/8c375c818d99ec81e423f00f02d50d84ff3ff8b46e023f0e48697c7f8f0017d9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_14-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/0ca9251a42e567ffc928c50db02e385b206deab71eff021d5330701de0ced886/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d7374617475732e737667"><img src="https://camo.githubusercontent.com/0ca9251a42e567ffc928c50db02e385b206deab71eff021d5330701de0ced886/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d7374617475732e737667" alt="Node.js 14" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_14-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5f80c3ab644d3a817719f90bce78a2ccb3e54cd61276e5041ebc62a099432073/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d73697a652e737667"><img src="https://camo.githubusercontent.com/5f80c3ab644d3a817719f90bce78a2ccb3e54cd61276e5041ebc62a099432073/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_14-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Nuxtjs</td>
 <td>2.15</td>
 <td><code>nuxtjs:2.15</code></td>
 <td><a href="https://github.com/artifakt-io/base-nuxtjs">artifakt-io/base-nuxtjs</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/1a82c2826557dd05ef66e66aab81665743e38b1266f46abd5567d81b97abc079/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d737461747573"><img src="https://camo.githubusercontent.com/1a82c2826557dd05ef66e66aab81665743e38b1266f46abd5567d81b97abc079/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d737461747573" alt="Nuxtjs 2.15" data-canonical-src="https://res.cloudinary.com/artifakt/nuxtjs_2.15-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ac9c9e9c37dfc5e65fc920deed78ab3b19864ad0982a080e8f984cddd03802ff/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d73697a65"><img src="https://camo.githubusercontent.com/ac9c9e9c37dfc5e65fc920deed78ab3b19864ad0982a080e8f984cddd03802ff/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/nuxtjs_2.15-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b34b99471d6807b968b0842fa2401c7da24d7281b6c955fc3c57afbb0953955f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d7374617475732e737667"><img src="https://camo.githubusercontent.com/b34b99471d6807b968b0842fa2401c7da24d7281b6c955fc3c57afbb0953955f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d7374617475732e737667" alt="Nuxtjs 2.15" data-canonical-src="https://res.cloudinary.com/artifakt/nuxtjs_2.15-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/01bd8b42d9fd48ea96e17bb46fdbd2488065482041c87558d26ba9633bdc3758/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d73697a652e737667"><img src="https://camo.githubusercontent.com/01bd8b42d9fd48ea96e17bb46fdbd2488065482041c87558d26ba9633bdc3758/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/nuxtjs_2.15-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>PHP</td>
 <td>7.3 Apache</td>
 <td><code>php:7.3-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-php/tree/7.3">artifakt-io/base-php</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/2675bb85641fec2050d046eae937c9462431c71c2f74a9fe26a096787bd698b4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d737461747573"><img src="https://camo.githubusercontent.com/2675bb85641fec2050d046eae937c9462431c71c2f74a9fe26a096787bd698b4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d737461747573" alt="PHP 7.3" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.3-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e0c9ef20e500898d080a6f0532d1672d9bc728c1bddd7c46992055ad5feb7be4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d73697a65"><img src="https://camo.githubusercontent.com/e0c9ef20e500898d080a6f0532d1672d9bc728c1bddd7c46992055ad5feb7be4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.3-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/02637f8150a3e9a405ccdb8806d4e16646c7be9edfab22b75d6902d8cc4a4996/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d7374617475732e737667"><img src="https://camo.githubusercontent.com/02637f8150a3e9a405ccdb8806d4e16646c7be9edfab22b75d6902d8cc4a4996/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d7374617475732e737667" alt="PHP 7.3" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.3-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ddfc1d979e08f1b7da3cce360ba376b8350a8ade120ac769b9bc4ec8ef4889aa/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d73697a652e737667"><img src="https://camo.githubusercontent.com/ddfc1d979e08f1b7da3cce360ba376b8350a8ade120ac769b9bc4ec8ef4889aa/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.3-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>PHP</td>
 <td>7.4 Apache</td>
 <td><code>php:7.4-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-php/tree/7.4">artifakt-io/base-php</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9253a68e7dec262d032a521d170bdefeeada5453c4f872e6f0755d297f5c8520/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d737461747573"><img src="https://camo.githubusercontent.com/9253a68e7dec262d032a521d170bdefeeada5453c4f872e6f0755d297f5c8520/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d737461747573" alt="PHP 7.4" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.4-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/aae1dec56c3f1f4277d848d92731672fd063e03e923372721c7e231c97d392fb/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d73697a65"><img src="https://camo.githubusercontent.com/aae1dec56c3f1f4277d848d92731672fd063e03e923372721c7e231c97d392fb/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.4-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/103b8296965e65f2cb4a0d2180b93f4720590f66c5f8ed6503e8a111bbbe8a2f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d7374617475732e737667"><img src="https://camo.githubusercontent.com/103b8296965e65f2cb4a0d2180b93f4720590f66c5f8ed6503e8a111bbbe8a2f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d7374617475732e737667" alt="PHP 7.4" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.4-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/49c38e76fd820edf836120a44a6076d7b3c5a244bfe8d9a2d5e71159ed015f66/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d73697a652e737667"><img src="https://camo.githubusercontent.com/49c38e76fd820edf836120a44a6076d7b3c5a244bfe8d9a2d5e71159ed015f66/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.4-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>PHP</td>
 <td>8.0 Apache</td>
 <td><code>php:8.0-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-php/tree/8.0">artifakt-io/base-php</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4fd16620f22c47daf0d5aa246068e21fdb71634c3e2a83ec664cc53a032967d9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d737461747573"><img src="https://camo.githubusercontent.com/4fd16620f22c47daf0d5aa246068e21fdb71634c3e2a83ec664cc53a032967d9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d737461747573" alt="PHP 8.0" data-canonical-src="https://res.cloudinary.com/artifakt/php_8.0-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c8536e04efa363356af90072136d5b5f8e5d2cd9920e5da83e335a87b48f7476/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d73697a65"><img src="https://camo.githubusercontent.com/c8536e04efa363356af90072136d5b5f8e5d2cd9920e5da83e335a87b48f7476/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/php_8.0-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/1331b44225eadfc73bf5038e094395c1823ed6f075bf40c22a42d0f950870e1d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d7374617475732e737667"><img src="https://camo.githubusercontent.com/1331b44225eadfc73bf5038e094395c1823ed6f075bf40c22a42d0f950870e1d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d7374617475732e737667" alt="PHP 8.0" data-canonical-src="https://res.cloudinary.com/artifakt/php_8.0-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4f63fc9bd9c2245ab24ea901b1c5e12482281199c6cb779741e831337cca373e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d73697a652e737667"><img src="https://camo.githubusercontent.com/4f63fc9bd9c2245ab24ea901b1c5e12482281199c6cb779741e831337cca373e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/php_8.0-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Python</td>
 <td>3.9</td>
 <td><code>python:3.9</code></td>
 <td><a href="https://github.com/artifakt-io/base-python">artifakt-io/base-python</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/81c3e96e0dd714c340c1bb7b51349680e0d3f6947ad9663ced961877515b0e15/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d737461747573"><img src="https://camo.githubusercontent.com/81c3e96e0dd714c340c1bb7b51349680e0d3f6947ad9663ced961877515b0e15/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d737461747573" alt="python:3.9" data-canonical-src="https://res.cloudinary.com/artifakt/python_3.9-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/d9590675b1a3a3d66e54dfeb3d5488d2155e5e1dbf21c3603973f3d4232982e0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d73697a65"><img src="https://camo.githubusercontent.com/d9590675b1a3a3d66e54dfeb3d5488d2155e5e1dbf21c3603973f3d4232982e0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/python_3.9-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/8f29ab1f839e4c5b5cc0b0d2488b0776b58b46ff250a8e734fc00ec29099e8c1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d7374617475732e737667"><img src="https://camo.githubusercontent.com/8f29ab1f839e4c5b5cc0b0d2488b0776b58b46ff250a8e734fc00ec29099e8c1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d7374617475732e737667" alt="python:3.9" data-canonical-src="https://res.cloudinary.com/artifakt/python_3.9-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/d62aaff7b5f90457f896e9a892c7e7f18b54c2c77af1cee069e169949d78fa8d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d73697a652e737667"><img src="https://camo.githubusercontent.com/d62aaff7b5f90457f896e9a892c7e7f18b54c2c77af1cee069e169949d78fa8d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/python_3.9-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Ruby</td>
 <td>2.7</td>
 <td><code>ruby:2.7</code></td>
 <td><a href="https://github.com/artifakt-io/base-ruby">artifakt-io/base-ruby</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e5d1db44bc6a1b5f9fc6928c51d8f905184797d013c43a570f9bf3ace0422751/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d737461747573"><img src="https://camo.githubusercontent.com/e5d1db44bc6a1b5f9fc6928c51d8f905184797d013c43a570f9bf3ace0422751/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d737461747573" alt="ruby:2.7" data-canonical-src="https://res.cloudinary.com/artifakt/ruby_2.7-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c82a2c667978b08d6cd43f66db474254d00613774614e4638cdd131404232945/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d73697a65"><img src="https://camo.githubusercontent.com/c82a2c667978b08d6cd43f66db474254d00613774614e4638cdd131404232945/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/ruby_2.7-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/23cc6db0d2ce427df91e4b97a4e9019ce0bece0a3f139a016caa9d3f12c5f6f8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d7374617475732e737667"><img src="https://camo.githubusercontent.com/23cc6db0d2ce427df91e4b97a4e9019ce0bece0a3f139a016caa9d3f12c5f6f8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d7374617475732e737667" alt="ruby:2.7" data-canonical-src="https://res.cloudinary.com/artifakt/ruby_2.7-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/42723937cc7e346453d6fb002fc368b28033cc34dfdf0b3d33ab50ba8e8607b9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d73697a652e737667"><img src="https://camo.githubusercontent.com/42723937cc7e346453d6fb002fc368b28033cc34dfdf0b3d33ab50ba8e8607b9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/ruby_2.7-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Sylius</td>
 <td>1.10 Apache</td>
 <td><code>sylius:1.10-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-sylius/tree/1.10">artifakt-io/base-sylius</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/7f70c84e46793eda2cf77133e0c36c878276e08e8aae201ec2ed8e5b2a14b747/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d737461747573"><img src="https://camo.githubusercontent.com/7f70c84e46793eda2cf77133e0c36c878276e08e8aae201ec2ed8e5b2a14b747/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d737461747573" alt="sylius:1.10-apache" data-canonical-src="https://res.cloudinary.com/artifakt/sylius_1.10-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/93e9e64e2008aec119ca8821dc1ec6db9946304bcfe5bc0ded4cb1099f969214/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d73697a65"><img src="https://camo.githubusercontent.com/93e9e64e2008aec119ca8821dc1ec6db9946304bcfe5bc0ded4cb1099f969214/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/sylius_1.10-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/60049835d2c0a4cf7f2ca1d88d730c74fa06026c608ab37f09a9df1ce1cca21b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d7374617475732e737667"><img src="https://camo.githubusercontent.com/60049835d2c0a4cf7f2ca1d88d730c74fa06026c608ab37f09a9df1ce1cca21b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d7374617475732e737667" alt="sylius:1.10-apache" data-canonical-src="https://res.cloudinary.com/artifakt/sylius_1.10-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a8aea84b48d7c7b0f921dce033720d40ba453bb6d15da1821b182d176dea34b3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d73697a652e737667"><img src="https://camo.githubusercontent.com/a8aea84b48d7c7b0f921dce033720d40ba453bb6d15da1821b182d176dea34b3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/sylius_1.10-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Symfony</td>
 <td>4.4 Apache</td>
 <td><code>symfony:4.4-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-symfony/tree/4.4">artifakt-io/base-symfony</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/d20f6435633b20c57c0c5a878ea9ba23d7a84f2b46fb57ad5f4579464a2a8093/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d737461747573"><img src="https://camo.githubusercontent.com/d20f6435633b20c57c0c5a878ea9ba23d7a84f2b46fb57ad5f4579464a2a8093/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d737461747573" alt="symfony:4.4-apache" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_4.4-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f2e15e42097cbdfa65d0405569e5e0c5de3cbbf393e47c778e5cd659ecd4e71e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d73697a65"><img src="https://camo.githubusercontent.com/f2e15e42097cbdfa65d0405569e5e0c5de3cbbf393e47c778e5cd659ecd4e71e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_4.4-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9e216fd88f654ba530811e9188186d58926dae2d59fc7233bbeb4f1be5b9285a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d7374617475732e737667"><img src="https://camo.githubusercontent.com/9e216fd88f654ba530811e9188186d58926dae2d59fc7233bbeb4f1be5b9285a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d7374617475732e737667" alt="symfony:4.4-apache" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_4.4-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e8676b12c7040dd337d5904443cb3c739b8c03aa6222b797243dee591f3e5486/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d73697a652e737667"><img src="https://camo.githubusercontent.com/e8676b12c7040dd337d5904443cb3c739b8c03aa6222b797243dee591f3e5486/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_4.4-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Symfony</td>
 <td>5.3 Apache</td>
 <td><code>symfony:5.3-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-symfony/tree/5.3">artifakt-io/base-symfony</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/aca336362f2f8c68660d724f721593a9935e4a9365ba59bac5ffa28c89c4c475/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d737461747573"><img src="https://camo.githubusercontent.com/aca336362f2f8c68660d724f721593a9935e4a9365ba59bac5ffa28c89c4c475/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d737461747573" alt="symfony:5.3-apache" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_5.3-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f78f8f2845f1242329f2f93193e545a4115f5237a4ed318846ddf738d3bfc7c3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d73697a65"><img src="https://camo.githubusercontent.com/f78f8f2845f1242329f2f93193e545a4115f5237a4ed318846ddf738d3bfc7c3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_5.3-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a04bb96b94eec6c562a86a1645a97d05f62baa261ec9e70ec52c13feacd4a5bf/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d7374617475732e737667"><img src="https://camo.githubusercontent.com/a04bb96b94eec6c562a86a1645a97d05f62baa261ec9e70ec52c13feacd4a5bf/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d7374617475732e737667" alt="symfony:5.3-apache" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_5.3-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/6d10704036f9da21572ebfe50544b1a8375bb6218cfa36d4315521eaf2a6c8ab/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d73697a652e737667"><img src="https://camo.githubusercontent.com/6d10704036f9da21572ebfe50544b1a8375bb6218cfa36d4315521eaf2a6c8ab/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_5.3-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>VueJs</td>
 <td>3</td>
 <td><code>vuejs:3</code></td>
 <td><a href="https://github.com/artifakt-io/base-vuejs">artifakt-io/base-vuejs</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e7ca6f29fb8d6fa45b707a8ad4ada521a2b12c76507d1132bf2efce2645d79bb/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d737461747573"><img src="https://camo.githubusercontent.com/e7ca6f29fb8d6fa45b707a8ad4ada521a2b12c76507d1132bf2efce2645d79bb/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d737461747573" alt="wordpress:vuejs" data-canonical-src="https://res.cloudinary.com/artifakt/vuejs_3-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/06838b9a68be0638a52ab7ec97484e9e0e4f889898f47d7c938fe4030d35380e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d73697a65"><img src="https://camo.githubusercontent.com/06838b9a68be0638a52ab7ec97484e9e0e4f889898f47d7c938fe4030d35380e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/vuejs_3-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c9d3e0a3b02dc53db3359c0e8eb93c36060186dd9059ff532266a51811e290a2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d7374617475732e737667"><img src="https://camo.githubusercontent.com/c9d3e0a3b02dc53db3359c0e8eb93c36060186dd9059ff532266a51811e290a2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d7374617475732e737667" alt="wordpress:vuejs" data-canonical-src="https://res.cloudinary.com/artifakt/vuejs_3-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4120ad34be838a336b5751aab8db3614874723a4e63e6fd29a230837072efcce/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d73697a652e737667"><img src="https://camo.githubusercontent.com/4120ad34be838a336b5751aab8db3614874723a4e63e6fd29a230837072efcce/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/vuejs_3-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Wordpress</td>
 <td>5 Apache</td>
 <td><code>wordpress:5-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-wordpress/tree/5.7">artifakt-io/base-wordpress</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4891b12876ab0fd06a1263edcdd2aa539b422669643226a8238e4b6d998e28d1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d737461747573"><img src="https://camo.githubusercontent.com/4891b12876ab0fd06a1263edcdd2aa539b422669643226a8238e4b6d998e28d1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d737461747573" alt="wordpress:5-apache" data-canonical-src="https://res.cloudinary.com/artifakt/wordpress_5-status" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b86ec3b0691f587b61535a1149b7775a791dd75d1c1cb58a5ebb46c0a29baad8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d73697a65"><img src="https://camo.githubusercontent.com/b86ec3b0691f587b61535a1149b7775a791dd75d1c1cb58a5ebb46c0a29baad8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d73697a65" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/wordpress_5-size" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9fcc9d8d1bbdc85afab9dfff73ea21a9a453268d2b04e4eedc65b08faeb79250/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d7374617475732e737667"><img src="https://camo.githubusercontent.com/9fcc9d8d1bbdc85afab9dfff73ea21a9a453268d2b04e4eedc65b08faeb79250/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d7374617475732e737667" alt="wordpress:5-apache" data-canonical-src="https://res.cloudinary.com/artifakt/wordpress_5-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/cb8f80b7a0edf1580c7db2aa1efea257105883ee37dfe7c22f185138da4c1717/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d73697a652e737667"><img src="https://camo.githubusercontent.com/cb8f80b7a0edf1580c7db2aa1efea257105883ee37dfe7c22f185138da4c1717/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/wordpress_5-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
@@ -2547,11 +2653,11 @@ license text.</p>
     <div class="Popover anim-scale-in js-tagsearch-popover"
      hidden
      data-tagsearch-url="/artifakt-io/artifakt-docker-images/find-definition"
-     data-tagsearch-ref="d1b356d8f656dd5af90d2e24931c4324b1103199"
+     data-tagsearch-ref="feat/ch6276-generate-perjob-labels"
      data-tagsearch-path="README.md"
      data-tagsearch-lang="Markdown"
-     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:323352019,&quot;ref&quot;:&quot;d1b356d8f656dd5af90d2e24931c4324b1103199&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}"
-     data-hydro-click-hmac="071eab52b698a8682fc5ac43b14365838147d3b98e26965018678cf879928575">
+     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:323352019,&quot;ref&quot;:&quot;feat/ch6276-generate-perjob-labels&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}"
+     data-hydro-click-hmac="9d588a4db56e2fcd3698d0edde9c2b2a775fc690580eaf1a912524786ae0172a">
   <div class="Popover-message Popover-message--large Popover-message--top-left TagsearchPopover mt-1 mb-4 mx-auto Box color-shadow-large">
     <div class="TagsearchPopover-content js-tagsearch-popover-content overflow-auto" style="will-change:transform;">
     </div>
@@ -2576,10 +2682,10 @@ license text.</p>
   <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 color-fg-muted border-top color-border-muted ">
     <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
       <li class="mr-3 mr-lg-0">&copy; 2021 GitHub, Inc.</li>
-        <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="9585e1971aa7aba882f8899884c7f97f22b193e06876a596db6a8d5f987c0d79" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}">Terms</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="6c66cc0b0635940a76007b77e0c59e01476d42090c40b1fdab1975d19a58805b" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}">Privacy</a></li>
-        <li class="mr-3 mr-lg-0"><a data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="1caa37252812cf385b5a291cdf2e7895f6620ce3c0892e60309e66d404de7275" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="https://github.com/security">Security</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://www.githubstatus.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="97219a8b8f86b60159b2c0a7639792cee5fefab9965f965faa2fa92e2a71aaea" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}">Status</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="9025104094c616f08209b74b052cbb275a69a4d10ff0593d6041db929f7f8d96" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="e5e4e8cf8dc7bb39721a6f1b74c1ed61a2dd9807526cba391989d4869f7b39f9" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="bca3adcfb9d93ad610abc5d173eca22a6b841ac3ef6602558c1c699f0e111300" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://www.githubstatus.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="9929621b99698892c7ce2df8d5d54c40b1060feca97b22ad0278f3b9a79946a6" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}">Status</a></li>
         <li><a data-ga-click="Footer, go to help, text:Docs" href="https://docs.github.com">Docs</a></li>
     </ul>
 
@@ -2589,11 +2695,11 @@ license text.</p>
 </svg>
 </a>
     <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-        <li class="mr-3 mr-lg-0"><a href="https://support.github.com?tags=dotcom-footer" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="0e3645f1e5809ef901c5e97ef648055e8e7a6ef8ed52e8dcb6cb7aa4c4378f47" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}">Contact GitHub</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Pricing&quot;,&quot;label&quot;:&quot;text:Pricing&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="7bd9e4fa0b74d3c8f38273e6eae60f6fc8380ea9f6b277c76b4b37bd52e2f1fa" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Pricing&quot;,&quot;label&quot;:&quot;text:Pricing&quot;}">Pricing</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://docs.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="21f1fe6abf6c5269763dbc4fdaac30cf313e356c8e4feb42a964eb9651549582" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;}">API</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://services.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to training&quot;,&quot;label&quot;:&quot;text:training&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="3aecdbff4ed4409f7c6ec11f900af050cf0870752f2fd63d897c642721ade670" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to training&quot;,&quot;label&quot;:&quot;text:training&quot;}">Training</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/d1b356d8f656dd5af90d2e24931c4324b1103199/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="13dec0785cb724228722a4b6760c5b6e223d19c7096436b3d17de892a47da93d" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;}">Blog</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://support.github.com?tags=dotcom-footer" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="77884e584dc679518713b7ac9191698e77afe27e5382b4239f566bb7449eaeaa" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Pricing&quot;,&quot;label&quot;:&quot;text:Pricing&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="6275317c8b41187e25fa51341d8f15f690aea3635fbf3c1acee9a9ff54272191" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Pricing&quot;,&quot;label&quot;:&quot;text:Pricing&quot;}">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://docs.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="2c2f5a879ec2666c964532d8b1487c6adafb0f1631a0dcc2c9dce4582e31780d" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;}">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://services.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to training&quot;,&quot;label&quot;:&quot;text:training&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="0f937cf27d5e72e269565da5d4dd3495363a991992c20a1301c56da60d1adce0" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to training&quot;,&quot;label&quot;:&quot;text:training&quot;}">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="c08b92201a3103257229b6909e448623d0748a86226dc9acc04fe6015b737051" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;}">Blog</a></li>
         <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
     </ul>
   </div>
