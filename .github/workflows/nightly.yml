@@ -65,12 +65,9 @@ jobs:
           IMAGE_NAME=${{ env.IMAGE_NAME }}
           TAG=${{ env.IMAGE_TAG }}
 
-          tmpName="image-$RANDOM"
-
           export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true --test=true --image=$IMAGE_NAME --tag=$TAG
           IMAGE_ID=registry.artifakt.io/$IMAGE_NAME
 
-          docker tag $tmpName $IMAGE_ID:$TAG
           IMAGE_SIZE=`docker images $IMAGE_ID:$TAG --format "{{.Size}}"`
           echo "IMAGE_SIZE=$IMAGE_SIZE" >> $GITHUB_ENV
 
