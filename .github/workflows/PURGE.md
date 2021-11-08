@@ -91,7 +91,7 @@
     <script crossorigin="anonymous" defer="defer" integrity="sha512-8NWmKXh96TMxAyNDrhoc2YIl4tXPe6v+DUuO6nPOP2C0WiUObu6+6q5PJPqzqi/BJqMHMHPiIMCFUEu/v6LikQ==" type="application/javascript" data-module-id="./chunk-webgl-warp.js" data-src="https://github.githubassets.com/assets/chunk-webgl-warp-f0d5a629.js"></script>
   
   <script crossorigin="anonymous" defer="defer" integrity="sha512-GBlegh9b9Zm8s+yRFiRNhJg09OxAqlOU4XA1zHGZbYTD+DaLps6fNHcqhjRRuKcEK/Xo9BlcSkYVr4HCW9B2jA==" type="application/javascript" src="https://github.githubassets.com/assets/repositories-18195e82.js"></script>
-<script crossorigin="anonymous" defer="defer" integrity="sha512-2cGbZ+odRG2o6raoQtBlhLBXQUN4OES5zgr5Lfimc4pWszDNFL2h8oWYYhpS+Oh9jTzk2bR3vWXV2k+HnxHo9Q==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-d9c19b67.js"></script>
+<script crossorigin="anonymous" defer="defer" integrity="sha512-BGAnrgsVTqUuppIPCCcmSJfBHTIj7D47biKPul2uQBZ2o/iRght5PnFvjix4IxHgDHBIc9mJG+L32gUtnIAmTg==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-046027ae.js"></script>
 
   <meta name="viewport" content="width=device-width">
   
@@ -110,11 +110,11 @@
     
 
   <link rel="assets" href="https://github.githubassets.com/">
-    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/4036528/ws?session=eyJ2IjoiVjMiLCJ1Ijo0MDM2NTI4LCJzIjo3NzQ0OTUzMTUsImMiOjIxMzgxNjQ5NTAsInQiOjE2MzYyMjM3MTZ9--edf302242af8f90096494778f32118560a7eeebfc0f5528eae8a21d13dcf511d" data-refresh-url="/_alive" data-session-id="3dbd7a1eed2a4a1f0c88050a8b4f378876223740fb015919b28488b276e607c8">
+    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/4036528/ws?session=eyJ2IjoiVjMiLCJ1Ijo0MDM2NTI4LCJzIjo3NzQyNzcwMjAsImMiOjM5NDE3NDA2OSwidCI6MTYzNjM5NTQyMn0=--321a80b359e815837fea1bb41c3f1f5c888cd5a210d8094904015341071f0789" data-refresh-url="/_alive" data-session-id="180357ca6ebc8494ef74c19ef662d8975a1fa69ed8846b24b445dd1a96823dd6">
     <link rel="shared-web-socket-src" href="/assets-cdn/worker/socket-worker-2e2ab3fc.js">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
-  <meta name="request-id" content="CDA5:E046:10B3B1:135F42:6186CAD5" data-pjax-transient="true" /><meta name="html-safe-nonce" content="7083ade0035ab1daa94d45c1d3706038d65b3b0635de4cc9f965d12d31a306b4" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6IkNEQTU6RTA0NjoxMEIzQjE6MTM1RjQyOjYxODZDQUQ1IiwidmlzaXRvcl9pZCI6IjIyNTc3MTk1MDAwMjI2MTA3OTIiLCJyZWdpb25fZWRnZSI6ImZyYSIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="fd848ddc56c5571ec0b01d2a3ca4b7374a63476ed1a4d55b00782e5888a4ac28" data-pjax-transient="true" />
+  <meta name="request-id" content="E8B3:AEEC:FBE8F:10BFD3:6189699D" data-pjax-transient="true" /><meta name="html-safe-nonce" content="4447646c48d9a50973142b8ce6ab973f6b0dbaccac3ed7204e48b1d5e06ce29b" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9hcnRpZmFrdC1pby9hcnRpZmFrdC1kb2NrZXItaW1hZ2VzL2VkaXQvZmVhdC9jaDYyNzYtZ2VuZXJhdGUtcGVyam9iLWxhYmVscy9SRUFETUUubWQiLCJyZXF1ZXN0X2lkIjoiRThCMzpBRUVDOkZCRThGOjEwQkZEMzo2MTg5Njk5RCIsInZpc2l0b3JfaWQiOiI1NjU0NDU3MDEwOTcxMTA1MTc0IiwicmVnaW9uX2VkZ2UiOiJmcmEiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true" /><meta name="visitor-hmac" content="cdd5cf5334f849e585a3efdec35729bc378cbe8f3a16aeb4fdc9b45c89f428d1" data-pjax-transient="true" />
 
     <meta name="hovercard-subject-tag" content="repository:323352019" data-pjax-transient>
 
@@ -153,7 +153,7 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="ZWFiOWI3Y2M3N2NiMzQ0NzAyYjFiNDYzY2ZlMDg2OGIwZjBmZWMzYWM2N2RlNTg1M2Q1NWU0NGMxMGUzNzViNnx7InJlbW90ZV9hZGRyZXNzIjoiMzcuMTcxLjE4My4xNjYiLCJyZXF1ZXN0X2lkIjoiQ0RBNTpFMDQ2OjEwQjNCMToxMzVGNDI6NjE4NkNBRDUiLCJ0aW1lc3RhbXAiOjE2MzYyMjM3MTYsImhvc3QiOiJnaXRodWIuY29tIn0=">
+      <meta name="js-proxy-site-detection-payload" content="ZjhhZGYyMjk1MDJkZTE2NmM3ZTFiNWMxN2E4N2U1NzQxZGFkNDYwMjFiNmQzMThlNjFjOTc4YjJmNTg0ZWM4Y3x7InJlbW90ZV9hZGRyZXNzIjoiMzcuMTY1LjcuMTIwIiwicmVxdWVzdF9pZCI6IkU4QjM6QUVFQzpGQkU4RjoxMEJGRDM6NjE4OTY5OUQiLCJ0aW1lc3RhbXAiOjE2MzYzOTU0MjIsImhvc3QiOiJnaXRodWIuY29tIn0=">
       <meta name="keyboard-shortcuts-preference" content="all">
       <script type="application/json" id="memex_keyboard_shortcuts_preference">"all"</script>
 
@@ -263,7 +263,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" value="ZJosrxmc80QYXTWL0vKPOyJFyIZ8FYEHtFcbkS5S5in/90bGX6hPLfasZmnr9zwq3N02CnOWHn7K4FOlUrUtww==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+        <input type="hidden" value="QsM89uVBIgLx0dTYQKh/+E2CPJ25QWFz1i00P/Fv+ABKmrkMkMahyOtsZlsLm6LrtqOI/CVVbGLPbg7/b3ZQOQ==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -479,7 +479,7 @@
       <img class="avatar avatar-user" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/4036528?s=40&amp;v=4" width="20" height="20" alt="@djalal" />
       djalal
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="HPPzw1xCdxdxb9g52SjKyXitaMSvNuEJyi3W8zmAzEl70yW5qhZropovHyx1MljR3Is8A/WDpxNqkPFehdQ+mg==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="atWyTajwV9Q/ml/+/WvdLCAXPy6grvK7hXH4vieYTY+1uNYxpNV/9HFS9OQdeZRAiakclauvzKTIypP7cRomSQ==" />
       <button
         type="submit"
         class="Header-link mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade d-md-none btn-link d-block width-full text-left"
@@ -517,7 +517,7 @@
       <notification-indicator
         class="js-socket-channel"
         data-test-selector="notifications-indicator"
-        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NDAzNjUyOCIsInQiOjE2MzYyMjM3MTZ9--c21e7a480fc3e8ce484a1ebf6ccd86d8309cbb431c99d0e29aae696fad0c50f8">
+        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NDAzNjUyOCIsInQiOjE2MzYzOTU0MjJ9--acc9fa6203f8e74aed5f3ad4892af2db78687f90295ff540a51c65aff831d04a">
         <a href="/notifications"
           class="Header-link notification-indicator position-relative tooltipped tooltipped-sw"
           
@@ -655,11 +655,11 @@
       data-return-to=/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md
       data-user-id="4036528"
       >
-      <input type="hidden" value="ZaKaOmmkgQfDbbRf5ojXpyUnkK/PFj0RZ2CWLBW4fb/pocfFMibk2YXN3v73NL3m9UhfPNqql3xHWXlfPJt/DQ==" data-csrf="true" class="js-graphql-csrf" />
+      <input type="hidden" value="Dc7Lua8fR+k50ZVYM4pdArYIB4J64UVdG5b52E6ZLuouGqwgbBvFRg2+vNPbx/cTW1wHsQ/f+lOpMjv1dtQYJg==" data-csrf="true" class="js-graphql-csrf" />
       <iframe class="d-none js-command-palette-commands" sandbox="allow-scripts allow-same-origin" srcdoc="<script crossorigin=&quot;anonymous&quot; defer=&quot;defer&quot; integrity=&quot;sha512-QlLlS61ztNDX0MakiMw8Co2H4lwwWxBjEux0TXwYeRxNqomMtm5SWMesEKum2gowVBnTnVaG9IqV5fCMSTa9Jg==&quot; type=&quot;application/javascript&quot; src=&quot;https://github.githubassets.com/assets/command-runner-4252e54b.js&quot;></script>
 " aria-hidden="true"></iframe>
       <input type="hidden" name="color-mode-path" id="color-mode-path" value="/settings/appearance/color_mode" class="js-color-mode-path" autocomplete="off" />
-      <input type="hidden" value="g2cwa4T00eQz/ZYg2IqhWhwynsTLG0YaMzfOTl2i4jhKHmxkQT9t0ltY6xF4tPl/sLjkZOhxubBIkZtAeWOhZw==" data-csrf="true" class="js-color-mode-csrf" />
+      <input type="hidden" value="EFxBQuKsSq4DJ+lYapA2GXvle1SFfjXR8cTy28UghYeWsb79PaHlBrld2wlF+7kaAvVjGu7qmqZdyWkizgZKAA==" data-csrf="true" class="js-color-mode-csrf" />
 
         <command-palette-mode
           data-char="#"
@@ -1385,7 +1385,7 @@
             </header>
 
             <div class="SelectMenu-list">
-              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="/Z0Pmpuk3Z1znxMvvZ9iBm4O27U5QckVOSGVn74PpO4pqHyDL6Wp0D3Y7tPzifg+nsJrzCtZsqlk8Q0ip2nPFg==" autocomplete="off" />
+              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="HLS4Vz2tbKTBrGc6SZATgt9ZimpKPFmPRNYW+Jv/aJDjuNCweB6HgBw4neRaRpHf/HpvET0qb38cYfe72IIK8w==" autocomplete="off" />
 
                 <input type="hidden" name="repository_id" value="323352019">
 
@@ -1508,7 +1508,7 @@
 
         <details-dialog class="notifications-component-dialog " data-target="notifications-list-subscription-form.customDialog" hidden>
           <div class="SelectMenu-modal notifications-component-dialog-modal overflow-visible">
-            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="FYZMHa2m03R/JaWB7Bp7D8V0bpVAcr2C6oYuQulBgInBsz8EGaenOTFiWH2iDOE3Nbje7FJqxj63Vrb/8CfrcQ==" autocomplete="off" />
+            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="A27el/1cZwC9Nxmn0qON1tGMiDGynfIJzhK4qoTUd+z8YrZwuO+MJGCj43nBdQ+L8q9tSsWLxPmWpVnpx6kVjw==" autocomplete="off" />
 
               <input type="hidden" name="repository_id" value="323352019">
 
@@ -1674,7 +1674,7 @@
 
     <li>
           <div class="js-toggler-container js-social-container starring-container d-block">
-    <form class="starred js-social-form" action="/artifakt-io/artifakt-docker-images/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="V8r6N7wJ8BbuLidjkMSQ0WFCUeY5XZ5885NvutSnRBaET6HyagRCUiD5RiQbBJ70uJnJvzGx4gxV5cNf0ZKU9A==" autocomplete="off" />
+    <form class="starred js-social-form" action="/artifakt-io/artifakt-docker-images/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Qh2za5zZZs1LcjnFa4nfYggAifeBbzo6+1YIJw2Tvz5VrhW5TWc1NzjNaXRzsT5Wb2EQjjnvCh9Jd3TJ0l2A4g==" autocomplete="off" />
       <input type="hidden" name="context" value="repository">
       <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="fdc269f05953181728956b793240559e3134635053fcfd4a613062169328a363" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar" aria-label="Unstar this repository" type="submit" data-view-component="true" class="js-toggler-target btn-with-count btn-sm btn">
   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill mr-1">
@@ -1696,7 +1696,7 @@
            0
         </a>
 </form>
-    <form class="unstarred js-social-form" action="/artifakt-io/artifakt-docker-images/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="93vkGPLEUEteFwDJhYV77+YQD3HMUaOrbbVDjHq74pDGeNCQ6m0FG9eyU6heybByUy/zKr8+lD3YkUGAs41sJw==" autocomplete="off" />
+    <form class="unstarred js-social-form" action="/artifakt-io/artifakt-docker-images/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Oc3OJFCBHR9W8kywoi8+EESkMvTQg5poBvjco2sGOHnem5kj04SxCEJCy4G/o/W3vI3JmegECoGT5qxKjkI4Og==" autocomplete="off" />
       <input type="hidden" name="context" value="repository">
       <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:323352019,&quot;originating_url&quot;:&quot;https://github.com/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md&quot;,&quot;user_id&quot;:4036528}}" data-hydro-click-hmac="76b22a9c84d8f2a04a2ba57a799b5c2480f92e0b9f7948232d5bb9dee5ce7f3c" data-ga-click="Repository, click star button, action:blob#show; text:Star" aria-label="Star this repository" type="submit" data-view-component="true" class="js-toggler-target btn-with-count btn-sm btn">
   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-1">
@@ -1875,7 +1875,7 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/artifakt-io/artifakt-docker-images/blob/28b4f576f95b2628605266b19cf1094fbaa297fe/README.md">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/artifakt-io/artifakt-docker-images/blob/4755ba23192b6a89a33da7d7d2882835332046ce/README.md">Permalink</a>
 
     <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-wrap flex-md-nowrap flex-justify-between flex-md-justify-start">
       
@@ -1933,7 +1933,7 @@
             "
             query-endpoint="/artifakt-io/artifakt-docker-images/refs"
             can-create
-            cache-key="v0:1635871234.364104"
+            cache-key="v0:1636387626.253525"
             current-committish="ZmVhdC9jaDYyNzYtZ2VuZXJhdGUtcGVyam9iLWxhYmVscw=="
             default-branch="bWFpbg=="
             name-with-owner="YXJ0aWZha3QtaW8vYXJ0aWZha3QtZG9ja2VyLWltYWdlcw=="
@@ -1945,7 +1945,7 @@
             </template>
 
               <template data-target="ref-selector.noMatchTemplate">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/artifakt-io/artifakt-docker-images/branches" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="aVr8O20yhIEeiwcCFrXKM4Unf8JtJ4KrR7EHLnOSEUBU2XS4R3Zm9WYkI4rSxYuoIpqPRKsNlHXpPGDMI71OuA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/artifakt-io/artifakt-docker-images/branches" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="qg27vjkFWAo3XdiVlibbMzqYJuRtj4kCZsIGbZdlRyMo97ew2SolfKAUKKrUjSh/u1kkihPrUrGRbCsz47GyLQ==" />
       <input type="hidden" name="name" value="{{ refName }}">
       <input type="hidden" name="branch"  value="feat/ch6276-generate-perjob-labels">
       <input type="hidden" name="path_binary" value="UkVBRE1FLm1k">
@@ -2001,7 +2001,7 @@
             "
             data-targets="input-demux.sinks"
             query-endpoint="/artifakt-io/artifakt-docker-images/refs"
-            cache-key="v0:1635871234.364104"
+            cache-key="v0:1636387626.253525"
             current-committish="ZmVhdC9jaDYyNzYtZ2VuZXJhdGUtcGVyam9iLWxhYmVscw=="
             default-branch="bWFpbg=="
             name-with-owner="YXJ0aWZha3QtaW8vYXJ0aWZha3QtZG9ja2VyLWltYWdlcw=="
@@ -2095,7 +2095,7 @@
 
 </clipboard-copy>            </li>
             <li>
-              <clipboard-copy data-toggle-for="blob-more-options-details" aria-label="Copy permalink" value="https://github.com/artifakt-io/artifakt-docker-images/blob/28b4f576f95b2628605266b19cf1094fbaa297fe/README.md" data-view-component="true" class="dropdown-item cursor-pointer">
+              <clipboard-copy data-toggle-for="blob-more-options-details" aria-label="Copy permalink" value="https://github.com/artifakt-io/artifakt-docker-images/blob/4755ba23192b6a89a33da7d7d2882835332046ce/README.md" data-view-component="true" class="dropdown-item cursor-pointer">
     
                 <span class="d-flex flex-items-baseline">
                   <span class="flex-auto">Copy permalink</span>
@@ -2110,83 +2110,17 @@
 
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-      
-  <div class="Box-header Details js-details-container">
-      <div class="d-flex flex-items-center">
-        <span class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1">
-          <a rel="contributor" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/djalal/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/djalal"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/4036528?s=48&amp;v=4" width="24" height="24" alt="@djalal" /></a>
-        </span>
-        <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
-          <div class="css-truncate css-truncate-overflow">
-            <a class="text-bold Link--primary" rel="contributor" data-hovercard-type="user" data-hovercard-url="/users/djalal/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/djalal">djalal</a>
-
-              <span class="markdown-title">
-                <a data-pjax="true" title="add svg ext." class="Link--secondary" href="/artifakt-io/artifakt-docker-images/commit/28b4f576f95b2628605266b19cf1094fbaa297fe">add svg ext.</a>
-              </span>
-          </div>
-
-
-          <span class="ml-2">
-            <include-fragment accept="text/fragment+html" src="/artifakt-io/artifakt-docker-images/commit/28b4f576f95b2628605266b19cf1094fbaa297fe/rollup?direction=e" class="d-inline"></include-fragment>
-          </span>
+      <include-fragment src="/artifakt-io/artifakt-docker-images/contributors/feat/ch6276-generate-perjob-labels/README.md" class="commit-loader">
+        <div class="Box-header d-flex flex-items-center">
+          <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
+          <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
         </div>
-        <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-fg-muted no-wrap">
-          <span class="d-none d-md-inline">
-            <span>Latest commit</span>
-            <a class="text-small text-mono Link--secondary" href="/artifakt-io/artifakt-docker-images/commit/28b4f576f95b2628605266b19cf1094fbaa297fe" data-pjax>28b4f57</a>
-            <span itemprop="dateModified"><relative-time datetime="2021-11-05T22:21:37Z" class="no-wrap">Nov 5, 2021</relative-time></span>
-          </span>
 
-          <a data-pjax href="/artifakt-io/artifakt-docker-images/commits/feat/ch6276-generate-perjob-labels/README.md" class="ml-3 no-wrap Link--primary no-underline">
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-history">
-    <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path>
-</svg>
-            <span class="d-none d-sm-inline">
-              <strong>History</strong>
-            </span>
-          </a>
+        <div class="Box-body d-flex flex-items-center" >
+          <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
+          <span class="color-fg-danger h6 loader-error">Cannot retrieve contributors at this time</span>
         </div>
-      </div>
-
-  </div>
-
-  <div class="Box-body d-flex flex-items-center flex-auto border-bottom-0 flex-wrap" >
-    <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default float-left mr-3" id="blob_contributors_box">
-      <summary class="Link--primary">
-        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-people">
-    <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"></path>
-</svg>
-        <strong>1</strong>
-        
-        contributor
-      </summary>
-      <details-dialog
-        class="Box Box--overlay d-flex flex-column anim-fade-in fast"
-        aria-label="Users who have contributed to this file"
-        src="/artifakt-io/artifakt-docker-images/contributors-list/feat/ch6276-generate-perjob-labels/README.md" preload>
-        <div class="Box-header">
-          <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
-</svg>
-          </button>
-          <h3 class="Box-title">
-            Users who have contributed to this file
-          </h3>
-        </div>
-        <include-fragment>
-          <span role="status">
-  <span class="sr-only">Loading</span>
-  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="my-3 mx-auto d-block anim-rotate">
-    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
-    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
-</svg></span>
-
-        </include-fragment>
-      </details-dialog>
-    </details>
-  </div>
-    </div>
+</include-fragment>    </div>
 
 
 
@@ -2261,19 +2195,19 @@
 
       147 lines (100 sloc)
       <span class="file-info-divider"></span>
-    11.1 KB
+    11.8 KB
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between hide-sm hide-md">
         <div class="BtnGroup">
-    <a href="/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md?plain=1" data-permalink-href="/artifakt-io/artifakt-docker-images/blob/28b4f576f95b2628605266b19cf1094fbaa297fe/README.md?plain=1" aria-label="Display the source blob" role="button" data-view-component="true" class="source tooltipped tooltipped tooltipped-n  js-permalink-replaceable-link btn-sm btn BtnGroup-item">
+    <a href="/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md?plain=1" data-permalink-href="/artifakt-io/artifakt-docker-images/blob/4755ba23192b6a89a33da7d7d2882835332046ce/README.md?plain=1" aria-label="Display the source blob" role="button" data-view-component="true" class="source tooltipped tooltipped tooltipped-n  js-permalink-replaceable-link btn-sm btn BtnGroup-item">
   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
     <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path>
 </svg>
   
   
 
-</a>    <a href="/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md" data-permalink-href="/artifakt-io/artifakt-docker-images/blob/28b4f576f95b2628605266b19cf1094fbaa297fe/README.md" aria-label="Display the rendered blob" role="button" data-view-component="true" class="rendered tooltipped tooltipped tooltipped-n selected js-permalink-replaceable-link btn-sm btn BtnGroup-item">
+</a>    <a href="/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/README.md" data-permalink-href="/artifakt-io/artifakt-docker-images/blob/4755ba23192b6a89a33da7d7d2882835332046ce/README.md" aria-label="Display the rendered blob" role="button" data-view-component="true" class="rendered tooltipped tooltipped tooltipped-n selected js-permalink-replaceable-link btn-sm btn BtnGroup-item">
   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file">
     <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
 </svg>
@@ -2310,7 +2244,7 @@
           </a>
 
         
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/artifakt-io/artifakt-docker-images/edit/feat/ch6276-generate-perjob-labels/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="MD9PoPdb2fgnHanAEk3KjDg4PvoEhF0X+PLJRdthGS9KEeT0ybNBDGu7u9Bol8UxKsYUjeLYnmrvnYhM5j2gtw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/artifakt-io/artifakt-docker-images/edit/feat/ch6276-generate-perjob-labels/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="vQrvydxc1hpxzW3ifnqE2Vt1H2Dwki7f5bmrRlgnn5VDSqi0MNSBN0OMPUICekDKl9LE2VdJe9HShLWEeTUpEA==" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Edit this file" data-hotkey="e" data-disable-with>
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil">
@@ -2318,7 +2252,7 @@
 </svg>
             </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/artifakt-io/artifakt-docker-images/delete/feat/ch6276-generate-perjob-labels/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="BOcv7Y++gbel11s+UFed3nmrtpsnKq63IFen3XMeSDAdUdyawUeZJQDK1r6tgDtqoV5g3gkism7DNG1NXLDZzw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/artifakt-io/artifakt-docker-images/delete/feat/ch6276-generate-perjob-labels/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="M1wl3d6jZ06HqhmMtZ0pyyMo5FCXoD2DjbIXRbwDywUWgtquDHNyod+2sYI4uFArQKIFd9LEmBZtM0gfRW+siA==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Delete this file" data-disable-with>
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
@@ -2372,15 +2306,15 @@
 
 
         <div id="readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6 gist-border-0">
-    <article class="markdown-body entry-content container-lg" itemprop="text"><div align="center">
-<h1><a id="user-content-artifakt-docker-images" class="anchor" aria-hidden="true" href="#artifakt-docker-images"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Artifakt Docker Images</h1>
+    <article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto">
+<h1 dir="auto"><a id="user-content-artifakt-docker-images" class="anchor" aria-hidden="true" href="#artifakt-docker-images"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Artifakt Docker Images</h1>
 <a target="_blank" rel="noopener noreferrer" href="/artifakt-io/artifakt-docker-images/blob/feat/ch6276-generate-perjob-labels/.github/logo.png"><img src="/artifakt-io/artifakt-docker-images/raw/feat/ch6276-generate-perjob-labels/.github/logo.png" alt="artifakt-logo" width="100" style="max-width: 100%;"></a>
-<p><strong>Base Docker images supported by Artifakt PaaS</strong></p>
-<p><a href="https://github.com/artifakt-io/artifakt-docker-images/actions"><img src="https://github.com/artifakt-io/artifakt-docker-images/actions/workflows/nightly.yml/badge.svg" alt="Build Docker Images" style="max-width: 100%;"></a>
+<p dir="auto"><strong>Base Docker images supported by Artifakt PaaS</strong></p>
+<p dir="auto"><a href="https://github.com/artifakt-io/artifakt-docker-images/actions"><img src="https://github.com/artifakt-io/artifakt-docker-images/actions/workflows/nightly.yml/badge.svg" alt="Build Docker Images" style="max-width: 100%;"></a>
 <a href="https://twitter.com/intent/follow?screen_name=artifakt_com" rel="nofollow"><img src="https://camo.githubusercontent.com/b230e746575b9073a361d7be4a1254de39079a4fbc927395f349137f00a15d0c/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6172746966616b745f636f6d2e7376673f7374796c653d736f6369616c266c6162656c3d466f6c6c6f77" alt="Twitter handle" data-canonical-src="https://img.shields.io/twitter/follow/artifakt_com.svg?style=social&amp;label=Follow" style="max-width: 100%;"></a></p>
 </div>
-<p>Contains all maintained runtimes supported by the Artifakt platform. All are freely available through our official registry at <code>registry.artifakt.io</code></p>
-<h2><a id="user-content-full-list-of-available-runtimes" class="anchor" aria-hidden="true" href="#full-list-of-available-runtimes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Full list of available runtimes</h2>
+<p dir="auto">Contains all maintained runtimes supported by the Artifakt platform. All are freely available through our official registry at <code>registry.artifakt.io</code></p>
+<h2 dir="auto"><a id="user-content-full-list-of-available-runtimes" class="anchor" aria-hidden="true" href="#full-list-of-available-runtimes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Full list of available runtimes</h2>
 <table>
 <thead>
 <tr>
@@ -2398,176 +2332,176 @@
 <td>4.0 Apache</td>
 <td><code>akeneo:4.0-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-akeneo/tree/4.0">artifakt-io/base-akeneo</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/57cdf102da41196ed3b0f17f25bdf26b3a773fdd71562935dea6d2c766c5fc47/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d7374617475732e737667"><img src="https://camo.githubusercontent.com/57cdf102da41196ed3b0f17f25bdf26b3a773fdd71562935dea6d2c766c5fc47/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d7374617475732e737667" alt="akeneo:4.0-apache" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_4.0-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/54cac5710151c475631cdcdc847cd61a316aac43a33a0b5012fbf743df798af2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d73697a652e737667"><img src="https://camo.githubusercontent.com/54cac5710151c475631cdcdc847cd61a316aac43a33a0b5012fbf743df798af2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f342e302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_4.0-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/bd307d9a57d1281a438080356b8d2bd0a137ccd9242cc90e6d4f0f6b4579c7ef/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616b656e656f5f342e302d7374617475732e737667"><img src="https://camo.githubusercontent.com/bd307d9a57d1281a438080356b8d2bd0a137ccd9242cc90e6d4f0f6b4579c7ef/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616b656e656f5f342e302d7374617475732e737667" alt="akeneo:4.0-apache" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/akeneo_4.0-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a5a1ad1beaf351954cadc047edd953ae3d7b354ab9cb721b8cf4f64af583e16d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616b656e656f5f342e302d73697a652e737667"><img src="https://camo.githubusercontent.com/a5a1ad1beaf351954cadc047edd953ae3d7b354ab9cb721b8cf4f64af583e16d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616b656e656f5f342e302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/akeneo_4.0-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Akeneo</td>
 <td>5.0 Apache</td>
 <td><code>akeneo:5.0-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-akeneo/tree/5.0">artifakt-io/base-akeneo</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e65dc05c51ee8e91eede847f471ae04c52cf133c76310e6e5907bc1402d568b1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d7374617475732e737667"><img src="https://camo.githubusercontent.com/e65dc05c51ee8e91eede847f471ae04c52cf133c76310e6e5907bc1402d568b1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d7374617475732e737667" alt="akeneo:5.0-apache" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_5.0-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/2a973b3105695f18d9482283d8a7f19d8554464e578908ed95e4eb2d77957cc9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d73697a652e737667"><img src="https://camo.githubusercontent.com/2a973b3105695f18d9482283d8a7f19d8554464e578908ed95e4eb2d77957cc9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616b656e656f5f352e302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/akeneo_5.0-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e98d29014f6cb1d731fa749eb511adba8ccf5a9ce5ed2af48aff3efc32b00a8f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616b656e656f5f352e302d7374617475732e737667"><img src="https://camo.githubusercontent.com/e98d29014f6cb1d731fa749eb511adba8ccf5a9ce5ed2af48aff3efc32b00a8f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616b656e656f5f352e302d7374617475732e737667" alt="akeneo:5.0-apache" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/akeneo_5.0-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f7a7d238d756671e097dc2939c84c9692f7e3a5cb2beb68eab2ee5e4defe0ca4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616b656e656f5f352e302d73697a652e737667"><img src="https://camo.githubusercontent.com/f7a7d238d756671e097dc2939c84c9692f7e3a5cb2beb68eab2ee5e4defe0ca4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616b656e656f5f352e302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/akeneo_5.0-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Angular</td>
 <td>12</td>
 <td><code>angular:12</code></td>
 <td><a href="https://github.com/artifakt-io/base-angular">artifakt-io/base-angular</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f7f4db692f7ff04e0eb6920159ce3c964da98bfe707b859ca8c0e9a431b2a867/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d7374617475732e737667"><img src="https://camo.githubusercontent.com/f7f4db692f7ff04e0eb6920159ce3c964da98bfe707b859ca8c0e9a431b2a867/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d7374617475732e737667" alt="angular:12" data-canonical-src="https://res.cloudinary.com/artifakt/angular_12-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/cdf9014836dc0b984b952e2f35773d25ccb5e55e27363ee6e426a7dc0b2357c3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d73697a652e737667"><img src="https://camo.githubusercontent.com/cdf9014836dc0b984b952e2f35773d25ccb5e55e27363ee6e426a7dc0b2357c3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f616e67756c61725f31322d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/angular_12-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f556f799d3d64dcdac44faf6b3582bd2d1163873689b4638ff0ca08803408d63/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616e67756c61725f31322d7374617475732e737667"><img src="https://camo.githubusercontent.com/f556f799d3d64dcdac44faf6b3582bd2d1163873689b4638ff0ca08803408d63/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616e67756c61725f31322d7374617475732e737667" alt="angular:12" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/angular_12-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/fba176508b613b776585dbf2233aa225336b390658d3c5fd13f6dfc35a26dc3e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616e67756c61725f31322d73697a652e737667"><img src="https://camo.githubusercontent.com/fba176508b613b776585dbf2233aa225336b390658d3c5fd13f6dfc35a26dc3e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f616e67756c61725f31322d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/angular_12-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Drupal</td>
 <td>9.2 Apache</td>
 <td><code>drupal:9.2-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-drupal/tree/9.2">artifakt-io/base-drupal</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9f16b84c89b35d9111511a613f4c08088b16e47b8c6fda46d897919d059c19b4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d7374617475732e737667"><img src="https://camo.githubusercontent.com/9f16b84c89b35d9111511a613f4c08088b16e47b8c6fda46d897919d059c19b4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d7374617475732e737667" alt="drupal:9.2-apache" data-canonical-src="https://res.cloudinary.com/artifakt/drupal_9.2-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/79a479e3681133105ab0265033ce5abca903429eadf5031bdaab6942c56b34ca/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d73697a652e737667"><img src="https://camo.githubusercontent.com/79a479e3681133105ab0265033ce5abca903429eadf5031bdaab6942c56b34ca/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f64727570616c5f392e322d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/drupal_9.2-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/fa31f5a6d67d442ef2c4a6a8bff5668dc092453fc84e030eb1666c7276aeae1c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f64727570616c5f392e322d7374617475732e737667"><img src="https://camo.githubusercontent.com/fa31f5a6d67d442ef2c4a6a8bff5668dc092453fc84e030eb1666c7276aeae1c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f64727570616c5f392e322d7374617475732e737667" alt="drupal:9.2-apache" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/drupal_9.2-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a5fbbd40beb1ef8644dbc3168facf028bac5f08797c3a7cb7e19f597ac38c8fd/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f64727570616c5f392e322d73697a652e737667"><img src="https://camo.githubusercontent.com/a5fbbd40beb1ef8644dbc3168facf028bac5f08797c3a7cb7e19f597ac38c8fd/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f64727570616c5f392e322d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/drupal_9.2-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Golang</td>
 <td>1.16</td>
 <td><code>golang:1.16</code></td>
 <td><a href="https://github.com/artifakt-io/base-golang">artifakt-io/base-golang</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/1e9dcc927198c201fcd06dbdfde5283fc43d9f76e095a337447e9d0d6163efc0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d7374617475732e737667"><img src="https://camo.githubusercontent.com/1e9dcc927198c201fcd06dbdfde5283fc43d9f76e095a337447e9d0d6163efc0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d7374617475732e737667" alt="golang:1.16" data-canonical-src="https://res.cloudinary.com/artifakt/golang_1.16-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/2bc5a654bcb4405c91928f3daa3e08ea90f13f0f375cef51e0a634571ea3025b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d73697a652e737667"><img src="https://camo.githubusercontent.com/2bc5a654bcb4405c91928f3daa3e08ea90f13f0f375cef51e0a634571ea3025b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f676f6c616e675f312e31362d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/golang_1.16-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/3790afd5f94ad057556cefa163460a7dee1ba08fc2318d87670e32ce30874bb2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f676f6c616e675f312e31362d7374617475732e737667"><img src="https://camo.githubusercontent.com/3790afd5f94ad057556cefa163460a7dee1ba08fc2318d87670e32ce30874bb2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f676f6c616e675f312e31362d7374617475732e737667" alt="golang:1.16" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/golang_1.16-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/eaa0bd546601795abb68cb5b7d99c8bec31ee53d033f1f25cc528e578e3b2a07/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f676f6c616e675f312e31362d73697a652e737667"><img src="https://camo.githubusercontent.com/eaa0bd546601795abb68cb5b7d99c8bec31ee53d033f1f25cc528e578e3b2a07/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f676f6c616e675f312e31362d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/golang_1.16-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Java</td>
 <td>8</td>
 <td><code>java:8</code></td>
 <td><a href="https://github.com/artifakt-io/base-java">artifakt-io/base-java</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c4bf89b59b42206c2c93cd992ba8119c1dd67cd8d1339d95dab66774e6834a55/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d7374617475732e737667"><img src="https://camo.githubusercontent.com/c4bf89b59b42206c2c93cd992ba8119c1dd67cd8d1339d95dab66774e6834a55/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d7374617475732e737667" alt="Java 8" data-canonical-src="https://res.cloudinary.com/artifakt/java_8-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/359d6f6bec34ec29501dc2de17b697d89b12915092ef1ae3ea6e3679a27dd2ce/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d73697a652e737667"><img src="https://camo.githubusercontent.com/359d6f6bec34ec29501dc2de17b697d89b12915092ef1ae3ea6e3679a27dd2ce/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6a6176615f382d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/java_8-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/578c0230ff1cad66c194a2929d138a9db950115813cf1c575980947bf21654aa/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6a6176615f382d7374617475732e737667"><img src="https://camo.githubusercontent.com/578c0230ff1cad66c194a2929d138a9db950115813cf1c575980947bf21654aa/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6a6176615f382d7374617475732e737667" alt="Java 8" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/java_8-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/7cfc466d348bedeea0774822136e38a3d51aa0660c03ce961ddcae8d9552dee5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6a6176615f382d73697a652e737667"><img src="https://camo.githubusercontent.com/7cfc466d348bedeea0774822136e38a3d51aa0660c03ce961ddcae8d9552dee5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6a6176615f382d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/java_8-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Magento</td>
 <td>2.4</td>
 <td><code>magento:2.4-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-magento/tree/2.4">artifakt-io/base-magento</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c52132907bbc193a484074a01ab11aad9c7a14d8199c092ec9311c2cf1543a54/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d7374617475732e737667"><img src="https://camo.githubusercontent.com/c52132907bbc193a484074a01ab11aad9c7a14d8199c092ec9311c2cf1543a54/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d7374617475732e737667" alt="magento:2.4" data-canonical-src="https://res.cloudinary.com/artifakt/magento_2.4-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/bc21ec0ffb0c513530592099d371151c6d479346fbdc5d4f6d916362650db9f1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d73697a652e737667"><img src="https://camo.githubusercontent.com/bc21ec0ffb0c513530592099d371151c6d479346fbdc5d4f6d916362650db9f1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6d6167656e746f5f322e342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/magento_2.4-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/10b3944a23229f2daa813de7af3ba84418b9bff4b7e97abf54a726edda399e75/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6d6167656e746f5f322e342d7374617475732e737667"><img src="https://camo.githubusercontent.com/10b3944a23229f2daa813de7af3ba84418b9bff4b7e97abf54a726edda399e75/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6d6167656e746f5f322e342d7374617475732e737667" alt="magento:2.4" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/magento_2.4-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/16e2d7950671d8d95dbcab9a49f7c31ab3a21d315c4ddf41bfc54262416bf3d0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6d6167656e746f5f322e342d73697a652e737667"><img src="https://camo.githubusercontent.com/16e2d7950671d8d95dbcab9a49f7c31ab3a21d315c4ddf41bfc54262416bf3d0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6d6167656e746f5f322e342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/magento_2.4-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Node.js</td>
 <td>12</td>
 <td><code>node:12</code></td>
 <td><a href="https://github.com/artifakt-io/base-nodejs">artifakt-io/base-nodejs</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f87c9e4e0728e478c859a4731f07cca8884f50b3bdcb19f15d273c2f3353e74a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d7374617475732e737667"><img src="https://camo.githubusercontent.com/f87c9e4e0728e478c859a4731f07cca8884f50b3bdcb19f15d273c2f3353e74a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d7374617475732e737667" alt="Node.js 12" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_12-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/644de74a4555c233468707f94a1653ca8f01365aec31bae7622d56b96fa4abb3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d73697a652e737667"><img src="https://camo.githubusercontent.com/644de74a4555c233468707f94a1653ca8f01365aec31bae7622d56b96fa4abb3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31322d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_12-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/f682126f242b2b01101f3920488d5f79e178e6e9b380c2968e0cf9c7862a2a49/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e6f64656a735f31322d7374617475732e737667"><img src="https://camo.githubusercontent.com/f682126f242b2b01101f3920488d5f79e178e6e9b380c2968e0cf9c7862a2a49/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e6f64656a735f31322d7374617475732e737667" alt="Node.js 12" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/nodejs_12-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5d04b64b3daaf928be7aca891f70982a6d1eb75e9db38b70f220362cac8ad3ca/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e6f64656a735f31322d73697a652e737667"><img src="https://camo.githubusercontent.com/5d04b64b3daaf928be7aca891f70982a6d1eb75e9db38b70f220362cac8ad3ca/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e6f64656a735f31322d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/nodejs_12-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Node.js</td>
 <td>14</td>
 <td><code>node:14</code></td>
 <td><a href="https://github.com/artifakt-io/base-nodejs">artifakt-io/base-nodejs</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/0ca9251a42e567ffc928c50db02e385b206deab71eff021d5330701de0ced886/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d7374617475732e737667"><img src="https://camo.githubusercontent.com/0ca9251a42e567ffc928c50db02e385b206deab71eff021d5330701de0ced886/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d7374617475732e737667" alt="Node.js 14" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_14-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5f80c3ab644d3a817719f90bce78a2ccb3e54cd61276e5041ebc62a099432073/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d73697a652e737667"><img src="https://camo.githubusercontent.com/5f80c3ab644d3a817719f90bce78a2ccb3e54cd61276e5041ebc62a099432073/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e6f64656a735f31342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/nodejs_14-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/84e7363cf741830a93d2d12635641deffe28b3cb889d058bebc0218d8de393db/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e6f64656a735f31342d7374617475732e737667"><img src="https://camo.githubusercontent.com/84e7363cf741830a93d2d12635641deffe28b3cb889d058bebc0218d8de393db/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e6f64656a735f31342d7374617475732e737667" alt="Node.js 14" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/nodejs_14-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/8e36a9bfb3869a7055992a99158ddbbdb9c4a574b0d0928dbb08d7eb3045b289/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e6f64656a735f31342d73697a652e737667"><img src="https://camo.githubusercontent.com/8e36a9bfb3869a7055992a99158ddbbdb9c4a574b0d0928dbb08d7eb3045b289/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e6f64656a735f31342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/nodejs_14-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Nuxtjs</td>
 <td>2.15</td>
 <td><code>nuxtjs:2.15</code></td>
 <td><a href="https://github.com/artifakt-io/base-nuxtjs">artifakt-io/base-nuxtjs</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b34b99471d6807b968b0842fa2401c7da24d7281b6c955fc3c57afbb0953955f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d7374617475732e737667"><img src="https://camo.githubusercontent.com/b34b99471d6807b968b0842fa2401c7da24d7281b6c955fc3c57afbb0953955f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d7374617475732e737667" alt="Nuxtjs 2.15" data-canonical-src="https://res.cloudinary.com/artifakt/nuxtjs_2.15-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/01bd8b42d9fd48ea96e17bb46fdbd2488065482041c87558d26ba9633bdc3758/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d73697a652e737667"><img src="https://camo.githubusercontent.com/01bd8b42d9fd48ea96e17bb46fdbd2488065482041c87558d26ba9633bdc3758/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f6e7578746a735f322e31352d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/nuxtjs_2.15-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e79146f909a14ef70e3f33325e639570c5f06cee7a388b370d09219f3a4d22e8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e7578746a735f322e31352d7374617475732e737667"><img src="https://camo.githubusercontent.com/e79146f909a14ef70e3f33325e639570c5f06cee7a388b370d09219f3a4d22e8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e7578746a735f322e31352d7374617475732e737667" alt="Nuxtjs 2.15" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/nuxtjs_2.15-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/76d7e339dc9284318a2caa23c6a1b69dca54b80825583bb6657c11f85662af22/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e7578746a735f322e31352d73697a652e737667"><img src="https://camo.githubusercontent.com/76d7e339dc9284318a2caa23c6a1b69dca54b80825583bb6657c11f85662af22/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f6e7578746a735f322e31352d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/nuxtjs_2.15-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>PHP</td>
 <td>7.3 Apache</td>
 <td><code>php:7.3-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-php/tree/7.3">artifakt-io/base-php</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/02637f8150a3e9a405ccdb8806d4e16646c7be9edfab22b75d6902d8cc4a4996/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d7374617475732e737667"><img src="https://camo.githubusercontent.com/02637f8150a3e9a405ccdb8806d4e16646c7be9edfab22b75d6902d8cc4a4996/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d7374617475732e737667" alt="PHP 7.3" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.3-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ddfc1d979e08f1b7da3cce360ba376b8350a8ade120ac769b9bc4ec8ef4889aa/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d73697a652e737667"><img src="https://camo.githubusercontent.com/ddfc1d979e08f1b7da3cce360ba376b8350a8ade120ac769b9bc4ec8ef4889aa/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e332d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.3-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4b1f6aeb2493f66e4ac840bb8398b82092b51a6365050f372cb33b35232fa10e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f372e332d7374617475732e737667"><img src="https://camo.githubusercontent.com/4b1f6aeb2493f66e4ac840bb8398b82092b51a6365050f372cb33b35232fa10e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f372e332d7374617475732e737667" alt="PHP 7.3" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/php_7.3-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5c42fc96bc5d1479c97ac5fe5be55609fb12ad5fe4db78e85b601bd4e4a6b91c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f372e332d73697a652e737667"><img src="https://camo.githubusercontent.com/5c42fc96bc5d1479c97ac5fe5be55609fb12ad5fe4db78e85b601bd4e4a6b91c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f372e332d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/php_7.3-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>PHP</td>
 <td>7.4 Apache</td>
 <td><code>php:7.4-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-php/tree/7.4">artifakt-io/base-php</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/103b8296965e65f2cb4a0d2180b93f4720590f66c5f8ed6503e8a111bbbe8a2f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d7374617475732e737667"><img src="https://camo.githubusercontent.com/103b8296965e65f2cb4a0d2180b93f4720590f66c5f8ed6503e8a111bbbe8a2f/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d7374617475732e737667" alt="PHP 7.4" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.4-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/49c38e76fd820edf836120a44a6076d7b3c5a244bfe8d9a2d5e71159ed015f66/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d73697a652e737667"><img src="https://camo.githubusercontent.com/49c38e76fd820edf836120a44a6076d7b3c5a244bfe8d9a2d5e71159ed015f66/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f372e342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/php_7.4-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a3c9d8405316ddf659a1c95c5ac79e5f740724d4e905797c6db77d02a3645610/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f372e342d7374617475732e737667"><img src="https://camo.githubusercontent.com/a3c9d8405316ddf659a1c95c5ac79e5f740724d4e905797c6db77d02a3645610/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f372e342d7374617475732e737667" alt="PHP 7.4" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/php_7.4-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/3916300cd01c26746dfaf6951ea911ec8bc22f646edbcac684619c4a039e1373/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f372e342d73697a652e737667"><img src="https://camo.githubusercontent.com/3916300cd01c26746dfaf6951ea911ec8bc22f646edbcac684619c4a039e1373/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f372e342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/php_7.4-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>PHP</td>
 <td>8.0 Apache</td>
 <td><code>php:8.0-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-php/tree/8.0">artifakt-io/base-php</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/1331b44225eadfc73bf5038e094395c1823ed6f075bf40c22a42d0f950870e1d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d7374617475732e737667"><img src="https://camo.githubusercontent.com/1331b44225eadfc73bf5038e094395c1823ed6f075bf40c22a42d0f950870e1d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d7374617475732e737667" alt="PHP 8.0" data-canonical-src="https://res.cloudinary.com/artifakt/php_8.0-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4f63fc9bd9c2245ab24ea901b1c5e12482281199c6cb779741e831337cca373e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d73697a652e737667"><img src="https://camo.githubusercontent.com/4f63fc9bd9c2245ab24ea901b1c5e12482281199c6cb779741e831337cca373e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7068705f382e302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/php_8.0-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/6d73c89e807cd4346553515ee9a2b075201c7192589245d6a1051ade82285559/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f382e302d7374617475732e737667"><img src="https://camo.githubusercontent.com/6d73c89e807cd4346553515ee9a2b075201c7192589245d6a1051ade82285559/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f382e302d7374617475732e737667" alt="PHP 8.0" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/php_8.0-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/465bc3e5ca7a79dd12675d7fb1de9f8714b4d04797c2f85b04c506503245a1c0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f382e302d73697a652e737667"><img src="https://camo.githubusercontent.com/465bc3e5ca7a79dd12675d7fb1de9f8714b4d04797c2f85b04c506503245a1c0/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7068705f382e302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/php_8.0-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Python</td>
 <td>3.9</td>
 <td><code>python:3.9</code></td>
 <td><a href="https://github.com/artifakt-io/base-python">artifakt-io/base-python</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/8f29ab1f839e4c5b5cc0b0d2488b0776b58b46ff250a8e734fc00ec29099e8c1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d7374617475732e737667"><img src="https://camo.githubusercontent.com/8f29ab1f839e4c5b5cc0b0d2488b0776b58b46ff250a8e734fc00ec29099e8c1/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d7374617475732e737667" alt="python:3.9" data-canonical-src="https://res.cloudinary.com/artifakt/python_3.9-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/d62aaff7b5f90457f896e9a892c7e7f18b54c2c77af1cee069e169949d78fa8d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d73697a652e737667"><img src="https://camo.githubusercontent.com/d62aaff7b5f90457f896e9a892c7e7f18b54c2c77af1cee069e169949d78fa8d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f707974686f6e5f332e392d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/python_3.9-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5c8372218e2e249ea101934588db338723534398cef84c129cfdbba94e5f1c2c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f707974686f6e5f332e392d7374617475732e737667"><img src="https://camo.githubusercontent.com/5c8372218e2e249ea101934588db338723534398cef84c129cfdbba94e5f1c2c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f707974686f6e5f332e392d7374617475732e737667" alt="python:3.9" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/python_3.9-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ebea612436dc08445c458928bd6fb94bdfa641bd7c72b88b5a8712256d32d791/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f707974686f6e5f332e392d73697a652e737667"><img src="https://camo.githubusercontent.com/ebea612436dc08445c458928bd6fb94bdfa641bd7c72b88b5a8712256d32d791/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f707974686f6e5f332e392d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/python_3.9-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Ruby</td>
 <td>2.7</td>
 <td><code>ruby:2.7</code></td>
 <td><a href="https://github.com/artifakt-io/base-ruby">artifakt-io/base-ruby</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/23cc6db0d2ce427df91e4b97a4e9019ce0bece0a3f139a016caa9d3f12c5f6f8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d7374617475732e737667"><img src="https://camo.githubusercontent.com/23cc6db0d2ce427df91e4b97a4e9019ce0bece0a3f139a016caa9d3f12c5f6f8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d7374617475732e737667" alt="ruby:2.7" data-canonical-src="https://res.cloudinary.com/artifakt/ruby_2.7-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/42723937cc7e346453d6fb002fc368b28033cc34dfdf0b3d33ab50ba8e8607b9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d73697a652e737667"><img src="https://camo.githubusercontent.com/42723937cc7e346453d6fb002fc368b28033cc34dfdf0b3d33ab50ba8e8607b9/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f727562795f322e372d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/ruby_2.7-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ac55783522f98ee875f06a1b09ad9c6e4d5f0b5821417e6819480e7103c91dc5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f727562795f322e372d7374617475732e737667"><img src="https://camo.githubusercontent.com/ac55783522f98ee875f06a1b09ad9c6e4d5f0b5821417e6819480e7103c91dc5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f727562795f322e372d7374617475732e737667" alt="ruby:2.7" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/ruby_2.7-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/90bb482f7e69f727f2666ee0fd54fc7590195ec829884dff802a61a84df1d36d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f727562795f322e372d73697a652e737667"><img src="https://camo.githubusercontent.com/90bb482f7e69f727f2666ee0fd54fc7590195ec829884dff802a61a84df1d36d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f727562795f322e372d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/ruby_2.7-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Sylius</td>
 <td>1.10 Apache</td>
 <td><code>sylius:1.10-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-sylius/tree/1.10">artifakt-io/base-sylius</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/60049835d2c0a4cf7f2ca1d88d730c74fa06026c608ab37f09a9df1ce1cca21b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d7374617475732e737667"><img src="https://camo.githubusercontent.com/60049835d2c0a4cf7f2ca1d88d730c74fa06026c608ab37f09a9df1ce1cca21b/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d7374617475732e737667" alt="sylius:1.10-apache" data-canonical-src="https://res.cloudinary.com/artifakt/sylius_1.10-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a8aea84b48d7c7b0f921dce033720d40ba453bb6d15da1821b182d176dea34b3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d73697a652e737667"><img src="https://camo.githubusercontent.com/a8aea84b48d7c7b0f921dce033720d40ba453bb6d15da1821b182d176dea34b3/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796c6975735f312e31302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/sylius_1.10-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/2be2f1772b95f7aa1fc2899e74d7fbec50ea8c803e4c76161d4d6099001a7761/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796c6975735f312e31302d7374617475732e737667"><img src="https://camo.githubusercontent.com/2be2f1772b95f7aa1fc2899e74d7fbec50ea8c803e4c76161d4d6099001a7761/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796c6975735f312e31302d7374617475732e737667" alt="sylius:1.10-apache" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/sylius_1.10-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/028634c5979c4bb22274ea45dfd30272bf0861a28322f277f94a406b25f4b920/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796c6975735f312e31302d73697a652e737667"><img src="https://camo.githubusercontent.com/028634c5979c4bb22274ea45dfd30272bf0861a28322f277f94a406b25f4b920/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796c6975735f312e31302d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/sylius_1.10-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Symfony</td>
 <td>4.4 Apache</td>
 <td><code>symfony:4.4-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-symfony/tree/4.4">artifakt-io/base-symfony</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9e216fd88f654ba530811e9188186d58926dae2d59fc7233bbeb4f1be5b9285a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d7374617475732e737667"><img src="https://camo.githubusercontent.com/9e216fd88f654ba530811e9188186d58926dae2d59fc7233bbeb4f1be5b9285a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d7374617475732e737667" alt="symfony:4.4-apache" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_4.4-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e8676b12c7040dd337d5904443cb3c739b8c03aa6222b797243dee591f3e5486/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d73697a652e737667"><img src="https://camo.githubusercontent.com/e8676b12c7040dd337d5904443cb3c739b8c03aa6222b797243dee591f3e5486/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f342e342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_4.4-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/d7fd1262cbfa6bd3254d926793dbd93d4cdb241c3503a8542ac87ef24af5f812/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796d666f6e795f342e342d7374617475732e737667"><img src="https://camo.githubusercontent.com/d7fd1262cbfa6bd3254d926793dbd93d4cdb241c3503a8542ac87ef24af5f812/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796d666f6e795f342e342d7374617475732e737667" alt="symfony:4.4-apache" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/symfony_4.4-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/606d66ed3263f2cb186e3f137d84119da82c4aa4ab47b3dc7964a90e742c5941/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796d666f6e795f342e342d73697a652e737667"><img src="https://camo.githubusercontent.com/606d66ed3263f2cb186e3f137d84119da82c4aa4ab47b3dc7964a90e742c5941/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796d666f6e795f342e342d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/symfony_4.4-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Symfony</td>
 <td>5.3 Apache</td>
 <td><code>symfony:5.3-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-symfony/tree/5.3">artifakt-io/base-symfony</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/a04bb96b94eec6c562a86a1645a97d05f62baa261ec9e70ec52c13feacd4a5bf/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d7374617475732e737667"><img src="https://camo.githubusercontent.com/a04bb96b94eec6c562a86a1645a97d05f62baa261ec9e70ec52c13feacd4a5bf/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d7374617475732e737667" alt="symfony:5.3-apache" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_5.3-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/6d10704036f9da21572ebfe50544b1a8375bb6218cfa36d4315521eaf2a6c8ab/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d73697a652e737667"><img src="https://camo.githubusercontent.com/6d10704036f9da21572ebfe50544b1a8375bb6218cfa36d4315521eaf2a6c8ab/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f73796d666f6e795f352e332d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/symfony_5.3-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/7d765ef18f0b3537b716e4a1258eb9b8bf6e626fc24efa932390a397254258ee/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796d666f6e795f352e332d7374617475732e737667"><img src="https://camo.githubusercontent.com/7d765ef18f0b3537b716e4a1258eb9b8bf6e626fc24efa932390a397254258ee/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796d666f6e795f352e332d7374617475732e737667" alt="symfony:5.3-apache" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/symfony_5.3-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/e6411bfef5ce2695230091644cdd7e6fc34cbd4518df5ccdb7e2d61eb5c66d6c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796d666f6e795f352e332d73697a652e737667"><img src="https://camo.githubusercontent.com/e6411bfef5ce2695230091644cdd7e6fc34cbd4518df5ccdb7e2d61eb5c66d6c/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f73796d666f6e795f352e332d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/symfony_5.3-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>VueJs</td>
 <td>3</td>
 <td><code>vuejs:3</code></td>
 <td><a href="https://github.com/artifakt-io/base-vuejs">artifakt-io/base-vuejs</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/c9d3e0a3b02dc53db3359c0e8eb93c36060186dd9059ff532266a51811e290a2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d7374617475732e737667"><img src="https://camo.githubusercontent.com/c9d3e0a3b02dc53db3359c0e8eb93c36060186dd9059ff532266a51811e290a2/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d7374617475732e737667" alt="wordpress:vuejs" data-canonical-src="https://res.cloudinary.com/artifakt/vuejs_3-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4120ad34be838a336b5751aab8db3614874723a4e63e6fd29a230837072efcce/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d73697a652e737667"><img src="https://camo.githubusercontent.com/4120ad34be838a336b5751aab8db3614874723a4e63e6fd29a230837072efcce/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f7675656a735f332d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/vuejs_3-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/34efa492476bd340d8c77b53dc40bc282af45c76ac072b12805c3114282df9fa/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7675656a735f332d7374617475732e737667"><img src="https://camo.githubusercontent.com/34efa492476bd340d8c77b53dc40bc282af45c76ac072b12805c3114282df9fa/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7675656a735f332d7374617475732e737667" alt="wordpress:vuejs" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/vuejs_3-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/31e504883331389e18c3b3fb91ce4ad87cf62c28fdcac8f33f385952c02f8104/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7675656a735f332d73697a652e737667"><img src="https://camo.githubusercontent.com/31e504883331389e18c3b3fb91ce4ad87cf62c28fdcac8f33f385952c02f8104/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f7675656a735f332d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/vuejs_3-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 <tr>
 <td>Wordpress</td>
 <td>5 Apache</td>
 <td><code>wordpress:5-apache</code></td>
 <td><a href="https://github.com/artifakt-io/base-wordpress/tree/5.7">artifakt-io/base-wordpress</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9fcc9d8d1bbdc85afab9dfff73ea21a9a453268d2b04e4eedc65b08faeb79250/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d7374617475732e737667"><img src="https://camo.githubusercontent.com/9fcc9d8d1bbdc85afab9dfff73ea21a9a453268d2b04e4eedc65b08faeb79250/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d7374617475732e737667" alt="wordpress:5-apache" data-canonical-src="https://res.cloudinary.com/artifakt/wordpress_5-status.svg" style="max-width: 100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/cb8f80b7a0edf1580c7db2aa1efea257105883ee37dfe7c22f185138da4c1717/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d73697a652e737667"><img src="https://camo.githubusercontent.com/cb8f80b7a0edf1580c7db2aa1efea257105883ee37dfe7c22f185138da4c1717/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f776f726470726573735f352d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/wordpress_5-size.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/593fc2c32dc3123a17d8fbe802d561e10d98137b85ebf2b4ec30303061d4fdd8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f776f726470726573735f352d7374617475732e737667"><img src="https://camo.githubusercontent.com/593fc2c32dc3123a17d8fbe802d561e10d98137b85ebf2b4ec30303061d4fdd8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f776f726470726573735f352d7374617475732e737667" alt="wordpress:5-apache" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/wordpress_5-status.svg" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/35c6633d4cef8f926c2629a7ee174e00b9aff8bface56c3803841fcad54f6f96/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f776f726470726573735f352d73697a652e737667"><img src="https://camo.githubusercontent.com/35c6633d4cef8f926c2629a7ee174e00b9aff8bface56c3803841fcad54f6f96/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6172746966616b742f696d6167652f75706c6f61642f76312f776f726470726573735f352d73697a652e737667" alt="Docker Image Size (tag)" data-canonical-src="https://res.cloudinary.com/artifakt/image/upload/v1/wordpress_5-size.svg" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
-<h1><a id="user-content-about-artifakt" class="anchor" aria-hidden="true" href="#about-artifakt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>About Artifakt</h1>
-<p><a href="https://artifakt.com/?utm_source=github" rel="nofollow">Artifakt</a> is a developer-focused platform to run applications on the cloud—it deploys, monitors, and alerts any web-based application and auto-scales.</p>
-<p>Artifakt makes cloud operations easier by filtering out potential differences between cloud providers and presents you all the essential features—for example, region selection, database settings, storage needs, and scalability options.</p>
-<p>Developers and agencies from all over the world can rely on Artifakt to manage the boilerplates of deployment: SSL, CDN, OS security, stack monitoring, etc.</p>
-<p>And of course, we are thrilled to welcome contributions, fixes, or updates, so feel free to open pull requests! We aim to respond as soon as possible.</p>
-<p>Check out the <a href="https://www.artifakt.com/blog" rel="nofollow">Artifakt Blog</a> for all upcoming Docker-related (and not only!) announcements.</p>
-<h1><a id="user-content-how-to-use-our-images" class="anchor" aria-hidden="true" href="#how-to-use-our-images"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How to use our images</h1>
-<h2><a id="user-content-pull-from-public-registry" class="anchor" aria-hidden="true" href="#pull-from-public-registry"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Pull from public registry</h2>
+<h1 dir="auto"><a id="user-content-about-artifakt" class="anchor" aria-hidden="true" href="#about-artifakt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>About Artifakt</h1>
+<p dir="auto"><a href="https://artifakt.com/?utm_source=github" rel="nofollow">Artifakt</a> is a developer-focused platform to run applications on the cloud—it deploys, monitors, and alerts any web-based application and auto-scales.</p>
+<p dir="auto">Artifakt makes cloud operations easier by filtering out potential differences between cloud providers and presents you all the essential features—for example, region selection, database settings, storage needs, and scalability options.</p>
+<p dir="auto">Developers and agencies from all over the world can rely on Artifakt to manage the boilerplates of deployment: SSL, CDN, OS security, stack monitoring, etc.</p>
+<p dir="auto">And of course, we are thrilled to welcome contributions, fixes, or updates, so feel free to open pull requests! We aim to respond as soon as possible.</p>
+<p dir="auto">Check out the <a href="https://www.artifakt.com/blog" rel="nofollow">Artifakt Blog</a> for all upcoming Docker-related (and not only!) announcements.</p>
+<h1 dir="auto"><a id="user-content-how-to-use-our-images" class="anchor" aria-hidden="true" href="#how-to-use-our-images"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How to use our images</h1>
+<h2 dir="auto"><a id="user-content-pull-from-public-registry" class="anchor" aria-hidden="true" href="#pull-from-public-registry"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Pull from public registry</h2>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="docker pull registry.artifakt.io/magento:2.4-apache
 "><pre><code>docker pull registry.artifakt.io/magento:2.4-apache
 </code></pre></div>
-<h2><a id="user-content-build-from-source" class="anchor" aria-hidden="true" href="#build-from-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Build from Source</h2>
-<p>All images are publicly available, just use the <code>docker pull</code> command or <code>FROM</code> syntax in your Dockerfile.
+<h2 dir="auto"><a id="user-content-build-from-source" class="anchor" aria-hidden="true" href="#build-from-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Build from Source</h2>
+<p dir="auto">All images are publicly available, just use the <code>docker pull</code> command or <code>FROM</code> syntax in your Dockerfile.
 In case you want to build them locally, see sample commands below:</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="git clone https://github.com/artifakt-io/artifakt-docker-images/
 
@@ -2576,37 +2510,37 @@ cd artifakt-docker-images
 
 cd artifakt-docker-images
 </code></pre></div>
-<p>To build all Docker images, just run the <code>build.sh</code> command at the top level:</p>
+<p dir="auto">To build all Docker images, just run the <code>build.sh</code> command at the top level:</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="./build.sh
 "><pre><code>./build.sh
 </code></pre></div>
-<p>To build all tags for a specific Docker image, use its name following the same folder name:</p>
+<p dir="auto">To build all tags for a specific Docker image, use its name following the same folder name:</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="./build.sh --image=magento
 "><pre><code>./build.sh --image=magento
 </code></pre></div>
-<p>To build a specific version, just add the tag name to the previous build command</p>
+<p dir="auto">To build a specific version, just add the tag name to the previous build command</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="./build.sh --image=php --tag=7.4-apache
 "><pre><code>./build.sh --image=php --tag=7.4-apache
 </code></pre></div>
-<p>In case a Dockerfile has been updated, this repo uses <a href="https://github.com/hadolint/hadolint">Hadolint</a> as a linter.</p>
-<p>To force validation on Dockerfile before building, add the following option:</p>
+<p dir="auto">In case a Dockerfile has been updated, this repo uses <a href="https://github.com/hadolint/hadolint">Hadolint</a> as a linter.</p>
+<p dir="auto">To force validation on Dockerfile before building, add the following option:</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="./build.sh --image=php --tag=7.4-apache --lint=true
 "><pre><code>./build.sh --image=php --tag=7.4-apache --lint=true
 </code></pre></div>
-<p>Upon successful build, the resulting image can be further assessed using using <a href="https://github.com/GoogleContainerTools/container-structure-test">Google's container-structure-test</a> tool, with the following command:</p>
+<p dir="auto">Upon successful build, the resulting image can be further assessed using using <a href="https://github.com/GoogleContainerTools/container-structure-test">Google's container-structure-test</a> tool, with the following command:</p>
 <div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="./build.sh --image=php --tag=7.4-apache --lint=true --test=true
 "><pre><code>./build.sh --image=php --tag=7.4-apache --lint=true --test=true
 </code></pre></div>
-<p>Remark #1: by design, if a Dockerfile fails linting, it will not be built
+<p dir="auto">Remark #1: by design, if a Dockerfile fails linting, it will not be built
 Remark #2: structure tests will look for a <code>test.yaml</code> next to the tested Dockerfile</p>
-<p>At anytime, just call the help with <code>./build.sh --help</code> for all the available options.</p>
-<h2><a id="user-content-execution-sample-run-a-web-application" class="anchor" aria-hidden="true" href="#execution-sample-run-a-web-application"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Execution sample: run a web application</h2>
-<p>It's easy to launch code inside a container from a pre-built Artifakt PHP image. Just paste the following command in a terminal pointing to the code source:</p>
+<p dir="auto">At anytime, just call the help with <code>./build.sh --help</code> for all the available options.</p>
+<h2 dir="auto"><a id="user-content-execution-sample-run-a-web-application" class="anchor" aria-hidden="true" href="#execution-sample-run-a-web-application"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Execution sample: run a web application</h2>
+<p dir="auto">It's easy to launch code inside a container from a pre-built Artifakt PHP image. Just paste the following command in a terminal pointing to the code source:</p>
 <div class="highlight highlight-text-shell-session position-relative overflow-auto" data-snippet-clipboard-copy-content="docker run -d -p 8000:80 --name php_sample -v $PWD:/var/www/html registry.artifakt.io/php:7.4-apache
 "><pre><span class="pl-c1">docker run -d -p 8000:80 --name php_sample -v $PWD:/var/www/html registry.artifakt.io/php:7.4-apache</span></pre></div>
-<p>After the application starts, navigate to <code>http://localhost:8000</code> in your web browser.</p>
-<h1><a id="user-content-adding-an-image" class="anchor" aria-hidden="true" href="#adding-an-image"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Adding an image</h1>
-<ul>
+<p dir="auto">After the application starts, navigate to <code>http://localhost:8000</code> in your web browser.</p>
+<h1 dir="auto"><a id="user-content-adding-an-image" class="anchor" aria-hidden="true" href="#adding-an-image"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Adding an image</h1>
+<ul dir="auto">
 <li>Fork this repository</li>
 <li>Create a folder at the root with the convention <code>&lt;image_name&gt;/&lt;tag&gt;</code></li>
 <li>Write a Dockerfile inside this new folder</li>
@@ -2614,17 +2548,17 @@ Remark #2: structure tests will look for a <code>test.yaml</code> next to the te
 <li>Submit a new pull request</li>
 <li>Upon successful review, we'll publish it on our official registry</li>
 </ul>
-<h1><a id="user-content-image-update-policy" class="anchor" aria-hidden="true" href="#image-update-policy"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Image update policy</h1>
-<ul>
+<h1 dir="auto"><a id="user-content-image-update-policy" class="anchor" aria-hidden="true" href="#image-update-policy"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Image update policy</h1>
+<ul dir="auto">
 <li>We update the supported images within 12 hours of any updates to their base images (e.g. php:7-apache-buster, wordpress:5-php7.3-apache, etc.).</li>
 </ul>
-<h1><a id="user-content-support-and-feedback" class="anchor" aria-hidden="true" href="#support-and-feedback"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Support and feedback</h1>
-<ul>
+<h1 dir="auto"><a id="user-content-support-and-feedback" class="anchor" aria-hidden="true" href="#support-and-feedback"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Support and feedback</h1>
+<ul dir="auto">
 <li><a href="https://github.com/artifakt-io/artifakt-docker-images/issues/new/choose">File an issue</a></li>
 <li><a href="https://support.artifakt.io/" rel="nofollow">Contact Artifakt Support</a></li>
 </ul>
-<h1><a id="user-content-license" class="anchor" aria-hidden="true" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>License</h1>
-<p>artifakt-docker-images is licensed under the Apache License, Version 2.0. See
+<h1 dir="auto"><a id="user-content-license" class="anchor" aria-hidden="true" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>License</h1>
+<p dir="auto">artifakt-docker-images is licensed under the Apache License, Version 2.0. See
 <a href="https://github.com/artifakt-io/artifakt-docker-images/blob/main/LICENSE">LICENSE</a> for the full
 license text.</p>
 </article>
