@@ -53,10 +53,12 @@ jobs:
           IMAGE_NAME=${TMP_IMAGE_ARRAY[1]}
           IMAGE_NAME_ESCAPED=${IMAGE_NAME/-/--}
           TAG=${TMP_IMAGE_ARRAY[2]}
+          IMAGE_TAG_ESCAPED=${TAG/-/--}
 
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
           echo "IMAGE_NAME_ESCAPED=$IMAGE_NAME_ESCAPED" >> $GITHUB_ENV
           echo "IMAGE_TAG=$TAG" >> $GITHUB_ENV
+          echo "IMAGE_TAG_ESCAPED=$IMAGE_TAG_ESCAPED" >> $GITHUB_ENV
           echo "DOCKERFILE_FOLDER=$folder" >> $GITHUB_ENV
 
       - name: Build Docker Images
@@ -102,7 +104,7 @@ jobs:
         uses: djalal/job-status-badge@main
         with:
           cloudinary_url: ${{ secrets.CLOUDINARY_URL }}
-          left_text: ${{ env.IMAGE_NAME_ESCAPED }}%3A${{ env.IMAGE_TAG }}
+          left_text: ${{ env.IMAGE_NAME_ESCAPED }}%3A${{ env.IMAGE_TAG_ESCAPED }}
           right_text: ${{ (startsWith(job.status, 'success') && 'passing') || 'failed' }}
           color: ${{ (startsWith(job.status, 'success') && 'green') || 'red' }}
           public_id: ${{ env.IMAGE_NAME }}_${{ env.IMAGE_TAG }}-status
