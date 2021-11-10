@@ -1,0 +1,10 @@
+contact_links:
+  - name: Documentation
+    url: https://docs.artifakt.com/
+    about: Product Documentation
+  - name: Knowledge Base
+    url: https://help.artifakt.com/kb/en
+    about: Step by step tutorials 
+  - name: Feedback
+    url: https://feedback.artifakt.io/
+    about: Discover our roadmap
