@@ -159,6 +159,8 @@ COPY --from=mysql:8 /usr/bin/my* /usr/bin/
 
 COPY etc/php-fpm.ini /usr/local/etc/php/conf.d/zzzz-magento.ini
 COPY etc/mail.ini /usr/local/etc/php/conf.d/zzzz-mail.ini
+COPY etc/opcache.exclusion /usr/local/etc/php/opcache.exclusion
+
 COPY etc/php-fpm.conf /usr/local/etc/
 
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh

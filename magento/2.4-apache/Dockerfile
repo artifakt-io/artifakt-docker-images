@@ -175,6 +175,8 @@ COPY --from=mysql:8 /usr/bin/my* /usr/bin/
 
 COPY etc/magento.ini /usr/local/etc/php/conf.d/zzzz-magento.ini
 COPY etc/mail.ini /usr/local/etc/php/conf.d/zzzz-mail.ini
+COPY etc/opcache.exclusion /usr/local/etc/php/opcache.exclusion
+
 COPY etc/crontab /etc/cron.d/magento2-cron
 COPY etc/000-default.conf /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite && a2ensite 000-default
