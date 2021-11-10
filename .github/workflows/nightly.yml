@@ -51,7 +51,6 @@ jobs:
           TMP_IMAGE_ARRAY=($(echo $folder | tr "/" "\n"))
 
           IMAGE_NAME=${TMP_IMAGE_ARRAY[1]}
-          IMAGE_NAME_ESCAPED=
           TAG=${TMP_IMAGE_ARRAY[2]}
 
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
