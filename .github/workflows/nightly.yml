@@ -73,7 +73,12 @@ jobs:
           IMAGE_ID=registry.artifakt.io/$IMAGE_NAME
 
           IMAGE_SIZE=`docker images $IMAGE_ID:$TAG --format "{{.Size}}"`
-          echo "IMAGE_SIZE=$IMAGE_SIZE" >> $GITHUB_ENV
+          echo "DEBUG ==> IMAGE_SIZE=$IMAGE_SIZE"
+          echo "DEBUG ==> IMAGE_ID=$IMAGE_ID"
+          echo "DEBUG ==> TAG=$TAG"
+          echo "DEBUG ==> docker images" && docker images
+          
+          echo "IMAGE_SIZE=$IMAGE_SIZE" >> $GITHUB_ENV          
 
       - name: Login to target registry
         if: github.ref == 'refs/heads/main'
