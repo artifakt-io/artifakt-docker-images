@@ -72,8 +72,8 @@ jobs:
           export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true --test=true --image=$IMAGE_NAME --tag=$TAG
           IMAGE_ID=$REGISTRY_TARGET/$IMAGE_NAME
 
-          IMAGE_SIZE=`docker images $IMAGE_ID:$TAG --format '{{.Size}}'`
-          echo "IMAGE_SIZE=$IMAGE_SIZE" >> $GITHUB_ENV          
+          IMAGE_SIZE=`docker images $IMAGE_ID:$TAG --format "{{.Size}}"`
+          echo "IMAGE_SIZE=$IMAGE_SIZE" >> $GITHUB_ENV
 
       - name: Login to target registry
         if: github.ref == 'refs/heads/main'
