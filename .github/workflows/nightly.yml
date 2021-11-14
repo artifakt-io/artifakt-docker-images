@@ -73,12 +73,6 @@ jobs:
           IMAGE_ID=$REGISTRY_TARGET/$IMAGE_NAME
 
           IMAGE_SIZE=`docker images $IMAGE_ID:$TAG --format '{{.Size}}'`
-          echo "DEBUG ==> IMAGE_SIZE=$IMAGE_SIZE"
-          echo "DEBUG ==> IMAGE_ID=$IMAGE_ID"
-          echo "DEBUG ==> TAG=$TAG"
-          echo "DEBUG ==> docker images" && docker images
-          echo "DEBUG ==> docker images $IMAGE_ID:$TAG" && docker images $IMAGE_ID:$TAG 
-          
           echo "IMAGE_SIZE=$IMAGE_SIZE" >> $GITHUB_ENV          
 
       - name: Login to target registry
