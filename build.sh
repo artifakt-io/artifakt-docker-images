@@ -251,7 +251,7 @@ do
 			OLDPWD=$PWD
 			echo -n "  - building $_image:$_tag... "
 			cd $_build_dir
-			DOCKER_BUILDKIT=0 $DOCKER_BIN image build --progress=plain -t $REGISTRY_TARGET/$_image:$_tag .
+			DOCKER_BUILDKIT=0 $DOCKER_BIN image build --cache-from $REGISTRY_TARGET/$_image:$_tag --progress=plain -t $REGISTRY_TARGET/$_image:$_tag .
 		fi
 		if [[ $TEST_MODE = true ]]; then
 			LOCAL_TEST_FILE=""
