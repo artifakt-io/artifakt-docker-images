@@ -4,14 +4,16 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-# see release archives https://github.com/akeneo/pim-community-standard/releases
-ARG AKENEO_VERSION=4.0.120
 
 # see https://docs.akeneo.com/4.0/install_pim/manual/system_requirements/system_requirements.html
 ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
 
+# see release archives https://github.com/akeneo/pim-community-standard/releases
+ARG AKENEO_VERSION=4.0.120
 ARG IMAGICK_VERSION=3.5.0
 ARG MEMCACHED_VERSION=3.1.5
+ARG COMPOSER_VERSION=2.1.3
+
 
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get update && \
@@ -106,7 +108,6 @@ ENV PHP_CONF_DATE_TIMEZONE="UTC"
 ENV PHP_CONF_MAX_EXECUTION_TIME=600
 ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
 
-ARG COMPOSER_VERSION=2.1.3
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
