@@ -1,6 +1,7 @@
 FROM registry.artifakt.io/php:7.4-apache
 
 ARG SHOPWARE_VERSION=6.4.3.1
+ARG COMPOSER_VERSION=2.1.3
 
 ENV TZ=Europe/Paris \
     APP_ENV=prod \
@@ -45,7 +46,6 @@ ENV PHP_CONF_DATE_TIMEZONE="UTC"
 ENV PHP_CONF_MAX_EXECUTION_TIME=600
 ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
 
-ARG COMPOSER_VERSION=2.1.3
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
@@ -61,10 +61,9 @@ USER root
 COPY 000-default.conf /etc/apache2/sites-available/
 RUN a2enmod rewrite && a2ensite 000-default
 
-HEALTHCHECK CMD curl --fail http://localhost || exit 1
-
 # hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
 
+HEALTHCHECK CMD curl --fail http://localhost || exit 1
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
