@@ -5,28 +5,28 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
+# https://www.drupal.org/node/3060/release
+ARG DRUPAL_VERSION=9.2.2
+ARG COMPOSER_VERSION=2.1.3
+
 # set recommended PHP.ini settings
 # see https://secure.php.net/manual/en/opcache.installation.php
 RUN { \
-		echo 'opcache.memory_consumption=128'; \
-		echo 'opcache.interned_strings_buffer=8'; \
-		echo 'opcache.max_accelerated_files=4000'; \
-		echo 'opcache.revalidate_freq=60'; \
-		echo 'opcache.fast_shutdown=1'; \
+	echo 'opcache.memory_consumption=128'; \
+	echo 'opcache.interned_strings_buffer=8'; \
+	echo 'opcache.max_accelerated_files=4000'; \
+	echo 'opcache.revalidate_freq=60'; \
+	echo 'opcache.fast_shutdown=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
-ARG COMPOSER_VERSION=2.1.3
 RUN curl -sS https://getcomposer.org/installer | \
     php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
-
-# https://www.drupal.org/node/3060/release
-ENV DRUPAL_VERSION 9.2.2
 
 WORKDIR /opt/drupal
 
 RUN set -eux; \
 	export COMPOSER_HOME="$(mktemp -d)"; \
-	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; \
+	composer create-project --no-interaction "drupal/recommended-project:${DRUPAL_VERSION}" ./; \
 	composer require --no-cache --update-no-dev --prefer-dist --no-ansi --no-interaction drush/drush; \
 	chown -R www-data:www-data /opt/drupal web/sites web/modules web/themes; \
 	rmdir /var/www/html; \
