@@ -12,7 +12,7 @@ ARG APACHE_MODULE_LIST="access_compat actions alias allowmethods auth_basic auth
 
 ARG MEMCACHE_VERSION=4.0.5.2
 ARG APCU_VERSION=5.1.19
-ARG LIBSODIUM_VERSION=1.0.18
+ARG LIBSODIUM_VERSION=1.0.18-RELEASE
 ARG COMPOSER_VERSION=2.1.3
 
 # Install dependencies
@@ -87,14 +87,14 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && rm -f /usr/local/lib/php/extensions/*/*sodium.so \
   && apt-get remove libsodium* -y  \
   && mkdir -p /tmp/libsodium  \
-  && curl -sL https://github.com/jedisct1/libsodium/archive/$LIBSODIUM_VERSION-RELEASE.tar.gz | tar xzf - -C  /tmp/libsodium \
-  && cd /tmp/libsodium/libsodium-${LIBSODIUM_VERSION}-RELEASE/ \
+  && curl -sL https://github.com/jedisct1/libsodium/archive/${LIBSODIUM_VERSION}.tar.gz | tar xzf - -C  /tmp/libsodium \
+  && cd /tmp/libsodium/libsodium-${LIBSODIUM_VERSION}/ \
   && ./configure \
   && make && make check \
   && make install  \
-  && pecl install -o -f libsodium-$LIBSODIUM_VERSION \
+  && pecl install -o -f libsodium \
   && rm -rf /tmp/libsodium
-
+  
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
