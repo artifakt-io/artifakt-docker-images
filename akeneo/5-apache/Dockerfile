@@ -105,7 +105,7 @@ ENV PHP_CONF_DATE_TIMEZONE="UTC"
 ENV PHP_CONF_MAX_EXECUTION_TIME=600
 ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
 
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.1.14
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer

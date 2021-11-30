@@ -15,7 +15,7 @@ RUN { \
 		echo 'opcache.fast_shutdown=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.1.14
 RUN curl -sS https://getcomposer.org/installer | \
     php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
