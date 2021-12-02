@@ -5,7 +5,7 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 # see release archives https://github.com/akeneo/pim-community-standard/releases
-ARG AKENEO_VERSION=5.0.40
+ARG AKENEO_VERSION=v5.0.40
 
 # see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html, already enabled: curl, mbstring, xml
 ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mysqli opcache pdo_mysql zip"
@@ -112,10 +112,10 @@ RUN curl -sS https://getcomposer.org/installer | \
 
 WORKDIR /var/www/html
 
-RUN curl -sSLO https://github.com/akeneo/pim-community-standard/archive/v$AKENEO_VERSION.tar.gz && \
-    tar -xzf v$AKENEO_VERSION.tar.gz -C . && \
+RUN curl -sSLO https://github.com/akeneo/pim-community-standard/archive/$AKENEO_VERSION.tar.gz && \
+    tar -xzf $AKENEO_VERSION.tar.gz -C . && \
     rm v$AKENEO_VERSION.tar.gz && \
-    mv pim-community-standard-$AKENEO_VERSION pim-community-standard && \
+    mv pim-community-standard-${AKENEO_VERSION:1} pim-community-standard && \
     chown -R www-data:www-data .
 
 WORKDIR /var/www/html/pim-community-standard
