@@ -114,7 +114,7 @@ WORKDIR /var/www/html
 
 RUN curl -sSLO https://github.com/akeneo/pim-community-standard/archive/$AKENEO_VERSION.tar.gz && \
     tar -xzf $AKENEO_VERSION.tar.gz -C . && \
-    rm v$AKENEO_VERSION.tar.gz && \
+    rm $AKENEO_VERSION.tar.gz && \
     mv pim-community-standard-${AKENEO_VERSION:1} pim-community-standard && \
     chown -R www-data:www-data .
 
