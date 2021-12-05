@@ -17,6 +17,8 @@ ARG MEMCACHE_VERSION=4.0.5.2
 ARG APCU_VERSION=5.1.19
 ARG LIBSODIUM_VERSION=2.0.23
 
+ARG COMPOSER_VERSION=1.10.22
+
 # Install dependencies
 # hadolint ignore=DL3008
 RUN apt-get update \
@@ -98,8 +100,6 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && pecl install -o -f libsodium-$LIBSODIUM_VERSION \
   && rm -rf /tmp/libsodium
 
-
-ARG COMPOSER_VERSION=2.1.14
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
