@@ -205,7 +205,7 @@ fi
 if [[ $LINT_MODE = true ]]; then
 	echo -n "  - ";
 	wrap_good "hadolint docker image" 'available'
-	HADOLINT_BIN="docker run --rm -i ghcr.io/hadolint/hadolint:v2.6.0 hadolint --require-label author:text --failure-threshold=error -"
+	HADOLINT_BIN="docker run --rm -i ghcr.io/hadolint/hadolint:v2.8.0 hadolint --require-label author:text --failure-threshold=error -"
 fi
 
 wrap_color "info: reading dockerfile list from current repo ..." white
@@ -251,7 +251,7 @@ do
 			OLDPWD=$PWD
 			echo -n "  - building $_image:$_tag... "
 			cd $_build_dir
-			DOCKER_BUILDKIT=0 $DOCKER_BIN image build --progress=plain -t $REGISTRY_TARGET/$_image:$_tag .
+			DOCKER_BUILDKIT=0 $DOCKER_BIN image build --cache-from $REGISTRY_TARGET/$_image:$_tag --progress=plain -t $REGISTRY_TARGET/$_image:$_tag .
 		fi
 		if [[ $TEST_MODE = true ]]; then
 			LOCAL_TEST_FILE=""

@@ -4,7 +4,7 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-ARG SYMFONY5_VERSION=5.3
+ARG SYMFONY5_VERSION=v5.3.99
 ARG COMPOSER_VERSION=2.1.3
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -12,7 +12,7 @@ RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 USER www-data
-RUN composer create-project symfony/website-skeleton:"^${SYMFONY5_VERSION}" /tmp/website-skeleton && \
+RUN composer create-project symfony/website-skeleton:"${SYMFONY5_VERSION}" /tmp/website-skeleton && \
     rm -rf /var/www/html/{.[!.],}* && \
     mv /tmp/website-skeleton/{.[!.],}* /var/www/html
 WORKDIR /var/www/html
