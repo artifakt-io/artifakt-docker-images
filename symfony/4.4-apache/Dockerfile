@@ -4,14 +4,15 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-
 ARG COMPOSER_VERSION=2.1.3
+ARG SYMFONY4_VERSION=4.4
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 USER www-data
-RUN composer --no-cache create-project symfony/website-skeleton:"^4.4" /tmp/website-skeleton && \
+RUN composer --no-cache create-project symfony/website-skeleton:"^${SYMFONY4_VERSION}" /tmp/website-skeleton && \
     rm -rf /var/www/html/{.[!.],}* && \
     mv /tmp/website-skeleton/{.[!.],}* /var/www/html
 WORKDIR /var/www/html
