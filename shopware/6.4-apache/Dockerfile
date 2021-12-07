@@ -1,6 +1,7 @@
 FROM registry.artifakt.io/php:7.4-apache
 
 ARG SHOPWARE_VERSION=6.4.3.1
+ARG COMPOSER_VERSION=2.1.14
 
 ENV TZ=Europe/Paris \
     APP_ENV=prod \
@@ -34,18 +35,18 @@ ENV TZ=Europe/Paris \
     PHP_MAX_EXECUTION_TIME=300 \
     PHP_MEMORY_LIMIT=512m
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends nodejs default-mysql-client cron netcat && \
-    rm -rf /var/lib/apt/lists/*
-
 ENV PHP_CONF_MEMORY_LIMIT="-1"
 ENV PHP_CONF_DATE_TIMEZONE="UTC"
 ENV PHP_CONF_MAX_EXECUTION_TIME=600
 ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
 
-ARG COMPOSER_VERSION=2.1.14
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends nodejs default-mysql-client cron netcat && \
+    rm -rf /var/lib/apt/lists/*
+
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
@@ -61,10 +62,9 @@ USER root
 COPY 000-default.conf /etc/apache2/sites-available/
 RUN a2enmod rewrite && a2ensite 000-default
 
-HEALTHCHECK CMD curl --fail http://localhost || exit 1
-
 # hadolint ignore=DL3045
 COPY docker-entrypoint.sh /usr/local/bin/
 
+HEALTHCHECK CMD curl --fail http://localhost || exit 1
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]

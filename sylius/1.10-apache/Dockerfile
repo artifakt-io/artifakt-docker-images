@@ -4,7 +4,16 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
+ARG COMPOSER_VERSION=2.1.14
+ARG SYLIUS_VERSION=1.10
+
+ENV PHP_CONF_MEMORY_LIMIT="-1"
+ENV PHP_CONF_DATE_TIMEZONE="UTC"
+ENV PHP_CONF_MAX_EXECUTION_TIME=600
+ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
+
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get update && \
     apt-get install -y --no-install-recommends nodejs && \
@@ -20,18 +29,12 @@ RUN export CFLAGS="$PHP_CFLAGS" CPPFLAGS="$PHP_CPPFLAGS" LDFLAGS="$PHP_LDFLAGS" 
     && apt-get update && apt-get install --no-install-recommends -y yarn \
     && rm -rf /var/lib/apt/lists/*
 
-ENV PHP_CONF_MEMORY_LIMIT="-1"
-ENV PHP_CONF_DATE_TIMEZONE="UTC"
-ENV PHP_CONF_MAX_EXECUTION_TIME=600
-ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
-
-ARG COMPOSER_VERSION=2.1.14
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 WORKDIR /var/www/html
 
-RUN COMPOSER_MEMORY_LIMIT=-1 composer create-project --no-scripts --no-cache --no-interaction --no-ansi --no-dev sylius/sylius-standard:^1.10 . && \
+RUN COMPOSER_MEMORY_LIMIT=-1 composer create-project --no-scripts --no-cache --no-interaction --no-ansi --no-dev sylius/sylius-standard:^${SYLIUS_VERSION} . && \
     chown -R www-data:www-data .
 
 RUN mkdir -p /var/www/.yarn && \
