@@ -1,29 +1,13 @@
-ARG PHP_VERSION=7.4-apache
-
-FROM php:${PHP_VERSION}
+FROM php:7.4-apache
 
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-ARG MYSQL_HOST
-ARG MYSQL_ROOT_PASSWORD
-ARG MYSQL_USER
-ARG MYSQL_PASSWORD
-ARG MYSQL_DATABASE
-ARG MAGENTO_LANGUAGE
-ARG MAGENTO_TIMEZONE
-ARG MAGENTO_DEFAULT_CURRENCY
-ARG MAGENTO_URL
-ARG MAGENTO_BACKEND_FRONTNAME
-ARG MAGENTO_USE_SECURE
-ARG MAGENTO_BASE_URL_SECURE
-ARG MAGENTO_USE_SECURE_ADMIN
-ARG MAGENTO_ADMIN_FIRSTNAME
-ARG MAGENTO_ADMIN_LASTNAME
-ARG MAGENTO_ADMIN_EMAIL
-ARG MAGENTO_ADMIN_USERNAME
-ARG MAGENTO_ADMIN_PASSWORD
+ARG COMPOSER_VERSION=2.1.3
+ARG LIBSODIUM_VERSION=1.0.18-RELEASE
+ARG GEOIP_VERSION=1.1.1
+ARG MYSQL_CLIENT_VERSION=8
 
 ENV PHP_MEMORY_LIMIT 4G
 ENV DEBUG false
@@ -102,7 +86,7 @@ RUN docker-php-ext-install -j$(nproc) \
   pcntl
 
 RUN pecl install -o -f \
-  geoip-1.1.1 \
+  geoip-${GEOIP_VERSION} \
   igbinary \
   imagick \
   mailparse \
@@ -118,8 +102,8 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && rm -f /usr/local/lib/php/extensions/*/*sodium.so \
   && apt-get remove libsodium* -y  \
   && mkdir -p /tmp/libsodium  \
-  && curl -sL https://github.com/jedisct1/libsodium/archive/1.0.18-RELEASE.tar.gz | tar xzf - -C  /tmp/libsodium \
-  && cd /tmp/libsodium/libsodium-1.0.18-RELEASE/ \
+  && curl -sL https://github.com/jedisct1/libsodium/archive/${LIBSODIUM_VERSION}.tar.gz | tar xzf - -C  /tmp/libsodium \
+  && cd /tmp/libsodium/libsodium-${LIBSODIUM_VERSION}/ \
   && ./configure \
   && make && make check \
   && make install  \
@@ -165,13 +149,12 @@ RUN docker-php-ext-enable \
   zip \
   pcntl
 
-ARG COMPOSER_VERSION=2.1.3
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 # hadolint ignore=DL3022
-COPY --from=mysql:8 /usr/bin/my* /usr/bin/
+COPY --from=mysql:${MYSQL_CLIENT_VERSION} /usr/bin/my* /usr/bin/
 
 COPY etc/magento.ini /usr/local/etc/php/conf.d/zzzz-magento.ini
 COPY etc/mail.ini /usr/local/etc/php/conf.d/zzzz-mail.ini
