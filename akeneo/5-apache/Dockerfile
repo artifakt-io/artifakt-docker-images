@@ -7,13 +7,14 @@ LABEL vendor="Artifakt" \
 # see https://docs.akeneo.com/5.0/install_pim/manual/system_requirements/system_requirements.html, already enabled: curl, mbstring, xml
 ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mysqli opcache pdo_mysql zip"
 
-# see release archives https://github.com/akeneo/pim-community-standard/releases
-ARG AKENEO_VERSION=v5.0.40
+# see release archives https://github.com/akeneo/pim-community-standard/tags
+ARG AKENEO_VERSION=v5.0.61
 ARG IMAGICK_VERSION=3.5.0
 ARG MEMCACHED_VERSION=3.1.5
 ARG COMPOSER_VERSION=2.1.14
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get update && \
     apt-get install -y --no-install-recommends nodejs && \
