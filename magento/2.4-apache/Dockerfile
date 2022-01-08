@@ -4,7 +4,7 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.2.4
 ARG LIBSODIUM_VERSION=1.0.18-RELEASE
 ARG GEOIP_VERSION=1.1.1
 
