@@ -7,9 +7,16 @@ LABEL vendor="Artifakt" \
 
 HEALTHCHECK CMD curl --fail http://localhost || exit 1
 
-
 # cloning official wordpress dockerfile to remove VOLUME
 # see https://github.com/moby/moby/issues/3465
+
+#
+# NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
+#
+# PLEASE DO NOT EDIT IT DIRECTLY.
+#
+
+#FROM php:7.4-apache
 
 # persistent dependencies
 RUN set -eux; \
@@ -31,12 +38,14 @@ RUN set -ex; \
 		libjpeg-dev \
 		libmagickwand-dev \
 		libpng-dev \
+		libwebp-dev \
 		libzip-dev \
 	; \
 	\
 	docker-php-ext-configure gd \
 		--with-freetype \
 		--with-jpeg \
+		--with-webp \
 	; \
 	docker-php-ext-install -j "$(nproc)" \
 		bcmath \
@@ -46,14 +55,22 @@ RUN set -ex; \
 		zip \
 	; \
 # https://pecl.php.net/package/imagick
-	pecl install imagick-3.5.0; \
+	pecl install imagick-3.6.0; \
 	docker-php-ext-enable imagick; \
 	rm -r /tmp/pear; \
 	\
+# some misbehaving extensions end up outputting to stdout 🙈 (https://github.com/docker-library/wordpress/issues/669#issuecomment-993945967)
+	out="$(php -r 'exit(0);')"; \
+	[ -z "$out" ]; \
+	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; \
+	[ -z "$err" ]; \
+	\
+	extDir="$(php -r 'echo ini_get("extension_dir");')"; \
+	[ -d "$extDir" ]; \
 # reset apt-mark's "manual" list so that "purge --auto-remove" will remove all build dependencies
 	apt-mark auto '.*' > /dev/null; \
 	apt-mark manual $savedAptMark; \
-	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so \
+	ldd "$extDir"/*.so \
 		| awk '/=>/ { print $3 }' \
 		| sort -u \
 		| xargs -r dpkg-query -S \
@@ -62,7 +79,12 @@ RUN set -ex; \
 		| xargs -rt apt-mark manual; \
 	\
 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \
-	rm -rf /var/lib/apt/lists/*
+	rm -rf /var/lib/apt/lists/*; \
+	\
+	! { ldd "$extDir"/*.so | grep 'not found'; }; \
+# check for output like "PHP Warning:  PHP Startup: Unable to load dynamic library 'foo' (tried: ...)
+	err="$(php --version 3>&1 1>&2 2>&3)"; \
+	[ -z "$err" ]
 
 # set recommended PHP.ini settings
 # see https://secure.php.net/manual/en/opcache.installation.php
@@ -110,8 +132,8 @@ RUN set -eux; \
 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' +
 
 RUN set -eux; \
-	version='5.7.2'; \
-	sha1='c97c037d942e974eb8524213a505268033aff6c8'; \
+	version='5.7.5'; \
+	sha1='08b2a513f0e17965c84a91cbdb0daffbfaf49b47'; \
 	\
 	curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; \
 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; \
@@ -147,8 +169,13 @@ RUN set -eux; \
 	chown -R www-data:www-data wp-content; \
 	chmod -R 777 wp-content
 
+#VOLUME /var/www/html
+
 #COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/
 #COPY docker-entrypoint.sh /usr/local/bin/
+
+#ENTRYPOINT ["docker-entrypoint.sh"]
+#CMD ["apache2-foreground"]
 
 ################################### END OF OFFICIAL WORDPRESS ###
 
