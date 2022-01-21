@@ -11,7 +11,7 @@ ARG PHP_EXTENSION_LIST="apcu bcmath gd intl mysqli pdo_mysql zip exif imagick"
 ARG AKENEO_VERSION=v4.0.120
 ARG IMAGICK_VERSION=3.5.0
 ARG MEMCACHED_VERSION=3.1.5
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.2.5
 
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get update && \
