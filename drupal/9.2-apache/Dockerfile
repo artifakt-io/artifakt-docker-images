@@ -6,8 +6,8 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 # https://www.drupal.org/node/3060/release
-ARG DRUPAL_VERSION=9.2.2
 ARG COMPOSER_VERSION=2.1.14
+ARG DRUPAL_VERSION=9.2.11
 
 # set recommended PHP.ini settings
 # see https://secure.php.net/manual/en/opcache.installation.php

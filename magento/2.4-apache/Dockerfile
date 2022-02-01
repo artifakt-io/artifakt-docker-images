@@ -7,7 +7,6 @@ LABEL vendor="Artifakt" \
 ARG COMPOSER_VERSION=2.1.14
 ARG LIBSODIUM_VERSION=1.0.18-RELEASE
 ARG GEOIP_VERSION=1.1.1
-ARG MYSQL_CLIENT_VERSION=8
 
 ENV PHP_MEMORY_LIMIT 4G
 ENV DEBUG false
@@ -155,7 +154,7 @@ RUN curl -sS https://getcomposer.org/installer | \
   php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 # hadolint ignore=DL3022
-COPY --from=mysql:${MYSQL_CLIENT_VERSION} /usr/bin/my* /usr/bin/
+COPY --from=mysql:8 /usr/bin/my* /usr/bin/
 
 COPY etc/magento.ini /usr/local/etc/php/conf.d/zzzz-magento.ini
 COPY etc/mail.ini /usr/local/etc/php/conf.d/zzzz-mail.ini
