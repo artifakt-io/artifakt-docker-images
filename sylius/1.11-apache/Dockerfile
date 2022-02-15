@@ -24,6 +24,7 @@ RUN export CFLAGS="$PHP_CFLAGS" CPPFLAGS="$PHP_CPPFLAGS" LDFLAGS="$PHP_LDFLAGS" 
     && apt-get update && apt-get install --no-install-recommends -y yarn \
     && rm -rf /var/lib/apt/lists/*
 
+ENV MESSENGER_TRANSPORT_DSN="doctrine://default"
 ENV PHP_CONF_MEMORY_LIMIT="-1"
 ENV PHP_CONF_DATE_TIMEZONE="UTC"
 ENV PHP_CONF_MAX_EXECUTION_TIME=600
