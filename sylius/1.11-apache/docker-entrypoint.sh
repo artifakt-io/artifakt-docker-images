@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-PERSISTENT_FOLDER_LIST=("var/cache" "var/sessions" "public/media" "public/uploads" "config/jwt")
+PERSISTENT_FOLDER_LIST=("var/sessions" "public/media" "public/uploads" "config/jwt")
 
 for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
   echo Mount $persistent_folder directory
