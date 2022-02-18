@@ -9,7 +9,7 @@ commandTests:
   - name: "vue --version"
     command: "vue"
     args: [ "--version"]
-    expectedOutput: ['.*4\.5\.*']
+    expectedOutput: ['.*5\.0\.*']
   - name: "vue framework 3.2"
     command: "npm"
     args: [ "list", "-g", "--depth=0"]
