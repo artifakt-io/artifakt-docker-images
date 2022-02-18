@@ -5,7 +5,7 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 ARG COMPOSER_VERSION=2.1.3
-ARG SYLIUS_VERSION=v1.11
+ARG SYLIUS_VERSION=dev-dependabot/npm_and_yarn/url-parse-1.5.7
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
