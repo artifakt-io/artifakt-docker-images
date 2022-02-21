@@ -1,4 +1,4 @@
-FROM php:8.0.14-fpm
+FROM php:8.0-fpm
 
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
