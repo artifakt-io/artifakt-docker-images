@@ -46,11 +46,6 @@ commandTests:
     command: "ls"
     args: [ "-la", "/var/www/html/var/sessions"]
     expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/var/sessions -> /data/var/sessions' ]
-  - name: "check mounted var/cache"
-    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
-    command: "ls"
-    args: [ "-la", "/var/www/html/var/cache"]
-    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/var/cache -> /data/var/cache' ]
   - name: "check mounted config/jwt"
     setup: [["/usr/local/bin/docker-entrypoint.sh"]]
     command: "ls"
