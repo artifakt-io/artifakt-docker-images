@@ -13,7 +13,28 @@ for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
 done
 
 if [[ -x "/.artifakt/entrypoint.sh" ]]; then
-    source /.artifakt/entrypoint.sh
+
+	# source: https://gist.github.com/karlrwjohnson/1921b05c290edb665c238676ef847f3c
+	function lock_cmd {
+	    LOCK_FILE="$1"; shift
+	    LOCK_TIMEOUT="$1"; shift;
+
+	    (
+	        trap "rm -f $LOCK_FILE" 0
+	        flock -x -w $LOCK_TIMEOUT 200
+	        RETVAL=$?
+	        if [ $RETVAL -ne 0 ]; then
+	            echo -e "Failed to aquire lock on $LOCK_FILE within $LOCK_TIMEOUT seconds. Is a similar script hung?"
+	            exit $RETVAL
+	        fi
+	        echo -e "Running command: $@"
+	        $@
+	    ) 200>"$LOCK_FILE"
+	}
+
+	lock_file=${ARTIFAKT_ENTRYPOINT_LOCK:-/data/artifakt-entrypoint-lock}
+	lock_timeout=${ARTIFAKT_TIMEOUT_LOCK:-600}
+	lock_cmd $lock_file $lock_timeout /.artifakt/entrypoint.sh
 fi
 
 # first arg is `-f` or `--some-option`
