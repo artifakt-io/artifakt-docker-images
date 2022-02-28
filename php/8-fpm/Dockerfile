@@ -4,8 +4,6 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-HEALTHCHECK CMD curl --fail http://localhost || exit 1
-
 ARG PHP_EXTENSION_LIST="apcu bcmath bz2 calendar exif gd gettext iconv intl memcache mysqli opcache pcntl pdo_mysql shmop soap sockets sodium sysvmsg sysvsem sysvshm xmlrpc xsl zip"
 
 ARG LIB_SODIUM_VERSION=1.0.18
@@ -98,6 +96,17 @@ RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
   && pecl install -o -f libsodium \
   && rm -rf /tmp/libsodium
 
+ARG COMPOSER_VERSION=2.1.3
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN curl -sS https://getcomposer.org/installer | \
+  php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
+
+# finally, make sure all mods and extensions are enabled
+RUN docker-php-ext-enable $PHP_EXTENSION_LIST
+
+# Use the default production configuration
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+COPY zzz-artifakt.ini $PHP_INI_DIR/conf.d/zzz-artifakt.ini
 
 # finally, make sure all mods and extensions are enabled
 RUN docker-php-ext-enable $PHP_EXTENSION_LIST
