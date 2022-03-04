@@ -2,27 +2,28 @@
 
 [ "$DEBUG" = "true" ] && set -x
 
-# Ensure our Magento directory exists
-mkdir -p $MAGENTO_ROOT
+PERSISTENT_FOLDER_LIST=('pub/media' 'pub/static/_cache', 'var')
 
-# Configure Sendmail if required
-if [ "$ENABLE_SENDMAIL" == "true" ]; then
-    /etc/init.d/sendmail start
+for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
+
+  echo Copy modified/new files from container /var/www/html/$persistent_folder to volume /data/$persistent_folder
+  cp -ur /var/www/html/$persistent_folder/* /data/$persistent_folder || true
+
+  echo Link /data/$persistent_folder directory to /var/www/html/$persistent_folder
+  rm -rf /var/www/html/$persistent_folder && \
+    mkdir -p /data/$persistent_folder && \
+    mkdir -p /var/www/html && \    
+    ln -sfn /data/$persistent_folder /var/www/html/$persistent_folder && \
+    chown -h -R -L www-data:www-data /var/www/html/$persistent_folder /data/$persistent_folder
+done
+
+if [[ -x "/.artifakt/entrypoint.sh" ]]; then
+    source /.artifakt/entrypoint.sh
 fi
 
-# Enable PHP extensions
-PHP_EXT_DIR=/usr/local/etc/php/conf.d
-PHP_EXT_COM_ON=docker-php-ext-enable
-[ -d ${PHP_EXT_DIR} ] && rm -f ${PHP_EXT_DIR}/docker-php-ext-*.ini
-if [ -x "$(command -v ${PHP_EXT_COM_ON})" ] && [ ! -z "${PHP_EXTENSIONS}" ]; then
-      ${PHP_EXT_COM_ON} ${PHP_EXTENSIONS}
+# first arg is `-f` or `--some-option`
+if [ "${1#-}" != "$1" ]; then
+  set -- php-fpm "$@"
 fi
-
-# Substitute in php.ini values
-[ ! -z "${PHP_MEMORY_LIMIT}" ] && sed -i "s/!PHP_MEMORY_LIMIT!/${PHP_MEMORY_LIMIT}/" /usr/local/etc/php/conf.d/zzzz-magento.ini
-[ ! -z "${UPLOAD_MAX_FILESIZE}" ] && sed -i "s/!UPLOAD_MAX_FILESIZE!/${UPLOAD_MAX_FILESIZE}/" /usr/local/etc/php/conf.d/zzzz-magento.ini
-
-# Configure PHP-FPM
-[ ! -z "${MAGENTO_RUN_MODE}" ] && sed -i "s/!MAGENTO_RUN_MODE!/${MAGENTO_RUN_MODE}/" /usr/local/etc/php-fpm.conf
 
 exec "$@"
