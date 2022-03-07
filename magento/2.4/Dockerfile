@@ -6,12 +6,11 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-ENV PHP_MEMORY_LIMIT 2G
-ENV MAGENTO_ROOT /app
+ENV PHP_MEMORY_LIMIT 4G
 ENV DEBUG false
 ENV MAGENTO_RUN_MODE production
 ENV UPLOAD_MAX_FILESIZE 64M
-ENV PHP_EXTENSIONS bcmath bz2 calendar exif gd gettext intl mysqli opcache pdo_mysql redis soap sockets sysvmsg sysvsem sysvshm xsl zip pcntl
+ENV PHP_EXTENSIONS bcmath bz2 calendar exif gd gettext intl mysqli opcache pdo_mysql redis soap sockets sodium sysvmsg sysvsem sysvshm xsl zip pcntl
 
 # Install dependencies
 # hadolint ignore=DL3008
@@ -160,6 +159,10 @@ COPY --from=mysql:8 /usr/bin/my* /usr/bin/
 COPY etc/php-fpm.ini /usr/local/etc/php/conf.d/zzzz-magento.ini
 COPY etc/mail.ini /usr/local/etc/php/conf.d/zzzz-mail.ini
 COPY etc/opcache.exclusion /usr/local/etc/php/opcache.exclusion
+
+# Substitute in php.ini values
+RUN [ -n "${PHP_MEMORY_LIMIT}" ] && sed -i "s/_PHP_MEMORY_LIMIT_/${PHP_MEMORY_LIMIT}/" /usr/local/etc/php/conf.d/zzzz-magento.ini
+RUN [ -n "${UPLOAD_MAX_FILESIZE}" ] && sed -i "s/_UPLOAD_MAX_FILESIZE_/${UPLOAD_MAX_FILESIZE}/" /usr/local/etc/php/conf.d/zzzz-magento.ini
 
 COPY etc/php-fpm.conf /usr/local/etc/
 
