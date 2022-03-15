@@ -8,7 +8,7 @@ ARG PHP_EXTENSION_LIST="apcu bcmath bz2 calendar exif gd gettext iconv intl memc
 ARG APACHE_MODULE_LIST="access_compat actions alias allowmethods auth_basic auth_digest authn_anon authn_core authn_dbd authn_dbm authn_file authn_socache authz_core authz_dbd authz_dbm authz_groupfile authz_host authz_owner authz_user autoindex cache cache_disk cache_socache cgi data dav dav_fs dav_lock dbd deflate dir dump_io echo env expires ext_filter filter headers http2 include info lbmethod_bybusyness lbmethod_byrequests lbmethod_bytraffic lbmethod_heartbeat lua macro mime mime_magic negotiation php7 proxy proxy_ajp proxy_balancer proxy_connect proxy_express proxy_fcgi proxy_fdpass proxy_ftp proxy_hcheck proxy_http proxy_scgi proxy_uwsgi proxy_wstunnel remoteip reqtimeout request rewrite setenvif slotmem_plain slotmem_shm socache_dbm socache_memcache socache_shmcb ssl status substitute suexec userdir vhost_alias"
 
 ARG APCU_VERSION=5.1.19
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.2.9
 ARG LIBSODIUM_PECL_VERSION=2.0.23
 ARG LIBSODIUM_SYSTEM_VERSION=1.0.18-RELEASE
 ARG MEMCACHE_VERSION=4.0.5.2

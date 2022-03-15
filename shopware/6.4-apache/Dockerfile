@@ -1,7 +1,7 @@
 FROM registry.artifakt.io/php:7.4-apache
 
 ARG SHOPWARE_VERSION=6.4.3.1
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.2.9
 
 ENV TZ=Europe/Paris \
     APP_ENV=prod \
