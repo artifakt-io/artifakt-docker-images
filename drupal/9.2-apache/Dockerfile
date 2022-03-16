@@ -6,7 +6,7 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 # https://www.drupal.org/node/3060/release
-ARG DRUPAL_VERSION=9.2.13
+ARG DRUPAL_VERSION=9.3.8
 ARG COMPOSER_VERSION=2.1.3
 
 # set recommended PHP.ini settings
