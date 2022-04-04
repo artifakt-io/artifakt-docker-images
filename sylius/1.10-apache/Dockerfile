@@ -1,4 +1,4 @@
-FROM registry.artifakt.io/php:7.4-apache
+FROM registry.artifakt.io/php:8-apache
 
 LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
