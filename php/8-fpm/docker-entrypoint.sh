@@ -12,7 +12,7 @@ rm -rf /var/www/html && \
   ln -sfn /data /var/www/html && \
   chown -h -R -L www-data:www-data /var/www/html /data
 
-if [[ -x "/.artifakt/entrypoint.sh" ]]; then
+if [[ -f "/.artifakt/entrypoint.sh" ]]; then
     source /.artifakt/entrypoint.sh
 fi
 

@@ -19,7 +19,7 @@ for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
     chown -h -R -L www-data:www-data /var/www/html/$persistent_folder /data/$persistent_folder
 done
 
-if [[ -x "/.artifakt/entrypoint.sh" ]]; then
+if [[ -f "/.artifakt/entrypoint.sh" ]]; then
     source /.artifakt/entrypoint.sh
 fi
 

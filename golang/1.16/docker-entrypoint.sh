@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-if [ -x "/.artifakt/entrypoint.sh" ]; then
+if [ -f "/.artifakt/entrypoint.sh" ]; then
     source /.artifakt/entrypoint.sh
 fi
 

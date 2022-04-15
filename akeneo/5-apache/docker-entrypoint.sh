@@ -17,7 +17,7 @@ rm -rf /var/www/html/pim-community-standard/var/logs && \
   ln -sfn /var/log/artifakt /var/www/html/pim-community-standard/var/logs && \
   chown -h www-data:www-data /var/www/html/pim-community-standard/var/logs /var/log/artifakt
 
-if [[ -x "/.artifakt/entrypoint.sh" ]]; then
+if [[ -f "/.artifakt/entrypoint.sh" ]]; then
 
   # source: https://gist.github.com/karlrwjohnson/1921b05c290edb665c238676ef847f3c
   function lock_cmd {
@@ -33,7 +33,7 @@ if [[ -x "/.artifakt/entrypoint.sh" ]]; then
               exit $RETVAL
           fi
           echo -e "Running command: $@"
-          $@
+          source $@
       ) 200>"$LOCK_FILE"
   }
 

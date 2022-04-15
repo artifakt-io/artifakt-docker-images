@@ -26,7 +26,7 @@ rm -rf /var/www/html/var/logs && \
 
 ln -snf /data/.uniqueid.txt /var/www/html/
 
-if [[ -x "/.artifakt/entrypoint.sh" ]]; then
+if [[ -f "/.artifakt/entrypoint.sh" ]]; then
 
   # source: https://gist.github.com/karlrwjohnson/1921b05c290edb665c238676ef847f3c
   function lock_cmd {
@@ -42,7 +42,7 @@ if [[ -x "/.artifakt/entrypoint.sh" ]]; then
               exit $RETVAL
           fi
           echo -e "Running command: $@"
-          $@
+          source $@
       ) 200>"$LOCK_FILE"
   }
 

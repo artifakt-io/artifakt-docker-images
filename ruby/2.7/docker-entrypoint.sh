@@ -8,7 +8,7 @@ rm -rf /var/www/html/var/log && \
   chown -h www-data:www-data /var/www/html/var/log /var/log/artifakt && \
   ls -la /var/www/html/var/log
 
-if [ -x "/.artifakt/entrypoint.sh" ]; then
+if [ -f "/.artifakt/entrypoint.sh" ]; then
     source /.artifakt/entrypoint.sh
 fi
 
