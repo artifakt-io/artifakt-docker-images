@@ -2,7 +2,7 @@
 
 [ "$DEBUG" = "true" ] && set -x
 
-PERSISTENT_FOLDER_LIST=('pub/media' 'pub/static/_cache', 'var')
+PERSISTENT_FOLDER_LIST=('pub/media' 'pub/static/_cache' 'var')
 
 for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
   echo Mount $persistent_folder directory
