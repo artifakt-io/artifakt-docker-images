@@ -6,6 +6,8 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
+ARG COMPOSER_VERSION=2.3.5
+
 ENV PHP_MEMORY_LIMIT 4G
 ENV DEBUG false
 ENV MAGENTO_RUN_MODE production
@@ -151,7 +153,7 @@ RUN docker-php-ext-enable \
   pcntl
 
 # hadolint ignore=DL3022
-COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:${COMPOSER_VERSION} /usr/bin/composer /usr/bin/composer
 
 # hadolint ignore=DL3022
 COPY --from=mysql:8 /usr/bin/my* /usr/bin/
