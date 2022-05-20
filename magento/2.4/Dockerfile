@@ -7,6 +7,7 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 ARG ARTIFAKT_COMPOSER_VERSION=2.3.5
+ENV ARTIFAKT_PHP_FPM_PORT=9000
 
 ENV PHP_MEMORY_LIMIT 4G
 ENV DEBUG false
@@ -173,6 +174,6 @@ COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
 HEALTHCHECK --interval=30s --timeout=3s \
-   CMD cgi-fcgi -bind -connect localhost:9000
+   CMD cgi-fcgi -bind -connect localhost:$ARTIFAKT_PHP_FPM_PORT
 
 CMD ["php-fpm", "-R"]
