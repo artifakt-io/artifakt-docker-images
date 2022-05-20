@@ -6,6 +6,9 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
+ARG ARTIFAKT_COMPOSER_VERSION=2.3.5
+ENV ARTIFAKT_PHP_FPM_PORT=9000
+
 ENV PHP_MEMORY_LIMIT 4G
 ENV DEBUG false
 ENV MAGENTO_RUN_MODE production
@@ -18,6 +21,7 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   apt-utils \
   libbz2-dev \
+  libfcgi-bin \
   libjpeg62-turbo-dev \
   libpng-dev \
   libfreetype6-dev \
@@ -150,8 +154,8 @@ RUN docker-php-ext-enable \
   zip \
   pcntl
 
-# hadolint ignore=DL3022
-COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
+RUN curl -sS https://getcomposer.org/installer | \
+    php -- --version=${ARTIFAKT_COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 # hadolint ignore=DL3022
 COPY --from=mysql:8 /usr/bin/my* /usr/bin/
@@ -168,5 +172,8 @@ COPY etc/php-fpm.conf /usr/local/etc/
 
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+
+HEALTHCHECK --interval=30s --timeout=3s \
+   CMD cgi-fcgi -bind -connect localhost:$ARTIFAKT_PHP_FPM_PORT
 
 CMD ["php-fpm", "-R"]
