@@ -6,7 +6,7 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-ARG ARTIFAKT_COMPOSER_VERSION=2.3.5
+ARG ARTIFAKT_COMPOSER_VERSION=2.3.7
 ENV ARTIFAKT_PHP_FPM_PORT=9000
 
 ENV PHP_MEMORY_LIMIT 4G
