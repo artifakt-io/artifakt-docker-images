@@ -2,7 +2,7 @@
 
 [ "$DEBUG" = "true" ] && set -x
 
-PERSISTENT_FOLDER_LIST=('pub/media' 'pub/static/_cache' 'var')
+PERSISTENT_FOLDER_LIST=('var/composer_home' 'var/log' 'var/export' 'var/report' 'var/import' 'var/import_history' 'var/session' 'var/importexport' 'var/backups' 'var/tmp' 'pub/cache' 'pub/sitemap' 'pub/media')
 
 for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
 
