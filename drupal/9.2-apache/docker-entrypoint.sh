@@ -7,10 +7,9 @@ PERSISTENT_FOLDER_LIST=('web/sites/default/files' 'web/sites/default/private')
 for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
   echo Mount $persistent_folder directory
   rm -rf /opt/drupal/$persistent_folder && \
-   ls /opt/drupal/**  && \
-   echo Creating persistant folder && \
+   echo "Content of /opt/drupal/web/sites : " && ls -al /opt/drupal/web/sites/**/**  && \
    mkdir -p /data/$persistent_folder && \
-   ls /data/** && \
+   echo "Content of /data/sites : " && ls -al /data/sites/**/** && \
    ln -sfn /data/$persistent_folder /opt/drupal/$persistent_folder && \
    chown -h www-data:www-data /opt/drupal/$persistent_folder /data/$persistent_folder
 done
