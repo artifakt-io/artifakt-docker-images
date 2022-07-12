@@ -3,8 +3,6 @@ set -e
 
 PERSISTENT_FOLDER_LIST=('web/sites/default/files' 'web/sites/default/private')
 
-mkdir -p /opt/drupal/web/sites/default
-
 for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
   echo Mount $persistent_folder directory
   rm -rf /opt/drupal/$persistent_folder && \
