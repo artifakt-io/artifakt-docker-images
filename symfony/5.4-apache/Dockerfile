@@ -5,7 +5,7 @@ LABEL vendor="Artifakt" \
       stage="alpha"
 
 ARG SYMFONY5_VERSION=v5.4.99
-ARG COMPOSER_VERSION=2.3.5
+ARG COMPOSER_VERSION=2.2.17
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
