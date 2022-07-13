@@ -4,7 +4,7 @@ LABEL vendor="Artifakt" \
       author="djalal@artifakt.io" \
       stage="alpha"
 
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.3.10
 ARG SYLIUS_VERSION=v1.11
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
