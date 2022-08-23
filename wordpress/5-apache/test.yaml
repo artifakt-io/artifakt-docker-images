@@ -90,7 +90,7 @@ commandTests:
   - name: "composer version"
     command: "composer"
     args: [ "--version"]
-    expectedOutput: ['.*1\.10\.*']
+    expectedOutput: ['.*2\.4\.*']
   - name: "php bcmath"
     command: "php"
     args: [ "-r", "!extension_loaded('bcmath') && exit(1);"]
