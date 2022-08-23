@@ -4,7 +4,7 @@ metadataTest:
 
 fileExistenceTests:
 - name: 'gzip'
-  path: '/bin/gzip'
+  path: '/bin/gzip'e
   shouldExist: true
   permissions: '-rwxr-xr-x'
   uid: 0
@@ -65,7 +65,7 @@ commandTests:
   - name: "composer version"
     command: "composer"
     args: [ "--version"]
-    expectedOutput: ['.*2\.1\.*']
+    expectedOutput: ['.*2\.4\.*']
   - name: "php bcmath"
     command: "php"
     args: [ "-r", "!extension_loaded('bcmath') && exit(1);"]
