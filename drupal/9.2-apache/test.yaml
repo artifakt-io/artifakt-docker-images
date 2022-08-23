@@ -4,7 +4,7 @@ metadataTest:
 
 fileExistenceTests:
 - name: 'gzip'
-  path: '/bin/gzip'e
+  path: '/bin/gzip'
   shouldExist: true
   permissions: '-rwxr-xr-x'
   uid: 0
