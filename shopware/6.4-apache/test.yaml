@@ -97,7 +97,7 @@ commandTests:
   - name: "composer version"
     command: "composer"
     args: [ "--version"]
-    expectedOutput: ['.*2\.1\.*']
+    expectedOutput: ['.*2\.4\.*']
   - name: "symfony version"
     command: "composer"
     args: [ "show", "symfony/console"]
