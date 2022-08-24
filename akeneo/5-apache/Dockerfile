@@ -128,6 +128,7 @@ USER www-data
 
 # dependencies / vendor
 RUN composer validate --no-check-all && \
+  composer config --no-plugins allow-plugins.symfony/flex && \
   COMPOSER_MEMORY_LIMIT=-1 composer install --no-cache
 
 ENV NO_DOCKER=true
