@@ -11,7 +11,7 @@ ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mysqli opcach
 ARG AKENEO_VERSION=v5.0.110
 ARG IMAGICK_VERSION=3.5.0
 ARG MEMCACHED_VERSION=3.1.5
-ARG COMPOSER_VERSION=2.4.1
+ARG COMPOSER_VERSION=2.1.14
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -120,6 +120,9 @@ RUN curl -sSLO https://github.com/akeneo/pim-community-standard/archive/$AKENEO_
 
 WORKDIR /var/www/html/pim-community-standard
 
+RUN ls -la 
+RUN cat composer.json
+
 RUN mkdir -p /var/www/.cache/yarn && \
     touch /var/www/.yarnrc && \
     chown -R www-data:www-data /var/www/.cache /var/www/.yarnrc
@@ -128,7 +131,6 @@ USER www-data
 
 # dependencies / vendor
 RUN composer validate --no-check-all && \
-  composer config --no-plugins allow-plugins.symfony/flex && \
   COMPOSER_MEMORY_LIMIT=-1 composer install --no-cache
 
 ENV NO_DOCKER=true
