@@ -8,10 +8,10 @@ LABEL vendor="Artifakt" \
 ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mysqli opcache pdo_mysql zip"
 
 # see release archives https://github.com/akeneo/pim-community-standard/tags
-ARG AKENEO_VERSION=v5.0.74
+ARG AKENEO_VERSION=v5.0.110
 ARG IMAGICK_VERSION=3.5.0
 ARG MEMCACHED_VERSION=3.1.5
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.1.14
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -119,6 +119,9 @@ RUN curl -sSLO https://github.com/akeneo/pim-community-standard/archive/$AKENEO_
     chown -R www-data:www-data .
 
 WORKDIR /var/www/html/pim-community-standard
+
+RUN ls -la 
+RUN cat composer.json
 
 RUN mkdir -p /var/www/.cache/yarn && \
     touch /var/www/.yarnrc && \
