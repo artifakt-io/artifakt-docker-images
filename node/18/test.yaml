@@ -55,7 +55,7 @@ commandTests:
   - name: "npm version"
     command: "npm"
     args: [ "--version"]
-    expectedOutput: ['8\.15\.*']
+    expectedOutput: ['8\.18\.*']
 
   - name: "yarn version"
     command: "yarn"
