@@ -56,7 +56,7 @@ commandTests:
   - name: "php version"
     command: "php"
     args: [ "-r", "echo phpversion();"]
-    expectedOutput: ['.*8\.0\.*']
+    expectedOutput: ['.*8\.1\.*']
   - name: "php timezone = Europe/Paris"
     command: "php"
     args: [ "-r", "echo ini_get('date.timezone');"]
