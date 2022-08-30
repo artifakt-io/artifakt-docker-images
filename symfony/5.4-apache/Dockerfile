@@ -107,9 +107,7 @@ RUN a2enmod $APACHE_MODULE_LIST
 
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-
-
-
+COPY zzz-artifakt.ini $PHP_INI_DIR/conf.d/zzz-artifakt.ini
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -sS https://getcomposer.org/installer | \
@@ -130,6 +128,9 @@ RUN a2enmod rewrite && a2ensite 000-default
 
 # Create the parameter.yml file if it doesn't exist
 COPY --chown=www-data:www-data etc/parameters.yml /var/www/html/config/parameters.yml
+
+# hadolint ignore=DL3045
+COPY docker-entrypoint.sh /usr/local/bin/
 
 HEALTHCHECK CMD curl --fail http://localhost/index.php || exit 1
 
