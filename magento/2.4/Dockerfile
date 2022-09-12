@@ -41,6 +41,7 @@ RUN apt-get update \
   libyaml-dev \
   libzip-dev \
   lsof \
+  mariadb-client \
   sendmail \
   sendmail-bin \
   sudo \
