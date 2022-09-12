@@ -3,8 +3,8 @@ ARG PHP_VERSION=7.4-fpm
 FROM php:${PHP_VERSION}
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io" \
-      stage="alpha"
+  author="djalal@artifakt.io" \
+  stage="alpha"
 
 ARG ARTIFAKT_COMPOSER_VERSION=2.3.7
 ENV ARTIFAKT_PHP_FPM_PORT=9000
@@ -76,7 +76,7 @@ RUN docker-php-ext-install -j$(nproc) \
   opcache \
   pdo_mysql \
   pspell \
-#  recode \
+  #  recode \
   shmop \
   soap \
   sockets \
@@ -138,7 +138,7 @@ RUN docker-php-ext-enable \
   propro \
   pspell \
   raphf \
-#  recode \
+  #  recode \
   redis \
   shmop \
   soap \
@@ -155,7 +155,7 @@ RUN docker-php-ext-enable \
   pcntl
 
 RUN curl -sS https://getcomposer.org/installer | \
-    php -- --version=${ARTIFAKT_COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
+  php -- --version=${ARTIFAKT_COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 # hadolint ignore=DL3022
 COPY --from=mysql:8 /usr/bin/my* /usr/bin/
@@ -170,10 +170,15 @@ RUN [ -n "${UPLOAD_MAX_FILESIZE}" ] && sed -i "s/_UPLOAD_MAX_FILESIZE_/${UPLOAD_
 
 COPY etc/php-fpm.conf /usr/local/etc/
 
+RUN mkdir /artifakt_scripts
+COPY artifakt_scripts/* /artifakt_scripts/
+RUN chmod -R +x /artifakt_scripts/
+RUN ls /artifakt_scripts
+
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
 HEALTHCHECK --interval=30s --timeout=3s \
-   CMD cgi-fcgi -bind -connect localhost:$ARTIFAKT_PHP_FPM_PORT
+  CMD cgi-fcgi -bind -connect localhost:$ARTIFAKT_PHP_FPM_PORT
 
 CMD ["php-fpm", "-R"]
