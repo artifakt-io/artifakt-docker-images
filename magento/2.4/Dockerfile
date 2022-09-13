@@ -3,7 +3,7 @@ ARG PHP_VERSION=7.4-fpm
 FROM php:${PHP_VERSION}
 
 LABEL vendor="Artifakt" \
-  author="djalal@artifakt.io" \
+  author="engineering@artifakt.io" \
   stage="alpha"
 
 ARG ARTIFAKT_COMPOSER_VERSION=2.3.7
@@ -174,7 +174,6 @@ COPY etc/php-fpm.conf /usr/local/etc/
 RUN mkdir /artifakt_scripts
 COPY artifakt_scripts/* /artifakt_scripts/
 RUN chmod -R +x /artifakt_scripts/
-RUN ls /artifakt_scripts
 
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
