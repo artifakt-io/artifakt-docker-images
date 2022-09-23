@@ -47,6 +47,7 @@ RUN apt-get update \
   sudo \
   wget \
   zip \
+  rsync \
   && rm -rf /var/lib/apt/lists/*
 
 # Configure the gd library
@@ -171,8 +172,9 @@ RUN [ -n "${UPLOAD_MAX_FILESIZE}" ] && sed -i "s/_UPLOAD_MAX_FILESIZE_/${UPLOAD_
 
 COPY etc/php-fpm.conf /usr/local/etc/
 
-RUN mkdir /artifakt_scripts
+RUN mkdir /artifakt_scripts && mkdir /artifakt_templates
 COPY artifakt_scripts/* /artifakt_scripts/
+COPY artifakt_templates/* /artifakt_templates/
 RUN chmod -R +x /artifakt_scripts/
 
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
