@@ -174,8 +174,7 @@ COPY etc/php-fpm.conf /usr/local/etc/
 
 RUN mkdir /artifakt_scripts /artifakt_templates
 COPY artifakt_scripts/* /artifakt_scripts/
-COPY artifakt_templates/magento /artifakt_templates/magento
-COPY artifakt_templates/nginx /artifakt_templates/nginx
+COPY artifakt_templates/ /artifakt_templates/
 RUN chmod -R +x /artifakt_scripts/
 
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
