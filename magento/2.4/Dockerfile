@@ -172,7 +172,7 @@ RUN [ -n "${UPLOAD_MAX_FILESIZE}" ] && sed -i "s/_UPLOAD_MAX_FILESIZE_/${UPLOAD_
 
 COPY etc/php-fpm.conf /usr/local/etc/
 
-RUN mkdir /artifakt_scripts && mkdir /artifakt_templates
+RUN mkdir /artifakt_scripts /artifakt_templates
 COPY artifakt_scripts/* /artifakt_scripts/
 COPY artifakt_templates/magento /artifakt_templates/magento
 COPY artifakt_templates/nginx /artifakt_templates/nginx
