@@ -1,9 +1,12 @@
 #!/bin/bash
 
 [ "$DEBUG" = "true" ] && set -x
-
-if [[ -x "/.artifakt/entrypoint.sh" ]]; then
+if [[ -n $ENTRYPOINT_CUSTOM ]]; then
+  if [[ -x "/.artifakt/entrypoint.sh" ]]; then
     source /.artifakt/entrypoint.sh
+  fi
+else
+    source artifakt_scripts/artifakt_entrypoint.sh
 fi
 
 # first arg is `-f` or `--some-option`
