@@ -9,10 +9,9 @@ else
 fi
 
 if [ -f "/.artifakt/entrypoint.sh" ]; then
-  if [[ -x "/.artifakt/entrypoint.sh" ]]; then
-    echo "Entrypoint.sh script detected and executable - Starting..."
-    source /.artifakt/entrypoint.sh
-  fi
+  chmod u+x /.artifakt/entrypoint.sh
+  echo "Entrypoint.sh script detected and executable - Starting..."
+  source /.artifakt/entrypoint.sh
 fi
 
 # first arg is `-f` or `--some-option`
