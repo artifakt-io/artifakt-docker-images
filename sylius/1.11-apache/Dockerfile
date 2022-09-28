@@ -1,13 +1,19 @@
 FROM registry.artifakt.io/php:8-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io" \
-      stage="alpha"
+    author="engineering@artifakt.io" \
+    stage="alpha"
 
 ARG COMPOSER_VERSION=2.1.3
 ARG SYLIUS_VERSION=v1.11
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+# Install git to fix deploy issue (28/09/2022)
+RUN apt-get update && \
+    apt-get install -y git && \
+    rm -rf /var/lib/apt/lists/*
+
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get update && \
     apt-get install -y --no-install-recommends nodejs && \
@@ -16,9 +22,9 @@ RUN apt-get update && \
 # hadolint ignore=DL3008,DL4006
 RUN export CFLAGS="$PHP_CFLAGS" CPPFLAGS="$PHP_CPPFLAGS" LDFLAGS="$PHP_LDFLAGS" \
     && apt-get update && apt-get install -y --no-install-recommends \
-        gnupg \
-        netcat \
-        python \
+    gnupg \
+    netcat \
+    python \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
     && apt-get update && apt-get install --no-install-recommends -y yarn \
@@ -31,7 +37,7 @@ ENV PHP_CONF_MAX_EXECUTION_TIME=600
 ENV PHP_CONF_OPCACHE_VALIDATE_TIMESTAMP=1
 
 RUN curl -sS https://getcomposer.org/installer | \
-  php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
+    php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
 WORKDIR /var/www/html
 
