@@ -130,8 +130,12 @@ if [ "$tableCount" -ne 0 ]; then
 
         #echo "Removing all old map files"
         #rm $NGINX_CONFIG_DEST_FOLDER/*.map
-        echo "Copying all .map files to $NGINX_CONFIG_DEST_FOLDER"
-        cp $NGINX_CONFIG_SRC_FOLDER/*.map $NGINX_CONFIG_DEST_FOLDER/
+        count=`ls -1 .artifakt/nginx/*.map 2>/dev/null | wc -l`
+        if [ $count -gt 0 ]
+        then 
+          echo "Copying all .map files to $NGINX_CONFIG_DEST_FOLDER"
+          cp $NGINX_CONFIG_SRC_FOLDER/*.map $NGINX_CONFIG_DEST_FOLDER/
+        fi 
     else
         echo "No MAGENTO_RUN_CODE_DEFAULT variable found. No action."
         touch $MAGENTO_MAP_FILE
