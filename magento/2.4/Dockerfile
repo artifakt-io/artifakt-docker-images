@@ -48,6 +48,7 @@ RUN apt-get update \
   wget \
   zip \
   rsync \
+  parallel \
   && rm -rf /var/lib/apt/lists/*
 
 # Configure the gd library
