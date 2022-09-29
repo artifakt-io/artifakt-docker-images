@@ -227,6 +227,18 @@ if [ "$tableCount" -ne 0 ]; then
               set -e
               su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme="${ARTIFAKT_MAGE_STATIC_THEME:-all}" --exclude-theme="${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}" --exclude-language="${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}" ${ARTIFAKT_MAGE_LANG:-all}"
               set +e
+    
+              #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
+              echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
+              find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
+              find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
+
+              find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+              find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+
+              echo ">> PERMISSIONS - Fix owner on dynamic data"
+              chown -R www-data:www-data /var/www/html/var/log
+              chown -R www-data:www-data /var/www/html/var/page_cache
           fi
       else
           echo "No config.php found."
@@ -364,17 +376,6 @@ if [ "$tableCount" -ne 0 ]; then
         su www-data -s /bin/bash -c "php bin/magento setup:config:set --http-cache-hosts=${ARTIFAKT_REPLICA_LIST} --no-interaction;"
       fi
     fi
-    #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
-    echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
-    find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
-    find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
-
-    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
-    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
-
-    echo ">> PERMISSIONS - Fix owner on dynamic data"
-    chown -R www-data:www-data /var/www/html/var/log
-    chown -R www-data:www-data /var/www/html/var/page_cache
 
     # Fix autoload error
     chown www-data:www-data /var/www/html/var/vendor/autoload.php
