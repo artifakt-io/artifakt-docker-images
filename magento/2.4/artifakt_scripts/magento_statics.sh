@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ -z $MAGE_MODE ]; then 
     MAGE_MODE="production"
