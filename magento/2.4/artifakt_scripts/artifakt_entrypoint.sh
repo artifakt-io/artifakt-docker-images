@@ -248,6 +248,9 @@ if [ "$tableCount" -ne 0 ]; then
     MOUNT_ARTIFAKT_LOGS_FOLDER="/var/log/artifakt"
     MAGENTO_NATIVE_LOGS_FOLDER=$(pwd)"/var/log"
 
+    mkdir -p $MAGENTO_NATIVE_LOGS_FOLDER
+    mkdir -p $MOUNT_ARTIFAKT_LOGS_FOLDER
+
     if [ -z $CUSTOM_LOGS_FOLDER ]; then CUSTOM_LOGS_FOLDER=$MAGENTO_NATIVE_LOGS_FOLDER; fi
     logfiles=$(find $CUSTOM_LOGS_FOLDER -maxdepth 1 -name '*.log' -type f)
 
@@ -372,6 +375,10 @@ if [ "$tableCount" -ne 0 ]; then
     echo ">> PERMISSIONS - Fix owner on dynamic data"
     chown -R www-data:www-data /var/www/html/var/log
     chown -R www-data:www-data /var/www/html/var/page_cache
+
+    # Fix autoload error
+    chown www-data:www-data /var/www/html/var/vendor/autoload.php
+    chmod 755 /var/www/html/var/vendor/autoload.php
 
     # Copy all files in shared folder to allow nginx to access it
     if [ $ARTIFAKT_IS_MAIN_INSTANCE -eq 1 ]; then
