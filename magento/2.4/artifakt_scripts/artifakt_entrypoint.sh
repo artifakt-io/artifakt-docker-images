@@ -376,7 +376,6 @@ if [ "$tableCount" -ne 0 ]; then
     chown -R www-data:www-data /var/www/html/var/log
     chown -R www-data:www-data /var/www/html/var/page_cache
 
-
     # Fix autoload error
     chown www-data:www-data /var/www/html/var/vendor/autoload.php
     chmod 755 /var/www/html/var/vendor/autoload.php
