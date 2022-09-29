@@ -14,7 +14,7 @@ VARNISH_CONFIG_DEST_FOLDER="/conf/varnish"
 VARNISH_CONFIG_SRC_FOLDER="$ROOT_PROJECT/.artifakt/varnish"
 VARNISH_CONFIG_FILES=('custom_backends' 'custom_end_rules' 'custom_process_graphql_headers' 'custom_start_rules' 'custom_vcl_backend_response' 'custom_vcl_deliver' 'custom_vcl_hash' 'custom_vcl_hit' 'custom_vcl_recv' 'default')
 
-PERSISTENT_FOLDER_LIST=('pub/media' 'var' 'pub/static/_cache')
+PERSISTENT_FOLDER_LIST=('pub/media' 'pub/static/_cache')
 
 MAGENTO_CONFIG_SRC_FOLDER=".artifakt/magento"
 MAGENTO_CONFIG_DEST_FOLDER="$ROOT_PROJECT/app/etc"
