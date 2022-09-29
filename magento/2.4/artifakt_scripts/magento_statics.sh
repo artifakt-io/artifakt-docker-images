@@ -26,7 +26,15 @@ if [ -f $MAGENTO_CONFIG_FILE ]; then
             echo "Language excluded (ARTIFAKT_MAGE_LANG_EXCLUDE): ${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}"
             echo "Languages (ARTIFAKT_MAGE_LANG): ${ARTIFAKT_MAGE_LANG:-all}"
             set -e
-            php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme="${ARTIFAKT_MAGE_STATIC_THEME:-all}" --exclude-theme="${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}" --exclude-language="${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}" ${ARTIFAKT_MAGE_LANG:-all}
+            
+            if [ ! -z "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
+                for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
+                    php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}
+                done
+            else
+                php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme="${ARTIFAKT_MAGE_STATIC_THEME:-all}" --exclude-theme="${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}" --exclude-language="${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}" ${ARTIFAKT_MAGE_LANG:-all}
+            fi
+            
             set +e
         fi
     fi
