@@ -2,6 +2,8 @@ ARG PHP_VERSION=7.4-fpm
 
 FROM php:${PHP_VERSION}
 
+ENV ARTIFAKT_PHP_FPM_PORT=9000
+
 LABEL vendor="Artifakt" \
   author="engineering@artifakt.io" \
   stage="alpha"
