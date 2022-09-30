@@ -286,11 +286,12 @@ if [ "$tableCount" -ne 0 ]; then
                 fi
             done 
         echo "** Permissions for both folders"
-        chown -h -L -R www-data:www-data  $MOUNT_ARTIFAKT_LOGS_FOLDER $CUSTOM_LOGS_FOLDER
-        chmod -R 775 $MOUNT_ARTIFAKT_LOGS_FOLDER $CUSTOM_LOGS_FOLDER
+
         echo "END"
         echo "-----"
     fi
+    chown -h -L -R www-data:www-data  $MOUNT_ARTIFAKT_LOGS_FOLDER $CUSTOM_LOGS_FOLDER
+    chmod -R 775 $MOUNT_ARTIFAKT_LOGS_FOLDER $CUSTOM_LOGS_FOLDER
     ## LOGS SCRIPT END
     echo ""
     echo "######################################################"
