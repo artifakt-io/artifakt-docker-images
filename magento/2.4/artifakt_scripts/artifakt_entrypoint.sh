@@ -20,6 +20,10 @@ MAGENTO_CONFIG_SRC_FOLDER=".artifakt/magento"
 MAGENTO_CONFIG_DEST_FOLDER="$ROOT_PROJECT/app/etc"
 
 MAGENTO_MAP_FILE="$NGINX_CONFIG_DEST_FOLDER/custom_http.conf"
+
+MOUNT_ARTIFAKT_LOGS_FOLDER="/var/log/artifakt"
+MAGENTO_NATIVE_LOGS_FOLDER=$(pwd)"/var/log"
+MAGENTO_LOGS_NATIVE_FILES=('debug.log' 'exception.log' 'system.log')
 ##########################################
 
 echo "######################################################"
@@ -254,10 +258,6 @@ if [ "$tableCount" -ne 0 ]; then
     echo "##### LOGS IMPLEMENTATION"
     echo ""
     echo "** LOGS SCRIPT START"
-
-    MOUNT_ARTIFAKT_LOGS_FOLDER="/var/log/artifakt"
-    MAGENTO_NATIVE_LOGS_FOLDER=$(pwd)"/var/log"
-    MAGENTO_LOGS_NATIVE_FILES=('debug.log' 'exception.log' 'system.log')
 
     mkdir -p "$MAGENTO_NATIVE_LOGS_FOLDER"
     mkdir -p $MOUNT_ARTIFAKT_LOGS_FOLDER
