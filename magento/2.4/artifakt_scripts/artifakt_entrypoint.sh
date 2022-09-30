@@ -261,10 +261,9 @@ if [ "$tableCount" -ne 0 ]; then
 
     mkdir -p "$MAGENTO_NATIVE_LOGS_FOLDER"
     mkdir -p $MOUNT_ARTIFAKT_LOGS_FOLDER
-
-    chown www-data:www-data  "$MOUNT_ARTIFAKT_LOGS_FOLDER" "$CUSTOM_LOGS_FOLDER"
  
     if [ -z "$CUSTOM_LOGS_FOLDER" ]; then CUSTOM_LOGS_FOLDER=$MAGENTO_NATIVE_LOGS_FOLDER; fi
+    chown www-data:www-data  "$MOUNT_ARTIFAKT_LOGS_FOLDER" "$CUSTOM_LOGS_FOLDER"
     echo "** Mapping native magento logs"
     for MAGENTO_LOGS_NATIVE_FILE in "${MAGENTO_LOGS_NATIVE_FILES[@]}"; do
         echo "** Mapping file: $MAGENTO_LOGS_NATIVE_FILE"
@@ -287,6 +286,7 @@ if [ "$tableCount" -ne 0 ]; then
           chown www-data:www-data "$MOUNT_ARTIFAKT_LOGS_FOLDER/$MAGENTO_LOGS_CUSTOM_FILE" "$CUSTOM_LOGS_FOLDER/$MAGENTO_LOGS_CUSTOM_FILE"
       done
     fi
+
     
     ## LOGS SCRIPT END
     
