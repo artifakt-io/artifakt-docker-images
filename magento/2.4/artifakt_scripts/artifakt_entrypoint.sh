@@ -20,6 +20,10 @@ MAGENTO_CONFIG_SRC_FOLDER=".artifakt/magento"
 MAGENTO_CONFIG_DEST_FOLDER="$ROOT_PROJECT/app/etc"
 
 MAGENTO_MAP_FILE="$NGINX_CONFIG_DEST_FOLDER/custom_http.conf"
+
+MOUNT_ARTIFAKT_LOGS_FOLDER="/var/log/artifakt"
+MAGENTO_NATIVE_LOGS_FOLDER=$(pwd)"/var/log"
+MAGENTO_LOGS_NATIVE_FILES=('debug.log' 'exception.log' 'system.log')
 ##########################################
 
 echo "######################################################"
@@ -255,44 +259,37 @@ if [ "$tableCount" -ne 0 ]; then
     echo ""
     echo "** LOGS SCRIPT START"
 
-    chown -R www-data:www-data /var/log/artifakt
-
-    MOUNT_ARTIFAKT_LOGS_FOLDER="/var/log/artifakt"
-    MAGENTO_NATIVE_LOGS_FOLDER=$(pwd)"/var/log"
-
-    mkdir -p $MAGENTO_NATIVE_LOGS_FOLDER
+    mkdir -p "$MAGENTO_NATIVE_LOGS_FOLDER"
     mkdir -p $MOUNT_ARTIFAKT_LOGS_FOLDER
 
-    if [ -z $CUSTOM_LOGS_FOLDER ]; then CUSTOM_LOGS_FOLDER=$MAGENTO_NATIVE_LOGS_FOLDER; fi
-    logfiles=$(find $CUSTOM_LOGS_FOLDER -maxdepth 1 -name '*.log' -type f)
+    chown www-data:www-data  "$MOUNT_ARTIFAKT_LOGS_FOLDER" "$CUSTOM_LOGS_FOLDER"
+ 
+    if [ -z "$CUSTOM_LOGS_FOLDER" ]; then CUSTOM_LOGS_FOLDER=$MAGENTO_NATIVE_LOGS_FOLDER; fi
+    echo "** Mapping native magento logs"
+    for MAGENTO_LOGS_NATIVE_FILE in "${MAGENTO_LOGS_NATIVE_FILES[@]}"; do
+        echo "** Mapping file: $MAGENTO_LOGS_NATIVE_FILE"
+        if [ ! -f "$MOUNT_ARTIFAKT_LOGS_FOLDER"/"$MAGENTO_LOGS_NATIVE_FILE" ]; then
+          touch "$MOUNT_ARTIFAKT_LOGS_FOLDER"/"$MAGENTO_LOGS_NATIVE_FILE"
+        fi
+        ln -sfn "$MOUNT_ARTIFAKT_LOGS_FOLDER/$MAGENTO_LOGS_NATIVE_FILE" "$CUSTOM_LOGS_FOLDER"
+        chown www-data:www-data "$MOUNT_ARTIFAKT_LOGS_FOLDER/$MAGENTO_LOGS_NATIVE_FILE" "$CUSTOM_LOGS_FOLDER/$MAGENTO_LOGS_NATIVE_FILE"
+    done
 
-    if [ -z "$logfiles" ]; then
-        echo "Nothing to do" 
-    else 
-        echo "** Log feature to activate view in console Artifakt"
-        echo "** Selected base logs directory: $CUSTOM_LOGS_FOLDER"
-        echo "START"
-        echo "-----"
-        for f in $logfiles
-            do
-                if [ -f "$f" ]; then
-                    file=$(basename -a $f)
-                    echo "** Moving log file '$file' to $MOUNT_ARTIFAKT_LOGS_FOLDER"
-                    mv "$f" $MOUNT_ARTIFAKT_LOGS_FOLDER
-                    echo "-----------------------------"
-                    echo "** Linking log file '$file' in $CUSTOM_LOGS_FOLDER"
-                    ln -sfn "$MOUNT_ARTIFAKT_LOGS_FOLDER/$file" $CUSTOM_LOGS_FOLDER
-                    echo ""
-                fi
-            done 
-        echo "** Permissions for both folders"
+    echo "** Checking custom magento logs"
 
-        echo "END"
-        echo "-----"
+    if [ -n "$MAGENTO_LOGS_CUSTOM_FILES" ]; then
+        for MAGENTO_LOGS_CUSTOM_FILE in "${MAGENTO_LOGS_CUSTOM_FILES[@]}"; do
+          echo "** Mapping files: $MAGENTO_LOGS_CUSTOM_FILE"
+          if [ ! -f "$MOUNT_ARTIFAKT_LOGS_FOLDER"/"$MAGENTO_LOGS_CUSTOM_FILE" ]; then
+            touch "$MOUNT_ARTIFAKT_LOGS_FOLDER"/"$MAGENTO_LOGS_CUSTOM_FILE"
+          fi
+          ln -sfn "$MOUNT_ARTIFAKT_LOGS_FOLDER/$MAGENTO_LOGS_CUSTOM_FILE" "$CUSTOM_LOGS_FOLDER"
+          chown www-data:www-data "$MOUNT_ARTIFAKT_LOGS_FOLDER/$MAGENTO_LOGS_CUSTOM_FILE" "$CUSTOM_LOGS_FOLDER/$MAGENTO_LOGS_CUSTOM_FILE"
+      done
     fi
-    chown -h -L -R www-data:www-data  $MOUNT_ARTIFAKT_LOGS_FOLDER $CUSTOM_LOGS_FOLDER
-    chmod -R 775 $MOUNT_ARTIFAKT_LOGS_FOLDER $CUSTOM_LOGS_FOLDER
+    
     ## LOGS SCRIPT END
+    
     echo ""
     echo "######################################################"
     echo "##### LOGS SCRIPT END"
