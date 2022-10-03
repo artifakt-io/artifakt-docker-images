@@ -1,22 +1,11 @@
 
-FROM php:7.4-apache
+FROM php:8.0.24-apache
 
 LABEL vendor="Artifakt" \
-      author="djalal@artifakt.io" \
+      author="engineering@artifakt.io" \
       stage="alpha"
 
 HEALTHCHECK CMD curl --fail http://localhost || exit 1
-
-# cloning official wordpress dockerfile to remove VOLUME
-# see https://github.com/moby/moby/issues/3465
-
-#
-# NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
-#
-# PLEASE DO NOT EDIT IT DIRECTLY.
-#
-
-#FROM php:7.4-apache
 
 # persistent dependencies
 RUN set -eux; \
