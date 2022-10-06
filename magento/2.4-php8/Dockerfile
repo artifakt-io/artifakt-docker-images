@@ -87,22 +87,22 @@ RUN docker-php-ext-install -j$(nproc) \
   sysvsem \
   sysvshm \
   tidy \
-  xmlrpc \
+#  xmlrpc \    # Not maintened anymore and removed from the php-src since PHP 8
   xsl \
   zip \
   pcntl
 
 RUN pecl install -o -f \
-  geoip-1.1.1 \
+#  geoip-1.1.1 \
   igbinary \
   imagick \
   mailparse \
   msgpack \
   oauth \
-  propro \
+#  propro \
   raphf \
   redis \
-  yaml
+  yaml \
 
 # hadolint ignore=DL3003,DL4006,SC2039
 RUN rm -f /usr/local/etc/php/conf.d/*sodium.ini \
@@ -124,7 +124,7 @@ RUN docker-php-ext-enable \
   calendar \
   exif \
   gd \
-  geoip \
+#  geoip \
   gettext \
   gmp \
   igbinary \
@@ -138,7 +138,7 @@ RUN docker-php-ext-enable \
   oauth \
   opcache \
   pdo_mysql \
-  propro \
+#  propro \
   pspell \
   raphf \
   #  recode \
@@ -151,7 +151,7 @@ RUN docker-php-ext-enable \
   sysvsem \
   sysvshm \
   tidy \
-  xmlrpc \
+#  xmlrpc \  # Not maintened anymore and removed from the php-src since PHP 8
   xsl \
   yaml \
   zip \
