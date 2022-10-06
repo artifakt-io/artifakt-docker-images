@@ -1,4 +1,4 @@
-name: Build Docker Images
+name: Build All Docker Images
 
 on:
   schedule:
@@ -35,7 +35,7 @@ jobs:
     needs: provide_images_json
     runs-on: ubuntu-latest
     strategy:
-        #fail-fast: true
+        fail-fast: false
         matrix:
             dockerfile: ${{fromJson(needs.provide_images_json.outputs.matrix)}}
     steps:
@@ -87,27 +87,27 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: docker images --format "{{.Repository}}:{{.Tag}}" | grep ${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} | xargs -n 1 docker push
 
-      - name: Create custom badge for image size
-        id: badge_size
-        if: github.ref == 'refs/heads/main'
-        uses: djalal/job-status-badge@main
-        with:
-          cloudinary_url: ${{ secrets.CLOUDINARY_URL }}
-          left_text: "image%20size"
-          right_text: ${{ (startsWith(job.status, 'success') && env.IMAGE_SIZE) || 'N/A' }}
-          color: ${{ (startsWith(job.status, 'success') && 'blue') || 'gray' }}
-          public_id: ${{ env.IMAGE_NAME }}_${{ env.IMAGE_TAG }}-size
-
-      - name: Create custom badge for build
-        id: badge_build
-        if: github.ref == 'refs/heads/main'
-        uses: djalal/job-status-badge@main
-        with:
-          cloudinary_url: ${{ secrets.CLOUDINARY_URL }}
-          left_text: ${{ env.IMAGE_NAME_ESCAPED }}%3A${{ env.IMAGE_TAG_ESCAPED }}
-          right_text: ${{ (startsWith(job.status, 'success') && 'passing') || 'failed' }}
-          color: ${{ (startsWith(job.status, 'success') && 'green') || 'red' }}
-          public_id: ${{ env.IMAGE_NAME }}_${{ env.IMAGE_TAG }}-status
+#      - name: Create custom badge for image size
+#        id: badge_size
+#        if: github.ref == 'refs/heads/main'
+#        uses: djalal/job-status-badge@main
+#        with:
+#          cloudinary_url: ${{ secrets.CLOUDINARY_URL }}
+#          left_text: "image%20size"
+#          right_text: ${{ (startsWith(job.status, 'success') && env.IMAGE_SIZE) || 'N/A' }}
+#          color: ${{ (startsWith(job.status, 'success') && 'blue') || 'gray' }}
+#          public_id: ${{ env.IMAGE_NAME }}_${{ env.IMAGE_TAG }}-size
+#
+#      - name: Create custom badge for build
+#        id: badge_build
+#        if: github.ref == 'refs/heads/main'
+#        uses: djalal/job-status-badge@main
+#        with:
+#          cloudinary_url: ${{ secrets.CLOUDINARY_URL }}
+#          left_text: ${{ env.IMAGE_NAME_ESCAPED }}%3A${{ env.IMAGE_TAG_ESCAPED }}
+#          right_text: ${{ (startsWith(job.status, 'success') && 'passing') || 'failed' }}
+#          color: ${{ (startsWith(job.status, 'success') && 'green') || 'red' }}
+#          public_id: ${{ env.IMAGE_NAME }}_${{ env.IMAGE_TAG }}-status
 
   purge_camo_badges:
     needs: build_and_push

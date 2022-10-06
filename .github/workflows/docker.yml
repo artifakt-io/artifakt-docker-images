@@ -1,4 +1,4 @@
-name: Build Docker Images
+name: Build Updated Docker Images
 
 on:
   workflow_dispatch:
