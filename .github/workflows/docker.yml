@@ -1,3 +1,4 @@
+# TODO: REVERT BEFORE MERGING !!!
 name: Build Updated Docker Images
 
 on:
@@ -67,9 +68,12 @@ jobs:
           IMAGE_NAME=${TMP_IMAGE_ARRAY[0]}
           TAG=${TMP_IMAGE_ARRAY[1]}
           export REGISTRY_TARGET=${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} && ./build.sh --lint=true --test=true --image=$IMAGE_NAME --tag=$TAG
+          echo "DOCKER_IMAGE_NAME=${IMAGE_NAME}" >> $GITHUB_ENV
+          echo "DOCKER_IMAGE_TAG=${TAG}-experimental" >> $GITHUB_ENV
+          docker tag ${{ secrets.AKT_ENG_REGISTRY_DOMAIN }}/${IMAGE_NAME}:${TAG} ${{ secrets.AKT_ENG_REGISTRY_DOMAIN }}/${IMAGE_NAME}:${TAG}-experimental
 
       - name: Login to target registry
-        if: github.ref == 'refs/heads/main'
+        #if: github.ref == 'refs/heads/main'
         uses: docker/login-action@v1
         with:
           registry: https://eu.gcr.io
@@ -77,5 +81,7 @@ jobs:
           password: ${{ secrets.AKT_ENG_REGISTRY_PUBLIC_JSON }}
 
       - name: Push images to GoogleContainerRegistry
-        if: github.ref == 'refs/heads/main'
-        run: docker images --format "{{.Repository}}:{{.Tag}}" | grep ${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} | xargs -n 1 docker push
+        #if: github.ref == 'refs/heads/main'
+        #docker images --format "{{.Repository}}:{{.Tag}}" | grep ${{ secrets.AKT_ENG_REGISTRY_DOMAIN }} | xargs -n 1 docker push
+        run: |
+          docker push "${{ secrets.AKT_ENG_REGISTRY_DOMAIN }}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}"

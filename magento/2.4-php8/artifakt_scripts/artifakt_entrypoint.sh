@@ -64,6 +64,7 @@ if [ "$tableCount" -ne 0 ]; then
     echo ""
 
     echo ">> CLEANING CONF FOLDER"
+    mkdir -p $NGINX_CONFIG_DEST_FOLDER
     rm -rf $NGINX_CONFIG_DEST_FOLDER/*
     echo ""
 
@@ -160,6 +161,7 @@ if [ "$tableCount" -ne 0 ]; then
     echo ""
 
     echo ">> CLEANING CONF FOLDER"
+    mkdir -p $VARNISH_CONFIG_DEST_FOLDER
     rm -rf $VARNISH_CONFIG_DEST_FOLDER/*
     echo ""
 
@@ -193,7 +195,7 @@ if [ "$tableCount" -ne 0 ]; then
       mkdir -p /data/$persistent_folder
 
       echo Copy modified/new files from container /var/www/html/$persistent_folder to volume /data/$persistent_folder
-      if [ $ARTIFAKT_IS_MAIN_INSTANCE == 1 ]; then
+      if [ "$ARTIFAKT_IS_MAIN_INSTANCE" == "1" ]; then
         if [ "$persistent_folder" != "pub/media" ]; then
           rsync -rtv /var/www/html/$persistent_folder/ /data/$persistent_folder || true
         fi
@@ -207,7 +209,18 @@ if [ "$tableCount" -ne 0 ]; then
       find /var/www/html/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
       find /data/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
     done
-
+    
+    # TODO: Check with CS why this is needed. Since base-magento in local has an empty vendor directory and fails to start.
+    echo ""
+    echo "######################################################"
+    echo "##### CHECKING VENDORS"
+    echo ""
+    if [ ! -f "/var/www/html/vendor/autoload.php" ]; then
+      echo "Missing vendors. Installing..."
+      composer install --no-dev --no-cache --no-interaction
+    fi
+    
+    
     ## config.php CHECKING
     echo ""
     echo "######################################################"
