@@ -12,6 +12,8 @@ if [ -n "$CUSTOM_CODE_ROOT" ]; then
 
     echo "Moving folder to /var/www/html and settings permissions";
     mv -f /tmp/"$CUSTOM_CODE_ROOT"/* /var/www/html/ 
+    mv -f /tmp/"$CUSTOM_CODE_ROOT"/.* /var/www/html/ 
+
     chown -R www-data:www-data /var/www/html  
     ls -lah /var/www/html/
 fi
