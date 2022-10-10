@@ -48,12 +48,15 @@ if [ "$tableCount" -ne 0 ]; then
     if [ -f "/artifakt_templates/magento/env.php.sample" ]; then
       echo "COPY SAMPLE ENV FILE FROM /artifakt_templates/ folder"
       cp /artifakt_templates/magento/env.php.sample $MAGENTO_CONFIG_DEST_FOLDER/env.php
-      chown www-data:www-data $MAGENTO_CONFIG_DEST_FOLDER/env.php
       else
       echo "ERROR ! CANNOT FIND THE FILE $MAGENTO_CONFIG_SRC_FOLDER/env.php.sample AND NO TEMPLATE FILE IN BASE CONTAINER"
     fi
   fi
-  if [ -f "$MAGENTO_CONFIG_DEST_FOLDER/env.php" ]; then ENV_FILE_CHECK=1; fi
+
+  if [ -f "$MAGENTO_CONFIG_DEST_FOLDER/env.php" ]; then       
+    chown www-data:www-data $MAGENTO_CONFIG_DEST_FOLDER/env.php
+    ENV_FILE_CHECK=1; 
+  fi
 
   if [ $ENV_FILE_CHECK -eq 1 ]; then
 
@@ -267,7 +270,7 @@ if [ "$tableCount" -ne 0 ]; then
     mkdir -p $MOUNT_ARTIFAKT_LOGS_FOLDER
  
     if [ -z "$CUSTOM_LOGS_FOLDER" ]; then CUSTOM_LOGS_FOLDER=$MAGENTO_NATIVE_LOGS_FOLDER; fi
-    chown www-data:www-data  "$MOUNT_ARTIFAKT_LOGS_FOLDER" "$CUSTOM_LOGS_FOLDER"
+    chown -R www-data:www-data  "$MOUNT_ARTIFAKT_LOGS_FOLDER" "$CUSTOM_LOGS_FOLDER"
     echo "** Mapping native magento logs"
     for MAGENTO_LOGS_NATIVE_FILE in "${MAGENTO_LOGS_NATIVE_FILES[@]}"; do
         echo "** Mapping file: $MAGENTO_LOGS_NATIVE_FILE"
