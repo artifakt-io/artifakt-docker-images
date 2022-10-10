@@ -206,8 +206,8 @@ if [ "$tableCount" -ne 0 ]; then
         
       find /var/www/html/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
       find /data/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
-    done
-
+    done    
+    
     ## config.php CHECKING
     echo ""
     echo "######################################################"
