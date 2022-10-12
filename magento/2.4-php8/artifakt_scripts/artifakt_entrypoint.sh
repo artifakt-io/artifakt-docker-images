@@ -207,8 +207,10 @@ if [ "$tableCount" -ne 0 ]; then
         mkdir -p /var/www/html && \
         ln -sfn /data/$persistent_folder /var/www/html/$persistent_folder
         
-      find /var/www/html/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
-      find /data/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
+      find /var/www/html/$persistent_folder -not -user www-data | parallel -j 32 chown -R www-data:www-data {}
+      find /data/$persistent_folder -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
+      find /var/www/html/$persistent_folder -not -user www-data | parallel -j 32 chown -R www-data:www-data {}
+      find /data/$persistent_folder -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
     done    
     
     ## config.php CHECKING
