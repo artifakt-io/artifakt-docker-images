@@ -5,7 +5,7 @@ LABEL vendor="Artifakt" \
     stage="alpha"
 
 ARG COMPOSER_VERSION=2.1.3
-ARG SYLIUS_VERSION=v1.10.1
+ARG SYLIUS_VERSION=dev-dependabot/composer/phpstan/phpstan-1.8.9
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
