@@ -298,6 +298,7 @@ if [ "$tableCount" -ne 0 ]; then
     echo ""
     echo "** LOGS SCRIPT START"
 
+    rm -rf "MAGENTO_NATIVE_LOGS_FOLDER"
     mkdir -p "$MAGENTO_NATIVE_LOGS_FOLDER"
     mkdir -p $MOUNT_ARTIFAKT_LOGS_FOLDER
  
