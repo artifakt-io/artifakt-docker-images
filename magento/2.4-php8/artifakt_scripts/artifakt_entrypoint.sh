@@ -20,6 +20,7 @@ MAGENTO_CONFIG_SRC_FOLDER=".artifakt/magento"
 MAGENTO_CONFIG_DEST_FOLDER="$ROOT_PROJECT/app/etc"
 
 MAGENTO_MAP_FILE="$NGINX_CONFIG_DEST_FOLDER/custom_http.conf"
+MAGENTO_CONFIG_FILE="app/etc/config.php"
 
 MOUNT_ARTIFAKT_LOGS_FOLDER="/var/log/artifakt"
 MAGENTO_NATIVE_LOGS_FOLDER=$(pwd)"/var/log"
@@ -221,10 +222,8 @@ if [ "$tableCount" -ne 0 ]; then
       echo "File not found, running generation."
       su www-data -s /bin/bash -c "php bin/magento module:enable --all"
       echo "Looking for the $MAGENTO_CONFIG_FILE file for static generation"
-      if [ -f $MAGENTO_CONFIG_FILE ]; then
+      if [ -f "$MAGENTO_CONFIG_FILE" ]; then
           echo "Config file found"
-          checkScopes=""
-          checkThemes=""
           if [ "$MAGE_MODE" = "production" ]; then
               echo "!> PRODUCTION MODE DETECTED"
               echo ">> STATIC CONTENT DEPLOY"
@@ -236,8 +235,16 @@ if [ "$tableCount" -ne 0 ]; then
               echo "Language excluded (ARTIFAKT_MAGE_LANG_EXCLUDE): ${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}"
               echo "Languages (ARTIFAKT_MAGE_LANG): ${ARTIFAKT_MAGE_LANG:-all}"
               set -e
-              su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme="${ARTIFAKT_MAGE_STATIC_THEME:-all}" --exclude-theme="${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}" --exclude-language="${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}" ${ARTIFAKT_MAGE_LANG:-all}"
+
+              if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
+                for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
+                    su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=$currentTheme --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
+                done
+              else
+                su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
+              fi
               set +e
+            fi
     
               #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
               echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
@@ -257,7 +264,31 @@ if [ "$tableCount" -ne 0 ]; then
     else 
       echo "File already exists."
     fi
-    
+
+    ## Force static if minification is active 
+    echo ""
+    echo "######################################################"
+    echo "##### Check if minify css or js are implemented"
+    echo ""
+
+    if [ "$MAGE_MODE" = "production" ]; then
+      # Check if minify css or js are implemented
+      minifyConfigurationCount=$(mysql -h "$ARTIFAKT_MYSQL_HOST" -u "$ARTIFAKT_MYSQL_USER" -p"$ARTIFAKT_MYSQL_PASSWORD" "$ARTIFAKT_MYSQL_DATABASE_NAME" -B -N -e "SELECT COUNT(*) from core_config_data where path REGEXP ('^dev/(js|css)/*') and value=1;" | grep -v "count");
+      if [ "$minifyConfigurationCount" -gt 0 ]; then
+        set -e
+
+        if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
+          for currentTheme in "${ARTIFAKT_MAGE_STATIC_THEME[@]}"; do
+              su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=$currentTheme --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
+          done
+        else
+          su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
+        fi
+        set +e
+      else
+        echo "Nothing to do about minification."  
+      fi      
+    fi    
 
     ## LOGS SCRIPT START
     echo ""
