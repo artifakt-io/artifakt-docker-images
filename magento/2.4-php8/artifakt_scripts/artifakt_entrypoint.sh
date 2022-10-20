@@ -238,7 +238,7 @@ if [ "$tableCount" -ne 0 ]; then
 
               if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
                 for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
-                    su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=$currentTheme --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
+                    su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
                 done
               else
                 su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
@@ -278,8 +278,8 @@ if [ "$tableCount" -ne 0 ]; then
         set -e
 
         if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
-          for currentTheme in "${ARTIFAKT_MAGE_STATIC_THEME[@]}"; do
-              su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=$currentTheme --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
+          for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
+              su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
           done
         else
           su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
