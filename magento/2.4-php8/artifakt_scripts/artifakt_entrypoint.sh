@@ -297,8 +297,9 @@ if [ "$tableCount" -ne 0 ]; then
     echo ""
     echo "** LOGS SCRIPT START"
 
+    rm -rf "$MAGENTO_NATIVE_LOGS_FOLDER"
     mkdir -p "$MAGENTO_NATIVE_LOGS_FOLDER"
-    mkdir -p $MOUNT_ARTIFAKT_LOGS_FOLDER
+    mkdir -p "$MOUNT_ARTIFAKT_LOGS_FOLDER"
  
     if [ -z "$CUSTOM_LOGS_FOLDER" ]; then CUSTOM_LOGS_FOLDER=$MAGENTO_NATIVE_LOGS_FOLDER; fi
     chown -R www-data:www-data  "$MOUNT_ARTIFAKT_LOGS_FOLDER" "$CUSTOM_LOGS_FOLDER"
