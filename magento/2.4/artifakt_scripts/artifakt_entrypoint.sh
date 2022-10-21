@@ -264,32 +264,6 @@ if [ "$tableCount" -ne 0 ]; then
       echo "File already exists."
     fi
 
-    ## Force static if minification is active 
-    echo ""
-    echo "######################################################"
-    echo "##### Check if minify css or js are implemented"
-    echo ""
-
-    if [ "$MAGE_MODE" = "production" ]; then
-      # Check if minify css or js are implemented
-      minifyConfigurationCount=$(mysql -h "$ARTIFAKT_MYSQL_HOST" -u "$ARTIFAKT_MYSQL_USER" -p"$ARTIFAKT_MYSQL_PASSWORD" "$ARTIFAKT_MYSQL_DATABASE_NAME" -B -N -e "SELECT COUNT(*) from core_config_data where path REGEXP ('^dev/(js|css)/*') and value=1;" | grep -v "count");
-      if [ "$minifyConfigurationCount" -gt 0 ]; then
-        set -e
-
-        if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
-          for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
-              su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
-          done
-        else
-          su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
-        fi
-        set +e
-      else
-        echo "Nothing to do about minification."  
-      fi      
-    fi  
-
-
     ## LOGS SCRIPT START
     echo ""
     echo "######################################################"
