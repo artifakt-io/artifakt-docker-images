@@ -208,10 +208,10 @@ if [ "$tableCount" -ne 0 ]; then
         mkdir -p /var/www/html && \
         ln -sfn /data/$persistent_folder /var/www/html/$persistent_folder
         
-      #find /var/www/html/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
+      #find /var/www/html/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {} 
       #find /data/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
-    done    
-    
+    done
+
     ## config.php CHECKING
     echo ""
     echo "######################################################"
@@ -244,20 +244,19 @@ if [ "$tableCount" -ne 0 ]; then
                 su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
               fi
               set +e
-            fi
-    
-              #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
-              echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
-              find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
-              find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
-
-              find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
-              find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
-
-              echo ">> PERMISSIONS - Fix owner on dynamic data"
-              chown -R www-data:www-data /var/www/html/var/log
-              chown -R www-data:www-data /var/www/html/var/page_cache
           fi
+    
+          #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
+          echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
+          find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
+          find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
+
+          find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+          find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+
+          echo ">> PERMISSIONS - Fix owner on dynamic data"
+          chown -R www-data:www-data /var/www/html/var/log
+          chown -R www-data:www-data /var/www/html/var/page_cache
       else
           echo "No config.php found."
       fi
@@ -288,7 +287,8 @@ if [ "$tableCount" -ne 0 ]; then
       else
         echo "Nothing to do about minification."  
       fi      
-    fi    
+    fi  
+
 
     ## LOGS SCRIPT START
     echo ""
