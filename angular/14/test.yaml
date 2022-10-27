@@ -1,0 +1,12 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  exposedPorts: []
+  volumes: []
+  entrypoint: ["/usr/local/bin/docker-entrypoint.sh"]
+  workdir: "/var/www/html"
+
+commandTests:
+  - name: "ng version"
+    command: "ng"
+    args: [ "version"]
+    expectedOutput: ['.*Angular CLI: 14\.*']
