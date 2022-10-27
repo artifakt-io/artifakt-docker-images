@@ -20,6 +20,7 @@ MAGENTO_CONFIG_SRC_FOLDER=".artifakt/magento"
 MAGENTO_CONFIG_DEST_FOLDER="$ROOT_PROJECT/app/etc"
 
 MAGENTO_MAP_FILE="$NGINX_CONFIG_DEST_FOLDER/custom_http.conf"
+MAGENTO_CONFIG_FILE="app/etc/config.php"
 
 MOUNT_ARTIFAKT_LOGS_FOLDER="/var/log/artifakt"
 MAGENTO_NATIVE_LOGS_FOLDER=$(pwd)"/var/log"
@@ -207,10 +208,10 @@ if [ "$tableCount" -ne 0 ]; then
         mkdir -p /var/www/html && \
         ln -sfn /data/$persistent_folder /var/www/html/$persistent_folder
         
-      #find /var/www/html/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
+      #find /var/www/html/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {} 
       #find /data/$persistent_folder -not -user www-data -not -group www-data | parallel -j 32 chown -R www-data:www-data {}
-    done    
-    
+    done
+
     ## config.php CHECKING
     echo ""
     echo "######################################################"
@@ -221,10 +222,8 @@ if [ "$tableCount" -ne 0 ]; then
       echo "File not found, running generation."
       su www-data -s /bin/bash -c "php bin/magento module:enable --all"
       echo "Looking for the $MAGENTO_CONFIG_FILE file for static generation"
-      if [ -f $MAGENTO_CONFIG_FILE ]; then
+      if [ -f "$MAGENTO_CONFIG_FILE" ]; then
           echo "Config file found"
-          checkScopes=""
-          checkThemes=""
           if [ "$MAGE_MODE" = "production" ]; then
               echo "!> PRODUCTION MODE DETECTED"
               echo ">> STATIC CONTENT DEPLOY"
@@ -236,28 +235,34 @@ if [ "$tableCount" -ne 0 ]; then
               echo "Language excluded (ARTIFAKT_MAGE_LANG_EXCLUDE): ${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}"
               echo "Languages (ARTIFAKT_MAGE_LANG): ${ARTIFAKT_MAGE_LANG:-all}"
               set -e
-              su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme="${ARTIFAKT_MAGE_STATIC_THEME:-all}" --exclude-theme="${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}" --exclude-language="${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}" ${ARTIFAKT_MAGE_LANG:-all}"
+
+              if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
+                for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
+                    su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
+                done
+              else
+                su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
+              fi
               set +e
-    
-              #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
-              echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
-              find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
-              find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
-
-              find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
-              find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
-
-              echo ">> PERMISSIONS - Fix owner on dynamic data"
-              chown -R www-data:www-data /var/www/html/var/log
-              chown -R www-data:www-data /var/www/html/var/page_cache
           fi
+    
+          #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
+          echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
+          find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
+          find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
+
+          find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+          find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+
+          echo ">> PERMISSIONS - Fix owner on dynamic data"
+          chown -R www-data:www-data /var/www/html/var/log
+          chown -R www-data:www-data /var/www/html/var/page_cache
       else
           echo "No config.php found."
       fi
     else 
       echo "File already exists."
     fi
-    
 
     ## LOGS SCRIPT START
     echo ""
@@ -266,13 +271,14 @@ if [ "$tableCount" -ne 0 ]; then
     echo ""
     echo "** LOGS SCRIPT START"
 
+    rm -rf "$MAGENTO_NATIVE_LOGS_FOLDER"
     mkdir -p "$MAGENTO_NATIVE_LOGS_FOLDER"
-    mkdir -p $MOUNT_ARTIFAKT_LOGS_FOLDER
+    mkdir -p "$MOUNT_ARTIFAKT_LOGS_FOLDER"
  
     if [ -z "$CUSTOM_LOGS_FOLDER" ]; then CUSTOM_LOGS_FOLDER=$MAGENTO_NATIVE_LOGS_FOLDER; fi
     chown -R www-data:www-data  "$MOUNT_ARTIFAKT_LOGS_FOLDER" "$CUSTOM_LOGS_FOLDER"
     echo "** Mapping native magento logs"
-    for MAGENTO_LOGS_NATIVE_FILE in "${MAGENTO_LOGS_NATIVE_FILES[@]}"; do
+    for MAGENTO_LOGS_NATIVE_FILE in ${MAGENTO_LOGS_NATIVE_FILES[@]}; do
         echo "** Mapping file: $MAGENTO_LOGS_NATIVE_FILE"
         if [ ! -f "$MOUNT_ARTIFAKT_LOGS_FOLDER"/"$MAGENTO_LOGS_NATIVE_FILE" ]; then
           touch "$MOUNT_ARTIFAKT_LOGS_FOLDER"/"$MAGENTO_LOGS_NATIVE_FILE"
@@ -284,7 +290,7 @@ if [ "$tableCount" -ne 0 ]; then
     echo "** Checking custom magento logs"
 
     if [ -n "$MAGENTO_LOGS_CUSTOM_FILES" ]; then
-        for MAGENTO_LOGS_CUSTOM_FILE in "${MAGENTO_LOGS_CUSTOM_FILES[@]}"; do
+        for MAGENTO_LOGS_CUSTOM_FILE in ${MAGENTO_LOGS_CUSTOM_FILES[@]}; do
           echo "** Mapping files: $MAGENTO_LOGS_CUSTOM_FILE"
           if [ ! -f "$MOUNT_ARTIFAKT_LOGS_FOLDER"/"$MAGENTO_LOGS_CUSTOM_FILE" ]; then
             touch "$MOUNT_ARTIFAKT_LOGS_FOLDER"/"$MAGENTO_LOGS_CUSTOM_FILE"
