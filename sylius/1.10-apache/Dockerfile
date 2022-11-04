@@ -5,7 +5,7 @@ LABEL vendor="Artifakt" \
     stage="alpha"
 
 ARG COMPOSER_VERSION=2.1.3
-ARG SYLIUS_VERSION=v1.10.1
+ARG SYLIUS_VERSION=v1.10.*
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -40,7 +40,7 @@ RUN curl -sS https://getcomposer.org/installer | \
 
 WORKDIR /var/www/html
 
-RUN COMPOSER_MEMORY_LIMIT=-1 composer create-project --no-scripts --no-cache --no-interaction --no-ansi sylius/sylius-standard:^${SYLIUS_VERSION} . && \
+RUN COMPOSER_MEMORY_LIMIT=-1 composer create-project --no-scripts --no-cache --no-interaction --no-ansi sylius/sylius-standard:${SYLIUS_VERSION} . && \
     chown -R www-data:www-data .
 
 RUN mkdir -p /var/www/.yarn && \
