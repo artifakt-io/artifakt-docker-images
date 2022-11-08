@@ -222,8 +222,17 @@ if [ "$tableCount" -ne 0 ]; then
       echo "File not found, running generation."
       su www-data -s /bin/bash -c "php bin/magento module:enable --all"
       echo "Looking for the $MAGENTO_CONFIG_FILE file for static generation"
-      if [ -f "$MAGENTO_CONFIG_FILE" ]; then
-          echo "Config file found"
+    else 
+      echo "File already exists."
+    fi
+
+    if [ -f "$MAGENTO_CONFIG_FILE" ]; then
+      echo "Config file found"
+      checkScopes=""
+      checkThemes=""
+      checkScopes=$(grep "'scopes' => " "$MAGENTO_CONFIG_FILE")
+      checkThemes=$(grep "'themes' => " "$MAGENTO_CONFIG_FILE")
+      if [ -z "$checkScopes" ] && [ -z "$checkThemes" ]; then 
           if [ "$MAGE_MODE" = "production" ]; then
               echo "!> PRODUCTION MODE DETECTED"
               echo ">> STATIC CONTENT DEPLOY"
@@ -244,25 +253,23 @@ if [ "$tableCount" -ne 0 ]; then
                 su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
               fi
               set +e
-          fi
+            fi
     
-          #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
-          echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
-          find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
-          find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
+            #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
+            echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
+            find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
+            find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
 
-          find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
-          find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+            find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+            find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
 
-          echo ">> PERMISSIONS - Fix owner on dynamic data"
-          chown -R www-data:www-data /var/www/html/var/log
-          chown -R www-data:www-data /var/www/html/var/page_cache
+            echo ">> PERMISSIONS - Fix owner on dynamic data"
+            chown -R www-data:www-data /var/www/html/var/log
+            chown -R www-data:www-data /var/www/html/var/page_cache
+          fi
       else
-          echo "No config.php found."
+        echo "No config.php found."
       fi
-    else 
-      echo "File already exists."
-    fi
 
     ## LOGS SCRIPT START
     echo ""
