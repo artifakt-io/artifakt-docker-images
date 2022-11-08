@@ -233,40 +233,41 @@ if [ "$tableCount" -ne 0 ]; then
       checkScopes=$(grep "'scopes' => " "$MAGENTO_CONFIG_FILE")
       checkThemes=$(grep "'themes' => " "$MAGENTO_CONFIG_FILE")
       if [ -z "$checkScopes" ] && [ -z "$checkThemes" ]; then 
-          if [ "$MAGE_MODE" = "production" ]; then
-              echo "!> PRODUCTION MODE DETECTED"
-              echo ">> STATIC CONTENT DEPLOY"
-              echo "INFO: for each parameter, you have below each Environment Variable you can use to customize the deployment."
-              echo "Jobs (ARTIFAKT_MAGE_STATIC_JOBS): ${ARTIFAKT_MAGE_STATIC_JOBS:-5}"
-              echo "Content version: $ARTIFAKT_BUILD_ID"
-              echo "Theme (ARTIFAKT_MAGE_STATIC_THEME): ${ARTIFAKT_MAGE_STATIC_THEME:-all}"
-              echo "Theme excluded (ARTIFAKT_MAGE_THEME_EXCLUDE): ${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}"
-              echo "Language excluded (ARTIFAKT_MAGE_LANG_EXCLUDE): ${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}"
-              echo "Languages (ARTIFAKT_MAGE_LANG): ${ARTIFAKT_MAGE_LANG:-all}"
-              set -e
+        if [ "$MAGE_MODE" = "production" ]; then
+          echo "!> PRODUCTION MODE DETECTED"
+          echo ">> STATIC CONTENT DEPLOY"
+          echo "INFO: for each parameter, you have below each Environment Variable you can use to customize the deployment."
+          echo "Jobs (ARTIFAKT_MAGE_STATIC_JOBS): ${ARTIFAKT_MAGE_STATIC_JOBS:-5}"
+          echo "Content version: $ARTIFAKT_BUILD_ID"
+          echo "Theme (ARTIFAKT_MAGE_STATIC_THEME): ${ARTIFAKT_MAGE_STATIC_THEME:-all}"
+          echo "Theme excluded (ARTIFAKT_MAGE_THEME_EXCLUDE): ${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}"
+          echo "Language excluded (ARTIFAKT_MAGE_LANG_EXCLUDE): ${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}"
+          echo "Languages (ARTIFAKT_MAGE_LANG): ${ARTIFAKT_MAGE_LANG:-all}"
+          set -e
 
-              if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
-                for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
-                    su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
-                done
-              else
-                su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
-              fi
-              set +e
-            fi
-    
-            #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
-            echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
-            find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
-            find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
-
-            find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
-            find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
-
-            echo ">> PERMISSIONS - Fix owner on dynamic data"
-            chown -R www-data:www-data /var/www/html/var/log
-            chown -R www-data:www-data /var/www/html/var/page_cache
+          if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
+            for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
+                su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
+            done
+          else
+            su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
           fi
+          set +e
+    
+          #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
+          echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
+          find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
+          find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
+
+          find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+          find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+
+          echo ">> PERMISSIONS - Fix owner on dynamic data"
+          chown -R www-data:www-data /var/www/html/var/log
+          chown -R www-data:www-data /var/www/html/var/page_cache
+        else
+          echo "MAGE_MODE not set to production. No static generated during entrypoint."
+        fi
       else
         echo "No config.php found."
       fi
