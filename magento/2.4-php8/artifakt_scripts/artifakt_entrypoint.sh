@@ -270,7 +270,7 @@ if [ "$tableCount" -ne 0 ]; then
       else
         echo "No config.php found."
       fi
-
+    fi
     ## LOGS SCRIPT START
     echo ""
     echo "######################################################"
