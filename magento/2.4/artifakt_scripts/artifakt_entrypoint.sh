@@ -155,8 +155,7 @@ if [ "$tableCount" -ne 0 ]; then
     echo ">> MULTI-STORE MAP FILE CONFIGURATION FROM DATABASE"
     echo "> To deactivate this auto-generation, set the MAGENTO_MULTISTORE_GEN_OFF variable or set your own variables (MAGENTO_RUN_CODE_DEFAULT)"
     if [ ! -z $MAGENTO_MULTISTORE_GEN_ON ]; then
-      echo "> MAGENTO_MULTISTORE_GEN_OFF: not detected"
-      echo "> MAGENTO_RUN_CODE_DEFAULT: not detected"
+      echo "> MAGENTO_MULTISTORE_GEN_ON: detected"
       echo "## Preparing the MAGE_RUN_CODE part"
       echo "Request on the database ..."
       result=$(mysql -u $ARTIFAKT_MYSQL_USER -h $ARTIFAKT_MYSQL_HOST -p$ARTIFAKT_MYSQL_PASSWORD $ARTIFAKT_MYSQL_DATABASE_NAME -A -e "select ccd.scope,sw.code,ccd.value from store_website as sw left join core_config_data as ccd on sw.website_id=ccd.scope_id where ccd.path='web/unsecure/base_url' or ccd.path='web/secure/base_url' group by ccd.value, sw.code, ccd.scope" | sed "s/'/\'/;s/\t/ /g;s/^//;s/$//;s/\n//g")
