@@ -57,7 +57,7 @@ RUN docker-php-ext-configure \
 RUN docker-php-ext-configure \
   imap --with-kerberos --with-imap-ssl
 RUN docker-php-ext-configure \
-  ldap --with-libdir=lib/x86_64-linux-gnu
+  ldap --with-libdir=lib/$(uname -m)-linux-gnu
 RUN docker-php-ext-configure \
   opcache --enable-opcache
 RUN docker-php-ext-configure zip
