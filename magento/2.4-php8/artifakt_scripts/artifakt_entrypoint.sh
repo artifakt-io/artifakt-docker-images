@@ -151,6 +151,68 @@ if [ "$tableCount" -ne 0 ]; then
     fi
     echo ""
 
+        # MULTI-STORE AUTO GENERATION FROM DATABASE
+    echo ">> MULTI-STORE MAP FILE CONFIGURATION FROM DATABASE"
+    echo "> To deactivate this auto-generation, set the MAGENTO_MULTISTORE_GEN_OFF variable or set your own variables (MAGENTO_RUN_CODE_DEFAULT)"
+    if [ ! -z $MAGENTO_MULTISTORE_GEN_ON ]; then
+      echo "> MAGENTO_MULTISTORE_GEN_ON: detected"
+      echo "## Preparing the MAGE_RUN_CODE part"
+      echo "Request on the database ..."
+      result=$(mysql -u $ARTIFAKT_MYSQL_USER -h $ARTIFAKT_MYSQL_HOST -p$ARTIFAKT_MYSQL_PASSWORD $ARTIFAKT_MYSQL_DATABASE_NAME -A -e "select ccd.scope,sw.code,ccd.value from store_website as sw left join core_config_data as ccd on sw.website_id=ccd.scope_id where ccd.path='web/unsecure/base_url' or ccd.path='web/secure/base_url' group by ccd.value, sw.code, ccd.scope" | sed "s/'/\'/;s/\t/ /g;s/^//;s/$//;s/\n//g")
+      echo "Initializing the map file: $MAGENTO_MAP_FILE"
+      echo "# Following code is included in the http block of Nginx" > $MAGENTO_MAP_FILE
+      echo "map \$http_host \$MAGE_RUN_CODE" >> $MAGENTO_MAP_FILE
+      echo "{" >> $MAGENTO_MAP_FILE
+
+      while IFS= read -r line; do
+          IFS=', ' read -r -a array <<< "$line"
+          
+          if [ "${array[0]}" == "default" ]; then
+              echo "  default ${array[1]};" >> $MAGENTO_MAP_FILE
+              echo "New line: default ${array[1]};"
+          elif [ "${array[2]}" != "value" ]; then
+              shortUrl=$(echo ${array[2]}|sed 's/https\?:\/\///' | sed 's/\///')
+              if ! grep -q $shortUrl "$MAGENTO_MAP_FILE"; then
+                  echo "  $shortUrl ${array[1]};"  >> $MAGENTO_MAP_FILE
+                  echo "New line: $shortUrl ${array[1]};"
+              fi
+          fi
+      done <<< "$result"
+      echo "}" >> $MAGENTO_MAP_FILE
+
+      echo "" >> $MAGENTO_MAP_FILE
+
+      MAGENTO_MAP_FILE2=custom_http2.conf
+      echo "## Preparing the MAGE_RUN_TYPE part"
+      echo "map \$http_host \$MAGE_RUN_TYPE" >> $MAGENTO_MAP_FILE2
+      echo "{" >> $MAGENTO_MAP_FILE2
+
+      while IFS= read -r line; do
+          IFS=', ' read -r -a array <<< "$line"
+          if [ "${array[2]}" != "value" ]; then
+              if [ "${array[0]}" != "default" ]; then
+                  shortUrl=$(echo ${array[2]}|sed 's/https\?:\/\///' | sed 's/\///')
+                  if ! grep -q $shortUrl "$MAGENTO_MAP_FILE2"; then
+                      if [ "${array[0]}" == "websites" ]; then
+                          storetype="website"
+                      elif [ "${array[0]}" == "stores" ]; then
+                          storetype="store"
+                      fi
+                      echo "  $shortUrl $storetype; "  >> $MAGENTO_MAP_FILE2
+                      echo "New line: $shortUrl $storetype;"
+                  fi
+              fi
+          fi
+      done <<< "$result"
+      echo "}" >> $MAGENTO_MAP_FILE2
+
+      cat $MAGENTO_MAP_FILE2 >> $MAGENTO_MAP_FILE
+      rm $MAGENTO_MAP_FILE2
+    else
+      echo "> Multi-store generation deactivated"
+    fi
+    # END OF MULTI-STORE AUTO GENERATION FROM DATABASE
+
     echo ">> Content of configuration folders $NGINX_CONFIG_DEST_FOLDER"
     ls -la $NGINX_CONFIG_DEST_FOLDER
 
@@ -233,44 +295,46 @@ if [ "$tableCount" -ne 0 ]; then
       checkScopes=$(grep "'scopes' => " "$MAGENTO_CONFIG_FILE")
       checkThemes=$(grep "'themes' => " "$MAGENTO_CONFIG_FILE")
       if [ -z "$checkScopes" ] && [ -z "$checkThemes" ]; then 
-          if [ "$MAGE_MODE" = "production" ]; then
-              echo "!> PRODUCTION MODE DETECTED"
-              echo ">> STATIC CONTENT DEPLOY"
-              echo "INFO: for each parameter, you have below each Environment Variable you can use to customize the deployment."
-              echo "Jobs (ARTIFAKT_MAGE_STATIC_JOBS): ${ARTIFAKT_MAGE_STATIC_JOBS:-5}"
-              echo "Content version: $ARTIFAKT_BUILD_ID"
-              echo "Theme (ARTIFAKT_MAGE_STATIC_THEME): ${ARTIFAKT_MAGE_STATIC_THEME:-all}"
-              echo "Theme excluded (ARTIFAKT_MAGE_THEME_EXCLUDE): ${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}"
-              echo "Language excluded (ARTIFAKT_MAGE_LANG_EXCLUDE): ${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}"
-              echo "Languages (ARTIFAKT_MAGE_LANG): ${ARTIFAKT_MAGE_LANG:-all}"
-              set -e
+        if [ "$MAGE_MODE" = "production" ]; then
+          echo "!> PRODUCTION MODE DETECTED"
+          echo ">> STATIC CONTENT DEPLOY"
+          echo "INFO: for each parameter, you have below each Environment Variable you can use to customize the deployment."
+          echo "Jobs (ARTIFAKT_MAGE_STATIC_JOBS): ${ARTIFAKT_MAGE_STATIC_JOBS:-5}"
+          echo "Content version: $ARTIFAKT_BUILD_ID"
+          echo "Theme (ARTIFAKT_MAGE_STATIC_THEME): ${ARTIFAKT_MAGE_STATIC_THEME:-all}"
+          echo "Theme excluded (ARTIFAKT_MAGE_THEME_EXCLUDE): ${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}"
+          echo "Language excluded (ARTIFAKT_MAGE_LANG_EXCLUDE): ${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}"
+          echo "Languages (ARTIFAKT_MAGE_LANG): ${ARTIFAKT_MAGE_LANG:-all}"
+          set -e
 
-              if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
-                for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
-                    su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
-                done
-              else
-                su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
-              fi
-              set +e
-            fi
-    
-            #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
-            echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
-            find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
-            find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
-
-            find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
-            find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
-
-            echo ">> PERMISSIONS - Fix owner on dynamic data"
-            chown -R www-data:www-data /var/www/html/var/log
-            chown -R www-data:www-data /var/www/html/var/page_cache
+          if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
+            for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
+                su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --theme=$currentTheme ${ARTIFAKT_MAGE_LANG:-all}"
+            done
+          else
+            su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
           fi
+          set +e
+    
+          #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
+          echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
+          find var generated vendor pub/static pub/media app/etc -type f -exec chown www-data:www-data {} +
+          find var generated vendor pub/static pub/media app/etc -type d -exec chown www-data:www-data {} +
+
+          find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+          find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+
+          echo ">> PERMISSIONS - Fix owner on dynamic data"
+          chown -R www-data:www-data /var/www/html/var/log
+          chown -R www-data:www-data /var/www/html/var/page_cache
+        else
+          echo "MAGE_MODE not set to production. No static generated during entrypoint."
+        fi
       else
         echo "No config.php found."
       fi
     fi
+    
     ## LOGS SCRIPT START
     echo ""
     echo "######################################################"
