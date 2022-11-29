@@ -16,11 +16,15 @@ if [ -f $MAGENTO_CONFIG_FILE ]; then
     fi
 
     echo "Config file found, looking for scope and themes in this file"
-    checkScopes=""
-    checkThemes=""
-    checkScopes=$(grep "'scopes' => " "$MAGENTO_CONFIG_FILE")
-    checkThemes=$(grep "'themes' => " "$MAGENTO_CONFIG_FILE")
-    if [ ! -z "$checkScopes" ] && [ ! -z "$checkThemes" ]; then 
+    if [ -n "$MAGENTO_DO_STATICS_IN_BUILD" ] && [ "$MAGENTO_DO_STATICS_IN_BUILD" = true  ]; then
+        checkScopes=$(grep "'scopes' => " "$MAGENTO_CONFIG_FILE")
+        checkThemes=$(grep "'themes' => " "$MAGENTO_CONFIG_FILE")
+    else
+        checkScopes=""
+        checkThemes=""
+    fi
+    
+    if [ -n "$checkScopes" ] && [ -n "$checkThemes" ]; then 
         echo "Scopes and themes found in the config file"
         if [ "$MAGE_MODE" = "production" ]; then
             echo "!> PRODUCTION MODE DETECTED"
