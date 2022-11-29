@@ -290,16 +290,17 @@ if [ "$tableCount" -ne 0 ]; then
 
     if [ -f "$MAGENTO_CONFIG_FILE" ]; then
       echo "Config file found"
-
-      if [ -n "$MAGENTO_DO_STATICS_IN_BUILD" ] && [ "$MAGENTO_DO_STATICS_IN_BUILD" = true  ]; then
+      checkScopes=""
+      checkThemes=""
+      checkScopes=$(grep "'scopes' => " "$MAGENTO_CONFIG_FILE")
+      checkThemes=$(grep "'themes' => " "$MAGENTO_CONFIG_FILE")
+      
+      if [ -n "$MAGENTO_FORCE_STATICS_IN_ENTRYPOINT" ]; then
         checkScopes=""
-        checkThemes=""     
-      else
-        checkScopes=$(grep "'scopes' => " "$MAGENTO_CONFIG_FILE")
-        checkThemes=$(grep "'themes' => " "$MAGENTO_CONFIG_FILE")       
+        checkThemes="" 
       fi
 
-      if [ -n "$checkScopes" ] && [ -n "$checkThemes" ]; then 
+      if [ -z "$checkScopes" ] && [ -z "$checkThemes" ]; then 
         if [ "$MAGE_MODE" = "production" ]; then
           echo "!> PRODUCTION MODE DETECTED"
           echo ">> STATIC CONTENT DEPLOY"
