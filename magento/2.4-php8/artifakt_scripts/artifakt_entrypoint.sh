@@ -294,6 +294,12 @@ if [ "$tableCount" -ne 0 ]; then
       checkThemes=""
       checkScopes=$(grep "'scopes' => " "$MAGENTO_CONFIG_FILE")
       checkThemes=$(grep "'themes' => " "$MAGENTO_CONFIG_FILE")
+      
+      if [ -n "$MAGENTO_FORCE_STATICS_IN_ENTRYPOINT" ]; then
+        checkScopes=""
+        checkThemes="" 
+      fi
+
       if [ -z "$checkScopes" ] && [ -z "$checkThemes" ]; then 
         if [ "$MAGE_MODE" = "production" ]; then
           echo "!> PRODUCTION MODE DETECTED"
