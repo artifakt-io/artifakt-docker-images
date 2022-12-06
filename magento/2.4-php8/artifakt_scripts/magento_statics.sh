@@ -11,7 +11,8 @@ if [ -f $MAGENTO_CONFIG_FILE ]; then
     
     if [ -n "$MAGENTO_CONFIG_SET_VALUES" ]; then
         for MAGENTO_CONFIG_SET_VALUE in ${MAGENTO_CONFIG_SET_VALUES[@]}; do
-            bin/magento config:set dev/$MAGENTO_CONFIG_SET_VALUE 1
+            echo "Set config dev/$MAGENTO_CONFIG_SET_VALUE to 1"
+            php bin/magento config:set dev/"$MAGENTO_CONFIG_SET_VALUE" 1
         done
     fi
 
