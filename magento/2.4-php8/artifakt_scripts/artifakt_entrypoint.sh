@@ -466,8 +466,8 @@ if [ "$tableCount" -ne 0 ]; then
     fi
 
     # Fix autoload error
-    chown www-data:www-data /var/www/html/var/vendor/autoload.php
-    chmod 755 /var/www/html/var/vendor/autoload.php
+    chown www-data:www-data /var/www/html/vendor/autoload.php
+    chmod 755 /var/www/html/vendor/autoload.php
 
     # Copy all files in shared folder to allow nginx to access it
     if [ $ARTIFAKT_IS_MAIN_INSTANCE -eq 1 ]; then
