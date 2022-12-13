@@ -466,8 +466,8 @@ if [ "$tableCount" -ne 0 ]; then
     fi
 
     # Fix autoload error
-    chown www-data:www-data /var/www/html/vendor/autoload.php
-    chmod 755 /var/www/html/vendor/autoload.php
+    chown www-data:www-data /var/www/html/var/vendor/autoload.php
+    chmod 755 /var/www/html/var/vendor/autoload.php
 
     # Copy all files in shared folder to allow nginx to access it
     if [ $ARTIFAKT_IS_MAIN_INSTANCE -eq 1 ]; then
@@ -477,8 +477,10 @@ if [ "$tableCount" -ne 0 ]; then
       echo "Switch owner to www-data"
       chown www-data:www-data /data/pub
       #echo "Copy all changed files from /var/www/html/pub/static/* to /data/pub/static"
-      if [ -d /var/www/html/pub/static ]; then rsync -rtv /var/www/html/pub/static/ /data/pub/static/; fi
-      if [ -d /var/www/html/pub/js ]; then rsync -rtv /var/www/html/pub/js/* /data/pub/js; fi
+      if [ -z $MAGENTO_BLOCK_JS_STATIC_SYNC ]; then
+        if [ -d /var/www/html/pub/static ]; then rsync -rtv /var/www/html/pub/static/ /data/pub/static/; fi
+        if [ -d /var/www/html/pub/js ]; then rsync -rtv /var/www/html/pub/js/* /data/pub/js; fi
+      fi
       echo "Copy all files in pub (no subdirectories)"
       rsync -rtv ./pub/* /data/pub/
     fi
