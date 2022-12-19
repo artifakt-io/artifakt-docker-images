@@ -3,7 +3,7 @@
 # Created: 15/08/2022
 # Version: 1.0
 
-set -e
+
 ### CONFIGURATION FILES - !! DO NOT EDIT
 ROOT_PROJECT="/var/www/html"
 NGINX_CONFIG_DEST_FOLDER="/conf/nginxfpm"
@@ -311,7 +311,7 @@ if [ "$tableCount" -ne 0 ]; then
           echo "Theme excluded (ARTIFAKT_MAGE_THEME_EXCLUDE): ${ARTIFAKT_MAGE_THEME_EXCLUDE:-none}"
           echo "Language excluded (ARTIFAKT_MAGE_LANG_EXCLUDE): ${ARTIFAKT_MAGE_LANG_EXCLUDE:-none}"
           echo "Languages (ARTIFAKT_MAGE_LANG): ${ARTIFAKT_MAGE_LANG:-all}"
-          set -e
+          
 
           if [ -n "$ARTIFAKT_MAGE_STATIC_THEME" ]; then
             for currentTheme in ${ARTIFAKT_MAGE_STATIC_THEME[@]}; do
@@ -320,7 +320,7 @@ if [ "$tableCount" -ne 0 ]; then
           else
             su www-data -s /bin/bash -c "php bin/magento setup:static-content:deploy -f --no-interaction --jobs ${ARTIFAKT_MAGE_STATIC_JOBS:-5}  --content-version=${ARTIFAKT_BUILD_ID} --exclude-theme=${ARTIFAKT_MAGE_THEME_EXCLUDE:-none} --exclude-language=${ARTIFAKT_MAGE_LANG_EXCLUDE:-none} ${ARTIFAKT_MAGE_LANG:-all}"
           fi
-          set +e
+          
     
           #6 fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}
           echo ">> PERMISSIONS -  Fix owner/permissions on var/{cache,di,generation,page_cache,view_preprocessed}"
@@ -391,21 +391,21 @@ if [ "$tableCount" -ne 0 ]; then
       # read db and config statuses 
       # while temporary disabling errors
       echo ">> STARTING DATABASE OPERATIONS"
-      set +e
+      
       bin/magento setup:db:status
       dbStatus=$?
       bin/magento app:config:status
       configStatus=$?
-      set -e
+      
 
       echo "> Result of setup:db:status : $dbStatus"
       echo "> Result of app:config:status : $configStatus"
       
       if [[ $dbStatus == 2 || $configStatus == 2 ]];then
         echo "Put 'current/live' release under maintenance"
-        set -e
+        
         su www-data -s /bin/bash -c "php bin/magento maintenance:enable"
-        set +e
+        
         echo "=> Maintenance enabled."
       fi
 
@@ -419,21 +419,21 @@ if [ "$tableCount" -ne 0 ]; then
 
       
       if [ $dbStatus == 2 ]; then
-        set -e
+        
         echo "The database needs to be updated"
         echo "=> Running setup:db-schema:upgrade"
         su www-data -s /bin/bash -c "php bin/magento setup:db-schema:upgrade --no-interaction"
         echo "=> Running setup:db-data:upgrade"
         su www-data -s /bin/bash -c "php bin/magento setup:db-data:upgrade --no-interaction"
-        set +e
+        
       fi
 
       echo "Remove 'current/live' release under maintenance"
       if [[ $dbStatus == 2 || $configStatus == 2 ]];    then
-        set -e
+        
         su www-data -s /bin/bash -c "php bin/magento maintenance:disable"
         echo "=> Maintenance disabled"   
-        set +e
+        
       fi
 
       echo ">> END OF DATABASE OPERATIONS"
@@ -466,8 +466,8 @@ if [ "$tableCount" -ne 0 ]; then
     fi
 
     # Fix autoload error
-    chown www-data:www-data /var/www/html/vendor/autoload.php
-    chmod 755 /var/www/html/vendor/autoload.php
+    chown www-data:www-data /var/www/html/var/vendor/autoload.php
+    chmod 755 /var/www/html/var/vendor/autoload.php
 
     # Copy all files in shared folder to allow nginx to access it
     if [ $ARTIFAKT_IS_MAIN_INSTANCE -eq 1 ]; then
