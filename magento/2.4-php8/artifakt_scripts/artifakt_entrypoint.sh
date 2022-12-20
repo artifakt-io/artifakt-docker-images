@@ -481,8 +481,9 @@ if [ "$tableCount" -ne 0 ]; then
         if [ -d /var/www/html/pub/static ]; then rsync -rtv /var/www/html/pub/static/ /data/pub/static/; fi
         if [ -d /var/www/html/pub/js ]; then rsync -rtv /var/www/html/pub/js/* /data/pub/js; fi
       fi
-      echo "Copy all files in pub (no subdirectories)"
-      rsync -rtv ./pub/* /data/pub/
+      echo "Copy php and js files in pub to /data/pub"
+      cp /var/www/html/pub/*.php /data/pub/
+      cp /var/www/html/pub/*.js /data/pub/
     fi
   else
     echo "ERROR - NO ENV FILE, MAGENTO OPERATIONS SKIPPED"
