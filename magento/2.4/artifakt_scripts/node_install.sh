@@ -13,6 +13,8 @@ if [ ! -z $NODE_VERSION ]; then
 
     nvm install $NODE_VERSION && \
     nvm use $NODE_VERSION && \
+    node --version
+
     if [ -n "$NODE_MODULES" ]; then
         npm install -g "$NODE_MODULES"
     fi
@@ -24,9 +26,5 @@ if [ ! -z $NODE_VERSION ]; then
     if [ -d "/var/www/node_modules" ]; then
         chown -R www-data:www-data /var/www/node_modules
     fi
-
-    . ~/.nvm/nvm.sh && \
-    nvm install $NODE_VERSION && \
-    nvm use $NODE_VERSION && \ 
-    node --version
+    
 fi
