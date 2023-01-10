@@ -13,7 +13,9 @@ if [ ! -z $NODE_VERSION ]; then
 
     nvm install $NODE_VERSION && \
     nvm use $NODE_VERSION && \
-    npm install -g $NODE_MODULES
+    if [ -n "$NODE_MODULES" ]; then
+        npm install -g "$NODE_MODULES" && \
+    fi
 
     chown -R www-data:www-data /var/www/.nvm && \
     chown -R www-data:www-data /var/www/.npm && \
