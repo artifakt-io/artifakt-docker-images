@@ -17,8 +17,11 @@ if [ ! -z $NODE_VERSION ]; then
 
     chown -R www-data:www-data /var/www/.nvm && \
     chown -R www-data:www-data /var/www/.npm && \
-    chown -R www-data:www-data /var/www/node_modules && \
     chown -R www-data:www-data /var/www/.config
+
+    if [ -d "/var/www/node_modules" ]; then
+        chown -R www-data:www-data /var/www/node_modules
+    fi
 
     . ~/.nvm/nvm.sh && \
     nvm install $NODE_VERSION && \
