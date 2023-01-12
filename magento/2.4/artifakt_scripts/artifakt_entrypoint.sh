@@ -477,7 +477,8 @@ if [ "$tableCount" -ne 0 ]; then
       echo "Switch owner to www-data"
       chown www-data:www-data /data/pub
       #echo "Copy all changed files from /var/www/html/pub/static/* to /data/pub/static"
-      if [ -z $MAGENTO_BLOCK_JS_STATIC_SYNC ]; then
+      if [ -z "$MAGENTO_BLOCK_JS_STATIC_SYNC" ]; then
+        echo "Empty variable MAGENTO_BLOCK_JS_STATIC_SYNC, running copy actions."
         if [ -d /var/www/html/pub/static ]; then rsync -rtv /var/www/html/pub/static/ /data/pub/static/; fi
         if [ -d /var/www/html/pub/js ]; then rsync -rtv /var/www/html/pub/js/* /data/pub/js; fi
       fi
