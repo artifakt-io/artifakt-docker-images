@@ -1,8 +1,5 @@
 #!/bin/bash
 
-if [ -z $MAGE_MODE ]; then 
-    MAGE_MODE="production"
-fi
 
 MAGENTO_CONFIG_FILE="app/etc/config.php"
 
