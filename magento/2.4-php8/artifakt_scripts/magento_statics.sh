@@ -1,19 +1,16 @@
 #!/bin/bash
 
-if [ -z $MAGE_MODE ]; then 
-    MAGE_MODE="production"
-fi
-
 MAGENTO_CONFIG_FILE="app/etc/config.php"
 
 echo "Looking for the $MAGENTO_CONFIG_FILE file for static generation"
 if [ -f $MAGENTO_CONFIG_FILE ]; then
     
     if [ -n "$MAGENTO_CONFIG_SET_VALUES" ]; then
-        for MAGENTO_CONFIG_SET_VALUE in ${MAGENTO_CONFIG_SET_VALUES[@]}; do
-            echo "Set config dev/$MAGENTO_CONFIG_SET_VALUE to 1"
-            php bin/magento config:set dev/"$MAGENTO_CONFIG_SET_VALUE" 1
-        done
+        echo "SET values are deprecated here, please check your configuration in core_config_data table"
+        # for MAGENTO_CONFIG_SET_VALUE in ${MAGENTO_CONFIG_SET_VALUES[@]}; do
+        #     echo "Set config dev/$MAGENTO_CONFIG_SET_VALUE to 1"
+        #     php bin/magento config:set dev/"$MAGENTO_CONFIG_SET_VALUE" 1
+        # done
     fi
 
     echo "Config file found, looking for scope and themes in this file"
