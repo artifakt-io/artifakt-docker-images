@@ -77,10 +77,10 @@ RUN docker-php-ext-install -j$(nproc) \
   zip
 
 # a couple of extensions are only available through PECL
-RUN pecl install \
-  apcu-$APCU_VERSION \
-  memcache-$MEMCACHE_VERSION \
-  xmlrpc-$XMLRPC_VERSION
+# RUN pecl install \
+#   apcu-$APCU_VERSION \
+#   memcache-$MEMCACHE_VERSION \
+#   xmlrpc-$XMLRPC_VERSION
 
 # install SODIUM php extension
 # see DOCS: https://doc.libsodium.org/
