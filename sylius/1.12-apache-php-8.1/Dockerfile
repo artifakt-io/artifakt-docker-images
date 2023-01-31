@@ -45,6 +45,7 @@ RUN COMPOSER_MEMORY_LIMIT=-1 composer create-project --no-scripts --no-cache --n
     chown -R www-data:www-data .
 
 RUN mkdir -p /var/www/.yarn && \
+    mkdir -p /var/www/.cache/yarn && \
     touch /var/www/.yarnrc && \
     touch /var/www/.babel.json && \
     chown -R www-data:www-data /var/www/.yarnrc /var/www/.yarn /var/www/.babel.json /var/www/.cache/yarn
