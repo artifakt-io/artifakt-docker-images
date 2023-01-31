@@ -48,7 +48,8 @@ RUN mkdir -p /var/www/.yarn && \
     mkdir -p /var/www/.cache/yarn && \
     touch /var/www/.yarnrc && \
     touch /var/www/.babel.json && \
-    chown -R www-data:www-data /var/www/.yarnrc /var/www/.yarn /var/www/.babel.json /var/www/.cache/yarn
+    chown -R www-data:www-data /var/www/.yarnrc /var/www/.yarn /var/www/.babel.json && \
+    chown -R www-data:www-data /var/www/.cache
 
 USER www-data
 
