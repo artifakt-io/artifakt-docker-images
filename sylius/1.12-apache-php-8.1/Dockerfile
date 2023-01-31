@@ -4,14 +4,14 @@ LABEL vendor="Artifakt" \
     author="engineering@artifakt.io" \
     stage="alpha"
 
-ARG COMPOSER_VERSION=2.4.4
+ARG COMPOSER_VERSION=2.4.0
 ARG SYLIUS_VERSION=1.12.0
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Install git to fix deploy issue (28/09/2022)
 RUN apt-get update && \
-    apt-get install -y git && \
+    apt-get install -y git unzip && \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
@@ -41,13 +41,13 @@ RUN curl -sS https://getcomposer.org/installer | \
 
 WORKDIR /var/www/html
 
-RUN COMPOSER_MEMORY_LIMIT=-1 composer create-project --no-scripts --no-cache --no-interaction --no-ansi sylius/sylius-standard:${SYLIUS_VERSION} . && \
+RUN COMPOSER_MEMORY_LIMIT=-1 composer create-project --no-scripts --no-cache --no-interaction --no-ansi --ignore-platform-reqs sylius/sylius-standard:${SYLIUS_VERSION} . && \
     chown -R www-data:www-data .
 
 RUN mkdir -p /var/www/.yarn && \
     touch /var/www/.yarnrc && \
     touch /var/www/.babel.json && \
-    chown -R www-data:www-data /var/www/.yarnrc /var/www/.yarn /var/www/.babel.json
+    chown -R www-data:www-data /var/www/.yarnrc /var/www/.yarn /var/www/.babel.json /var/www/.cache/yarn
 
 USER www-data
 

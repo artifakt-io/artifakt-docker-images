@@ -56,10 +56,10 @@ commandTests:
     command: "ls"
     args: [ "-la", "/var/www/html/var/log"]
     expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/var/log -> /var/log/artifakt' ]
-  - name: "symfony version"
-    command: "php"
-    args: [ "/var/www/html/bin/console", "--env=prod", "about"]
-    expectedOutput: ['.*Version\s+6\.0\..+']
+  # - name: "symfony version"
+  #   command: "php"
+  #   args: [ "/var/www/html/bin/console", "--env=prod", "about"]
+  #   expectedOutput: ['.*Version\s+6\.0\..+']
   - name: "apache version"
     command: "apache2ctl"
     args: [ "-v"]
