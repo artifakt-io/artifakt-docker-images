@@ -1,15 +1,15 @@
 FROM php:8.1-apache
 
 LABEL vendor="Artifakt" \
-  author="djalal@artifakt.io" \
+  author="engineering@artifakt.io" \
   stage="alpha"
 
-#TODO acpu / memcache / xmlrpc alternative if needed
-ARG PHP_EXTENSION_LIST="acpu bcmath bz2 calendar exif gd gettext iconv intl  mysqli opcache pcntl pdo_mysql shmop soap sockets sodium sysvmsg sysvsem sysvshm xsl zip"
+#TODO  xmlrpc alternative if needed
+ARG PHP_EXTENSION_LIST="apcu memcache bcmath bz2 calendar exif gd gettext iconv intl  mysqli opcache pcntl pdo_mysql shmop soap sockets sodium sysvmsg sysvsem sysvshm xsl zip"
 ARG APACHE_MODULE_LIST="access_compat actions alias allowmethods auth_basic auth_digest authn_anon authn_core authn_dbd authn_dbm authn_file authn_socache authz_core authz_dbd authz_dbm authz_groupfile authz_host authz_owner authz_user autoindex cache cache_disk cache_socache cgi data dav dav_fs dav_lock dbd deflate dir dump_io echo env expires ext_filter filter headers http2 include info lbmethod_bybusyness lbmethod_byrequests lbmethod_bytraffic lbmethod_heartbeat lua macro mime mime_magic negotiation php proxy proxy_ajp proxy_balancer proxy_connect proxy_express proxy_fcgi proxy_fdpass proxy_ftp proxy_hcheck proxy_http proxy_scgi proxy_uwsgi proxy_wstunnel remoteip reqtimeout request rewrite setenvif slotmem_plain slotmem_shm socache_dbm socache_memcache socache_shmcb ssl status substitute suexec userdir vhost_alias"
 
 ARG APCU_VERSION=5.1.20
-ARG COMPOSER_VERSION=2.4
+ARG COMPOSER_VERSION=2.1.3
 ARG LIBSODIUM_PECL_VERSION=2.0.23
 ARG LIBSODIUM_SYSTEM_VERSION=1.0.18-RELEASE
 ARG MEMCACHE_VERSION=8.0
@@ -51,6 +51,16 @@ RUN docker-php-ext-configure \
 # Configure the zip library
 RUN docker-php-ext-configure zip
 
+# a couple of extensions are only available through PECL
+# RUN pecl install \
+#   apcu-$APCU_VERSION \
+#   memcache-$MEMCACHE_VERSION  q
+
+RUN mkdir -p /usr/src/php/ext/apcu \
+  && curl -fsSL https://pecl.php.net/get/apcu | tar xvz -C "/usr/src/php/ext/apcu" --strip 1 \
+  && docker-php-ext-install apcu 
+
+
 # Install required PHP extensions
 # hadolint ignore=SC2046
 RUN docker-php-ext-install -j$(nproc) \
@@ -64,6 +74,7 @@ RUN docker-php-ext-install -j$(nproc) \
   iconv \
   intl \
   mysqli \
+  memcache \
   opcache \
   pcntl \
   pdo_mysql \
@@ -76,11 +87,7 @@ RUN docker-php-ext-install -j$(nproc) \
   xsl \
   zip
 
-# a couple of extensions are only available through PECL
-# RUN pecl install \
-#   apcu-$APCU_VERSION \
-#   memcache-$MEMCACHE_VERSION \
-#   xmlrpc-$XMLRPC_VERSION
+
 
 # install SODIUM php extension
 # see DOCS: https://doc.libsodium.org/
