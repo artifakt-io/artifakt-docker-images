@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-PERSISTENT_FOLDER_LIST=('wp-content/cache' 'wp-content/uploads' 'wp-content/backups' 'wp-content/backup-db' 'wp-content/upgrade')
+PERSISTENT_FOLDER_LIST=('wp-content/cache' 'wp-content/uploads' 'wp-content/backups' 'wp-content/backup-db' 'wp-content/upgrade' 'wp-content/themes')
 
 for persistent_folder in ${PERSISTENT_FOLDER_LIST[@]}; do
   echo Mount $persistent_folder directory
