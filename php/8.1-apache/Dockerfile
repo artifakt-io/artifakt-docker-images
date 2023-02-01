@@ -57,8 +57,7 @@ RUN mkdir -p /usr/src/php/ext/apcu \
 
 # a couple of extensions are only available through PECL
 RUN mkdir -p /usr/src/php/ext/memcache \
-  && pecl install memcache-$MEMCACHE_VERSION \
-  && docker-php-ext-install memcache
+  && pecl install memcache-$MEMCACHE_VERSION 
 
 # Install required PHP extensions
 # hadolint ignore=SC2046
