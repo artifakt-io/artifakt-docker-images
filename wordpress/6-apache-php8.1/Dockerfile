@@ -122,7 +122,7 @@ RUN set -eux; \
 
 RUN set -eux; \
 	version='6.1.1'; \
-	sha1='21c189ff3b3ef3d3adfda56b05dc5ed4705b7a54'; \
+	sha1='80f0f829645dec07c68bcfe0a0a1e1d563992fcb'; \
 	\
 	curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; \
 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; \
