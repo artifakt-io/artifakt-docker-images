@@ -13,7 +13,7 @@ ARG COMPOSER_VERSION=2.1.3
 ARG LIBSODIUM_PECL_VERSION=2.0.23
 ARG LIBSODIUM_SYSTEM_VERSION=1.0.18-RELEASE
 ARG MEMCACHE_VERSION=8.0
-ARG XMLRPC_VERSION=1.0.0RC2
+ARG XMLRPC_VERSION=1.0.0RC3
 
 # Install dependencies
 # hadolint ignore=DL3008
@@ -55,9 +55,11 @@ RUN mkdir -p /usr/src/php/ext/apcu \
   && curl -fsSL https://pecl.php.net/get/apcu | tar xvz -C "/usr/src/php/ext/apcu" --strip 1 \
   && docker-php-ext-install apcu 
 
-# a couple of extensions are only available through PECL
 RUN mkdir -p /usr/src/php/ext/memcache \
   && pecl install memcache-$MEMCACHE_VERSION 
+
+# a couple of extensions are only available through PECL
+RUN pecl install xmlrpc-$XMLRPC_VERSION
 
 # Install required PHP extensions
 # hadolint ignore=SC2046
