@@ -1,0 +1,131 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  cmd: ["apache2-foreground"]
+
+fileExistenceTests:
+- name: 'gzip'
+  path: '/bin/gzip'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'php'
+  path: '/usr/local/bin/php'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+- name: 'tar'
+  path: '/bin/tar'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'any'
+
+commandTests:
+  - name: "check passphrase"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/data/passphrase"]
+    expectedOutput: [ '-rw-r--r-- 1 www-data www-data .+ /data/passphrase' ]
+  - name: "check mounted folder uploads"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/public/uploads"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/public/uploads -> /data/public/uploads' ]
+  - name: "check mounted folder media"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/public/media"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/public/media -> /data/public/media' ]
+  - name: "check mounted var/sessions"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/var/sessions"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/var/sessions -> /data/var/sessions' ]
+  - name: "check mounted config/jwt"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/config/jwt"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/config/jwt -> /data/config/jwt' ]
+  - name: "check mounted folder log"
+    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
+    command: "ls"
+    args: [ "-la", "/var/www/html/var/log"]
+    expectedOutput: [ 'lrwxrwxrwx 1 www-data www-data .+ /var/www/html/var/log -> /var/log/artifakt' ]
+  # - name: "symfony version"
+  #   command: "php"
+  #   args: [ "/var/www/html/bin/console", "--env=prod", "about"]
+  #   expectedOutput: ['.*Version\s+6\.0\..+']
+  - name: "apache version"
+    command: "apache2ctl"
+    args: [ "-v"]
+    expectedOutput: ['Apache\/2\.4\.*']
+  - name: "apache version"
+    command: "apache2ctl"
+    args: [ "-t", "-D", "DUMP_MODULES"]
+    expectedOutput: ['.*rewrite_module.*']
+  - name: "php version"
+    command: "php"
+    args: [ "-r", "echo phpversion();"]
+    expectedOutput: ['.*8\.2\.*']
+  - name: "php timezone = UTC"
+    command: "php"
+    args: [ "-r", "echo ini_get('date.timezone');"]
+    expectedOutput: ["UTC"]
+  - name: "php memory_limit >= 1024MB"
+    command: "php"
+    args: [ "-r", "if (intval(ini_get('memory_limit')) == -1 || (intval(ini_get('memory_limit')) * 1024 ** ['k' => 1, 'm' => 2, 'g' => 3][strtolower(ini_get('memory_limit'))[-1]] >= 1073741824)) { exit(0); } else { echo 'memory_limit='.ini_get('memory_limit'); exit(1);};"]
+    exitCode: 0
+  - name: "composer version"
+    command: "composer"
+    args: [ "--version"]
+    expectedOutput: ['.*2\.4\.*']
+  - name: "php apcu"
+    command: "php"
+    args: [ "-r", "!extension_loaded('apcu') && exit(1);"]
+    exitCode: 0
+  - name: "php bcmath"
+    command: "php"
+    args: [ "-r", "!extension_loaded('bcmath') && exit(1);"]
+    exitCode: 0
+  - name: "php curl"
+    command: "php"
+    args: [ "-r", "!extension_loaded('curl') && exit(1);"]
+    exitCode: 0
+  - name: "php exif"
+    command: "php"
+    args: [ "-r", "!extension_loaded('exif') && exit(1);"]
+    exitCode: 0
+  - name: "php intl"
+    command: "php"
+    args: [ "-r", "!extension_loaded('intl') && exit(1);"]
+    exitCode: 0
+  - name: "php gd"
+    command: "php"
+    args: [ "-r", "!extension_loaded('gd') && exit(1);"]
+    exitCode: 0
+  - name: "php mbstring"
+    command: "php"
+    args: [ "-r", "!extension_loaded('mbstring') && exit(1);"]
+    exitCode: 0
+  - name: "php pdo_mysql"
+    command: "php"
+    args: [ "-r", "!extension_loaded('pdo_mysql') && exit(1);"]
+    exitCode: 0
+  - name: "php opcache enabled"
+    command: "php"
+    args: [ "-r", "echo ini_get('opcache.enable');"]
+    expectedOutput: ["1"]
+  - name: "php xml"
+    command: "php"
+    args: [ "-r", "!extension_loaded('xml') && exit(1);"]
+    exitCode: 0
+  - name: "php zip"
+    command: "php"
+    args: [ "-r", "!extension_loaded('zip') && exit(1);"]
+    exitCode: 0
+
