@@ -4,8 +4,7 @@ LABEL vendor="Artifakt" \
   author="engineering@artifakt.io" \
   stage="alpha"
 
-#TODO  xmlrpc alternative if needed
-ARG PHP_EXTENSION_LIST="bcmath bz2 calendar exif gd gettext iconv intl mysqli opcache pcntl pdo_mysql shmop soap sockets sodium sysvmsg sysvsem sysvshm xsl zip"
+ARG PHP_EXTENSION_LIST="bcmath bz2 calendar exif fileinfo gd gettext iconv intl memcache mysqli opcache pcntl pdo_mysql shmop soap sockets sodium sysvmsg sysvsem sysvshm xmlrpc xsl zip"
 ARG APACHE_MODULE_LIST="access_compat actions alias allowmethods auth_basic auth_digest authn_anon authn_core authn_dbd authn_dbm authn_file authn_socache authz_core authz_dbd authz_dbm authz_groupfile authz_host authz_owner authz_user autoindex cache cache_disk cache_socache cgi data dav dav_fs dav_lock dbd deflate dir dump_io echo env expires ext_filter filter headers http2 include info lbmethod_bybusyness lbmethod_byrequests lbmethod_bytraffic lbmethod_heartbeat lua macro mime mime_magic negotiation php proxy proxy_ajp proxy_balancer proxy_connect proxy_express proxy_fcgi proxy_fdpass proxy_ftp proxy_hcheck proxy_http proxy_scgi proxy_uwsgi proxy_wstunnel remoteip reqtimeout request rewrite setenvif slotmem_plain slotmem_shm socache_dbm socache_memcache socache_shmcb ssl status substitute suexec userdir vhost_alias"
 
 ARG APCU_VERSION=5.1.20
@@ -31,6 +30,7 @@ RUN apt-get update \
   libpng-dev \
   libpspell-dev \
   libtidy-dev \
+  libtool \
   libwebp-dev \
   libxpm-dev \
   libxslt1-dev \
@@ -41,25 +41,15 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # Configure the gd library
-RUN docker-php-ext-configure \
-  gd --with-freetype --with-jpeg --with-xpm --with-webp
+RUN set -e; \
+  docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype;
 
 # Configure the opcache library
 RUN docker-php-ext-configure \
   opcache --enable-opcache
 
 # Configure the zip library
-RUN docker-php-ext-configure zip
-
-RUN mkdir -p /usr/src/php/ext/apcu \
-  && curl -fsSL https://pecl.php.net/get/apcu | tar xvz -C "/usr/src/php/ext/apcu" --strip 1 \
-  && docker-php-ext-install apcu 
-
-RUN mkdir -p /usr/src/php/ext/memcache \
-  && pecl install memcache-$MEMCACHE_VERSION 
-
-# a couple of extensions are only available through PECL
-RUN pecl install xmlrpc-$XMLRPC_VERSION
+RUN docker-php-ext-configure zip;
 
 # Install required PHP extensions
 # hadolint ignore=SC2046
@@ -68,6 +58,7 @@ RUN docker-php-ext-install -j$(nproc) \
   bz2 \
   calendar \
   exif \
+  fileinfo \
   gd \
   gettext \
   iconv \
@@ -85,7 +76,13 @@ RUN docker-php-ext-install -j$(nproc) \
   xsl \
   zip
 
-
+RUN pecl install \
+  apcu-$APCU_VERSION \
+  memcache-$MEMCACHE_VERSION \
+  xmlrpc-$XMLRPC_VERSION; \
+  pecl clear-cache; \
+  docker-php-ext-enable \
+  apcu;
 
 # install SODIUM php extension
 # see DOCS: https://doc.libsodium.org/
