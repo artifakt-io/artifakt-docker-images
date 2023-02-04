@@ -7,7 +7,7 @@ LABEL vendor="Artifakt" \
 
 # https://www.drupal.org/node/3060/release
 ARG DRUPAL_VERSION=9.2.13
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.2.19
 
 # set recommended PHP.ini settings
 # see https://secure.php.net/manual/en/opcache.installation.php
