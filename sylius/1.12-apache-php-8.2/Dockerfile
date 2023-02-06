@@ -5,7 +5,7 @@ LABEL vendor="Artifakt" \
     stage="alpha"
 
 ARG COMPOSER_VERSION=2.4.0
-ARG SYLIUS_VERSION=1.12.0
+ARG SYLIUS_VERSION=dev-dependabot/composer/phpunit/phpunit-tw-9.6
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
