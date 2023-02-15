@@ -11,7 +11,7 @@ ARG PHP_EXTENSION_LIST="apcu bcmath exif gd imagick intl memcached mysqli opcach
 ARG AKENEO_VERSION=v5.0.115
 ARG IMAGICK_VERSION=3.5.0
 ARG MEMCACHED_VERSION=3.1.5
-ARG COMPOSER_VERSION=2.1.3
+ARG COMPOSER_VERSION=2.5.4
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
