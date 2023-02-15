@@ -460,8 +460,10 @@ if [ "$tableCount" -ne 0 ]; then
         echo "REPLICA LIST: $ARTIFAKT_REPLICA_LIST"
         echo "INFO: You can deactivate this by setting the SET_VARNISH to 0 (or anything you want)"
         echo "Activating Varnish in env.php file"
-        su www-data -s /bin/bash -c "php bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2"
-        su www-data -s /bin/bash -c "php bin/magento setup:config:set --http-cache-hosts=${ARTIFAKT_REPLICA_LIST} --no-interaction;"
+        # su www-data -s /bin/bash -c "php bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2"
+        # su www-data -s /bin/bash -c "php bin/magento setup:config:set --http-cache-hosts=${ARTIFAKT_REPLICA_LIST} --no-interaction;"
+        php bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
+        php bin/magento setup:config:set --http-cache-hosts="$ARTIFAKT_REPLICA_LIST" --no-interaction;
       fi
     fi
 
