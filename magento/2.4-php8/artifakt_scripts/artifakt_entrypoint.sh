@@ -417,7 +417,7 @@ if [ "$tableCount" -ne 0 ]; then
           echo "=> Configuration is already up to date.";
       fi
 
-      
+      su www-data -s /bin/bash -c "bin/magento setup:upgrade"
       if [ $dbStatus == 2 ]; then
         
         echo "The database needs to be updated"
