@@ -5,7 +5,7 @@ LABEL vendor="Artifakt" \
     stage="alpha"
 
 ARG COMPOSER_VERSION=2.4.0
-ARG SYLIUS_VERSION=1.12.0
+ARG SYLIUS_VERSION=dev-dependabot/composer/stripe/stripe-php-tw-10.7
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
