@@ -122,6 +122,7 @@ RUN set -eux; \
 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' +
 
 RUN set -eux; \
+	mkdir /usr/src/wordpress \
 	# https://wordpress.org/support/article/htaccess/
 	[ ! -e /usr/src/wordpress/.htaccess ]; \
 	{ \
