@@ -121,28 +121,6 @@ RUN set -eux; \
 	# (replace all instances of "%h" with "%a" in LogFormat)
 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' +
 
-RUN set -eux; \
-	mkdir /usr/src/wordpress \
-	# https://wordpress.org/support/article/htaccess/
-	[ ! -e /usr/src/wordpress/.htaccess ]; \
-	{ \
-	echo '# BEGIN WordPress'; \
-	echo ''; \
-	echo 'RewriteEngine On'; \
-	echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; \
-	echo 'RewriteBase /'; \
-	echo 'RewriteRule ^index\.php$ - [L]'; \
-	echo 'RewriteCond %{REQUEST_FILENAME} !-f'; \
-	echo 'RewriteCond %{REQUEST_FILENAME} !-d'; \
-	echo 'RewriteRule . /index.php [L]'; \
-	echo ''; \
-	echo '# END WordPress'; \
-	} > /usr/src/wordpress/.htaccess; \
-	\
-	chown -R www-data:www-data /usr/src/wordpress; 
-
-
-################################### END OF OFFICIAL WORDPRESS ###
 
 # Force HTTPS on mode
 ENV HTTPS=on

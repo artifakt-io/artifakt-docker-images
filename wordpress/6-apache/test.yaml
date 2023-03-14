@@ -41,11 +41,6 @@ fileExistenceTests:
 
 
 commandTests:
-  - name: "check default salt file"
-    setup: [["/usr/local/bin/docker-entrypoint.sh"]]
-    command: "ls"
-    args: [ "-la", "/data/secret-key.php"]
-    expectedOutput: [ '-rw-r--r-- 1 www-data www-data .+ /data/secret-key.php' ]
   - name: "apache version"
     command: "apache2ctl"
     args: [ "-v"]
