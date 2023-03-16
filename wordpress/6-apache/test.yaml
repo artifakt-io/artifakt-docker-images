@@ -45,7 +45,7 @@ commandTests:
   - name: "php version"
     command: "php"
     args: [ "-r", "echo phpversion();"]
-    expectedOutput: ['.*8\.1\.*']
+    expectedOutput: ['.*8\.2\.*']
   - name: "php memory_limit >= 1GB"
     command: "php"
     args: [ "-r", "if (intval(ini_get('memory_limit')) == -1 || (intval(ini_get('memory_limit')) * 1024 ** ['k' => 1, 'm' => 2, 'g' => 3][strtolower(ini_get('memory_limit'))[-1]] >= 134217728 )) { exit(0); } else { echo 'memory_limit='.ini_get('memory_limit'); exit(1);};"]
