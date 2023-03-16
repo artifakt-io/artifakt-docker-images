@@ -4,7 +4,7 @@
 ROOT_PATH="/var/www/html"
 
 #### We determine which version of WordPress to install.
-if [ -z "$WORDPRESS_VERSION" ];then WORDPRESS_VERSION="6.1.1"; fi
+if [ -z "$WORDPRESS_VERSION" ];then WORDPRESS_VERSION="latest"; fi
 echo -e "Wordpress version: $WORDPRESS_VERSION"
 
 if [ "$ARTIFAKT_IS_MAIN_INSTANCE" == 1 ]; then
@@ -42,9 +42,9 @@ END
 ### We base ourselves on the existence or non-existence of the wp-includes directory to determine 
 ### if the core of WordPress is present or not.
 
-if [ ! -d "/var/www/html/wp-includes" ];then
+if [ ! -d "$ROOT_PATH/wp-includes" ];then
 	#### If the wp-includes directory does not exist, we check for the presence or absence of the composer.lock file
-	if [ -f "/var/www/html/composer.lock" ]; then
+	if [ -f "$ROOT_PATH/composer.lock" ]; then
 	### If the composer.lock file is found, we proceed with the site installation using composer install
 	echo -e "composer.lock file found. Install wordpress with it."
 		su www-data -s /bin/bash -c "composer install --prefer-dist"
@@ -52,14 +52,16 @@ if [ ! -d "/var/www/html/wp-includes" ];then
 	### If we do not find a composer.lock file, we proceed using the official .tar.gz 
 	### with the default version 6.1.1 or the version provided through the custom variable $WORDPRESS_VERSION.
 		echo -e "No wp-includes folder. Get worpress core from $WORDPRESS_VERSION wordpress version."
-	    curl -o /var/www/html/wordpress.tar.gz -fL "https://wordpress.org/wordpress-$WORDPRESS_VERSION.tar.gz";
+	    curl -o $ROOT_PATH/wordpress.tar.gz -fL "https://wordpress.org/wordpress-$WORDPRESS_VERSION.tar.gz";
 	    tar -zxvf wordpress.tar.gz 
 		rm wordpress.tar.gz
 	fi
-	cp -R /var/www/html/wordpress/* .
-	rm -rf /var/www/html/wordpress
+	cp -R $ROOT_PATH/wordpress/* .
+	rm -rf $ROOT_PATH/wordpress
 fi
 
 ### We grant the necessary permissions in accordance with the official documentation
-chown -R www-data:www-data /var/www/html
-chmod -R 755 /var/www/html
+chown -R www-data:www-data $ROOT_PATH
+chmod -R 755 $ROOT_PATH
+### Finally remove wp-config-sample.php
+rm $ROOT_PATH/wp-config-sample.php

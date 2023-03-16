@@ -143,6 +143,7 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
 COPY --chown=www-data:www-data etc/wp-config.php /var/www/html/
 RUN  if [ ! -d /.artifakt ]; then mkdir -p /.artifakt; fi
 
+### artifakt_scripts creation
 RUN mkdir /artifakt_scripts
 COPY artifakt_scripts/* /artifakt_scripts/
 RUN chmod -R +x /artifakt_scripts/
