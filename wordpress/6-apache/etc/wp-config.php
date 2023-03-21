@@ -20,22 +20,22 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', $_ENV['ARTIFAKT_MYSQL_DATABASE_NAME'] );
+define('DB_NAME', $_ENV['ARTIFAKT_MYSQL_DATABASE_NAME']);
 
 /** MySQL database username */
-define( 'DB_USER', $_ENV['ARTIFAKT_MYSQL_USER'] );
+define('DB_USER', $_ENV['ARTIFAKT_MYSQL_USER']);
 
 /** MySQL database password */
-define( 'DB_PASSWORD', $_ENV['ARTIFAKT_MYSQL_PASSWORD'] );
+define('DB_PASSWORD', $_ENV['ARTIFAKT_MYSQL_PASSWORD']);
 
 /** MySQL hostname */
-define( 'DB_HOST', $_ENV['ARTIFAKT_MYSQL_HOST'] );
+define('DB_HOST', $_ENV['ARTIFAKT_MYSQL_HOST']);
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -46,7 +46,7 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-include "/data/secret-key.php";
+include '/data/secret-key.php';
 
 /**#@-*/
 
@@ -56,7 +56,7 @@ include "/data/secret-key.php";
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = ($_ENV['TABLE_PREFIX'] != '') ? $_ENV['TABLE_PREFIX'] : 'wp_';
+$table_prefix = $_ENV['TABLE_PREFIX'] != '' ? $_ENV['TABLE_PREFIX'] : 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -70,14 +70,16 @@ $table_prefix = ($_ENV['TABLE_PREFIX'] != '') ? $_ENV['TABLE_PREFIX'] : 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', ($_ENV['WP_DEBUG'] != '') ? $_ENV['WP_DEBUG'] : false);
-define( 'WP_DEBUG_LOG', '/var/log/artifakt/wp-errors.log' );
+$debug_configuration = $_ENV['WP_DEBUG'] != '' ? $_ENV['WP_DEBUG'] : false;
+define('WP_DEBUG', $debug_configuration);
+
+define('WP_DEBUG_LOG', '/var/log/artifakt/wp-errors.log');
 
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+if (!defined('ABSPATH')) {
+    define('ABSPATH', __DIR__ . '/');
 }
 
 /** Sets up WordPress vars and included files. */
