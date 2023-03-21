@@ -6,7 +6,8 @@ LABEL vendor="Artifakt" \
 
 ARG PHP_EXTENSION_LIST="apcu bcmath bz2 calendar exif gd gettext iconv intl memcache mysqli opcache pcntl pdo_mysql shmop soap sockets sodium sysvmsg sysvsem sysvshm xmlrpc xsl zip"
 
-ARG LIB_SODIUM_VERSION=2.0.23
+ARG LIB_SODIUM_VERSION=1.0.18
+
 ARG MEMCACHE_VERSION=8.0
 ARG APCU_VERSION=5.1.20
 ARG XMLRPC_VERSION=1.0.0RC3
