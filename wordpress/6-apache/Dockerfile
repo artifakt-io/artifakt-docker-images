@@ -2,7 +2,7 @@ FROM php:8.2-apache
 
 LABEL vendor="Artifakt" \
 	author="engineering@artifakt.io" \
-	stage="mega"
+	stage="alpha"
 
 HEALTHCHECK --interval=1m --timeout=30s --retries=3 CMD curl --fail http://localhost || exit 1
 
