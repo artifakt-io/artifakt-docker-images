@@ -64,4 +64,6 @@ fi
 chown -R www-data:www-data $ROOT_PATH
 chmod -R 755 $ROOT_PATH
 ### Finally remove wp-config-sample.php
+if [ -f "$ROOT_PATH/wp-config-sample.php" ];then 
 rm $ROOT_PATH/wp-config-sample.php
+fi
