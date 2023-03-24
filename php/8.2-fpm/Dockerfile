@@ -32,6 +32,7 @@ RUN apt-get update \
   libxpm-dev \
   libxslt1-dev \
   libzip-dev \
+  mariadb-client \
   wget \
   zip \
   zlib1g-dev \
