@@ -23,7 +23,7 @@ MAGENTO_MAP_FILE="$NGINX_CONFIG_DEST_FOLDER/custom_http.conf"
 MAGENTO_CONFIG_FILE="app/etc/config.php"
 
 MOUNT_ARTIFAKT_LOGS_FOLDER="/var/log/artifakt"
-MAGENTO_NATIVE_LOGS_FOLDER=$(pwd)"/var/log"
+MAGENTO_NATIVE_LOGS_FOLDER="$ROOT_PROJECT/var/log"
 MAGENTO_LOGS_NATIVE_FILES=('debug.log' 'exception.log' 'system.log')
 ##########################################
 
