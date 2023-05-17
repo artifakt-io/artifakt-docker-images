@@ -4,7 +4,7 @@ LABEL vendor="Artifakt" \
       author="remi@artifakt.io" \
       stage="alpha"
 
-ARG ANGULAR_VERSION=14.2.7
+ARG ANGULAR_VERSION=16.1.0-next.0
 
 RUN npm install -g @angular/cli@${ANGULAR_VERSION}
 
