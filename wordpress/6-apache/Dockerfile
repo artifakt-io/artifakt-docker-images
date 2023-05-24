@@ -129,7 +129,7 @@ ENV HTTPS=on
 RUN echo 'SetEnv HTTPS on' > /etc/apache2/conf-enabled/force-ssl.conf
 
 # Install composer
-ARG COMPOSER_VERSION=2.3.7
+ARG COMPOSER_VERSION=2.5.7
 RUN curl -sS https://getcomposer.org/installer | \
 	php -- --version=${COMPOSER_VERSION} --install-dir=/usr/local/bin --filename=composer
 
